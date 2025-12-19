@@ -1,9 +1,9 @@
 # Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.1 (Tortola)  
+**Version:** v0.2 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
-**DOI:** 10.5281/zenodo.17982541  
+**DOI:** 10.5281/zenodo.17982540  
 **Generated:** 2025-12-19  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
@@ -179,11 +179,11 @@ The TEP-GL framework operates in two distinct regimes, distinguished by the magn
 
     - **Assumption (Sector Decoupling):** GW170817 constrains only differential disformal coupling; conformal temporal structure is unconstrained (see Axiom 4).
 
-    - **Delay scale:** \(\Delta\tilde{\tau} \sim 10^{3}\text{--}10^{5}\) years, driven by the conformal factor \(A(\phi)\) integrated along cosmological paths.
+    - **Delay scale:** \(\Delta\tilde{\tau} \sim 1\text{--}10\) years, driven by the conformal factor \(A(\phi)\) integrated over halo scales (Mpc).
 
-    - **Primary observables:** The full phenomenology of "dark matter" in lensing—cluster arcs, cosmic shear.
+    - **Primary observables:** The full phenomenology of "dark matter" in lensing—cluster arcs, cosmic shear (via Static Refraction).
 
-    - **Dark matter status:** Dark matter is modeled as a measurement artifact. The \(\phi\) field constitutes the underlying reality.
+    - **Dark matter status:** Dark matter is modeled as a refractive index artifact. The \(\phi\) field constitutes the underlying reality.
 
     - **Falsification:** CMB-galaxy lensing agreement at < 1%; no source-variability correlation in shear.
 
@@ -221,11 +221,11 @@ If \(A(\phi)\) varies spatially—forming a halo-like configuration around the l
 
 $\Delta t_{\rm path} = \int_{\rm path} \frac{\sqrt{A(\phi)}}{c}\,dl$
 
-differs between rays at different impact parameters. For cosmological propagation distances \(L \sim\) Gpc and conformal variations \(\Delta A/A \sim 10^{-6}\text{--}10^{-4}\), the differential delay is:
+differs between rays at different impact parameters. For halo-scale propagation distances \(L \sim 2\) Mpc and conformal variations \(\Delta A/A \sim 10^{-6}\), the differential delay is:
 
-$\Delta t \sim \frac{1}{2} \frac{\Delta A}{A} \cdot \frac{L}{c} \sim 10^3\text{--}10^5 \text{ years}$
+$\Delta t \sim \frac{1}{2} \frac{\Delta A}{A} \cdot \frac{L}{c} \sim \text{years}$
 
-This is *long enough that the source has evolved*. The inner parts of the lensed image show the galaxy from an earlier epoch; the outer parts show it from a later epoch. The observation is not a spatial snapshot—it is a *temporal composite*.
+This delay is **consistent with observed strong lensing time delays**. However, it implies that the "Dynamic Shutter" effect (temporal smearing) is negligible for slowly evolving galaxies. The "Dark Matter" signal for galaxies is therefore dominated by the **Static Refractive Index** (Mechanism A), while the temporal smearing (Mechanism B) becomes the dominant signal only for fast transients (FRBs).
 
 #### Why This Creates "Phantom Mass"
 
@@ -249,65 +249,123 @@ Under TEP, the existence of "dark matter" is inferred rather than directly obser
 
 ## 3. The Phantom Mass Mechanism
 
-### 3.1 Deriving Temporal Shear: Multipath Temporal Divergence
+### 3.1 Deriving Temporal Shear from the Perturbed Metric
 
-The core insight of TEP is that standard lensing analysis mistakes *Multipath Temporal Divergence* for spatial mass. When light travels from across the universe, it passes through "time-warped regions" of space—areas where the scalar field \(\phi\) modifies the local rate of time flow. Because an extended image is formed by rays taking *different pathways* through these distortions, the arrival times diverge.
+We now derive the Phantom Mass mechanism from first principles, starting from the TEP line element and obtaining the modified geodesic deviation equation. This places the temporal shear on rigorous geometric footing.
 
-We derive the effective shear introduced by these time delays as follows. Let the observed image position be \(\vec{\theta}\). The source position \(\vec{\beta}\) is a function of \(\vec{\theta}\) and the emission time \(t_{emit}\):
+#### 3.1.1 The TEP Line Element
 
-$\vec{\beta} = \vec{\beta}_{geom}(\vec{\theta}) + \vec{\Delta\beta}(t_{emit})$
+In the weak-field limit, the TEP framework modifies the standard Newtonian gauge metric by introducing a scalar-field-dependent conformal factor \(A(\phi)\) in the spatial sector:
 
-where \(\vec{\beta}_{geom}\) is the standard gravitational deflection mapping. The emission time is related to the observation time \(t_{obs}\) by the total delay \(T(\vec{\theta})\):
+$ds^2 = -\left(1 + 2\Psi\right)c^2 dt^2 + \left(1 - 2\Psi\right)A(\phi)\, \delta_{ij}\, dx^i dx^j$
 
-$t_{emit} = t_{obs} - T(\vec{\theta}) = t_{obs} - (T_{geom}(\vec{\theta}) + \Delta \tilde{\tau}(\vec{\theta}))$
+where \(\Psi\) is the Newtonian potential and \(A(\phi) = 1 + \alpha(\phi)\) with \(|\alpha| \ll 1\). The scalar field \(\phi\) is sourced by the local matter distribution and varies on galactic/cluster scales. Crucially, \(A(\phi)\) modifies the *proper spatial distance* traversed by photons, which—via the null condition \(ds^2 = 0\)—translates into a modification of the coordinate travel time.
 
-For a source with proper motion \(\vec{\mu}_s = \partial\vec{\beta}/\partial t\), substituting the time equation yields:
+#### 3.1.2 Null Geodesics and the Effective Refractive Index
 
-$\vec{\beta}(\vec{\theta}) \approx \vec{\beta}_{geom}(\vec{\theta}) - \vec{\mu}_s \cdot \Delta \tilde{\tau}(\vec{\theta})$
+For null rays (\(ds^2 = 0\)), the coordinate velocity satisfies:
 
-The Jacobian matrix of the lens mapping \(\mathcal{A}_{ij} = \partial \beta_i / \partial \theta_j\) thus contains two distinct TEP contributions:
+$\frac{|d\vec{x}|}{dt} = c\sqrt{\frac{1 + 2\Psi}{(1 - 2\Psi)A(\phi)}} \approx c\left(1 + 2\Psi - \frac{\alpha(\phi)}{2}\right)$
 
-$\mathcal{A}_{ij} = \underbrace{\frac{\partial \beta_{geom,i}}{\partial \theta_j}}_{\text{Geodesic}} + \underbrace{\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})}_{\text{Coherent Refraction}} - \underbrace{\mu_{s,i} \nabla_j (\Delta \tilde{\tau})}_{\text{Stochastic Shear}}$
+to first order in \(\Psi\) and \(\alpha\). This defines an **effective refractive index**:
 
-This decomposition resolves the "Coherence Problem" inherent in purely dynamic models:
+$n_{\text{eff}}(\vec{x}) = \frac{c}{v_{\text{coord}}} \approx 1 - 2\Psi + \frac{\alpha(\phi)}{2}$
 
-    - **Coherent Refraction (The Halo):** The term \(\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})\) represents the curvature of the static time-delay potential. Like a glass lens, this depends only on the lens profile \(A(\phi)\), not the source motion. It produces a coherent, radial tangential shear—the primary "Dark Matter" signal.
+The total coordinate time delay along a ray path \(\gamma\) is:
 
-    - **Stochastic Shear (The Noise):** The term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) depends on the random proper motion vector \(\vec{\mu}_s\). It does not produce a coherent halo but adds a *random shear component* to each source.
+$T = \int_\gamma \frac{n_{\text{eff}}}{c}\, d\ell = T_0 + \underbrace{\frac{2}{c^3}\int |\Psi|\, d\ell}_{\text{Shapiro (geometric)}} + \underbrace{\frac{1}{2c}\int \alpha(\phi)\, d\ell}_{\Delta\tilde{\tau}\text{ (TEP)}}$
 
-**Conclusion:** TEP predicts that "Dark Matter" is the static refractive index of the scalar field. The unique signature of TEP is not the halo itself, but the **excess shear noise** (stochastic term) that correlates with source velocity/variability.
+The TEP contribution \(\Delta\tilde{\tau}\) is the *excess proper time* accumulated due to the scalar field.
 
-This demonstrates that for an evolving source, the "shape" observed is a mixture of spatial geometry and temporal simultaneity surfaces.
+#### 3.1.3 The Geodesic Deviation Equation
+
+To derive lensing observables, we consider a bundle of null geodesics and compute the **geodesic deviation**—the evolution of the separation vector \(\xi^\mu\) between neighboring rays. In the geometric optics limit, the transverse separation \(\vec{\xi}_\perp\) satisfies:
+
+$\frac{d^2 \xi^i_\perp}{d\lambda^2} = -\mathcal{R}^i_{\;\;j}\, \xi^j_\perp$
+
+where \(\lambda\) is the affine parameter and \(\mathcal{R}^i_{\;\;j}\) is the *optical tidal matrix*, constructed from the Riemann tensor projected onto the screen space orthogonal to the ray.
+
+For the TEP metric, the optical tidal matrix decomposes as:
+
+$\mathcal{R}_{ij} = \mathcal{R}^{(\Psi)}_{ij} + \mathcal{R}^{(\alpha)}_{ij}$
+
+where \(\mathcal{R}^{(\Psi)}_{ij}\) is the standard GR contribution (sourced by \(\nabla^2\Psi\)) and the TEP correction is:
+
+$\mathcal{R}^{(\alpha)}_{ij} = \frac{1}{2}\left(\nabla_i \nabla_j \alpha - \frac{1}{2}\delta_{ij}\nabla^2\alpha\right)$
+
+This term arises from the spatial gradient of the conformal factor and acts as an *additional tidal field* on the light bundle.
+
+#### 3.1.4 The Amplification Matrix and Jacobian Decomposition
+
+Integrating the geodesic deviation equation along the line of sight yields the **amplification matrix** \(\mathcal{A}_{ij}\), which maps source-plane displacements to image-plane displacements:
+
+$\mathcal{A}_{ij} = \frac{\partial \beta_i}{\partial \theta_j} = \delta_{ij} - \int_0^{\chi_s} \frac{(\chi_s - \chi)\chi}{\chi_s}\, \mathcal{R}_{ij}(\chi)\, d\chi$
+
+Substituting the decomposed tidal matrix, we obtain the **central result**:
+
+$\mathcal{A}_{ij} = \underbrace{\delta_{ij} - \Psi_{,ij}}_{\text{Geometric (Standard GR)}} - \underbrace{\frac{1}{2}\int \frac{(\chi_s - \chi)\chi}{\chi_s}\left(\alpha_{,ij} - \frac{1}{2}\delta_{ij}\nabla^2\alpha\right) d\chi}_{\text{Temporal (TEP Correction)}}$
+
+where \(\Psi_{,ij}\) denotes the lensing potential Hessian and \(\alpha_{,ij} = \nabla_i\nabla_j\alpha(\phi)\).
+
+#### 3.1.5 Interpretation: Geometric vs. Temporal Contributions
+
+The Jacobian decomposition reveals two physically distinct contributions to image distortion:
+
+| Term | Source | Physical Origin | Observational Signature |
+| --- | --- | --- | --- |
+| **Geometric** | \(\Psi_{,ij}\) | Spatial curvature from mass | Standard convergence \(\kappa\) and shear \(\gamma\) |
+| **Temporal (Static)** | \(\alpha_{,ij}\) | Gradient of scalar field (refractive index) | Coherent tangential shear mimicking DM halo |
+| **Temporal (Dynamic)** | \(\mu_s^i \nabla_j(\Delta\tilde{\tau})\) | Source motion × time-delay gradient | Stochastic shear noise correlated with kinematics |
+
+The **static temporal term** produces a coherent, radially-symmetric contribution to the shear field—indistinguishable from a dark matter halo in single-epoch imaging. The **dynamic term** arises when the source position evolves during the differential light-travel time across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
+
+$\vec{\beta}_{\text{eff}}(\vec{\theta}) = \vec{\beta}_{\text{geom}}(\vec{\theta}) - \vec{\mu}_s \cdot \Delta\tilde{\tau}(\vec{\theta})$
+
+This adds an asymmetric, source-dependent contribution to the Jacobian that does not average coherently but increases the *variance* of shear measurements.
 
 **Principle:**
 
-### Box 3.1: A Minimal Toy Model Estimate
+#### Summary: The Phantom Mass Decomposition
+
+The full amplification matrix in TEP is:
+
+$\mathcal{A}_{ij} = \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic Lensing}} + \underbrace{\mathcal{A}^{(\alpha,\text{static})}_{ij}}_{\text{"Dark Matter" (Coherent)}} + \underbrace{\mathcal{A}^{(\alpha,\text{dyn})}_{ij}}_{\text{Shear Noise (Stochastic)}}$
+Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as **Phantom Mass**—a geometric effect of the scalar field's refractive gradient, not particulate matter. The third term provides the **unique observational discriminator**: excess shear dispersion correlated with source kinematics.
+
+**Principle:**
+
+### Box 3.1: A Minimal Toy Model Estimate (Halo Scale Integration)
 
 To demonstrate the order of magnitude, consider a simple spherical conformal halo profile:
 
 $A(\phi) = 1 + \epsilon \ln(r/r_0)$
 For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale \(r_0 = 10\) kpc:
 
-    - **Differential Delay:** Across an Einstein radius (\(r_E \approx 5\) kpc), the differential proper time accumulation is \(\Delta \tilde{\tau} \sim \frac{\epsilon}{2} (L/c) \approx 1.5 \times 10^3\) years (for \(L \sim 1\) Gpc).
+    - **Integration Path:** We integrate the delay only over the effective halo depth (\(L_{halo} \approx 2\) Mpc), not the full cosmological path. This respects the locality of the potential well.
 
-    - **Phantom Convergence:** The resulting effective convergence \(\kappa_{eff}\) mimics an NFW profile core, with magnitude scaling as \(\kappa_{eff} \propto \epsilon \cdot (\partial I_s / \partial t)\).
+    **Differential Delay:** Across an Einstein radius (\(r_E \approx 5\) kpc), the differential proper time accumulation is:
+    $\Delta \tilde{\tau} \sim \frac{\epsilon}{2} \frac{L_{halo}}{c} \approx \frac{10^{-6}}{2} \cdot (6.5 \times 10^6 \text{ light-years}) \approx 3.2 \text{ years}$
+    
+    - **Consistency:** This **~3 year delay** is consistent with observed time delays in strong lens systems (e.g., SN Refsdal), resolving the "Refsdal Paradox" where cosmological integration predicted unobserved millennia-long gaps.
 
-This confirms that even minute conformal variations (\(10^{-6}\)) integrated over cosmological distances produce delays sufficient to shear evolving sources.
+    - **Mechanism A (Refraction):** The static gradient \(\nabla(\Delta \tilde{\tau})\) creates the coherent lensing (Refractive Index).
+
+    - **Mechanism B (Stochastic):** The dynamic shutter effect \(\vec{\mu}_s \cdot \nabla \tau\) is small for galaxies on year-timescales, but dominant for millisecond transients (FRBs).
 
 **Principle:**
 
-### Box 3.2: Order of Magnitude Estimate for Static Sources
+### Box 3.2: Order of Magnitude Estimate for Stochastic Shear
 
-To verify that proper motion alone generates sufficient shear, we calculate the magnitude of the Temporal Shear Tensor \(\mathcal{T} \approx \mu_s \nabla(\Delta \tilde{\tau})\).
+To estimate the magnitude of the *stochastic* shear contribution (the dynamic term \(\mu_s \nabla(\Delta \tilde{\tau})\)), we use the updated halo-scale delays:
 
     - **Source Velocity:** Typical cluster transverse velocity \(v_s \sim 1000\) km/s at distance \(D_A \sim 1\) Gpc yields an angular proper motion \(\mu_s \approx 2 \times 10^{-4}\) arcsec/year.
 
-    - **Delay Gradient:** From the toy model (Box 3.1), a delay of \(\sim 10^3\) years varying over arcsecond scales gives \(\nabla(\Delta \tilde{\tau}) \sim 10^3\) years/arcsec.
+    - **Delay Gradient:** From Box 3.1, a delay of \(\sim 3\) years varying over arcsecond scales gives \(\nabla(\Delta \tilde{\tau}) \sim 3\) years/arcsec.
 
-    **Resulting Shear:** The product is dimensionless shear:
-    $\gamma_{eff} \approx (2 \times 10^{-4} \, \text{arcsec/yr}) \times (10^3 \, \text{yr/arcsec}) \approx 0.2$
+    **Resulting Stochastic Shear:** The product is dimensionless shear:
+    $\gamma_{stoch} \approx (2 \times 10^{-4} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-4}$
 
-This result (\(\gamma \approx 0.2\)) is of the order of unity, demonstrating that the proper motion of standard elliptical galaxies is sufficient to generate strong lensing-like distortions without intrinsic luminosity variability.
+This stochastic contribution (\(\gamma_{stoch} \sim 10^{-3}\)) is **small compared to typical weak lensing shear** (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a *perturbation* (excess scatter), not the dominant signal. The coherent "Dark Matter" halo arises from the **Static Refractive Index** (Mechanism A), not source motion.
 
 ### 3.2 Connection to Lens-Model Degeneracies
 
@@ -386,6 +444,45 @@ To reconcile the large potentials required on cluster scales with the strict con
 $\mathcal{L}_\phi = -\frac{1}{2}(\partial \phi)^2 - \frac{1}{\Lambda^3}(\partial \phi)^2 \square \phi + \frac{g}{M_{Pl}} \phi T$
 
 where \(\Lambda\) is the strong coupling scale and \(T\) is the trace of the energy-momentum tensor. In high-density environments (Solar System), the non-linear term \(\frac{1}{\Lambda^3}(\partial \phi)^2 \square \phi\) dominates, suppressing the spatial gradients of \(\phi\) and restoring General Relativity to high precision (Vainshtein screening). On cosmological scales (low density), the linear kinetic term dominates, allowing the scalar field to develop the large \(10^3\text{--}10^5\) year potential depths required for TEP phenomenology. This Lagrangian formulation moves the screening argument from "wishful thinking" to standard field theory practice, ensuring mathematical consistency with local tests.
+
+**Principle:**
+
+#### Box 4.1: The Vainshtein Radius and the Screening Hierarchy
+
+For a spherically symmetric source of mass \(M\), the Vainshtein radius marks the transition between the screened (GR-like) and unscreened (modified gravity) regimes:
+
+$r_V = \left(\frac{g M}{4\pi M_{Pl} \Lambda^3}\right)^{1/3}$
+
+where \(g\) is the matter coupling and \(\Lambda\) is the strong-coupling scale. Inside \(r_V\), the non-linear kinetic term dominates and suppresses scalar gradients; outside \(r_V\), the scalar field mediates a fifth force.
+
+**Numerical Estimates:**
+
+| System | Mass | \(r_V\) (for \(\Lambda \sim 10^{-13}\) eV) | Characteristic Scale | Status |
+| --- | --- | --- | --- | --- |
+| Sun | \(M_\odot\) | \(\sim 0.1\) pc | 1 AU \(\ll r_V\) | **Screened** ✓ |
+| Milky Way | \(10^{12} M_\odot\) | \(\sim 1\) Mpc | 50 kpc \( | Partially screened |
+| Galaxy Cluster | \(10^{15} M_\odot\) | \(\sim 10\) Mpc | 1–5 Mpc \( | Partially screened |
+| Cosmic Filament | Diffuse | N/A | 10–100 Mpc | **Unscreened** ✓ |
+
+**The Goldilocks Condition:** For TEP phenomenology to work, we require:
+
+$r_{\text{Solar System}} \ll r_V(M_\odot) \quad \text{and} \quad r_V(M_{\text{cluster}}) \lesssim r_{\text{halo}}$
+
+The first condition ensures Solar System tests (Cassini, lunar laser ranging) see pure GR. The second ensures the scalar field gradients are *not* fully suppressed at halo scales where "dark matter" effects are observed.
+
+**Parameter Space:** Taking \(\Lambda \sim 10^{-13}\) eV (comparable to the dark energy scale \(H_0\)) and \(g \sim \mathcal{O}(1)\):
+
+    - \(r_V(M_\odot) \approx 0.1\) pc \(\approx 2 \times 10^4\) AU — Solar System (scale \(\sim 50\) AU) is deeply screened.
+
+    - \(r_V(M_{\text{MW}}) \approx 1\) Mpc — Galactic halo (scale \(\sim 50\) kpc) lies in the transition zone.
+
+    - Intergalactic paths traverse unscreened voids where \(\nabla\phi\) accumulates freely.
+
+**The Screening Cliff (Parameter Tension):** The ratio of conformal coupling required at cluster scales (\(\alpha \sim 10^{-1}\)) to that permitted at Solar System scales (\(\alpha \lesssim 10^{-5}\)) spans four orders of magnitude. While Vainshtein screening can in principle provide this suppression, it requires:
+
+$\frac{\alpha_{\text{cluster}}}{\alpha_{\text{Solar}}} \sim \left(\frac{r_V}{r}\right)^{3/2} \gtrsim 10^4$
+
+This is achievable but represents a **fine-tuning constraint** on the Lagrangian parameters \((\Lambda, g)\). We acknowledge this as a necessary condition for TEP viability, analogous to the coincidence problem in \(\Lambda\)CDM. Future work should derive the screening profile self-consistently from the full field equations.
 
 ## 5. Observational Predictions: The Era of Chronometric Mapping
 
@@ -642,7 +739,7 @@ Zwicky, F. 1933, *Helv. Phys. Acta*, 6, 110
 
         **License:** This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-        Version: v0.1 (Tortola) · Last updated: 19 December 2025
+        Version: v0.2 (Tortola) · Last updated: 19 December 2025
 
 ## Appendix A: Mathematical Derivations
 

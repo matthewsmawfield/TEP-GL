@@ -11,7 +11,7 @@ abstract: >
 
   It is demonstrated that **GW170817 does not constrain the conformal component** of this coupling; because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. The widely cited speed-of-gravity constraints apply only to the disformal sector, leaving the conformal "rate of time" unconstrained to explain dark matter phenomenology. The dark sector is thus reinterpreted not as an invisible substance, but as the shadow of temporal transport.
 license: CC-BY-4.0
-version: 0.1
+version: 0.2
 date-released: 2025-12-19
 keywords:
   - physics
@@ -24,21 +24,21 @@ keywords:
   - TEP-GL
 repository-code: "https://github.com/matthewsmawfield/TEP-GL"
 url: "https://github.com/matthewsmawfield/TEP-GL"
-doi: 10.5281/zenodo.17982541
+doi: 10.5281/zenodo.17982540
 
 preferred-citation:
   type: article
-  title: "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations (Tortola v0.1)"
+  title: "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations (Tortola v0.2)"
   authors:
     - family-names: Smawfield
       given-names: Matthew Lukin
       orcid: "https://orcid.org/0009-0003-8219-3159"
   year: 2025
   journal: Zenodo
-  doi: 10.5281/zenodo.17982541
+  doi: 10.5281/zenodo.17982540
   identifiers:
   - type: doi
-    value: 10.5281/zenodo.17982541
+    value: 10.5281/zenodo.17982540
     description: Pre-print DOI
-  url: "https://doi.org/10.5281/zenodo.17982541"
+  url: "https://doi.org/10.5281/zenodo.17982540"
   notes: "Preprint"

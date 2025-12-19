@@ -3,7 +3,7 @@
 Standard gravitational lensing analysis relies on the Isochrony Axiom—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. This work demonstrates that for evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image.
 
 > **Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations**  
-> TEP-GL Paper | v0.1 (Tortola) | DOI: 10.5281/zenodo.17982541
+> TEP-GL Paper | v0.2 (Tortola) | DOI: 10.5281/zenodo.17982540
 
 **Live Site**: [matthewsmawfield.github.io/TEP-GL](https://matthewsmawfield.github.io/TEP-GL/)
 
@@ -101,8 +101,8 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   author={Smawfield, Matthew Lukin},
   journal={Zenodo},
   year={2025},
-  doi={10.5281/zenodo.17982541},
-  note={Preprint v0.1 (Tortola)}
+  doi={10.5281/zenodo.17982540},
+  note={Preprint v0.2 (Tortola)}
 }
 ```
 
@@ -112,4 +112,4 @@ The author thanks colleagues for valuable discussions. This research made use of
 
 ## Status
 
-**Version 0.1 (Tortola)** - Landmark Release. Theoretical framework complete.
+**Version 0.2 (Tortola)** - Landmark Release. Theoretical framework complete.

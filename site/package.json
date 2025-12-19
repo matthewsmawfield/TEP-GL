@@ -1,8 +1,8 @@
 {
   "name": "tep-gl-site",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations",
-  "comment": "Package version matches manuscript version v0.1 (Tortola)",
+  "comment": "Package version matches manuscript version v0.2 (Tortola)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
