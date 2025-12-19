@@ -65,7 +65,7 @@ This paper develops the TEP framework to show that two-metric temporal coupling 
 
     - **GW170817 is a differential constraint:** The multi-messenger constraint \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\) is explicitly reanalyzed. It is shown that this bounds only the *disformal* (cone-tilt) component of the coupling. The *conformal* component, which governs clock rates and drives the "dark matter" phenomenology, is unconstrained because photons and gravitational waves share the same null cone and thus experience common-mode dilation.
 
-    - **The Reference Envelope vs. The Reality:** The standard translation of GW170817 timing to propagation-speed bounds is treated as a conservative **Reference Envelope** for the disformal sector. However, for the unconstrained conformal sector, it is demonstrated that the temporal-field gradients required to reproduce lensing anomalies are physically viable. This transforms the "dark matter problem" from a search for particles into a search for unmodeled temporal structure.
+    - **The Reference Envelope vs. The Reality:** The standard translation of GW170817 timing to propagation-speed bounds is treated as a conservative Reference Envelope for the disformal sector. However, for the unconstrained conformal sector, it is demonstrated that the temporal-field gradients required to reproduce lensing anomalies are physically viable. This transforms the "dark matter problem" from a search for particles into a search for unmodeled temporal structure.
 
 By abandoning the Isochrony Axiom, the dark matter problem is transformed from a search for missing particles into a search for unmodeled temporal structure. The parameter space where this structure masquerades as dark matter is defined, offering a falsifiable alternative to the particle paradigm.
 
@@ -381,7 +381,7 @@ By distinguishing between the *speed of transmission* (constrained) and the *rat
 
 A critical quantitative challenge to the TEP framework is the magnitude of the scalar potential required to explain cluster lensing. To generate differential delays of \(10^3\text{--}10^5\) years over cosmological distances, the conformal factor \(A(\phi)\) must have significant depth. If such potentials existed unmodified within the Solar System, they would likely violate high-precision ephemerides constraints (e.g., the Cassini parameter \(\gamma\)).
 
-To reconcile the large potentials required on cluster scales with the strict constraints on local scales, we explicitly invoke a **Screening Mechanism**. To move beyond qualitative hypotheses, we define the scalar sector via a Galileon-type Lagrangian known to provide Vainshtein screening:
+To reconcile the large potentials required on cluster scales with the strict constraints on local scales, we explicitly invoke a Screening Mechanism. To move beyond qualitative hypotheses, we define the scalar sector via a Galileon-type Lagrangian known to provide Vainshtein screening:
 
 $\mathcal{L}_\phi = -\frac{1}{2}(\partial \phi)^2 - \frac{1}{\Lambda^3}(\partial \phi)^2 \square \phi + \frac{g}{M_{Pl}} \phi T$
 
@@ -428,11 +428,11 @@ The critical discriminant is the *source-dependence* of the inferred dark compon
 
 TEP-GL is a falsifiable hypothesis. The following observations would exclude specific regimes or the framework entirely:
 
-    - **Reference Envelope Exclusion:** If precision timing of strongly lensed FRBs yields achromatic residuals consistent with zero to better than 0.1 ms across diverse lens environments, the **Reference Envelope** parameter space is excluded.
+    - **Reference Envelope Exclusion:** If precision timing of strongly lensed FRBs yields achromatic residuals consistent with zero to better than 0.1 ms across diverse lens environments, the Reference Envelope parameter space is excluded.
 
     - **Source-Independent Shear:** If weak-lensing shear measurements behind clusters show no correlation with source variability class (static ellipticals vs. variable AGN) after controlling for redshift and morphology, the temporal-composite mechanism is excluded.
 
-    - **CMB-Galaxy Agreement:** If future surveys (e.g., CMB-S4, Rubin/LSST) demonstrate that CMB lensing and galaxy weak-lensing mass inferences agree to better than 1% after controlling for all modeling systematics, the **Extended Regime** parameter space is excluded.
+    - **CMB-Galaxy Agreement:** If future surveys (e.g., CMB-S4, Rubin/LSST) demonstrate that CMB lensing and galaxy weak-lensing mass inferences agree to better than 1% after controlling for all modeling systematics, the Extended Regime parameter space is excluded.
 
     - **Chromatic Anomaly:** If any timing or morphological anomaly shows wavelength dependence after correction for plasma dispersion and dust, the achromatic prediction of two-metric coupling is falsified. This would indicate conventional astrophysical systematics rather than metric effects.
 
