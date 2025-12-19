@@ -1,5 +1,7 @@
 # TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing
 
+![TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing](site/public/twitter-image.jpg)
+
 Standard gravitational lensing analysis relies on the Isochrony Axiom—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. This work demonstrates that for evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image.
 
 > **Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations**  
@@ -17,7 +19,7 @@ When using this work, please cite the paper and theoretical framework listed bel
 
 If the Isochrony Axiom is violated by differential time dilation (conformal metric coupling), extended images become temporal composites. This projects temporal depth onto the spatial plane, generating a Temporal Jacobian contribution that is mathematically indistinguishable from gravitational shear—a phenomenon defined here as Phantom Mass.
 
-Crucially, GW170817 does not constrain this effect. Because photons and gravitational waves traverse the same null geodesics in the conformal limit, time dilation is common-mode and cancels in differential measurements. The constraints apply only to the disformal (cone-tilt) sector, leaving the conformal "rate of time" unconstrained.
+Crucially, GW170817 does not constrain this effect. Because photons and gravitational waves traverse the same null geodesics in the conformal limit, time dilation is common-mode and cancels in differential measurements. While GW170817 constrains disformal propagation speeds, it leaves the conformal "rate of time" unconstrained. Conformal gradients can reproduce specific aspects of dark matter phenomenology—particularly coherent lensing shear and time-domain signatures—subject to Vainshtein screening constraints. The dark sector is thus reinterpreted not as an invisible substance, but as the shadow of temporal transport.
 
 ## Key Predictions
 

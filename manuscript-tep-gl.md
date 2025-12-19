@@ -11,7 +11,7 @@
 
 ## Abstract
 
-    Standard gravitational lensing analysis relies on the *Isochrony Axiom*—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. We demonstrate that for evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a *Temporal Jacobian* contribution that is mathematically indistinguishable from gravitational shear—a phenomenon defined here as *Phantom Mass*. It is demonstrated that *GW170817 does not constrain the conformal component* of this coupling; because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. The widely cited speed-of-gravity constraints apply only to the disformal sector, leaving the conformal "rate of time" unconstrained to explain dark matter phenomenology. The dark sector is thus reinterpreted not as an invisible substance, but as the shadow of temporal transport.
+    Standard gravitational lensing analysis relies on the *Isochrony Axiom*—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. We demonstrate that for evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a *Temporal Jacobian* contribution that is mathematically indistinguishable from gravitational shear—a phenomenon defined here as *Phantom Mass*. It is demonstrated that *GW170817 does not constrain the conformal component* of this coupling; because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. While GW170817 constrains disformal propagation speeds, it leaves the conformal "rate of time" unconstrained. We demonstrate that conformal gradients can reproduce specific aspects of dark matter phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. The dark sector is thus reinterpreted not as an invisible substance, but as the shadow of temporal transport.
 
     *Keywords:* gravitational lensing – dark matter – modified gravity – cosmology: theory – galaxies: kinematics and dynamics – temporal equivalence principle
 
@@ -551,7 +551,46 @@ Gravitational physics has historically advanced by refining the fundamental geom
 
 By treating the rate of proper time accumulation as a physical field with its own degrees of freedom (rather than a fixed function of the metric), TEP unifies the "stack" into a single framework. The "dark matter" anomaly is simply the observation that this field has spatial gradients.
 
-### 6.2 Interpretational Challenges
+### 6.2 CMB Lensing and the Integrated Sachs-Wolfe Constraint
+
+A scalar field capable of generating year-scale differential delays on cluster scales raises a critical question: what are the implications for the Cosmic Microwave Background (CMB)? Two potential tensions must be addressed.
+
+#### 6.2.1 The ISW Effect
+
+The Integrated Sachs-Wolfe (ISW) effect arises when CMB photons traverse time-evolving gravitational potentials. In TEP, the conformal factor \(A(\phi)\) contributes an additional term to the photon temperature perturbation:
+
+$\frac{\Delta T}{T}\bigg|_{\text{TEP}} = \int \frac{\partial \ln A(\phi)}{\partial t}\, dt$
+
+For TEP to remain consistent with *Planck* constraints on the ISW amplitude, one of the following must hold:
+
+    - **Quasi-Static Regime:** The scalar field evolves slowly (\(\partial_t A \ll H_0 A\)), so the TEP contribution to ISW is subdominant to the standard \(\dot{\Psi}\) term. This is natural if \(\phi\) tracks the matter distribution adiabatically.
+
+    - **Cancellation:** In some scalar-tensor theories, the conformal ISW contribution partially cancels the metric ISW, leaving the net effect within observational bounds (cf. Amendola et al. 2008).
+
+#### 6.2.2 CMB Lensing Power Spectrum
+
+The CMB lensing convergence power spectrum \(C_\ell^{\kappa\kappa}\) is measured to high precision by *Planck* and ACT. In standard \(\Lambda\)CDM, this is sourced entirely by the integrated mass distribution. In TEP, the lensing kernel receives contributions from both the geometric (mass) term and the temporal (refractive) term:
+
+$\kappa_{\text{TEP}} = \kappa_{\text{mass}} + \kappa_{\text{refraction}}$
+
+For the CMB (a static, non-evolving source), the "Dynamic Shutter" term vanishes identically—there is no source proper motion to couple to the delay gradient. The only TEP contribution is the **static refractive term** \(\nabla^2(\Delta\tilde{\tau}_{\text{static}})\), which is coherent and radially symmetric around mass concentrations.
+
+**Implication:** CMB lensing in TEP is dominated by the same static mechanism that produces "dark matter halos" in galaxy lensing. The amplitude is controlled by the integrated \(\alpha(\phi)\) profile, not by lens motion. This is consistent with the observed CMB lensing power spectrum *provided* the static refractive term has the correct radial profile—a constraint that effectively fixes the relationship between \(\alpha(\phi)\) and the matter density \(\rho\).
+
+#### 6.2.3 Parameter Space Constraints
+
+Combining ISW and CMB lensing constraints with the Vainshtein screening requirements (Box 4.1) defines a narrow but viable parameter window:
+
+| Constraint | Requirement | Status |
+| --- | --- | --- |
+| Solar System (Cassini) | \(\alpha_{\text{local}} \lesssim 10^{-5}\) | Satisfied via Vainshtein |
+| Cluster Lensing | \(\alpha_{\text{halo}} \sim 10^{-1}\) | Required for DM phenomenology |
+| ISW (*Planck*) | \(\partial_t \ln A / H_0 \lesssim 0.1\) | Requires quasi-static \(\phi\) |
+| CMB Lensing | \(\kappa_{\text{refraction}} \propto \kappa_{\text{mass}}\) | Requires \(\alpha \propto \Psi\) scaling |
+
+The requirement that \(\alpha(\phi) \propto \Psi\) (the scalar field tracks the Newtonian potential) is a **non-trivial constraint** on the TEP Lagrangian. It is satisfied in conformal coupling models where \(\phi\) is sourced by the trace of the stress-energy tensor, but represents a theoretical prior that must be verified against N-body simulations. We flag this as a key target for future numerical work.
+
+### 6.3 Interpretational Challenges
 
 TEP effects mimic standard lensing signatures, making them difficult to distinguish without time-domain analysis.
 
@@ -559,7 +598,7 @@ TEP effects mimic standard lensing signatures, making them difficult to distingu
 
     - **Differential vs. Common-Mode Effects:** The GW170817 constraint is often interpreted as excluding modified metric couplings. However, as shown in Section 4, this constraint applies to the differential disformal sector. Conformal proper-time dilation is a *common-mode effect* for co-propagating signals, leaving the "speed of gravity" constraint satisfied while permitting significant time-domain phenomenology.
 
-### 6.3 Reinterpreting the Evidence: Multipath vs. Single-Path
+### 6.4 Reinterpreting the Evidence: Multipath vs. Single-Path
 
 When viewed through the lens of TEP, the disparate constraints on the dark sector resolve into a consistent picture based on signal topology:
 
@@ -569,7 +608,7 @@ When viewed through the lens of TEP, the disparate constraints on the dark secto
 
 The apparent contradiction—"how can gravity be modified enough to create dark matter but unmodified enough to pass GW170817?"—is resolved. Gravity may not be modified; time is. And time manifests as a differential observable only when comparing divergent paths.
 
-### 6.4 Global Variation of Effective Light Speed
+### 6.5 Global Variation of Effective Light Speed
 
 If TEP is correct, then \(c\) is locally invariant but globally variable. This challenges the foundational assumption used to interpret all astrophysical data.
 
@@ -579,7 +618,7 @@ If TEP is correct, then \(c\) is locally invariant but globally variable. This c
 
 TEP removes the need for an invisible substance by correcting the assumption about the constancy of the global speed of light.
 
-### 6.5 TEP as a Bridge Between Paradigms
+### 6.6 TEP as a Bridge Between Paradigms
 
 TEP offers a potential unification of competing frameworks:
 
@@ -589,7 +628,7 @@ TEP offers a potential unification of competing frameworks:
 
 Thus, TEP is not merely a competitor to these paradigms; it is a framework that explains *why* CDM works on large scales (where static assumptions hold) and *why* MOND works on galactic scales (where the field gradients are dominant).
 
-### 6.6 The Path Forward
+### 6.7 The Path Forward
 
 The analysis suggests that *dark matter phenomenology can be reproduced without a substance*. What exists is a temporal field with spatial gradients, and what has been measured as "dark matter" is the projection of those gradients onto observations that assume temporal synchrony. To maintain the particle interpretation, it is necessary to demonstrate that the universe is synchronous to a precision that excludes TEP effects. TEP offers a geometric identification of the phenomenology, explaining the universality of dark matter profiles and the success of MOND on galactic scales through a single parsimonious framework.
 
@@ -607,7 +646,7 @@ The *Temporal Equivalence Principle (TEP)*, introduced in a companion paper (Sma
 
     - **Phantom Mass from Dark Time:** It was demonstrated that a gradient in proper-time accumulation across an image plane acts as a "temporal shear" on evolving sources. In a static reconstruction, this is mathematically indistinguishable from the gravitational shear of a dark matter halo. The "dark sector" may simply be the difference between the gravitational metric (which guides orbits) and the matter metric (which guides clocks).
 
-    - **The GW170817 "Speed Limit" is Nuanced:** The standard multi-messenger constraint was deconstructed. Because the conformal component of the metric coupling preserves null cones, it is *invisible* to differential speed-of-gravity tests. Photons and gravitational waves share the common-mode dilation. The widely cited \(10^{-15}\) bound constrains only the disformal (cone-tilt) sector, accepted here as the "speed of transmission" limit, while the unconstrained conformal sector governs the "rate of proper time accumulation" responsible for dark matter phenomenology.
+    - **The GW170817 "Speed Limit" is Nuanced:** The standard multi-messenger constraint was deconstructed. Because the conformal component of the metric coupling preserves null cones, it is *invisible* to differential speed-of-gravity tests. Photons and gravitational waves share the common-mode dilation. While GW170817 constrains disformal propagation speeds to \(|c_\gamma - c_g|/c \lesssim 10^{-15}\), it leaves the conformal "rate of time" unconstrained. We demonstrate that conformal gradients can reproduce specific aspects of dark matter phenomenology—particularly coherent lensing shear and time-domain signatures—subject to Vainshtein screening constraints that ensure consistency with Solar System tests.
 
     - **A New Observational Era:** Two regimes for testing TEP are defined. In the conservative *Reference Envelope*, the effects are millisecond-scale and detectable only in high-time-resolution astrophysics (FRBs, pulsars). In the *Extended Regime*, where environmental screening and/or a revised operational mapping allow larger effective delays, TEP becomes a full dynamical alternative to particle dark matter.
 

@@ -12,7 +12,67 @@
 
 <p>By treating the rate of proper time accumulation as a physical field with its own degrees of freedom (rather than a fixed function of the metric), TEP unifies the "stack" into a single framework. The "dark matter" anomaly is simply the observation that this field has spatial gradients.</p>
 
-<h3>6.2 Interpretational Challenges</h3>
+<h3>6.2 CMB Lensing and the Integrated Sachs-Wolfe Constraint</h3>
+
+<p>A scalar field capable of generating year-scale differential delays on cluster scales raises a critical question: what are the implications for the Cosmic Microwave Background (CMB)? Two potential tensions must be addressed.</p>
+
+<h4>6.2.1 The ISW Effect</h4>
+
+<p>The Integrated Sachs-Wolfe (ISW) effect arises when CMB photons traverse time-evolving gravitational potentials. In TEP, the conformal factor \(A(\phi)\) contributes an additional term to the photon temperature perturbation:</p>
+
+<div class="equation">$$\frac{\Delta T}{T}\bigg|_{\text{TEP}} = \int \frac{\partial \ln A(\phi)}{\partial t}\, dt$$</div>
+
+<p>For TEP to remain consistent with <em>Planck</em> constraints on the ISW amplitude, one of the following must hold:</p>
+<ul>
+    <li><strong>Quasi-Static Regime:</strong> The scalar field evolves slowly (\(\partial_t A \ll H_0 A\)), so the TEP contribution to ISW is subdominant to the standard \(\dot{\Psi}\) term. This is natural if \(\phi\) tracks the matter distribution adiabatically.</li>
+    <li><strong>Cancellation:</strong> In some scalar-tensor theories, the conformal ISW contribution partially cancels the metric ISW, leaving the net effect within observational bounds (cf. Amendola et al. 2008).</li>
+</ul>
+
+<h4>6.2.2 CMB Lensing Power Spectrum</h4>
+
+<p>The CMB lensing convergence power spectrum \(C_\ell^{\kappa\kappa}\) is measured to high precision by <em>Planck</em> and ACT. In standard \(\Lambda\)CDM, this is sourced entirely by the integrated mass distribution. In TEP, the lensing kernel receives contributions from both the geometric (mass) term and the temporal (refractive) term:</p>
+
+<div class="equation">$$\kappa_{\text{TEP}} = \kappa_{\text{mass}} + \kappa_{\text{refraction}}$$</div>
+
+<p>For the CMB (a static, non-evolving source), the "Dynamic Shutter" term vanishes identically—there is no source proper motion to couple to the delay gradient. The only TEP contribution is the <strong>static refractive term</strong> \(\nabla^2(\Delta\tilde{\tau}_{\text{static}})\), which is coherent and radially symmetric around mass concentrations.</p>
+
+<p><strong>Implication:</strong> CMB lensing in TEP is dominated by the same static mechanism that produces "dark matter halos" in galaxy lensing. The amplitude is controlled by the integrated \(\alpha(\phi)\) profile, not by lens motion. This is consistent with the observed CMB lensing power spectrum <em>provided</em> the static refractive term has the correct radial profile—a constraint that effectively fixes the relationship between \(\alpha(\phi)\) and the matter density \(\rho\).</p>
+
+<h4>6.2.3 Parameter Space Constraints</h4>
+
+<p>Combining ISW and CMB lensing constraints with the Vainshtein screening requirements (Box 4.1) defines a narrow but viable parameter window:</p>
+
+<table class="data-table" style="margin: 15px 0;">
+<thead>
+<tr><th>Constraint</th><th>Requirement</th><th>Status</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td>Solar System (Cassini)</td>
+    <td>\(\alpha_{\text{local}} \lesssim 10^{-5}\)</td>
+    <td>Satisfied via Vainshtein</td>
+</tr>
+<tr>
+    <td>Cluster Lensing</td>
+    <td>\(\alpha_{\text{halo}} \sim 10^{-1}\)</td>
+    <td>Required for DM phenomenology</td>
+</tr>
+<tr>
+    <td>ISW (<em>Planck</em>)</td>
+    <td>\(\partial_t \ln A / H_0 \lesssim 0.1\)</td>
+    <td>Requires quasi-static \(\phi\)</td>
+</tr>
+<tr>
+    <td>CMB Lensing</td>
+    <td>\(\kappa_{\text{refraction}} \propto \kappa_{\text{mass}}\)</td>
+    <td>Requires \(\alpha \propto \Psi\) scaling</td>
+</tr>
+</tbody>
+</table>
+
+<p>The requirement that \(\alpha(\phi) \propto \Psi\) (the scalar field tracks the Newtonian potential) is a <strong>non-trivial constraint</strong> on the TEP Lagrangian. It is satisfied in conformal coupling models where \(\phi\) is sourced by the trace of the stress-energy tensor, but represents a theoretical prior that must be verified against N-body simulations. We flag this as a key target for future numerical work.</p>
+
+<h3>6.3 Interpretational Challenges</h3>
 
 <p>TEP effects mimic standard lensing signatures, making them difficult to distinguish without time-domain analysis.</p>
 <ol>
@@ -20,7 +80,7 @@
     <li><strong>Differential vs. Common-Mode Effects:</strong> The GW170817 constraint is often interpreted as excluding modified metric couplings. However, as shown in Section 4, this constraint applies to the differential disformal sector. Conformal proper-time dilation is a <em>common-mode effect</em> for co-propagating signals, leaving the "speed of gravity" constraint satisfied while permitting significant time-domain phenomenology.</li>
 </ol>
 
-<h3>6.3 Reinterpreting the Evidence: Multipath vs. Single-Path</h3>
+<h3>6.4 Reinterpreting the Evidence: Multipath vs. Single-Path</h3>
 
 <p>When viewed through the lens of TEP, the disparate constraints on the dark sector resolve into a consistent picture based on signal topology:</p>
 
@@ -31,7 +91,7 @@
 
 <p>The apparent contradiction—"how can gravity be modified enough to create dark matter but unmodified enough to pass GW170817?"—is resolved. Gravity may not be modified; time is. And time manifests as a differential observable only when comparing divergent paths.</p>
 
-<h3>6.4 Global Variation of Effective Light Speed</h3>
+<h3>6.5 Global Variation of Effective Light Speed</h3>
 
 <p>If TEP is correct, then \(c\) is locally invariant but globally variable. This challenges the foundational assumption used to interpret all astrophysical data.</p>
 
@@ -42,7 +102,7 @@
 
 <p>TEP removes the need for an invisible substance by correcting the assumption about the constancy of the global speed of light.</p>
 
-<h3>6.5 TEP as a Bridge Between Paradigms</h3>
+<h3>6.6 TEP as a Bridge Between Paradigms</h3>
 
 <p>TEP offers a potential unification of competing frameworks:</p>
 <ul>
@@ -51,7 +111,7 @@
 </ul>
 <p>Thus, TEP is not merely a competitor to these paradigms; it is a framework that explains <em>why</em> CDM works on large scales (where static assumptions hold) and <em>why</em> MOND works on galactic scales (where the field gradients are dominant).</p>
 
-<h3>6.6 The Path Forward</h3>
+<h3>6.7 The Path Forward</h3>
 
 <p>The analysis suggests that <em>dark matter phenomenology can be reproduced without a substance</em>. What exists is a temporal field with spatial gradients, and what has been measured as "dark matter" is the projection of those gradients onto observations that assume temporal synchrony. To maintain the particle interpretation, it is necessary to demonstrate that the universe is synchronous to a precision that excludes TEP effects. TEP offers a geometric identification of the phenomenology, explaining the universality of dark matter profiles and the success of MOND on galactic scales through a single parsimonious framework.</p>
 
