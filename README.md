@@ -5,7 +5,7 @@
 Standard gravitational lensing analysis relies on the Isochrony Axiom—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. This work demonstrates that for evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image.
 
 > **Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations**  
-> TEP-GL Paper | v0.2 (Tortola) | DOI: 10.5281/zenodo.17982540
+> TEP-GL Paper | v0.3 (Tortola) | DOI: 10.5281/zenodo.17982540
 
 **Live Site**: [matthewsmawfield.github.io/TEP-GL](https://matthewsmawfield.github.io/TEP-GL/)
 
@@ -31,6 +31,8 @@ Crucially, GW170817 does not constrain this effect. Because photons and gravitat
 
 4. **Achromaticity**: Like dark matter, the temporal effect is wavelength-independent.
 
+5. **Convergence of Evidence**: Existing cosmological tensions (S₈, H₀, flux ratio anomalies) converge on TEP-GL phenomenology—the framework provides a unified explanation for multiple independent anomalies.
+
 ## Observational Discriminants
 
 The manuscript proposes several tests to distinguish temporal-field effects from dark matter:
@@ -40,12 +42,26 @@ The manuscript proposes several tests to distinguish temporal-field effects from
 - **Multi-Image Spectroscopy**: Search for evolutionary signatures between multiple images
 - **Statistical Surveys**: Correlate lensing anomalies with source properties
 
+### Preliminary Observational Support
+
+Recent FRB anomalies show consistency with TEP-GL predictions:
+
+| FRB ID | Observed Residual | TEP-GL Prediction | Status |
+|--------|-------------------|-------------------|--------|
+| FRB 20181117C | 32.9 ± 0.7 ms | ~30–35 ms | ✓ Consistent |
+| FRB 20210912B | 49.5 ± 1.2 ms | ~45–55 ms | ✓ Consistent |
+| FRB 20200405A | 13.1 ± 0.4 ms | ~10–15 ms | ✓ Consistent |
+| FRB 20201124A | 1.2 ± 0.3 ms | ~1–2 ms | ✓ Consistent |
+
+Additionally, FRB 20190520B exhibits a DM Excess (~900 pc cm⁻³) and FRB 20190308C is identified as a lensed candidate—both are priority targets for temporal shear measurement.
+
 ## Theoretical Framework
 
 This work builds on the Temporal Equivalence Principle (TEP), which proposes:
 -   **Gravity is Geometry; Time is a Dynamical Field.**
 -   The decomposition of proper time accumulation into "mass" and "time dilation" is **gauge-dependent**.
 -   **Sector Decoupling**: The Conformal Sector (clock rates) is unconstrained by GW170817, while the Disformal Sector (speed of transmission) is tightly bound.
+-   **Vainshtein Screening**: The "Screening Cliff" objection is addressed; the mechanism is shown to be over-efficient rather than fine-tuned.
 
 **TEP Theory Reference:**
 > Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.6 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
@@ -104,7 +120,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   journal={Zenodo},
   year={2025},
   doi={10.5281/zenodo.17982540},
-  note={Preprint v0.2 (Tortola)}
+  note={Preprint v0.3 (Tortola)}
 }
 ```
 
@@ -114,4 +130,4 @@ The author thanks colleagues for valuable discussions. This research made use of
 
 ## Status
 
-**Version 0.2 (Tortola)** - Landmark Release. Theoretical framework complete.
+**Version 0.3 (Tortola)** - Landmark Release. Theoretical framework complete.
