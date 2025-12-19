@@ -297,7 +297,7 @@ For null rays (\(ds^2 = 0\)), the coordinate velocity satisfies:
 
 $\frac{|d\vec{x}|}{dt} = c\sqrt{\frac{1 + 2\Psi}{(1 - 2\Psi)A(\phi)}} \approx c\left(1 + 2\Psi - \frac{\alpha(\phi)}{2}\right)$
 
-to first order in \(\Psi\) and \(\alpha\). This defines an **effective refractive index**:
+to first order in \(\Psi\) and \(\alpha\). This defines an effective refractive index:
 
 $n_{\text{eff}}(\vec{x}) = \frac{c}{v_{\text{coord}}} \approx 1 - 2\Psi + \frac{\alpha(\phi)}{2}$
 
@@ -327,7 +327,7 @@ This term arises from the spatial gradient of the conformal factor and acts as a
 
 #### 3.1.4 The Amplification Matrix and Jacobian Decomposition
 
-Integrating the geodesic deviation equation along the line of sight yields the **amplification matrix** \(\mathcal{A}_{ij}\), which maps source-plane displacements to image-plane displacements:
+Integrating the geodesic deviation equation along the line of sight yields the amplification matrix \(\mathcal{A}_{ij}\), which maps source-plane displacements to image-plane displacements:
 
 $\mathcal{A}_{ij} = \frac{\partial \beta_i}{\partial \theta_j} = \delta_{ij} - \int_0^{\chi_s} \frac{(\chi_s - \chi)\chi}{\chi_s}\, \mathcal{R}_{ij}(\chi)\, d\chi$
 
@@ -347,7 +347,7 @@ The Jacobian decomposition reveals two physically distinct contributions to imag
 | **Temporal (Static)** | \(\alpha_{,ij}\) | Gradient of scalar field (refractive index) | Coherent tangential shear mimicking DM halo |
 | **Temporal (Dynamic)** | \(\mu_s^i \nabla_j(\Delta\tilde{\tau})\) | Source motion × time-delay gradient | Stochastic shear noise correlated with kinematics |
 
-The **static temporal term** produces a coherent, radially-symmetric contribution to the shear field—indistinguishable from a dark matter halo in single-epoch imaging. The **dynamic term** arises when the source position evolves during the differential light-travel time across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
+The static temporal term produces a coherent, radially-symmetric contribution to the shear field—indistinguishable from a dark matter halo in single-epoch imaging. The dynamic term arises when the source position evolves during the differential light-travel time across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
 
 $\vec{\beta}_{\text{eff}}(\vec{\theta}) = \vec{\beta}_{\text{geom}}(\vec{\theta}) - \vec{\mu}_s \cdot \Delta\tilde{\tau}(\vec{\theta})$
 
@@ -360,7 +360,7 @@ This adds an asymmetric, source-dependent contribution to the Jacobian that does
 The full amplification matrix in TEP is:
 
 $\mathcal{A}_{ij} = \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic Lensing}} + \underbrace{\mathcal{A}^{(\alpha,\text{static})}_{ij}}_{\text{"Dark Matter" (Coherent)}} + \underbrace{\mathcal{A}^{(\alpha,\text{dyn})}_{ij}}_{\text{Shear Noise (Stochastic)}}$
-Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as **Phantom Mass**—a geometric effect of the scalar field's refractive gradient, not particulate matter. The third term provides the **unique observational discriminator**: excess shear dispersion correlated with source kinematics.
+Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as Phantom Mass—a geometric effect of the scalar field's refractive gradient, not particulate matter. The third term provides the unique observational discriminator: excess shear dispersion correlated with source kinematics.
 
 **Principle:**
 
@@ -411,7 +411,7 @@ To estimate the magnitude of the *stochastic* shear contribution (the dynamic te
     **Resulting Stochastic Shear:** The product is dimensionless shear:
     $\gamma_{stoch} \approx (2 \times 10^{-4} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-4}$
 
-This stochastic contribution (\(\gamma_{stoch} \sim 10^{-3}\)) is **small compared to typical weak lensing shear** (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a *perturbation* (excess scatter), not the dominant signal. The coherent "Dark Matter" halo arises from the **Static Refractive Index** (Mechanism A), not source motion.
+This stochastic contribution (\(\gamma_{stoch} \sim 10^{-3}\)) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo arises from the static refractive index (Mechanism A), not source motion.
 
 ### 3.2 Connection to Lens-Model Degeneracies
 
@@ -573,7 +573,7 @@ In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by th
 
 **Prediction:** The *dispersion* (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.
 
-As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the **Shear RMS** will be systematically higher than for static sources, even if the mean profile (the halo) is identical.
+As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical.
 
 **Principle:**
 
