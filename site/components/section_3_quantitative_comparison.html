@@ -16,17 +16,18 @@
 
 <div class="equation">$$\vec{\beta}(\vec{\theta}) \approx \vec{\beta}_{geom}(\vec{\theta}) - \vec{\mu}_s \cdot \Delta \tilde{\tau}(\vec{\theta})$$</div>
 
-<p>The Jacobian matrix of the lens mapping \(\mathcal{A}_{ij} = \partial \beta_i / \partial \theta_j\) becomes:</p>
+<p>The Jacobian matrix of the lens mapping \(\mathcal{A}_{ij} = \partial \beta_i / \partial \theta_j\) thus contains two distinct TEP contributions:</p>
 
-<div class="equation">$$\mathcal{A}_{ij} = \frac{\partial \beta_{geom,i}}{\partial \theta_j} - \mu_{s,i} \frac{\partial (\Delta \tilde{\tau})}{\partial \theta_j}$$</div>
+<div class="equation">$$\mathcal{A}_{ij} = \underbrace{\frac{\partial \beta_{geom,i}}{\partial \theta_j}}_{\text{Geodesic}} + \underbrace{\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})}_{\text{Coherent Refraction}} - \underbrace{\mu_{s,i} \nabla_j (\Delta \tilde{\tau})}_{\text{Stochastic Shear}}$$</div>
 
-<p>The first term is the standard convergence/shear matrix \(\mathcal{A}_{GR}\). The second term is the <em>Temporal Shear Tensor</em>:</p>
+<p>This decomposition resolves the "Coherence Problem" inherent in purely dynamic models:</p>
 
-<div class="equation">$$\mathcal{T}_{ij} = - \mu_{s,i} \nabla_j (\Delta \tilde{\tau})$$</div>
+<ul>
+    <li><strong>Coherent Refraction (The Halo):</strong> The term \(\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})\) represents the curvature of the static time-delay potential. Like a glass lens, this depends only on the lens profile \(A(\phi)\), not the source motion. It produces a coherent, radial tangential shear—the primary "Dark Matter" signal.</li>
+    <li><strong>Stochastic Shear (The Noise):</strong> The term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) depends on the random proper motion vector \(\vec{\mu}_s\). It does not produce a coherent halo but adds a <em>random shear component</em> to each source.</li>
+</ul>
 
-<p><strong>The "Static Source" Resolution:</strong> Even if a source has a constant luminosity profile \(I(\vec{x}, t) = I(\vec{x})\) (zero intrinsic evolution), it is moving across the sky. The term \(\vec{\mu}_{s} \cdot \nabla(\Delta \tilde{\tau})\) represents the source physically moving into a region of different time delay. The "variability" required for the effect is therefore not limited to intrinsic evolution; the proper motion of the source across the delay gradient suffices. Thus, even "static" galaxies are subject to Phantom Mass shearing if they possess transverse velocity relative to the lens.</p>
-
-<p>This tensor introduces anisotropic distortions (shear) and isotropic magnification (convergence) that depend on the source velocity \(\vec{\mu}_s\) and the delay gradient \(\nabla (\Delta \tilde{\tau})\). Crucially, unlike the gravitational shear tensor which is symmetric and curl-free (derived from a scalar potential \(\psi\)), the Temporal Shear Tensor \(\mathcal{T}_{ij}\) is constructed from the outer product of a velocity vector and a gradient vector. It generally possesses a non-zero curl if \(\nabla \times (\vec{\mu}_s (\nabla \Delta \tilde{\tau})) \neq 0\). This implies that TEP-induced lensing can produce image rotation—a "smoking gun" signature forbidden in standard scalar-potential lensing.</p>
+<p><strong>Conclusion:</strong> TEP predicts that "Dark Matter" is the static refractive index of the scalar field. The unique signature of TEP is not the halo itself, but the <strong>excess shear noise</strong> (stochastic term) that correlates with source velocity/variability.</p>
 
 <p>This demonstrates that for an evolving source, the "shape" observed is a mixture of spatial geometry and temporal simultaneity surfaces.</p>
 
@@ -68,12 +69,12 @@
 
 <p><strong>Conclusion:</strong> In the <em>Reference Envelope</em>, TEP is a precision correction to time-domain astrophysics, not a full dark matter substitute.</p>
 
-<h3>3.4 The Critical Discriminator: Source Variability</h3>
+<h3>3.4 The Critical Discriminator: Variability Scatter</h3>
 
-<p>The magnitude of the Phantom Mass effect depends on \(\partial I_s / \partial t\). This leads to a unique falsifiable prediction:</p>
+<p>Since the dynamic term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) is randomly oriented (depending on the direction of \(\vec{\mu}_s\)), it does not add to the mean shear profile but contributes to the <em>variance</em> of the shear measurement.</p>
 
 <div class="principle">
-<p><strong>The Variability Bias:</strong> The inferred "dark matter" distribution should appear to change depending on the intrinsic variability timescale of the background source population. Static sources see less phantom mass; variable sources see more.</p>
+<p><strong>The Variability Scatter:</strong> The inferred "shear noise" (RMS dispersion of ellipticities) should be higher for source populations with high proper motion or intrinsic variability. While the coherent "dark matter" signal is static, the <em>scatter</em> around that signal is dynamic.</p>
 </div>
 
-<p>This is a radical prediction that distinguishes TEP from particulate dark matter, which is expected to be passive and source-independent.</p>
+<p>This distinguishes TEP from particle dark matter, where the shear dispersion is dominated solely by intrinsic shape noise and measurement error, independent of source kinematics.</p>

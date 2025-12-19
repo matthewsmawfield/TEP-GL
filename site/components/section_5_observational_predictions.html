@@ -7,10 +7,11 @@
 <p><strong>Prediction:</strong> Strongly lensed fast transients (FRBs, GRBs) will exhibit achromatic arrival-time residuals that cannot be explained by geometric time delays (Refsdal 1964) or plasma dispersion.</p>
 <p>In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional proper-time delay \(\Delta \tilde{\tau}\). Because \(\phi\) fields in halos may have substructure (or "weather"), this delay varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this delay is <em>achromatic</em>. A detection of non-dispersive, millisecond-scale residuals in lensed FRBs would constitute a definitive signature of TEP.</p>
 
-<h3>5.2 The Variability Bias Relation</h3>
+<h3>5.2 The Variability Scatter Relation</h3>
 
-<p><strong>Prediction:</strong> The inferred weak-lensing shear should correlate with the variability of the background source population.</p>
-<p>As derived in Section 3, the "phantom mass" effect is driven by the <em>Temporal Shear Tensor</em> \(\mathcal{T}_{shear}\), which depends on the total source variation (intrinsic evolution + proper motion). A specific test using existing cluster fields is outlined (e.g., Abell 370): construct two independent shear maps of the same cluster. Map A uses only passive elliptical galaxies (dominated by proper motion variability). Map B uses only intrinsically variable sources (quasars, lensed supernovae). TEP predicts a systematic excess convergence in Map B due to the additional intrinsic term \(\partial I_s/\partial t\), whereas particle dark matter predicts identical maps. Future surveys (LSST/Rubin) will have the cadence to test this "Variability Bias," potentially falsifying the particle hypothesis.</p>
+<p><strong>Prediction:</strong> The <em>dispersion</em> (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.</p>
+
+<p>As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the <strong>Shear RMS</strong> will be systematically higher than for static sources, even if the mean profile (the halo) is identical.</p>
 
 <h3>5.3 The CMB-Galaxy Lensing Tension</h3>
 
@@ -36,9 +37,9 @@
     <td>Achromatic <em>residual</em> anomaly (ms-scale)</td>
 </tr>
 <tr>
-    <td><strong>Source-evolution correlation</strong></td>
-    <td>None (lensing is source-independent)</td>
-    <td>Strong (phantom mass scales with \(\tau_{\rm var}\))</td>
+    <td><strong>Source-dependent Shear</strong></td>
+    <td>None (shear noise is constant)</td>
+    <td><strong>Excess Scatter</strong> (noise scales with \(\mu_s\))</td>
 </tr>
 <tr>
     <td><strong>CMB lensing</strong></td>
@@ -72,7 +73,7 @@
 <ol>
     <li><strong>Reference Envelope Exclusion:</strong> If precision timing of strongly lensed FRBs yields achromatic residuals consistent with zero to better than 0.1 ms across diverse lens environments, the Reference Envelope parameter space is excluded.</li>
     
-    <li><strong>Source-Independent Shear:</strong> If weak-lensing shear measurements behind clusters show no correlation with source variability class (static ellipticals vs. variable AGN) after controlling for redshift and morphology, the temporal-composite mechanism is excluded.</li>
+    <li><strong>Universal Shear Scatter:</strong> If the intrinsic scatter of weak-lensing shear measurements is identical across all source kinematic classes (after correcting for measurement noise), the stochastic temporal shear mechanism is excluded.</li>
 
     <li><strong>CMB-Galaxy Agreement:</strong> If future surveys (e.g., CMB-S4, Rubin/LSST) demonstrate that CMB lensing and galaxy weak-lensing mass inferences agree to better than 1% after controlling for all modeling systematics, the Extended Regime parameter space is excluded.</li>
     

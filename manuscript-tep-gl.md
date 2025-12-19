@@ -265,17 +265,17 @@ For a source with proper motion \(\vec{\mu}_s = \partial\vec{\beta}/\partial t\)
 
 $\vec{\beta}(\vec{\theta}) \approx \vec{\beta}_{geom}(\vec{\theta}) - \vec{\mu}_s \cdot \Delta \tilde{\tau}(\vec{\theta})$
 
-The Jacobian matrix of the lens mapping \(\mathcal{A}_{ij} = \partial \beta_i / \partial \theta_j\) becomes:
+The Jacobian matrix of the lens mapping \(\mathcal{A}_{ij} = \partial \beta_i / \partial \theta_j\) thus contains two distinct TEP contributions:
 
-$\mathcal{A}_{ij} = \frac{\partial \beta_{geom,i}}{\partial \theta_j} - \mu_{s,i} \frac{\partial (\Delta \tilde{\tau})}{\partial \theta_j}$
+$\mathcal{A}_{ij} = \underbrace{\frac{\partial \beta_{geom,i}}{\partial \theta_j}}_{\text{Geodesic}} + \underbrace{\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})}_{\text{Coherent Refraction}} - \underbrace{\mu_{s,i} \nabla_j (\Delta \tilde{\tau})}_{\text{Stochastic Shear}}$
 
-The first term is the standard convergence/shear matrix \(\mathcal{A}_{GR}\). The second term is the *Temporal Shear Tensor*:
+This decomposition resolves the "Coherence Problem" inherent in purely dynamic models:
 
-$\mathcal{T}_{ij} = - \mu_{s,i} \nabla_j (\Delta \tilde{\tau})$
+    - **Coherent Refraction (The Halo):** The term \(\nabla_i \nabla_j (\Delta \tilde{\tau}_{static})\) represents the curvature of the static time-delay potential. Like a glass lens, this depends only on the lens profile \(A(\phi)\), not the source motion. It produces a coherent, radial tangential shear—the primary "Dark Matter" signal.
 
-**The "Static Source" Resolution:** Even if a source has a constant luminosity profile \(I(\vec{x}, t) = I(\vec{x})\) (zero intrinsic evolution), it is moving across the sky. The term \(\vec{\mu}_{s} \cdot \nabla(\Delta \tilde{\tau})\) represents the source physically moving into a region of different time delay. The "variability" required for the effect is therefore not limited to intrinsic evolution; the proper motion of the source across the delay gradient suffices. Thus, even "static" galaxies are subject to Phantom Mass shearing if they possess transverse velocity relative to the lens.
+    - **Stochastic Shear (The Noise):** The term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) depends on the random proper motion vector \(\vec{\mu}_s\). It does not produce a coherent halo but adds a *random shear component* to each source.
 
-This tensor introduces anisotropic distortions (shear) and isotropic magnification (convergence) that depend on the source velocity \(\vec{\mu}_s\) and the delay gradient \(\nabla (\Delta \tilde{\tau})\). Crucially, unlike the gravitational shear tensor which is symmetric and curl-free (derived from a scalar potential \(\psi\)), the Temporal Shear Tensor \(\mathcal{T}_{ij}\) is constructed from the outer product of a velocity vector and a gradient vector. It generally possesses a non-zero curl if \(\nabla \times (\vec{\mu}_s (\nabla \Delta \tilde{\tau})) \neq 0\). This implies that TEP-induced lensing can produce image rotation—a "smoking gun" signature forbidden in standard scalar-potential lensing.
+**Conclusion:** TEP predicts that "Dark Matter" is the static refractive index of the scalar field. The unique signature of TEP is not the halo itself, but the **excess shear noise** (stochastic term) that correlates with source velocity/variability.
 
 This demonstrates that for an evolving source, the "shape" observed is a mixture of spatial geometry and temporal simultaneity surfaces.
 
@@ -323,15 +323,15 @@ Under the conservative *Reference Envelope* (accepting the standard translation 
 
 **Conclusion:** In the *Reference Envelope*, TEP is a precision correction to time-domain astrophysics, not a full dark matter substitute.
 
-### 3.4 The Critical Discriminator: Source Variability
+### 3.4 The Critical Discriminator: Variability Scatter
 
-The magnitude of the Phantom Mass effect depends on \(\partial I_s / \partial t\). This leads to a unique falsifiable prediction:
+Since the dynamic term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) is randomly oriented (depending on the direction of \(\vec{\mu}_s\)), it does not add to the mean shear profile but contributes to the *variance* of the shear measurement.
 
 **Principle:**
 
-**The Variability Bias:** The inferred "dark matter" distribution should appear to change depending on the intrinsic variability timescale of the background source population. Static sources see less phantom mass; variable sources see more.
+**The Variability Scatter:** The inferred "shear noise" (RMS dispersion of ellipticities) should be higher for source populations with high proper motion or intrinsic variability. While the coherent "dark matter" signal is static, the *scatter* around that signal is dynamic.
 
-This is a radical prediction that distinguishes TEP from particulate dark matter, which is expected to be passive and source-independent.
+This distinguishes TEP from particle dark matter, where the shear dispersion is dominated solely by intrinsic shape noise and measurement error, independent of source kinematics.
 
 ## 4. Reanalysis of GW170817: What is Actually Constrained?
 
@@ -397,11 +397,11 @@ The transition from a geometric to a dynamical-time framework shifts the observa
 
 In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional proper-time delay \(\Delta \tilde{\tau}\). Because \(\phi\) fields in halos may have substructure (or "weather"), this delay varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this delay is *achromatic*. A detection of non-dispersive, millisecond-scale residuals in lensed FRBs would constitute a definitive signature of TEP.
 
-### 5.2 The Variability Bias Relation
+### 5.2 The Variability Scatter Relation
 
-**Prediction:** The inferred weak-lensing shear should correlate with the variability of the background source population.
+**Prediction:** The *dispersion* (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.
 
-As derived in Section 3, the "phantom mass" effect is driven by the *Temporal Shear Tensor* \(\mathcal{T}_{shear}\), which depends on the total source variation (intrinsic evolution + proper motion). A specific test using existing cluster fields is outlined (e.g., Abell 370): construct two independent shear maps of the same cluster. Map A uses only passive elliptical galaxies (dominated by proper motion variability). Map B uses only intrinsically variable sources (quasars, lensed supernovae). TEP predicts a systematic excess convergence in Map B due to the additional intrinsic term \(\partial I_s/\partial t\), whereas particle dark matter predicts identical maps. Future surveys (LSST/Rubin) will have the cadence to test this "Variability Bias," potentially falsifying the particle hypothesis.
+As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the **Shear RMS** will be systematically higher than for static sources, even if the mean profile (the halo) is identical.
 
 ### 5.3 The CMB-Galaxy Lensing Tension
 
@@ -416,7 +416,7 @@ The following table summarizes the distinguishing predictions of the two framewo
 | Observable | Particle DM Prediction | TEP-GL Prediction |
 | --- | --- | --- |
 | **Lensed FRB timing** | Achromatic, GR time delays only | Achromatic *residual* anomaly (ms-scale) |
-| **Source-evolution correlation** | None (lensing is source-independent) | Strong (phantom mass scales with \(\tau_{\rm var}\)) |
+| **Source-dependent Shear** | None (shear noise is constant) | **Excess Scatter** (noise scales with \(\mu_s\)) |
 | **CMB lensing** | Standard convergence | Identical (CMB is static; no temporal smearing) |
 | **Galaxy weak lensing** | Identical to CMB lensing | Systematic offset from CMB (source-dependent) |
 | **Chromatic dependence** | None | None (both achromatic) |
@@ -430,7 +430,7 @@ TEP-GL is a falsifiable hypothesis. The following observations would exclude spe
 
     - **Reference Envelope Exclusion:** If precision timing of strongly lensed FRBs yields achromatic residuals consistent with zero to better than 0.1 ms across diverse lens environments, the Reference Envelope parameter space is excluded.
 
-    - **Source-Independent Shear:** If weak-lensing shear measurements behind clusters show no correlation with source variability class (static ellipticals vs. variable AGN) after controlling for redshift and morphology, the temporal-composite mechanism is excluded.
+    - **Universal Shear Scatter:** If the intrinsic scatter of weak-lensing shear measurements is identical across all source kinematic classes (after correcting for measurement noise), the stochastic temporal shear mechanism is excluded.
 
     - **CMB-Galaxy Agreement:** If future surveys (e.g., CMB-S4, Rubin/LSST) demonstrate that CMB lensing and galaxy weak-lensing mass inferences agree to better than 1% after controlling for all modeling systematics, the Extended Regime parameter space is excluded.
 
