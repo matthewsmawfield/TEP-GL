@@ -13,10 +13,55 @@
 
 <p>As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the <strong>Shear RMS</strong> will be systematically higher than for static sources, even if the mean profile (the halo) is identical.</p>
 
+<div class="principle">
+<h4>Box 5.2: The Einstein Cross Test (Existing Data)</h4>
+<p>The Einstein Cross (Q2237+0305) provides a unique opportunity to test TEP with <em>existing</em> archival data. This quadruply-imaged quasar has:</p>
+<ul>
+    <li><strong>High variability:</strong> The background quasar shows significant optical variability on timescales of weeks to months.</li>
+    <li><strong>Anomalous flux ratios:</strong> The observed image flux ratios deviate from smooth lens model predictions, typically attributed to microlensing by stars in the lens galaxy.</li>
+    <li><strong>Extensive monitoring:</strong> Decades of photometric data exist (OGLE, Gaia, HST).</li>
+</ul>
+
+<p><strong>TEP Prediction:</strong> If the flux ratio anomalies are (partially) due to temporal shear rather than stellar microlensing, they should correlate with the quasar's variability timescale. Specifically:</p>
+<ul>
+    <li>During periods of rapid quasar variability, flux ratio anomalies should be <em>larger</em>.</li>
+    <li>During quiescent periods, anomalies should regress toward the smooth-lens prediction.</li>
+    <li>This correlation is <em>forbidden</em> in standard microlensing (stellar positions are uncorrelated with quasar variability).</li>
+</ul>
+
+<p><strong>Status:</strong> This test can be performed immediately using archival OGLE light curves cross-correlated with flux ratio measurements. A positive detection would constitute strong evidence for TEP using existing data, independent of future FRB observations. This is flagged as a priority archival analysis.</p>
+</div>
+
 <h3>5.3 The CMB-Galaxy Lensing Tension</h3>
 
 <p><strong>Prediction (Extended Regime):</strong> Lensing inferred from the Cosmic Microwave Background (CMB) should differ systematically from lensing inferred from galaxy shear.</p>
 <p>While the CMB is effectively a static backlight (zero intrinsic evolution), the intervening structures (the lenses) are moving dynamically across the line of sight. Under TEP, the rapid transit of a lens's "time gradient" \(\nabla(\Delta\tilde{\tau})\) across a static background induces a temporal shear similar to the <em>Rees-Sciama effect</em>, but amplified by the conformal factor. Consequently, TEP predicts that CMB lensing <em>exists</em> and correlates with structure, driven by lens motion. However, galaxy lensing includes an <em>additional</em> constructive contribution from the intrinsic evolution of the source galaxies (\(\partial I_s / \partial t\)). This asymmetry predicts a systematic tension in the inferred amplitude of clustering (\(S_8\)) between CMB lensing (lens-motion only) and galaxy weak lensing (lens-motion + source-evolution), offering a physical resolution to the observed \(S_8\) tension.</p>
+
+<div class="principle">
+<h4>Box 5.3: Quantitative \(S_8\) Prediction</h4>
+<p><strong>Observed Tension:</strong> Current measurements show a 2–3σ discrepancy between CMB-derived and galaxy weak-lensing-derived values of \(S_8 \equiv \sigma_8 \sqrt{\Omega_m/0.3}\):</p>
+<ul>
+    <li><em>Planck</em> CMB (2018): \(S_8 = 0.834 \pm 0.016\)</li>
+    <li>DES Y3 + KiDS-1000 (2021): \(S_8 = 0.790 \pm 0.014\)</li>
+    <li>Discrepancy: \(\Delta S_8 / S_8 \approx 5\%\)</li>
+</ul>
+
+<p><strong>TEP Interpretation:</strong> TEP predicts that galaxy weak lensing measures a <em>larger</em> effective shear than CMB lensing for the same underlying mass distribution, because galaxy sources contribute an additional temporal-shear term from their intrinsic evolution. The CMB, being static, lacks this contribution.</p>
+
+<p><strong>Direction of Effect:</strong> If standard analyses assume all shear is gravitational (mass-induced), then:</p>
+<ul>
+    <li>Galaxy lensing overestimates \(S_8\) (attributes temporal shear to mass)</li>
+    <li>CMB lensing measures the "true" gravitational \(S_8\)</li>
+    <li>Predicted: \(S_8^{\text{galaxy}} > S_8^{\text{CMB}}\)</li>
+</ul>
+
+<p><strong>Quantitative Estimate:</strong> The magnitude of the offset depends on the mean source evolution rate. For typical weak-lensing source galaxies at \(z \sim 0.5\text{--}1\) with evolutionary timescales \(\tau_{evol} \sim 1\) Gyr and delay gradients \(\nabla(\Delta\tilde{\tau}) \sim 10^3\) years/arcsec (Extended Regime):</p>
+<div class="equation">$$\frac{\Delta S_8}{S_8} \sim \frac{\gamma_{\text{temporal}}}{\gamma_{\text{total}}} \sim \frac{\nabla(\Delta\tilde{\tau})}{\tau_{evol}} \sim \frac{10^3 \text{ yr}}{10^9 \text{ yr}} \sim 10^{-6}$$</div>
+
+<p>This naive estimate is far smaller than the observed 5% tension, suggesting that if TEP explains the \(S_8\) discrepancy, either (a) the delay gradients are larger than the toy model estimate, (b) the relevant evolutionary timescale is shorter (e.g., AGN variability at \(\tau \sim 10^6\) yr), or (c) the tension has a different origin.</p>
+
+<p><strong>Status:</strong> TEP predicts the correct <em>sign</em> of the \(S_8\) tension (galaxy > CMB) but the <em>magnitude</em> requires either larger delay gradients or a sub-population of rapidly evolving sources dominating the signal. Quantitative prediction of the offset requires numerical simulation of the source population and is flagged for future work. The current prediction is: \(S_8^{\text{CMB}} / S_8^{\text{galaxy}} < 1\), with magnitude to be determined.</p>
+</div>
 
 <h3>5.4 Comparison of Predictions: TEP-GL vs. Particle Dark Matter</h3>
 
@@ -83,3 +128,48 @@
 </ol>
 
 <p>The framework stands or falls on empirical grounds. It does not claim immunity from observation; the claim is that the observations required to test TEP have not yet been performed with sufficient precision.</p>
+
+<div class="principle">
+<h4>Box 5.1: Quantitative Falsification Thresholds</h4>
+<p>To ensure rigorous falsifiability, explicit null-result thresholds are specified for each prediction channel:</p>
+
+<table class="data-table" style="margin: 15px 0;">
+<thead>
+<tr><th>Test</th><th>Sample Size</th><th>Precision Required</th><th>Null-Result Threshold</th><th>Regime Falsified</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td><strong>Lensed FRB Timing</strong></td>
+    <td>≥10 lensed FRBs</td>
+    <td>&lt;0.1 ms timing</td>
+    <td>All residuals &lt;0.01 ms</td>
+    <td>Reference Envelope</td>
+</tr>
+<tr>
+    <td><strong>Shear-Variability Correlation</strong></td>
+    <td>≥1000 lenses per class</td>
+    <td>&lt;0.5% shear scatter</td>
+    <td>No correlation at &gt;3σ</td>
+    <td>Extended Regime (dynamic term)</td>
+</tr>
+<tr>
+    <td><strong>CMB-Galaxy \(S_8\) Tension</strong></td>
+    <td>CMB-S4 + LSST</td>
+    <td>&lt;1% \(S_8\) agreement</td>
+    <td>Agreement within 1%</td>
+    <td>Extended Regime (static term)</td>
+</tr>
+<tr>
+    <td><strong>Variability-Mass Correlation</strong></td>
+    <td>≥100 lenses with varied sources</td>
+    <td>10% mass precision</td>
+    <td>No correlation at &gt;3σ</td>
+    <td>Extended Regime</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Complete Falsification:</strong> If <em>all four</em> null-result thresholds are met simultaneously—(1) no FRB timing residuals, (2) no shear-variability correlation, (3) CMB-galaxy agreement &lt;1%, and (4) no variability-mass correlation—then TEP-GL is falsified as a framework, not merely in one regime. The theory makes no predictions distinguishable from standard CDM under these conditions.</p>
+
+<p><strong>Timeline:</strong> Tests (1) and (4) are achievable within 5–10 years (CHIME, DSA-2000, Rubin/LSST). Tests (2) and (3) require next-generation surveys (CMB-S4, Euclid) with ~10-year horizons. A definitive verdict on TEP-GL is therefore expected by ~2035.</p>
+</div>

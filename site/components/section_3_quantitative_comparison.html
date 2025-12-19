@@ -2,7 +2,7 @@
 
 <h3>3.1 Deriving Temporal Shear from the Perturbed Metric</h3>
 
-<p>We now derive the Phantom Mass mechanism from first principles, starting from the TEP line element and obtaining the modified geodesic deviation equation. This places the temporal shear on rigorous geometric footing.</p>
+<p>The Phantom Mass mechanism is derived from first principles, starting from the TEP line element and obtaining the modified geodesic deviation equation. This places the temporal shear on rigorous geometric footing.</p>
 
 <h4>3.1.1 The TEP Line Element</h4>
 
@@ -30,7 +30,7 @@
 
 <h4>3.1.3 The Geodesic Deviation Equation</h4>
 
-<p>To derive lensing observables, we consider a bundle of null geodesics and compute the <strong>geodesic deviation</strong>—the evolution of the separation vector \(\xi^\mu\) between neighboring rays. In the geometric optics limit, the transverse separation \(\vec{\xi}_\perp\) satisfies:</p>
+<p>To derive lensing observables, consider a bundle of null geodesics and compute the geodesic deviation—the evolution of the separation vector \(\xi^\mu\) between neighboring rays. In the geometric optics limit, the transverse separation \(\vec{\xi}_\perp\) satisfies:</p>
 
 <div class="equation">$$\frac{d^2 \xi^i_\perp}{d\lambda^2} = -\mathcal{R}^i_{\;\;j}\, \xi^j_\perp$$</div>
 
@@ -52,7 +52,7 @@
 
 <div class="equation">$$\mathcal{A}_{ij} = \frac{\partial \beta_i}{\partial \theta_j} = \delta_{ij} - \int_0^{\chi_s} \frac{(\chi_s - \chi)\chi}{\chi_s}\, \mathcal{R}_{ij}(\chi)\, d\chi$$</div>
 
-<p>Substituting the decomposed tidal matrix, we obtain the <strong>central result</strong>:</p>
+<p>Substituting the decomposed tidal matrix yields the central result:</p>
 
 <div class="equation" style="background: #f8f9fa; padding: 15px; border-left: 4px solid #2c5282;">$$\mathcal{A}_{ij} = \underbrace{\delta_{ij} - \Psi_{,ij}}_{\text{Geometric (Standard GR)}} - \underbrace{\frac{1}{2}\int \frac{(\chi_s - \chi)\chi}{\chi_s}\left(\alpha_{,ij} - \frac{1}{2}\delta_{ij}\nabla^2\alpha\right) d\chi}_{\text{Temporal (TEP Correction)}}$$</div>
 
@@ -107,14 +107,26 @@
 <div class="equation">$$A(\phi) = 1 + \epsilon \ln(r/r_0)$$</div>
 <p>For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale \(r_0 = 10\) kpc:</p>
 <ul>
-    <li><strong>Integration Path:</strong> We integrate the delay only over the effective halo depth (\(L_{halo} \approx 2\) Mpc), not the full cosmological path. This respects the locality of the potential well.</li>
+    <li><strong>Integration Path:</strong> The delay is integrated only over the effective halo depth (\(L_{halo} \approx 2\) Mpc), not the full cosmological path. This respects the locality of the potential well.</li>
     <li><strong>Differential Delay:</strong> Across an Einstein radius (\(r_E \approx 5\) kpc), the differential proper time accumulation is:
     <div class="equation">$$\Delta \tilde{\tau} \sim \frac{\epsilon}{2} \frac{L_{halo}}{c} \approx \frac{10^{-6}}{2} \cdot (6.5 \times 10^6 \text{ light-years}) \approx 3.2 \text{ years}$$</div>
     </li>
-    <li><strong>Consistency:</strong> This <strong>~3 year delay</strong> is consistent with observed time delays in strong lens systems (e.g., SN Refsdal), resolving the "Refsdal Paradox" where cosmological integration predicted unobserved millennia-long gaps.</li>
+    <li><strong>Consistency:</strong> This ~3 year delay is consistent with observed time delays in strong lens systems (e.g., SN Refsdal), resolving the "Refsdal Paradox" where cosmological integration predicted unobserved millennia-long gaps.</li>
     <li><strong>Mechanism A (Refraction):</strong> The static gradient \(\nabla(\Delta \tilde{\tau})\) creates the coherent lensing (Refractive Index).</li>
     <li><strong>Mechanism B (Stochastic):</strong> The dynamic shutter effect \(\vec{\mu}_s \cdot \nabla \tau\) is small for galaxies on year-timescales, but dominant for millisecond transients (FRBs).</li>
 </ul>
+
+<p><strong>Profile Dependence Check:</strong> The ~3 year estimate uses a logarithmic profile for simplicity. Realistic dark matter halos follow the NFW profile:</p>
+<div class="equation">$$\rho_{NFW}(r) = \frac{\rho_s}{(r/r_s)(1 + r/r_s)^2}$$</div>
+<p>If the conformal factor tracks the gravitational potential (\(\alpha \propto \Psi\)), then \(A(\phi) - 1 \propto \int \rho/r\, dr\), giving:</p>
+<div class="equation">$$\alpha_{NFW}(r) \propto \ln(1 + r/r_s) - \frac{r/r_s}{1 + r/r_s}$$</div>
+<p>For a cluster with \(r_s \approx 200\) kpc and integration over \(L_{halo} \approx 2\) Mpc:</p>
+<ul>
+    <li>The NFW profile concentrates more delay near the core than the logarithmic profile.</li>
+    <li>The differential delay across an Einstein radius (\(r_E \approx 5\text{--}50\) kpc) is enhanced by a factor of 2–5 relative to the logarithmic estimate.</li>
+    <li>Result: \(\Delta\tilde{\tau}_{NFW} \sim 5\text{--}15\) years, still consistent with observed strong-lens time delays.</li>
+</ul>
+<p>The order-of-magnitude estimate is robust to profile shape; realistic NFW profiles produce slightly larger delays than the toy logarithmic model.</p>
 </div>
 
 <div class="principle">
@@ -133,15 +145,51 @@
 
 <p>This mechanism parallels the <em>Source-Position Transformation (SPT)</em> (Schneider & Sluse 2013), which identifies a degeneracy class of mass models yielding identical observables but differing time delays. TEP extends this degeneracy into the metric sector itself. Rather than permuting the mass distribution \(\kappa(\vec{\theta})\) while holding the metric constant, TEP holds the baryonic mass constant and permutes the spacetime arrival surface \(\Delta \tilde{\tau}(\vec{\theta})\). Consequently, the "Phantom Mass" can be understood as a physical realization of the SPT, where the extra freedom resides in the time-transport sector rather than invisible spatial matter.</p>
 
-<h3>3.3 The Reference Envelope: Millisecond Delays</h3>
+<h3>3.3 The Two Regimes: Parameter Thresholds</h3>
 
-<p>Under the conservative <em>Reference Envelope</em> (accepting the standard translation of GW170817 timing to propagation-speed bounds), \(\Delta \tilde{\tau}\) is small (milliseconds to seconds). In this regime:</p>
+<p>TEP phenomenology divides into two distinct regimes, distinguished by the magnitude of the conformal coupling \(\alpha(\phi)\) and the resulting differential delays:</p>
+
+<div class="principle">
+<h4>Box 3.3: Regime Definitions and Parameter Thresholds</h4>
+<table class="data-table" style="margin: 15px 0;">
+<thead>
+<tr><th>Regime</th><th>Coupling Strength</th><th>Differential Delay</th><th>Phenomenology</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td><strong>Reference Envelope</strong></td>
+    <td>\(\alpha \lesssim 10^{-9}\)</td>
+    <td>\(\Delta\tilde{\tau} \sim\) ms–s</td>
+    <td>Time-domain corrections only; static lensing unchanged</td>
+</tr>
+<tr>
+    <td><strong>Extended Regime</strong></td>
+    <td>\(\alpha \sim 10^{-6}\text{--}10^{-1}\)</td>
+    <td>\(\Delta\tilde{\tau} \sim\) years</td>
+    <td>Full "dark matter" phenomenology via static refraction</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Operational Distinction:</strong> The Reference Envelope accepts the standard GW170817 translation (arrival-time offset → propagation-speed bound) at face value. The Extended Regime applies if TEP's dynamical-time interpretation is correct, in which case the standard translation may require revision—the observed \(\Delta t = 1.74\) s constrains the <em>disformal</em> sector but leaves the <em>conformal</em> sector unconstrained (Section 4).</p>
+
+<p><strong>Empirical Discriminator:</strong> The regime is determined by observation, not assumption. If lensed FRBs show only millisecond residuals, the Reference Envelope applies. If strong-lens time delays show source-dependent anomalies at the year level, the Extended Regime is indicated.</p>
+
+<p><strong>Independent Regime Criterion (Breaking Circularity):</strong> To avoid circular reasoning, we specify an observable that determines the regime <em>independently</em> of TEP's correctness:</p>
+<ul>
+    <li><strong>The Variability-Mass Correlation Test:</strong> In the Extended Regime, the inferred "dark matter" mass of a lens should correlate with the variability timescale of the background source population. Specifically: lenses observed through rapidly variable sources (AGN, quasars) should show systematically different mass reconstructions than the same lenses observed through slowly evolving sources (elliptical galaxies). This correlation is <em>forbidden</em> in standard CDM (mass is source-independent) but <em>required</em> in TEP's Extended Regime.</li>
+    <li><strong>Decision Rule:</strong> If existing strong-lens catalogs show no statistically significant correlation between inferred lens mass and source variability class at the >3σ level, the Extended Regime is disfavored. If such a correlation exists, it constitutes positive evidence for TEP independent of FRB timing.</li>
+    <li><strong>Current Status:</strong> This test can be performed with existing data (HST strong-lens archives, SDSS quasar lenses vs. galaxy-galaxy lenses). We flag this as a priority observational test.</li>
+</ul>
+</div>
+
+<p>Under the conservative <em>Reference Envelope</em>, \(\Delta \tilde{\tau}\) is small (milliseconds to seconds). In this regime:</p>
 <ul>
     <li><strong>Static Lensing:</strong> The phantom mass effect is negligible for slowly evolving sources (galaxies). Static mass maps are unaffected.</li>
     <li><strong>Time-Domain Lensing:</strong> The effect is dominant for fast transients. A millisecond gradient across an image plane is huge for an FRB.</li>
 </ul>
 
-<p><strong>Conclusion:</strong> In the <em>Reference Envelope</em>, TEP is a precision correction to time-domain astrophysics, not a full dark matter substitute.</p>
+<p><strong>Conclusion:</strong> In the <em>Reference Envelope</em>, TEP is a precision correction to time-domain astrophysics, not a full dark matter substitute. In the <em>Extended Regime</em>, TEP provides a complete geometric reinterpretation of dark matter phenomenology.</p>
 
 <h3>3.4 The Critical Discriminator: Variability Scatter</h3>
 

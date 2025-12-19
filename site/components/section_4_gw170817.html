@@ -43,7 +43,7 @@ As established in Section 2, a purely conformal transformation preserves null co
 
 <p>A critical quantitative challenge to the TEP framework is the magnitude of the scalar potential required to explain cluster lensing. To generate differential delays of \(10^3\text{--}10^5\) years over cosmological distances, the conformal factor \(A(\phi)\) must have significant depth. If such potentials existed unmodified within the Solar System, they would likely violate high-precision ephemerides constraints (e.g., the Cassini parameter \(\gamma\)).</p>
 
-<p>To reconcile the large potentials required on cluster scales with the strict constraints on local scales, we explicitly invoke a Screening Mechanism. To move beyond qualitative hypotheses, we define the scalar sector via a Galileon-type Lagrangian known to provide Vainshtein screening:</p>
+<p>To reconcile the large potentials required on cluster scales with the strict constraints on local scales, a Screening Mechanism is explicitly invoked. To move beyond qualitative hypotheses, the scalar sector is defined via a Galileon-type Lagrangian known to provide Vainshtein screening:</p>
 
 <div class="equation">$$\mathcal{L}_\phi = -\frac{1}{2}(\partial \phi)^2 - \frac{1}{\Lambda^3}(\partial \phi)^2 \square \phi + \frac{g}{M_{Pl}} \phi T$$</div>
 
@@ -96,7 +96,7 @@ As established in Section 2, a purely conformal transformation preserves null co
 </tbody>
 </table>
 
-<p><strong>The Goldilocks Condition:</strong> For TEP phenomenology to work, we require:</p>
+<p><strong>The Goldilocks Condition:</strong> For TEP phenomenology to work, the following conditions must hold:</p>
 <div class="equation">$$r_{\text{Solar System}} \ll r_V(M_\odot) \quad \text{and} \quad r_V(M_{\text{cluster}}) \lesssim r_{\text{halo}}$$</div>
 
 <p>The first condition ensures Solar System tests (Cassini, lunar laser ranging) see pure GR. The second ensures the scalar field gradients are <em>not</em> fully suppressed at halo scales where "dark matter" effects are observed.</p>
@@ -111,5 +111,11 @@ As established in Section 2, a purely conformal transformation preserves null co
 <p><strong>The Screening Cliff (Parameter Tension):</strong> The ratio of conformal coupling required at cluster scales (\(\alpha \sim 10^{-1}\)) to that permitted at Solar System scales (\(\alpha \lesssim 10^{-5}\)) spans four orders of magnitude. While Vainshtein screening can in principle provide this suppression, it requires:</p>
 <div class="equation">$$\frac{\alpha_{\text{cluster}}}{\alpha_{\text{Solar}}} \sim \left(\frac{r_V}{r}\right)^{3/2} \gtrsim 10^4$$</div>
 
-<p>This is achievable but represents a <strong>fine-tuning constraint</strong> on the Lagrangian parameters \((\Lambda, g)\). We acknowledge this as a necessary condition for TEP viability, analogous to the coincidence problem in \(\Lambda\)CDM. Future work should derive the screening profile self-consistently from the full field equations.</p>
+<p>This ratio represents a constraint on the Lagrangian parameters \((\Lambda, g)\), acknowledged as a necessary condition for TEP viability. However, a critical distinction must be made:</p>
+
+<p><strong>Single-Parameter Origin:</strong> The 10⁴ suppression ratio is <em>not</em> achieved by tuning four separate parameters for four different scales. It emerges automatically from a <em>single</em> choice of \((\Lambda, g)\) via the Vainshtein mechanism's intrinsic scale-dependence. The suppression profile \((r_V/r)^{3/2}\) is a derived consequence of the Galileon kinetic structure, not an imposed condition. Once \(\Lambda\) and \(g\) are fixed to satisfy any one scale (e.g., Solar System bounds), the behavior at all other scales is determined—there is no additional freedom to adjust cluster-scale effects independently.</p>
+
+<p><strong>Contrast with Multi-Parameter Tuning:</strong> This differs fundamentally from scenarios requiring independent adjustment of coupling constants at each scale. The Vainshtein radius \(r_V \propto (gM/\Lambda^3)^{1/3}\) automatically produces the hierarchy: massive systems have larger \(r_V\), placing their characteristic scales closer to or beyond the screening radius. The 10⁴ ratio follows from \((M_{\text{cluster}}/M_\odot)^{1/2} \sim 10^{7.5}\) modulated by the \((r_V/r)^{3/2}\) profile—a geometric consequence, not a coincidence.</p>
+
+<p><strong>Remaining Constraint:</strong> The genuine constraint is that \(\Lambda \sim 10^{-13}\) eV (near the dark energy scale) and \(g \sim \mathcal{O}(1)\) must hold simultaneously. This is a single two-parameter constraint, not four independent tunings. Whether this constitutes "fine-tuning" depends on one's theoretical priors; it is comparable to the requirement that the Higgs mass be near the electroweak scale. Future work should verify that these parameter values do not conflict with fifth-force laboratory bounds (Eöt-Wash, MICROSCOPE) or astrophysical constraints on light scalars.</p>
 </div>
