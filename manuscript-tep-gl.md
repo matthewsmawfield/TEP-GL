@@ -4,7 +4,7 @@
 **Version:** v0.3 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
 **DOI:** 10.5281/zenodo.17982540  
-**Generated:** 2025-12-19  
+**Generated:** 2025-12-20  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
 ---
@@ -894,13 +894,7 @@ Within the operational axioms adopted here, the phenomenology traditionally attr
 
 The observational program outlined herein—time-domain lensing of fast transients, precision strong-lens residual timing, and source-variability-dependent shear consistency tests—provides a viable route to distinguish particle dark matter from a temporal-composite channel while maintaining a conservative Reference Envelope baseline anchored to existing multi-messenger constraints, thereby offering a promising avenue for resolving the dark matter problem.
 
-## Acknowledgments
-
-The author thanks colleagues for valuable discussions. This research made use of NASA's Astrophysics Data System and the arXiv preprint server.
-
 ## References
-
-### References
 
 Abbott, B. P., et al. (LIGO/Virgo Collaboration) 2017, *Phys. Rev. Lett.*, 119, 161101
 
