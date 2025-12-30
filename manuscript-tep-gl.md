@@ -4,7 +4,7 @@
 **Version:** v0.3 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
 **DOI:** 10.5281/zenodo.17982540  
-**Generated:** 2025-12-29  
+**Generated:** 2025-12-31  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
 ---
@@ -1070,6 +1070,8 @@ This is the geodesic equation with a non-affine parameterization (\(Dk/d\lambda 
         - [Universal Critical Density: Unifying Atomic, Galactic, and Compact Object Scales 28 Dec 2025](/tep/ucd/)
 
         - [The Soliton Wake: Identifying RBH-1 as a Gravitational Soliton 28 Dec 2025](/tep/rbh/)
+
+        - [Global Time Echoes: Optical Validation of TEP via Satellite Laser Ranging 30 Dec 2025](/tep/slr/)
 
         ← Previous
         Next →
