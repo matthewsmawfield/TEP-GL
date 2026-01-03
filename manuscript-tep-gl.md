@@ -1,10 +1,10 @@
-# Temporal-Spatial Coupling in Lensing
+# Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 
 **Author:** Matthew Lukin Smawfield  
 **Version:** v0.3 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
 **DOI:** 10.5281/zenodo.17982540  
-**Generated:** 2025-12-31  
+**Generated:** 2026-01-03  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
 ---
