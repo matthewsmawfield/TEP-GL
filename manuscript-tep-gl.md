@@ -4,7 +4,7 @@
 **Version:** v0.3 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
 **DOI:** 10.5281/zenodo.17982540  
-**Generated:** 2026-01-03  
+**Generated:** 2026-01-07  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
 ---
@@ -1050,31 +1050,6 @@ Since \(k\) is null (\(g_{\nu\sigma}k^\nu k^\sigma = 0\)) and \(k^\nu \nabla_\nu
 
 $k^\nu \tilde{\nabla}_\nu k^\mu = (k^\nu \partial_\nu \ln A) k^\mu$
 This is the geodesic equation with a non-affine parameterization (\(Dk/d\lambda \propto k\)). Thus, the curve is a geodesic of \(\tilde{g}\), differing only by the parameterization (the clock rate). \(\square\)
-
-        [← Home](/)
-        
-### TEP Research Series
-
-        - [Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed 18 Aug 2025](/tep/theory/)
-
-        - [Global Time Echoes: Distance-Structured Correlations in GNSS Clocks 17 Sep 2025](/tep/gnss-i/)
-
-        - [25-Year Temporal Evolution of Distance-Structured Correlations in GNSS 3 Nov 2025](/tep/gnss-ii/)
-
-        - [Global Time Echoes: Raw RINEX Validation 17 Dec 2025](/tep/gnss-iii/)
-
-        - [Temporal-Spatial Coupling in Gravitational Lensing 19 Dec 2025](/tep/gl/)
-
-        - [Global Time Echoes: Empirical Validation of TEP 21 Dec 2025](/tep/gte/)
-
-        - [Universal Critical Density: Unifying Atomic, Galactic, and Compact Object Scales 28 Dec 2025](/tep/ucd/)
-
-        - [The Soliton Wake: Identifying RBH-1 as a Gravitational Soliton 28 Dec 2025](/tep/rbh/)
-
-        - [Global Time Echoes: Optical Validation of TEP via Satellite Laser Ranging 30 Dec 2025](/tep/slr/)
-
-        ← Previous
-        Next →
 
 ---
 
