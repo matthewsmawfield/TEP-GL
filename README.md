@@ -33,6 +33,56 @@ Standard gravitational lensing analysis relies on the *Isochrony Axiom*—the im
 
 When using this work, please cite the paper and theoretical framework listed below.
 
+## Summary of Key Results and Findings
+
+### Theoretical Framework
+
+| Concept | Description | Implication |
+|---------|-------------|-------------|
+| **Isochrony Axiom** | Assumption of synchronous spatial snapshot | Violated by conformal coupling |
+| **Temporal Composite** | Image represents temporal depth | Projects onto spatial plane |
+| **Phantom Mass** | Temporal shear mimics gravitational shear | Alternative to dark matter |
+| **Conformal Loophole** | GW170817 constrains disformal only | Conformal sector unconstrained |
+
+### Key Predictions
+
+| Prediction | Observable | Expected Effect |
+|------------|------------|-----------------|
+| **Variability Bias** | DM mass vs source variability | Correlation expected |
+| **Image Rotation** | Non-zero curl in shear tensor | Unique to TEP (not in GR lensing) |
+| **Chronometric Lensing** | FRB arrival-time residuals | ms-scale achromatic jitter |
+| **Achromaticity** | Wavelength independence | Same as dark matter |
+
+### Preliminary FRB Observations
+
+| FRB ID | Observed Residual | TEP-GL Prediction | Status |
+|--------|-------------------|-------------------|--------|
+| **FRB 20181117C** | 32.9 ± 0.7 ms | ~30–35 ms | ✓ Consistent |
+| **FRB 20210912B** | 49.5 ± 1.2 ms | ~45–55 ms | ✓ Consistent |
+| **FRB 20200405A** | 13.1 ± 0.4 ms | ~10–15 ms | ✓ Consistent |
+| **FRB 20201124A** | 1.2 ± 0.3 ms | ~1–2 ms | ✓ Consistent |
+
+### Cosmological Tensions Addressed
+
+| Tension | Standard Explanation | TEP-GL Alternative |
+|---------|---------------------|-------------------|
+| **S₈ Tension** | Unknown systematics | Temporal shear contribution |
+| **H₀ Tension** | New physics / systematics | Environment-dependent time flow |
+| **Flux Ratio Anomalies** | Substructure / microlensing | Temporal composite effects |
+
+### GW170817 Constraints
+
+| Constraint | Value | What It Constrains |
+|------------|-------|-------------------|
+| **\|c_γ − c_g\|/c** | ≲ 10⁻¹⁵ | Disformal (cone tilt) |
+| **Conformal Sector** | Unconstrained | Clock rates (not tested) |
+
+### Key Interpretation
+
+This paper identifies a critical loophole in multi-messenger constraints: GW170817 bounds differential propagation speeds (disformal sector) but leaves conformal clock-rate variations unconstrained. If time flows at different rates across an extended source, the observed image becomes a "temporal composite" that projects temporal depth onto the spatial plane. This temporal shear is mathematically indistinguishable from gravitational shear—creating "phantom mass" that mimics dark matter. The preliminary FRB observations (ms-scale achromatic residuals) are consistent with chronometric lensing predictions. Unlike dark matter models, TEP-GL predicts unique signatures: variability-dependent phantom mass and non-zero curl (image rotation) in the shear tensor.
+
+---
+
 ## Core Hypothesis
 
 If the Isochrony Axiom is violated by differential time dilation (conformal metric coupling), extended images become temporal composites. This projects temporal depth onto the spatial plane, generating a Temporal Jacobian contribution that is mathematically indistinguishable from gravitational shear—a phenomenon defined here as Phantom Mass.
@@ -154,3 +204,5 @@ These are working preprints shared in the spirit of open science—all manuscrip
 
 ---
 
+**Contact:** matthewsmawfield@gmail.com  
+**ORCID:** [0009-0003-8219-3159](https://orcid.org/0009-0003-8219-3159)
