@@ -4,7 +4,7 @@
 **Version:** v0.3 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 19 December 2025  
 **DOI:** 10.5281/zenodo.17982540  
-**Generated:** 2026-01-07  
+**Generated:** 2026-03-23  
 **Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
 
 ---

@@ -90,10 +90,16 @@
       "order": 10
     },
     {
+      "id": "reproducibility",
+      "file": "8_reproducibility.html",
+      "title": "Data Availability & Reproducibility",
+      "order": 11
+    },
+    {
       "id": "appendix_a",
       "file": "appendix_a.html",
       "title": "Appendix A: Mathematical Derivations",
-      "order": 11
+      "order": 12
     }
   ]
 }
