@@ -1,0 +1,91 @@
+<section id="reproducibility">
+    <h2>Data Availability & Reproducibility</h2>
+    
+    <div class="reproducibility-box" style="background: #f5f5f5; padding: 1.5em; margin: 1em 0; border-left: 4px solid #2c5aa0;">
+        <p>
+            This work follows open-science practices. This is a theoretical framework paper developing 
+            the TEP-GL (Temporal Equivalence Principle - Gravitational Lensing) model. The analysis builds 
+            upon established dark matter phenomenology from the literature and derives new observational 
+            predictions from first principles.
+        </p>
+    </div>
+
+    <h3>Repository & Code</h3>
+    <p>
+        <strong>GitHub Repository:</strong> <a href="https://github.com/matthewsmawfield/TEP-GL">github.com/matthewsmawfield/TEP-GL</a>
+    </p>
+    <p>
+        The repository contains the complete theoretical framework, mathematical derivations, 
+        and observational predictions for the TEP-GL model.
+    </p>
+
+    <h4>Repository Structure</h4>
+    <pre><code>TEP-GL/
+├── manuscripts/               # Markdown manuscript sources
+│   └── manuscript-tep-gl.md
+├── site/
+│   ├── components/            # HTML manuscript sections
+│   │   ├── abstract.html
+│   │   ├── section_1_introduction.html
+│   │   ├── section_2_theoretical_framework.html
+│   │   ├── section_3_quantitative_comparison.html
+│   │   ├── section_4_gw170817.html
+│   │   ├── section_5_observational_predictions.html
+│   │   ├── section_6_discussion.html
+│   │   ├── section_7_conclusions.html
+│   │   ├── acknowledgments.html
+│   │   ├── references.html
+│   │   └── appendix_a.html
+│   └── manifest.json
+├── scripts/                   # Analysis scripts (future expansion)
+│   └── utils/
+├── requirements.txt           # Python dependencies
+├── CITATION.cff               # Citation metadata
+└── README.md                  # Repository documentation</code></pre>
+
+    <h3>Data Provenance</h3>
+    <p>
+        This is a theoretical framework paper. Primary data references:
+    </p>
+    <ul>
+        <li><strong>GW170817:</strong> LIGO/Virgo gravitational wave and EM counterpart data (public)</li>
+        <li><strong>Dark matter phenomenology:</strong> Established lensing results from the literature (fully cited)</li>
+        <li><strong>SPARC database:</strong> For TEP-UCD cross-paper validation</li>
+    </ul>
+
+    <h3>Reproduction Instructions</h3>
+    
+    <h4>Quick Start (Manuscript Build)</h4>
+    <pre><code># 1. Clone repository
+git clone https://github.com/matthewsmawfield/TEP-GL.git
+cd TEP-GL
+
+# 2. Build manuscript website
+cd site
+npm install
+npm run build
+
+# 3. Output in site/dist/</code></pre>
+
+    <h4>System Requirements</h4>
+    <ul>
+        <li><strong>Node.js</strong> 16+ (for site building)</li>
+        <li><strong>Storage:</strong> &lt; 50 MB</li>
+    </ul>
+
+    <h3>Theoretical Framework Documentation</h3>
+    <p>
+        The TEP-GL framework derives from three foundational postulates:
+    </p>
+    <ol>
+        <li><strong>Two-Metric Postulate:</strong> Clock metric <em>g<sub>μν</sub><sup>(clock)</sup></em> differs from light metric <em>g<sub>μν</sub><sup>(light)</sup></em></li>
+        <li><strong>Isochrony Violation:</strong> Synchronization becomes path-dependent under conformal coupling</li>
+        <li><strong>Optical Theory of Gravity:</strong> Gravitational phenomenology arises from differential proper-time accumulation</li>
+    </ol>
+
+    <h3>Software Versions</h3>
+    <ul>
+        <li><strong>Node.js</strong> 16+</li>
+        <li><strong>Python</strong> 3.8+ (optional utilities)</li>
+    </ul>
+</section>
