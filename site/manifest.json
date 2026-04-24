@@ -2,10 +2,10 @@
   "title": "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations",
   "subtitle": "Landmark Release",
   "author": "Matthew Lukin Smawfield",
-  "version": "v0.3 (Tortola)",
+  "version": "v0.4 (Tortola)",
   "first_published": "19 December 2025",
-  "last_updated": "19 December 2025",
-  "description": "Temporal-spatial coupling in gravitational lensing as an alternative interpretation of dark matter observations",
+  "last_updated": "24 April 2026",
+  "description": "Standard gravitational lensing analysis relies on the Isochrony Axiom. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a 'temporal composite' image that projects temporal depth onto the spatial plane, generating Temporal Shear that is mathematically indistinguishable from gravitational shear—defined here as Phantom Mass.",
   "doi": "10.5281/zenodo.17982540",
   "code_repo": "github.com/matthewsmawfield/TEP-GL",
   "paper_number": 1,
@@ -78,28 +78,22 @@
       "order": 8
     },
     {
-      "id": "acknowledgments",
-      "file": "acknowledgments.html",
-      "title": "Acknowledgments",
-      "order": 9
-    },
-    {
       "id": "references",
       "file": "references.html",
       "title": "References",
-      "order": 10
+      "order": 9
     },
     {
       "id": "reproducibility",
       "file": "8_reproducibility.html",
       "title": "Data Availability & Reproducibility",
-      "order": 11
+      "order": 10
     },
     {
       "id": "appendix_a",
       "file": "appendix_a.html",
       "title": "Appendix A: Mathematical Derivations",
-      "order": 12
+      "order": 11
     }
   ]
 }
