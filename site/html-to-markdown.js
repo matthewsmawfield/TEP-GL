@@ -186,11 +186,13 @@ class HTMLToMarkdownConverter {
             .replace(/^Version:\s*/i, '')
             .trim() : 'v0.3 (Tortola)';
         
-        const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>(.*?)<\/div>/i);
-        const date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 29 November 2025';
+        const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>([\s\S]*?)<\/div>/i);
+        let date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 19 December 2025';
+        // Clean up the date string to remove extra spaces around the dot
+        date = date.replace(/\s*·\s*/g, ' · ');
         
-        const doiMatch = html.match(/DOI:\s*<a[^>]*href=["']([^"']*)["'][^>]*>(.*?)<\/a>/i);
-        const doi = doiMatch ? doiMatch[2] : '[DOI]';
+        const doiMatch = html.match(/<div[^>]*class=["'][^"']*doi[^"']*["'][^>]*>[\s\S]*?<a[^>]*href=["']https?:\/\/doi\.org\/([^"']*)["'][^>]*>/i);
+        const doi = doiMatch ? doiMatch[1].trim() : '[DOI]';
         
         return { title, author, version, date, doi };
     }
@@ -248,8 +250,14 @@ class HTMLToMarkdownConverter {
             // Build the complete markdown document
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
-            // Write to file
-            const outputPath = path.join(__dirname, '..', 'manuscript-tep-gl.md');
+            // Parse version for filename (e.g., "v0.4 (Tortola)" -> "v0.4-Tortola")
+            const versionClean = metadata.version
+                .replace(/^Version:\s*/i, '')
+                .replace(/\s+/g, '-')
+                .replace(/[()]/g, '');
+            
+            // Write to file with new naming format: 4-TEP-GL-v0.4-Tortola.md
+            const outputPath = path.join(__dirname, '..', `4-TEP-GL-${versionClean}.md`);
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
             console.log('✅ Markdown conversion complete!');
@@ -271,22 +279,25 @@ class HTMLToMarkdownConverter {
      */
     buildMarkdownDocument(metadata, content) {
         const timestamp = new Date().toISOString().split('T')[0];
-        
+
         // Clean up the title to remove the author part
         const cleanTitle = metadata.title.replace(' | Matthew Lukin Smawfield', '');
-        
-        return `# ${cleanTitle}
 
-**Author:** ${metadata.author}  
-**Version:** ${metadata.version}  
-**Date:** ${metadata.date}  
-**DOI:** ${metadata.doi}  
-**Generated:** ${timestamp}  
-**Paper Series:** TEP-GL Paper 1 (Gravitational Lensing)
+        // Clean up content - remove leading indentation from each line
+        const cleanContent = content
+            .split('\n')
+            .map(line => line.replace(/^\s+/, ''))
+            .join('\n');
+
+        return `# ${cleanTitle}
+**${metadata.author}**
+Version: ${metadata.version}
+${metadata.date}
+DOI: ${metadata.doi}
 
 ---
 
-${content}
+${cleanContent}
 
 ---
 

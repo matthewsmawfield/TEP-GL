@@ -1,0 +1,4 @@
+v0.4 (Tortola) - Notation Standardization
+
+- Fixed Planck mass notation: Changed $M_{Pl}$ to $M_{\\text{Pl}}$ for consistency with Paper 0 (Jakarta) LaTeX conventions.
+- Fixed disformal term derivative: Changed $\\partial_\\mu \\phi$ to $\\nabla_\\mu\\phi$ in the two-metric relation to match Paper 0 notation.
