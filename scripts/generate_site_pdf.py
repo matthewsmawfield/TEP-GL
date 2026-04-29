@@ -36,7 +36,7 @@ def load_citation_metadata():
     
     if not citation_file.exists():
         print("⚠️  CITATION.cff not found, using defaults")
-        return {'version': 'v0.4', 'codename': 'Tortola', 'title': 'TEP-GL'}
+        return {'version': 'v0.5', 'codename': 'Tortola', 'title': 'TEP-GL'}
     
     try:
         if yaml:
@@ -65,7 +65,7 @@ def load_citation_metadata():
         
     except Exception as e:
         print(f"⚠️  Error parsing CITATION.cff: {e}, using defaults")
-        return {'version': 'v0.4', 'codename': 'Tortola', 'title': 'TEP-GL'}
+        return {'version': 'v0.5', 'codename': 'Tortola', 'title': 'TEP-GL'}
 
 
 def build_static_site():
@@ -100,7 +100,7 @@ def copy_pdf_to_docs(source_pdf: Path, docs_dir: Path):
     
     # Load metadata from CITATION.cff
     metadata = load_citation_metadata()
-    version_str = f"v{metadata['version']}_{metadata['codename']}"
+    version_str = f"v{metadata['version']}-{metadata['codename']}"
     
     # Primary PDF name
     target_name = f"4-TEP-GL-{version_str}.pdf"
@@ -120,7 +120,7 @@ def copy_pdf_to_root(source_pdf: Path, base_dir: Path):
     """Copy PDF to the project root directory."""
     # Load metadata from CITATION.cff
     metadata = load_citation_metadata()
-    version_str = f"v{metadata['version']}_{metadata['codename']}"
+    version_str = f"v{metadata['version']}-{metadata['codename']}"
     
     # Primary PDF name
     target_name = f"4-TEP-GL-{version_str}.pdf"
@@ -241,7 +241,7 @@ async def generate_pdf(quality: str = 'high', wait_time: float = 5.0, skip_build
         
         # Load metadata for display
         metadata = load_citation_metadata()
-        version_str = f"v{metadata['version']}_{metadata['codename']}"
+        version_str = f"v{metadata['version']}-{metadata['codename']}"
         print(f"   Version: {version_str}")
         
         # Copy to docs directory

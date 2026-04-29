@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations"
+message: "If you use this software, please cite it as below."
+type: article
+authors:
+  - family-names: "Smawfield"
+    given-names: "Matthew Lukin"
+    orcid: "https://orcid.org/0009-0003-8219-3159"
+license: CC-BY-4.0
+repository-code: "https://github.com/matthewsmawfield/TEP-GL"
+url: "https://matthewsmawfield.github.io/TEP-GL/"
+doi: 10.5281/zenodo.17982540
+
+preferred-citation:
+  type: article
+  title: "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations"
+  authors:
+    - family-names: Smawfield
+      given-names: Matthew Lukin
+      orcid: "https://orcid.org/0009-0003-8219-3159"
+  year: 2025
+  journal: Zenodo
+  doi: 10.5281/zenodo.17982540
+  identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17982540
+    description: Pre-print DOI
+  url: "https://doi.org/10.5281/zenodo.17982540"
+  notes: "Preprint"

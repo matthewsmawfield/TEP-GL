@@ -8,7 +8,7 @@
 
 <p>In the weak-field limit, the TEP framework modifies the standard Newtonian gauge metric by introducing a scalar-field-dependent conformal factor \(A(\phi)\) in the spatial sector:</p>
 
-<div class="equation">$$ds^2 = -\left(1 + 2\Psi\right)c^2 dt^2 + \left(1 - 2\Psi\right)A(\phi)\, \delta_{ij}\, dx^i dx^j$$</div>
+<div class="equation">$$ds^2 = -\left(1 + 2\Psi\right)c^2 dt^2 + \left(1 - 2\Psi\right)A^2(\phi)\, \delta_{ij}\, dx^i dx^j$$</div>
 
 <p>where \(\Psi\) is the Newtonian potential and \(A(\phi) = 1 + \alpha(\phi)\) with \(|\alpha| \ll 1\). The scalar field \(\phi\) is sourced by the local matter distribution and varies on galactic/cluster scales. Crucially, \(A(\phi)\) modifies the <em>proper spatial distance</em> traversed by photons, which—via the null condition \(ds^2 = 0\)—translates into a modification of the coordinate travel time.</p>
 
@@ -16,15 +16,15 @@
 
 <p>For null rays (\(ds^2 = 0\)), the coordinate velocity satisfies:</p>
 
-<div class="equation">$$\frac{|d\vec{x}|}{dt} = c\sqrt{\frac{1 + 2\Psi}{(1 - 2\Psi)A(\phi)}} \approx c\left(1 + 2\Psi - \frac{\alpha(\phi)}{2}\right)$$</div>
+<div class="equation">$$\frac{|d\vec{x}|}{dt} = c\sqrt{\frac{1 + 2\Psi}{(1 - 2\Psi)A^2(\phi)}} \approx \frac{c}{A(\phi)}\left(1 + 2\Psi\right) \approx c\left(1 + 2\Psi - \alpha(\phi)\right)$$</div>
 
 <p>to first order in \(\Psi\) and \(\alpha\). This defines an effective refractive index:</p>
 
-<div class="equation">$$n_{\text{eff}}(\vec{x}) = \frac{c}{v_{\text{coord}}} \approx 1 - 2\Psi + \frac{\alpha(\phi)}{2}$$</div>
+<div class="equation">$$n_{\text{eff}}(\vec{x}) = \frac{c}{v_{\text{coord}}} \approx A(\phi)(1 - 2\Psi) \approx 1 - 2\Psi + \alpha(\phi)$$</div>
 
 <p>The total coordinate time delay along a ray path \(\gamma\) is:</p>
 
-<div class="equation">$$T = \int_\gamma \frac{n_{\text{eff}}}{c}\, d\ell = T_0 + \underbrace{\frac{2}{c^3}\int |\Psi|\, d\ell}_{\text{Shapiro (geometric)}} + \underbrace{\frac{1}{2c}\int \alpha(\phi)\, d\ell}_{\Delta\tilde{\tau}\text{ (TEP)}}$$</div>
+<div class="equation">$$T = \int_\gamma \frac{n_{\text{eff}}}{c}\, d\ell = T_0 + \underbrace{\frac{2}{c^3}\int |\Psi|\, d\ell}_{\text{Shapiro (geometric)}} + \underbrace{\frac{1}{c}\int \alpha(\phi)\, d\ell}_{\Delta\tilde{\tau}\text{ (TEP)}}$$</div>
 
 <p>The TEP contribution \(\Delta\tilde{\tau}\) is the <em>excess proper time</em> accumulated due to the scalar field.</p>
 
@@ -131,13 +131,14 @@
 
 <div class="principle">
 <h3>Box 3.2: Order of Magnitude Estimate for Stochastic Shear</h3>
-<p>To estimate the magnitude of the <em>stochastic</em> shear contribution (the dynamic term \(\mu_s \nabla(\Delta \tilde{\tau})\)), we use the updated halo-scale delays:</p>
+<p>To estimate the magnitude of the <em>stochastic</em> shear contribution (the dynamic term \(\mu_s \nabla(\Delta \tilde{\tau})\)), the analysis uses the updated halo-scale delays:</p>
 <ul>
     <li><strong>Source Velocity:</strong> Typical cluster transverse velocity \(v_s \sim 1000\) km/s at distance \(D_A \sim 1\) Gpc yields an angular proper motion \(\mu_s \approx 2 \times 10^{-4}\) arcsec/year.</li>
     <li><strong>Delay Gradient:</strong> From Box 3.1, a delay of \(\sim 3\) years varying over arcsecond scales gives \(\nabla(\Delta \tilde{\tau}) \sim 3\) years/arcsec.</li>
     <li><strong>Resulting Stochastic Shear:</strong> The product is dimensionless shear:
     <div class="equation">$$\gamma_{stoch} \approx (2 \times 10^{-4} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-4}$$</div></li>
 </ul>
+
 <p>This stochastic contribution (\(\gamma_{stoch} \sim 10^{-3}\)) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo arises from the static refractive index (Mechanism A), not source motion.</p>
 </div>
 
@@ -171,15 +172,15 @@
 </tbody>
 </table>
 
-<p><strong>Operational Distinction:</strong> The Reference Envelope accepts the standard GW170817 translation (arrival-time offset → propagation-speed bound) at face value. The Extended Regime applies if TEP's dynamical-time interpretation is correct, in which case the standard translation may require revision—the observed \(\Delta t = 1.74\) s constrains the <em>disformal</em> sector but leaves the <em>conformal</em> sector unconstrained (Section 4).</p>
+<p><strong>Operational Distinction:</strong> The Reference Envelope accepts the standard GW170817 translation (arrival-time offset → propagation-speed bound) at face value. The Extended Regime applies if TEP's dynamical-time interpretation is correct, in which case the standard translation may require revision—the observed \(\Delta t = 1.74\) s constrains the <em>disformal</em> sector; it does not directly test the <em>conformal</em> sector, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests (Section 4).</p>
 
 <p><strong>Empirical Discriminator:</strong> The regime is determined by observation, not assumption. If lensed FRBs show only millisecond residuals, the Reference Envelope applies. If strong-lens time delays show source-dependent anomalies at the year level, the Extended Regime is indicated.</p>
 
-<p><strong>Independent Regime Criterion (Breaking Circularity):</strong> To avoid circular reasoning, we specify an observable that determines the regime <em>independently</em> of TEP's correctness:</p>
+<p><strong>Independent Regime Criterion (Breaking Circularity):</strong> To avoid circular reasoning, the following observable specifies the regime <em>independently</em> of TEP's correctness:</p>
 <ul>
     <li><strong>The Variability-Mass Correlation Test:</strong> In the Extended Regime, the inferred "dark matter" mass of a lens should correlate with the variability timescale of the background source population. Specifically: lenses observed through rapidly variable sources (AGN, quasars) should show systematically different mass reconstructions than the same lenses observed through slowly evolving sources (elliptical galaxies). This correlation is <em>forbidden</em> in standard CDM (mass is source-independent) but <em>required</em> in TEP's Extended Regime.</li>
     <li><strong>Decision Rule:</strong> If existing strong-lens catalogs show no statistically significant correlation between inferred lens mass and source variability class at the >3σ level, the Extended Regime is disfavored. If such a correlation exists, it constitutes positive evidence for TEP independent of FRB timing.</li>
-    <li><strong>Current Status:</strong> This test can be performed with existing data (HST strong-lens archives, SDSS quasar lenses vs. galaxy-galaxy lenses). We flag this as a priority observational test.</li>
+    <li><strong>Current Status:</strong> This test can be performed with existing data (HST strong-lens archives, SDSS quasar lenses vs. galaxy-galaxy lenses). This is flagged as a priority observational test.</li>
 </ul>
 </div>
 

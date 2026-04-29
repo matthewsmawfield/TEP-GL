@@ -1,8 +1,8 @@
 {
   "name": "tep-gl-site",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations",
-  "comment": "Package version matches manuscript version v0.4 (Tortola)",
+  "comment": "Package version matches manuscript version v0.5 (Tortola)",
   "main": "index.html",
   "scripts": {
     "dev": "node dev-server.js",
@@ -24,7 +24,7 @@
     "conformal coupling",
     "cosmology"
   ],
-  "author": "Matthew Lukin Smawfield <matthewsmawfield@gmail.com>",
+  "author": "Matthew Lukin Smawfield <matthew@mlsmawfield.com>",
   "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
