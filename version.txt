@@ -1,4 +1,8 @@
-v0.4 (Tortola) - Notation Standardization
+v0.5 (Tortola) - Major Manuscript Revision
 
-- Fixed Planck mass notation: Changed $M_{Pl}$ to $M_{\\text{Pl}}$ for consistency with Paper 0 (Jakarta) LaTeX conventions.
-- Fixed disformal term derivative: Changed $\\partial_\\mu \\phi$ to $\\nabla_\\mu\\phi$ in the two-metric relation to match Paper 0 notation.
+- Comprehensive revision of all manuscript sections with expanded theoretical framework
+- Updated GW170817 analysis with refined common-mode cancellation discussion
+- Added Reference Envelope and Extended Regime classification with Variability-Mass Correlation test
+- Updated abstract to TEP v0.8 reference with refined Phantom Mass definition
+- Expanded observational predictions with lensed FRB test targets
+- Synchronized all citation metadata files and publication date

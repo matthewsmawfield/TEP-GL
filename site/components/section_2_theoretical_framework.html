@@ -13,7 +13,7 @@
 </p>
 
 <div class="equation">
-    $$\tilde{g}_{\mu\nu} = A(\phi) g_{\mu\nu} + B(\phi)\nabla_\mu\phi
+    $$\tilde{g}_{\mu\nu} = A^2(\phi) g_{\mu\nu} + B(\phi)\nabla_\mu\phi
     \nabla_\nu\phi$$
 </div>
 
@@ -39,7 +39,7 @@
     <ul>
         <li>
             <strong>Brans-Dicke Theory:</strong> TEP with \(B=0\) and \(A(\phi)
-            = e^{2\beta\phi/M_{\text{Pl}}}\) reduces to Brans-Dicke gravity in the
+            = e^{\beta\phi/M_{\text{Pl}}}\) reduces to Brans-Dicke gravity in the
             Jordan frame. The scalar field \(\phi\) plays the role of the
             Brans-Dicke field, with the coupling \(\beta\) related to the
             Brans-Dicke parameter \(\omega_{BD}\).
@@ -53,7 +53,7 @@
         </li>
         <li>
             <strong>Screening and Temporal Topology:</strong> The core TEP
-            framework (v0.7) formulates screening as a continuous spatial
+            framework (v0.8) formulates screening as a continuous spatial
             profile governed by the non-linear superposition of field gradients
             (Temporal Shear), replacing discrete thin-shell boundaries. TEP-GL
             phenomenologically employs Vainshtein screening (from the Galileon
@@ -90,11 +90,11 @@
 <h4>1. The Static Refractive Index (Geometric Lensing)</h4>
 <p>
     The scalar field acts as a locally variable optical factor \(n_{eff} \approx
-    \sqrt{A(\phi)}\) in the travel-time functional governing image formation.
+    A(\phi)\) in the travel-time functional governing image formation.
     The associated excess matter proper-time delay is:
 </p>
 <div class="equation">
-    $$\Delta \tilde{\tau}_{\rm static} = \frac{1}{c} \int (\sqrt{A(\phi)} - 1)\,
+    $$\Delta \tilde{\tau}_{\rm static} = \frac{1}{c} \int (A(\phi) - 1)\,
     dl$$
 </div>
 <p>
@@ -175,7 +175,7 @@
         \mathcal{T}[\gamma_1] - \mathcal{T}[\gamma_2]\). This holonomy is the
         invariant discriminator: it is directly observable and cannot be reduced
         to a coordinate "speed" parameter. In the conformal limit,
-        \(d\tilde{\tau} = \sqrt{A(\phi)} d\tau_g\) is common-mode for
+        \(d\tilde{\tau} = A(\phi) d\tau_g\) is common-mode for
         co-propagating messengers; disformal coupling contributes the genuinely
         path-dependent component that generates differential delays across an
         image plane.
@@ -254,7 +254,7 @@
         while leaving cosmology accessible to dynamics. Rather than invoking
         discrete thin-shell boundaries or step-function density cutoffs, the
         suppression of local field gradients in deep potential wells reduces the
-        effective coupling continuously, preserving PPN bounds without rigid
+        $\alpha_{\text{PPN}}^{\text{eff}}$ continuously, preserving PPN bounds without rigid
         approximations. Existing multi-messenger constraints (e.g., GW170817)
         are interpreted within the standard framework that assumes a single
         metric governs all sectors; in the TEP framework, these constraints
@@ -312,7 +312,7 @@
                 \(c\) is locally invariant (measured as \(299,792,458\) m/s by
                 any local clock), the <em>global effective speed</em> is
                 variable. Because the rate of proper time accumulation
-                \(d\tilde{\tau} = \sqrt{A(\phi)} d\tau_g\) varies with location,
+                \(d\tilde{\tau} = A(\phi) d\tau_g\) varies with location,
                 the time required to traverse a fixed spatial interval depends
                 on the scalar field value. To an observer assuming a universal
                 clock, light appears to speed up or slow down depending on the
@@ -539,7 +539,7 @@
 </p>
 
 <div class="equation">
-    $$\Delta t_{\rm path} = \int_{\rm path} \frac{\sqrt{A(\phi)}}{c}\,dl$$
+    $$\Delta t_{\rm path} = \int_{\rm path} \frac{A(\phi)}{c}\,dl$$
 </div>
 
 <p>
@@ -549,7 +549,7 @@
 </p>
 
 <div class="equation">
-    $$\Delta t \sim \frac{1}{2} \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
+    $$\Delta t \sim \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
     \text{years}$$
 </div>
 
