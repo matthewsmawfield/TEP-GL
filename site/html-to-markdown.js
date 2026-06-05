@@ -256,7 +256,7 @@ class HTMLToMarkdownConverter {
                 .replace(/\s+/g, '-')
                 .replace(/[()]/g, '');
             
-            // Write to file with new naming format: 4-TEP-GL-v0.4-Tortola.md
+            // Write to file with new naming format: 4-TEP-GL-v0.6-Tortola.md
             const outputPath = path.join(__dirname, '..', `4-TEP-GL-${versionClean}.md`);
             fs.writeFileSync(outputPath, markdown, 'utf8');
             
