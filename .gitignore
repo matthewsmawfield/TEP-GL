@@ -57,3 +57,5 @@ results/**/*.hdf5
 *.code-workspace
 .windsurf/
 .windsurfrules
+
+.devin

@@ -6,7 +6,7 @@
 ![TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing](site/public/twitter-image.jpg)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.5 (Tortola)  
+**Version:** v0.6 (Tortola)  
 **Date:** First published: 19 December 2025 · Last updated: 29 April 2026  
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540)  
@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Standard gravitational lensing analysis relies on the *Isochrony Axiom*—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a *Temporal Shear* contribution—arising from gradients in the scalar field's continuous spatial profile (*Temporal Topology*, TEP v0.8)—that is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included. This phenomenon is defined here as *Phantom Mass*. GW170817 primarily constrains differential propagation and disformal cone tilt; it does not directly test common-mode conformal clock-rate structure along a shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. Because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. Screening operates via the continuous flattening of Temporal Topology in dense environments, suppressing local field gradients without invoking discrete thin-shell boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. The component conventionally attributed to dark matter may contain an unmodeled temporal-transport contribution. These results are derived in two regimes: a conservative Reference Envelope (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended Regime (year-scale delays, possible dark-sector reinterpretation) whose validity is determined by the Variability-Mass Correlation test in existing strong-lens catalogs. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. This is a conditional claim; the Reference Envelope result is the primary, unconditional contribution.
+Standard gravitational lensing analysis relies on the *Isochrony Axiom*—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a *Temporal Shear* contribution—arising from gradients in the scalar field's continuous spatial profile (*Temporal Topology*, TEP v0.9)—that is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included. This phenomenon is defined here as *Phantom Mass*. GW170817 primarily constrains differential propagation and disformal cone tilt; it does not directly test common-mode conformal clock-rate structure along a shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. Because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. Screening operates via the continuous flattening of Temporal Topology in dense environments, suppressing local field gradients without invoking discrete thin-shell boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. The component conventionally attributed to dark matter may contain an unmodeled temporal-transport contribution. These results are derived in two regimes: a conservative Reference Envelope (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended Regime (year-scale delays, possible dark-sector reinterpretation) whose validity is determined by the Variability-Mass Correlation test in existing strong-lens catalogs. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. This is a conditional claim; the Reference Envelope result is the primary, unconditional contribution.
 
 ## The TEP Research Program
 
@@ -42,13 +42,13 @@ When using this work, please cite the paper and theoretical framework listed bel
 
 ## Key Findings
 
-This paper identifies a nuanced aspect of multi-messenger constraints: GW170817 bounds differential propagation speeds (disformal sector) but does not directly test common-mode conformal clock-rate structure along the shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. If time flows at different rates across an extended source, the observed image becomes a "temporal composite" that projects temporal depth onto the spatial plane. This temporal shear—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP v0.8)—is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included, creating "phantom mass" that mimics dark matter. Screening operates via the continuous flattening of Temporal Topology in dense environments, suppressing local field gradients without invoking discrete thin-shell boundaries. Preliminary FRB observations show ms-scale achromatic residuals consistent with chronometric lensing predictions (4 FRBs tested, all consistent). Unlike dark matter models, TEP-GL predicts unique signatures: variability-dependent phantom mass and non-zero curl (image rotation) in the shear tensor.
+This paper identifies a nuanced aspect of multi-messenger constraints: GW170817 bounds differential propagation speeds (disformal sector) but does not directly test common-mode conformal clock-rate structure along the shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. If time flows at different rates across an extended source, the observed image becomes a "temporal composite" that projects temporal depth onto the spatial plane. This temporal shear—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP v0.9)—is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included, creating "phantom mass" that mimics dark matter. Screening operates via the continuous flattening of Temporal Topology in dense environments, suppressing local field gradients without invoking discrete thin-shell boundaries. Preliminary FRB observations show ms-scale achromatic residuals consistent with chronometric lensing predictions (4 FRBs tested, all consistent). Unlike dark matter models, TEP-GL predicts unique signatures: variability-dependent phantom mass and non-zero curl (image rotation) in the shear tensor.
 
 ---
 
 ## Core Hypothesis
 
-If the Isochrony Axiom is violated by differential time dilation (conformal metric coupling), extended images become temporal composites. This projects temporal depth onto the spatial plane, generating a Temporal Shear contribution—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP v0.8)—that is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included—a phenomenon defined here as Phantom Mass.
+If the Isochrony Axiom is violated by differential time dilation (conformal metric coupling), extended images become temporal composites. This projects temporal depth onto the spatial plane, generating a Temporal Shear contribution—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP v0.9)—that is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included—a phenomenon defined here as Phantom Mass.
 
 GW170817 primarily constrains differential propagation and disformal cone tilt; it does not directly test common-mode conformal clock-rate structure along a shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. Because photons and gravitational waves traverse the same null geodesics in the conformal limit, time dilation is common-mode and cancels in differential measurements. Conformal gradients can reproduce specific aspects of dark matter phenomenology—particularly coherent lensing shear and time-domain signatures—subject to continuous geometric screening constraints (Temporal Topology). The component conventionally attributed to dark matter may contain an unmodeled temporal-transport contribution.
 
@@ -92,10 +92,10 @@ This work builds on the Temporal Equivalence Principle (TEP), which proposes:
 -   **Gravity is Geometry; Time is a Dynamical Field.**
 -   The decomposition of proper time accumulation into "mass" and "time dilation" is **gauge-dependent**.
 -   **Sector Decoupling**: The Conformal Sector (clock rates) is unconstrained by GW170817, while the Disformal Sector (speed of transmission) is tightly bound.
--   **Temporal Shear Suppression**: The "Screening Cliff" objection is addressed through continuous geometric gradient suppression (TEP v0.8); the mechanism is shown to be over-efficient rather than fine-tuned.
+-   **Temporal Shear Suppression**: The "Screening Cliff" objection is addressed through continuous geometric gradient suppression (TEP v0.9); the mechanism is shown to be over-efficient rather than fine-tuned.
 
 **TEP Theory Reference:**
-> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.8 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
+> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.6 (Tortola))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
 
 ## File Structure
 
@@ -151,7 +151,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   journal={Zenodo},
   year={2025},
   doi={10.5281/zenodo.17982540},
-  note={Preprint v0.5 (Tortola)}
+  note={Preprint v0.6 (Tortola)}
 }
 ```
 
