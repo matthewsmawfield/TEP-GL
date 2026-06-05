@@ -871,7 +871,7 @@ $\mathcal{L}_\phi = -\frac{1}{2}(\partial \phi)^2 -
 T$
 
 where \(\Lambda\) is the strong coupling scale and \(T\) is the trace of the
-energy-momentum tensor. In high-density environments (Solar System), the
+energy-momentum tensor. In dense environments (Solar System), the
 non-linear term \(\frac{1}{\Lambda^3}(\partial \phi)^2 \square \phi\)
 dominates, suppressing the spatial gradients of \(\phi\)—the
 *Temporal Shear*—and restoring General Relativity to high precision.
