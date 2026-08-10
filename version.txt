@@ -1,10 +1,8 @@
-v0.6 (Tortola) — 05 June 2026 — Renamed conformal coupling notation from beta_conf to beta_A to avoid PPN collision
+v0.7 (Tortola) — 10 August 2026 — Canonical TEP architecture alignment, static-space cosmological synchronization, mathematical corrections, and Vainshtein/Galileon removal
 
-v0.5 (Tortola) - Major Manuscript Revision
-
-- Comprehensive revision of all manuscript sections with expanded theoretical framework
-- Updated GW170817 analysis with refined common-mode cancellation discussion
-- Added Reference Envelope and Extended Regime classification with Variability-Mass Correlation test
-- Updated abstract to TEP v0.8 reference with refined Phantom Mass definition
-- Expanded observational predictions with lensed FRB test targets
-- Synchronized all citation metadata files and publication date
+- Canonical architecture: all nongravitational matter couples universally to the causal matter metric; Axiom 2 and the TEP statement corrected so observables are clock-registered proper time plus phase/frequency/arrival-time transport along null paths.
+- Static-space cosmology: redshift reframed as a conformal clock map (a_m=1, A_clock=(1+z)^-1), not physical spatial expansion; H_0 is the observational clock/redshift rate.
+- Removed the illustrative Galileon/Vainshtein completion throughout; the canonical temporal-gradient suppression operator is now the sole foregrounded mechanism, with Galileon/Vainshtein listed only as candidate completions.
+- Mathematical and naming corrections: image and vector equations fixed; "Chronometric Reconstruction" and "Temporal-Composite Shear" terminology adopted; falsification thresholds and evidence statements (Einstein Cross, GW170817) made statistically and historically accurate.
+- Removed unsupported entries (lensed-FRB table, alpha_halo ~ 10^-1, a_0 ~ Lambda^2/M_Pl chain) and replaced with traceable, environment-dependent notation tied to results/.
+- Synchronized abstract, CITATION.cff, codemeta.json, manifest.json, and site/index.html meta tags with the corrected Extended-Regime test statement; added missing TEP-LENS and TEP-BH references.

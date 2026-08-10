@@ -1,7 +1,8 @@
 {
-  "version": "0.6",
+  "version": "0.7",
   "codename": "Tortola",
   "description": "Paper 4: Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations",
-  "date": "2026-06-05",
-  "previous_version": "0.5"
+  "date": "2026-08-10",
+  "previous_version": "0.6",
+  "paper": "4"
 }

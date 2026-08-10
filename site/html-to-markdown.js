@@ -97,11 +97,31 @@ class HTMLToMarkdownConverter {
         html = html.replace(/<(?!\/?[a-zA-Z!])/g, '&lt;');
 
         // Remove remaining HTML tags
+        // Preserve sub/sup tags before generic stripping
+        const subTags = [];
+        html = html.replace(/<sub>(.*?)<\/sub>/gi, (match, inner) => {
+            subTags.push(inner);
+            return `__SUB_${subTags.length - 1}__`;
+        });
+        const supTags = [];
+        html = html.replace(/<sup>(.*?)<\/sup>/gi, (match, inner) => {
+            supTags.push(inner);
+            return `__SUP_${supTags.length - 1}__`;
+        });
+
         html = html.replace(/<[^>]+>/g, '');
         
         // Restore MathJax expressions
         mathExpressions.forEach((expr, index) => {
             html = html.replace(`__MATH_EXPRESSION_${index}__`, expr);
+        });
+
+        // Restore sub/sup tags
+        subTags.forEach((inner, index) => {
+            html = html.replace(`__SUB_${index}__`, `<sub>${inner}</sub>`);
+        });
+        supTags.forEach((inner, index) => {
+            html = html.replace(`__SUP_${index}__`, `<sup>${inner}</sup>`);
         });
         
         // Decode HTML entities
@@ -184,7 +204,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.3 (Tortola)';
+            .trim() : 'v0.7 (Tortola)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>([\s\S]*?)<\/div>/i);
         let date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 19 December 2025';
@@ -256,7 +276,7 @@ class HTMLToMarkdownConverter {
                 .replace(/\s+/g, '-')
                 .replace(/[()]/g, '');
             
-            // Write to file with new naming format: 4-TEP-GL-v0.6-Tortola.md
+            // Write to file with new naming format: 4-TEP-GL-v0.7-Tortola.md
             const outputPath = path.join(__dirname, '..', `4-TEP-GL-${versionClean}.md`);
             fs.writeFileSync(outputPath, markdown, 'utf8');
             

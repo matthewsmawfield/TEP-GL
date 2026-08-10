@@ -1,4 +1,4 @@
-# robots.txt for TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing
+# robots.txt for TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 User-agent: *
 Allow: /
 

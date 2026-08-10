@@ -46,8 +46,10 @@
 </p>
 
 <div class="equation">
-    $$\frac{\Delta T}{T}\bigg|_{\text{TEP}} = \int \frac{\partial \ln
-    A(\phi)}{\partial t}\, dt$$
+ \begin{equation} \label{eq:gl_isw}
+    \frac{\Delta T}{T}\bigg|_{\text{TEP}} = \int \frac{\partial \ln
+    A(\phi)}{\partial t}\, dt
+ \end{equation}
 </div>
 
 <p>
@@ -71,19 +73,26 @@
 <div class="principle">
     <h4>Box 6.1: Order-of-Magnitude ISW Consistency Check</h4>
     <p>
-        The quasi-static condition is demonstrated to be satisfied for TEP's
-        required scalar field profile.
+        Conditional on the HC tracking closure in which \(\phi\) follows the
+        matter distribution adiabatically, the resulting order-of-magnitude
+        estimate satisfies the quasi-static ISW bound.
     </p>
 
     <p>
         <strong>Setup:</strong> The conformal factor is \(A(\phi) = 1 +
-        \alpha(\phi)\) with \(\alpha \sim 10^{-6}\) on halo scales. The ISW
-        constraint requires:
+        \alpha(\phi)\) with \(\alpha \sim 10^{-6}\) on halo scales. The following
+        estimate uses the conventional reference-background variables employed by
+        the HC linear-transfer representation (Paper 18). Here \(H_{\rm ref}(z)\)
+        is an observational/reference inverse-time scale and \(a_{\rm eff}=
+        A_{\rm clock}\); neither denotes physical expansion of the underlying
+        spatial geometry. The ISW constraint requires:
     </p>
     <div class="equation">
-        $$\left|\frac{\partial \ln A}{\partial t}\right| \approx
+ \begin{equation} \label{eq:gl_isw_constraint}
+        \left|\frac{\partial \ln A}{\partial t}\right| \approx
         \left|\frac{\dot{\alpha}}{1+\alpha}\right| \approx |\dot{\alpha}| \ll
-        H_0$$
+        H_0
+ \end{equation}
     </div>
 
     <p>
@@ -92,25 +101,32 @@
         \(\alpha\) evolves on the timescale of structure formation:
     </p>
     <div class="equation">
-        $$\dot{\alpha} \sim \alpha \cdot \frac{\dot{\rho}}{\rho} \sim \alpha
-        \cdot H(z) \cdot f(z)$$
+ \begin{equation} \label{eq:gl_alpha_dot}
+        \dot{\alpha} \sim \alpha \cdot \frac{\dot{\rho}}{\rho} \sim \alpha
+        \cdot H_{\rm ref}(z) \cdot f_{\rm ref}(z)
+ \end{equation}
     </div>
     <p>
-        where \(f(z) \equiv d\ln D/d\ln a \approx \Omega_m(z)^{0.55}\) is the
-        growth rate. At \(z \sim 0.5\) (peak ISW sensitivity), \(f \approx 0.8\)
-        and \(H(z) \approx 1.2 H_0\).
+        where \(f_{\rm ref}(z) \equiv d\ln D/d\ln a_{\rm eff} \approx
+        \Omega_m(z)^{0.55}\) is the growth rate and \(a_{\rm eff}=A_{\rm clock}\).
+        At \(z \sim 0.5\) (peak ISW sensitivity), \(f_{\rm ref} \approx 0.8\)
+        and \(H_{\rm ref}(z) \approx 1.2 H_0\).
     </p>
 
     <p><strong>Result:</strong></p>
     <div class="equation">
-        $$\frac{|\dot{\alpha}|}{H_0} \sim \alpha \cdot f \cdot \frac{H(z)}{H_0}
-        \sim 10^{-6} \times 0.8 \times 1.2 \approx 10^{-6}$$
+ \begin{equation} \label{eq:gl_isw_result}
+        \frac{|\dot{\alpha}|}{H_0} \sim \alpha \cdot f_{\rm ref} \cdot \frac{H_{\rm ref}(z)}{H_0}
+        \sim 10^{-6} \times 0.8 \times 1.2 \approx 10^{-6}
+ \end{equation}
     </div>
 
     <p>
         This is six orders of magnitude below the ISW
         constraint threshold (\(\lesssim 0.1\)). The quasi-static approximation
-        is therefore robustly satisfied for TEP's required coupling strengths.
+        is therefore satisfied under this tracking closure; the result should
+        not be interpreted as independent derivation of that closure within
+        TEP-GL.
     </p>
 
     <p>
@@ -129,31 +145,57 @@
     The CMB lensing convergence power spectrum \(C_\ell^{\kappa\kappa}\) is
     measured to high precision by <em>Planck</em> and ACT. In standard
     \(\Lambda\)CDM, this is sourced entirely by the integrated mass
-    distribution. In TEP, the lensing kernel receives contributions from both
-    the geometric (mass) term and the temporal (refractive) term:
+    distribution. Consistent with the optical-tidal decomposition of §3.1.4, the
+    physical angular remapping in TEP is carried by the baryonic term, the
+    scalar-backreaction correction to the Einstein-frame geometry, and any
+    permitted disformal contribution:
 </p>
 
 <div class="equation">
-    $$\kappa_{\text{TEP}} = \kappa_{\text{mass}} + \kappa_{\text{refraction}}$$
+ \begin{equation} \label{eq:gl_kappa_tep}
+    \kappa_{\text{TEP}}^{\rm phys}
+    = \kappa_{\text{baryon}}
+    + \delta\kappa_{g[\phi]}
+    + \delta\kappa_{B}
+ \end{equation}
 </div>
 
 <p>
-    For the CMB (a static, non-evolving source), the "Dynamic Shutter" term
-    vanishes identically—there is no source proper motion to couple to the delay
-    gradient. The only TEP contribution is the
-    <strong>static refractive term</strong>
-    \(\nabla^2(\Delta\tilde{\tau}_{\text{static}})\), which is coherent and
-    radially symmetric around mass concentrations.
+    The conformal sector may additionally enter the <em>inferred</em>
+    convergence through the chronometric reconstruction mapping,
+</p>
+
+<div class="equation">
+ \begin{equation} \label{eq:gl_kappa_inferred}
+    \kappa_{\text{TEP}}^{\rm inferred}
+    = \kappa_{\text{TEP}}^{\rm phys}
+    + \delta\kappa_{A,\,\rm recon},
+ \end{equation}
+</div>
+
+<p>
+    but it does not independently deflect the CMB rays, since conformal
+    transformations preserve null cones (Axiom 1).
 </p>
 
 <p>
-    <strong>Implication:</strong> CMB lensing in TEP is dominated by the same
-    static mechanism that produces "dark matter halos" in galaxy lensing. The
-    amplitude is controlled by the integrated \(\alpha(\phi)\) profile, not by
-    lens motion. This is consistent with the observed CMB lensing power spectrum
-    <em>provided</em> the static refractive term has the correct radial
-    profile—a constraint that effectively fixes the relationship between
-    \(\alpha(\phi)\) and the matter density \(\rho\).
+    For the CMB (a static, non-evolving source), the Temporal-Composite Shear
+    term vanishes identically—there is no source proper motion or intrinsic
+    variability on lensing timescales to couple to the delay gradient. Removing
+    that term does <em>not</em> make the CMB insensitive to TEP: it means CMB
+    lensing constrains the coherent scalar-metric perturbation sector rather than
+    source-evolution smearing.
+</p>
+
+<p>
+    <strong>Implication:</strong> CMB lensing therefore tests the coherent
+    scalar-metric sector, which is implemented in TEP-HC (Paper 18) through the
+    pure-conformal Bellini–Sawicki closure with active \(\delta\phi\) evolution.
+    TEP-GL imports that linear closure rather than treating CMB lensing as a
+    source-evolution effect. The amplitude is controlled by the integrated
+    scalar-backreaction profile, not by lens motion; consistency with the
+    observed spectrum constrains the relationship between \(\alpha(\phi)\) and
+    the matter density \(\rho\).
 </p>
 
 <h4>6.2.3 Parameter Space Constraints</h4>
@@ -174,92 +216,73 @@
     <tbody>
         <tr>
             <td>Solar System (Cassini)</td>
-            <td>\(\alpha_{\text{local}} \lesssim 10^{-5}\)</td>
-            <td>Satisfied via screening</td>
+            <td>\(\mathcal{S}_\Sigma(\mathcal{E}_\odot)\,|\Sigma| \ll |\Sigma|\)</td>
+            <td>Satisfied via environmental suppression</td>
         </tr>
         <tr>
             <td>Cluster Lensing</td>
-            <td>\(\alpha_{\text{halo}} \sim 10^{-1}\)</td>
-            <td>Required for DM phenomenology</td>
+            <td>\(\left|\int_{\gamma_{\rm halo}} \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu\right| \sim 10^{-7}\text{--}10^{-6}\)</td>
+            <td>Required for DM phenomenology; value set by solved transfer function</td>
         </tr>
         <tr>
             <td>ISW (<em>Planck</em>)</td>
             <td>\(\partial_t \ln A / H_0 \lesssim 0.1\)</td>
-            <td>Requires quasi-static \(\phi\)</td>
+            <td>Conditional on HC tracking closure</td>
         </tr>
         <tr>
             <td>CMB Lensing</td>
-            <td>\(\kappa_{\text{refraction}} \propto \kappa_{\text{mass}}\)</td>
-            <td>Requires \(\alpha \propto \Psi\) scaling</td>
+            <td>\(\delta\kappa_{g[\phi]} + \delta\kappa_B\) must satisfy the HC/CMB lensing spectrum constraint; \(\delta\kappa_{A,\rm recon}\) treated separately</td>
+            <td>Constrains the coherent scalar-metric closure and its relationship to the matter distribution</td>
         </tr>
     </tbody>
 </table>
 
 <p>
-    The requirement that \(\alpha(\phi) \propto \Psi\) (the scalar field tracks
-    the Newtonian potential) is a non-trivial constraint on the
-    TEP Lagrangian. It is satisfied in conformal coupling models where \(\phi\)
-    is sourced by the trace of the stress-energy tensor, but represents a
-    theoretical prior that must be verified against N-body simulations. This is
-    flagged as a key target for future numerical work.
+    The required closure is a relationship between the solved scalar-backreaction
+    profile and the matter distribution. It is not a claim that the pure
+    conformal factor independently deflects CMB rays. The closure is satisfied
+    in models where the scalar-backreaction profile is sourced by the matter
+    density, but represents a theoretical prior that must be verified against
+    N-body simulations. This is flagged as a key target for future numerical
+    work.
 </p>
 
 <div class="principle">
-    <h4>Box 6.3: Addressing the Hierarchy Problem via Temporal Topology</h4>
-    <p>
-        <strong>Critique:</strong> A common objection to Modified Gravity
-        theories is the "Screening Cliff"—the requirement that the scalar field
-        \(\phi\) must be order-unity on cluster scales to mimic dark matter, yet
-        suppressed to \(\lesssim 10^{-15}\) in the Solar System to satisfy
-        Cassini constraints. This implies a "fine-tuned" suppression of
-        \(10^{15}\).
-    </p>
+    <h4>Box 6.3: Cross-Scale Temporal-Gradient Constraint</h4>
 
     <p>
-        <strong>TEP Response:</strong> TEP does <em>not</em> require order-unity
-        couplings on cluster scales. The "Phantom Mass" effect is driven by the
-        <em>gradient</em> of the proper time field—the
-        <em>Temporal Shear</em>—which must match the Newtonian potential
-        gradient of the dark matter halo. Since \(\Phi_{\text{DM}}/c^2 \sim
-        10^{-5}\) for typical clusters, TEP only requires \(\alpha(\phi) \sim
-        10^{-5}\) on Mpc scales. The hierarchy is therefore:
+        A viable TEP realization must produce a strongly suppressed observable
+        Temporal Shear in local high-precision environments while retaining a
+        nonzero integrated temporal-gradient response across extended halo
+        paths:
     </p>
-    <ul>
-        <li>
-            Cluster Scale (Mpc): \(\alpha \sim 10^{-5}\) (Year-scale delays)
-        </li>
-        <li>
-            Solar System (AU): \(\alpha < 10^{-15}\) (Microsecond residuals)
-        </li>
-    </ul>
 
-    <p>
-        <strong>Mechanism:</strong> The required suppression factor is
-        \(10^{10}\). In the continuous geometric framework of Temporal Topology
-        (TEP v0.8), the scalar field gradient is suppressed smoothly as a
-        function of ambient density, without invoking discrete thin-shell
-        boundaries. The non-linear kinetic term in the Galileon Lagrangian
-        flattens the field profile continuously in deep potential wells; the
-        degree of suppression scales as \((r/r_V)^{3/2}\) interior to the
-        characteristic Vainshtein scale \(r_V\). For a galaxy with \(r_V \sim
-        100\) kpc, the suppression at Solar System scales (\(r \sim 10^{-11}\)
-        kpc) is:
-    </p>
     <div class="equation">
-        $$\text{Suppression} \approx \left(\frac{10^{-11}}{100}\right)^{1.5}
-        \approx (10^{-13})^{1.5} \approx 10^{-19.5}$$
+ \begin{equation}
+    \mathcal{S}_\Sigma(\mathcal{E}_\odot)\,|\Sigma|
+    \leq \Sigma_{\rm local}^{\rm max},
+ \end{equation}
+    </div>
+
+    <div class="equation">
+ \begin{equation}
+    \left|
+    \int_{\gamma_{\rm halo}}
+    \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu
+    \right|
+    \sim 10^{-7}\text{--}10^{-6}.
+ \end{equation}
     </div>
 
     <p>
-        <strong>Conclusion:</strong> The continuous suppression of Temporal Shear
-        within the Temporal Topology framework is not just sufficient; it is <em>over-efficient</em>.
-        The challenge in TEP is not hiding the scalar field in the Solar System,
-        but preventing the Temporal Shear from being suppressed too early in the
-        outskirts of galaxies. This "Magnitude Hierarchy" is a standard feature
-        of non-linear derivative couplings and is mathematically robust, albeit
-        counter-intuitive compared to linear shielding. The transition from
-        active to suppressed Temporal Shear is smooth and density-dependent, not
-        a step function at a discrete boundary.
+        These are constraints on one continuous environmental operator, not
+        independently adjusted couplings at different scales. The Solar-System
+        bound is satisfied when the environmental projection
+        \(\mathcal{S}_\Sigma(\mathcal{E}_\odot)\) suppresses the locally
+        observable Temporal Shear below precision-test thresholds. The halo
+        constraint is satisfied when the same operator, acting across an
+        extended path through lower-density environments, permits a cumulative
+        clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\).
     </p>
 </div>
 
@@ -312,37 +335,58 @@
 
 <p>
     The apparent contradiction—"how can gravity be modified enough to create
-    dark matter but unmodified enough to pass GW170817?"—is resolved. Gravity
-    may not be modified; time is. And time manifests as a differential
-    observable only when comparing divergent paths.
+    dark matter but unmodified enough to pass GW170817?"—is resolved. TEP
+    introduces the temporal field as the additional physical degree of freedom;
+    its conformal sector governs clock transport without bending null geodesics,
+    while its stress-energy and strong-field operators can backreact on the
+    Einstein-frame geometry (Bahrain, Paper 28). The differential-propagation
+    bound constrains the disformal sector, not the common-mode conformal clock
+    sector. Time manifests as a differential observable only when comparing
+    divergent paths.
 </p>
 
-<h3>6.5 Global Variation of Effective Light Speed</h3>
+<h3>6.5 Path-Dependent Distance/Proper-Time Ratio</h3>
 
 <p>
-    If TEP is correct, then \(c\) is locally invariant but globally variable.
-    This challenges the foundational assumption used to interpret all
-    astrophysical data.
+    If TEP is correct, then local \(c\) remains invariant, but the
+    <em>inferred ratio between spatial separation and matter-clock transfer
+    registered between endpoints</em>
+    along extended paths is path dependent. This challenges the foundational
+    assumption used to interpret all astrophysical data.
 </p>
 
 <ul>
     <li>
-        <strong>Standard Assumption:</strong> \(c\) is constant; therefore, any
-        anomaly in \(t\) must be due to extra path length (spatial curvature) or
-        extra mass (Shapiro delay). Conclusion: particulate <em>dark matter</em>
-        is inferred.
+        <strong>Standard Assumption:</strong> The universal clock rate is
+        constant; therefore, any anomaly in \(t\) must be due to extra path
+        length (spatial curvature) or extra mass (Shapiro delay). Conclusion:
+        particulate <em>dark matter</em> is inferred.
     </li>
     <li>
-        <strong>TEP Reality:</strong> \(t\) is modulated by the field
-        \(A(\phi)\); \(c\) is effectively variable along the path. The
-        anomaly in \(t\) is due to the scalar field gradient. Conclusion:
-        apparent <em>dark matter</em> is reconstructed temporal transport.
+        <strong>TEP Reality:</strong> The matter proper-time accumulation rate
+        \(d\tilde{\tau} = A(\phi) d\tau_g\) varies with location. The anomaly
+        in inferred travel time is due to the scalar field gradient modulating
+        clock rates along the path, not to a variation in local \(c\).
+        Conclusion: apparent <em>dark matter</em> is reconstructed temporal
+        transport.
     </li>
 </ul>
 
 <p>
     TEP removes the need for an invisible substance by correcting the assumption
-    about the constancy of the global speed of light.
+    that a single universal clock rate governs all paths, rather than by
+    asserting a variable speed of light.
+</p>
+
+<p>
+    This is the local multipath analogue of the cosmological TEP mapping:
+    conventional cosmology reconstructs observed redshift as spatial expansion,
+    whereas TEP attributes it to the evolution of the conformal proper-time map
+    on an underlying static spatial geometry (Athens, Paper 26; Thika, Paper 27).
+    In lensing, the corresponding reconstruction can project temporal transport
+    into inferred spatial mass. The two effects — dark matter and cosmic
+    expansion — are parallel temporal-to-spatial reconstruction artefacts in
+    TEP, not independent ad hoc mechanisms.
 </p>
 
 <h3>6.6 TEP as a Bridge Between Paradigms</h3>
@@ -356,69 +400,79 @@
         mechanism).
     </li>
     <li>
-        <strong>MOND:</strong> In the regime of low acceleration (large
-        gradients in \(\phi\)), TEP reproduces the scaling relations of Modified
-        Newtonian Dynamics without modifying Newton's laws, but by modifying the
-        clock metric.
+        <strong>MOND:</strong> In low-acceleration environments,
+        environmentally active Temporal Shear supplies a candidate common
+        origin for MOND-like scaling. This paper establishes the
+        acceleration-scale correspondence but does not independently derive
+        the complete MOND interpolation law.
     </li>
 </ul>
 <p>
-    Thus, TEP is not merely a competitor to these paradigms; it is a framework
-    that explains <em>why</em> CDM works on large scales (where static
-    assumptions hold) and <em>why</em> MOND works on galactic scales (where the
-    field gradients are dominant).
+    TEP provides a single temporal-gradient framework within which CDM-like
+    large-scale phenomenology and MOND-like low-acceleration behaviour may
+    emerge in different environmental projections.
 </p>
 
 <div class="principle">
-    <h4>Box 6.2: Derivation of the MOND Acceleration Scale from TEP</h4>
+    <h4>Box 6.2: Relation to Low-Acceleration Phenomenology</h4>
     <p>
-        The characteristic MOND acceleration \(a_0 \approx 1.2 \times 10^{-10}\)
-        m/s² emerges naturally from TEP parameters:
+        In TEP, MOND-like phenomenology is associated with the environmental
+        activation of observable Temporal Shear in low-acceleration, weakly
+        suppressed systems. The canonical screening operator
+        \(\mathcal{S}_\Sigma(\mathcal{E})\) becomes weak in low-gradient
+        galactic environments, allowing the observable Temporal Shear response
+        to become active. This supplies a candidate origin for MOND-like
+        phenomenology without modifying the local value of \(c\).
     </p>
 
     <p>
-        <strong>Setup:</strong> The TEP strong-coupling scale is \(\Lambda \sim
-        10^{-13}\) eV \(\sim H_0\) (the dark energy scale). The scalar field
-        gradient produces an effective "fifth force" that becomes significant
-        when the Newtonian acceleration falls below a threshold.
+        The empirical coincidence
     </p>
 
-    <p>
-        <strong>Derivation:</strong> The Vainshtein suppression factor scales as
-        \((r/r_V)^{3/2}\) inside the screening radius. The transition from
-        screened to unscreened behavior occurs when the scalar-mediated
-        acceleration equals the Newtonian acceleration:
-    </p>
     <div class="equation">
-        $$a_\phi \sim \frac{g}{M_{\text{Pl}}} \nabla\phi \sim a_N \quad \Rightarrow
-        \quad a_0 \sim \frac{\Lambda^2}{M_{\text{Pl}}} \sim \frac{(H_0
-        M_{\text{Pl}})^2}{M_{\text{Pl}}} \sim c H_0$$
+ \begin{equation} \label{eq:gl_acceleration}
+    a_T \sim c H_0
+ \end{equation}
     </div>
+
+    <p>
+        identifies the relevant observational acceleration scale, where \(H_0\)
+        is the conventional inverse-time scale encoded by the cosmological
+        clock map rather than physical spatial expansion. In TEP, \(H_0\) is
+        not identified with \(\dot a_m/a_m\), since \(a_m = 1\).
+    </p>
 
     <p><strong>Numerical Check:</strong></p>
     <div class="equation">
-        $$a_0 \sim c H_0 \approx (3 \times 10^8 \text{ m/s}) \times (2.2 \times
-        10^{-18} \text{ s}^{-1}) \approx 6.6 \times 10^{-10} \text{ m/s}^2$$
+ \begin{equation}
+    a_0 \sim c H_0 \approx (3 \times 10^8\ \text{m/s}) \times (2.2 \times
+    10^{-18}\ \text{s}^{-1}) \approx 6.6 \times 10^{-10}\ \text{m/s}^2
+ \end{equation}
     </div>
 
     <p>
-        This is within a factor of 5 of the empirical MOND value \(a_0 \approx
-        1.2 \times 10^{-10}\) m/s². The \(\mathcal{O}(1)\) discrepancy can be
-        absorbed into the coupling constant \(g\) or reflects the simplified
-        derivation. The key result is that TEP with \(\Lambda \sim H_0\)
-        <em>automatically</em> produces an acceleration scale of cosmological
-        magnitude—the same "cosmic coincidence" that MOND requires as an
-        unexplained input.
+        This lies within a factor of about five of the empirical MOND value
+        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². TEP attributes this
+        cross-scale relation to the same temporal-gradient structure
+        represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
+        statement is that TEP produces an acceleration scale of cosmological
+        magnitude, which suggests that TEP and MOND phenomenology may share a
+        common origin. This matches the level of claim established in TEP-UCD
+        (Paper 6); TEP-GL does not independently derive the numerical MOND
+        acceleration scale.
     </p>
 
     <p>
-        <strong>Physical Interpretation:</strong> MOND phenomenology emerges in
-        TEP because the scalar field's strong-coupling scale is set by the
-        Hubble parameter. Regions within galaxies with internal accelerations
-        \(a < a_0 \sim cH_0\) are in the unscreened regime where the scalar
-        field gradient dominates; regions with \(a > a_0\) are screened and
-        follow Newtonian dynamics. This provides a physical origin for the MOND
-        interpolating function.
+        <strong>Physical Interpretation:</strong> Low-acceleration
+        phenomenology arises in TEP because the environmental operator
+        \(\mathcal{S}_\Sigma(\mathcal{E})\) leaves the Temporal Shear response
+        active precisely in low-gradient regions. Regions with internal
+        accelerations \(a \lesssim cH_0\) are weakly screened and the temporal
+        gradient contributes; regions with \(a \gtrsim cH_0\) are strongly
+        screened and follow Newtonian dynamics. The low-gradient scalar
+        profile, its metric backreaction, and the reconstruction response must
+        be fitted jointly to galaxy and lensing data before the MOND
+        transition can be claimed as derived.
     </p>
 </div>
 
@@ -449,8 +503,8 @@
             </td>
             <td>
                 <strong>\(S_8\) Tension</strong><br /><small
-                    >Galaxy lensing (\(S_8 \approx 0.79\)) consistently lower
-                    than static CMB (\(S_8 \approx 0.83\)).</small
+                    >Survey-dependent: DES Y6 lower than CMB; KiDS-Legacy
+                    consistent with Planck.</small
                 >
             </td>
             <td>
@@ -477,7 +531,7 @@
         </tr>
         <tr>
             <td>
-                <strong>Temporal Shear</strong><br /><small
+                <strong>Temporal-Composite Shear</strong><br /><small
                     >(Dynamic Shutter)</small
                 >
             </td>
@@ -495,8 +549,10 @@
             <td><strong>Variability-Shear Correlation</strong></td>
             <td>
                 <strong>Einstein Cross Anomalies</strong><br /><small
-                    >Flux anomalies correlate with source variability phase
-                    (e.g., Eigenbrod et al. 2008).</small
+                    >Existing Einstein Cross monitoring provides archival data
+                    suitable for testing the predicted variability-phase
+                    correlation; no dedicated TEP correlation analysis has yet
+                    been performed (Eigenbrod et al. 2008).</small
                 >
             </td>
             <td>
@@ -516,19 +572,18 @@
 
 <p>
     The analysis suggests that
-    <em>dark-matter phenomenology may be reproducible without a new substance</em>,
-    if temporal-composite projection effects survive the proposed time-domain tests.
-    In TEP ontology, what exists is a temporal field with spatial gradients, and what has been
-    inferred as "dark matter" is the projection of those gradients onto
-    observations that assume temporal synchrony. To maintain the particle
-    interpretation, it is necessary to demonstrate that the universe is
-    synchronous to a precision that excludes TEP effects. TEP offers a geometric
-    identification of the phenomenology, explaining the universality of dark
-    matter profiles and the success of MOND on galactic scales through a single
-    parsimonious framework.
+    <em>dark-matter phenomenology may be reproducible without a new particulate dark component</em>,
+    if the combined coherent optical, chronometric and Temporal-Composite predictions survive the proposed tests.
+    In the TEP ontology, the underlying entity is a temporal field whose geometry and transport are
+    reconstructed as apparent spatial mass under the Isochrony Axiom. For particulate dark matter to
+    remain the complete explanation of the relevant anomalies, the distinctive TEP residuals must be
+    excluded at the required precision. The framework also provides a common setting in which CDM-like
+    and MOND-like phenomenology may emerge, while the quantitative MOND transition remains to be derived.
 </p>
 
 <p>
-    "Dark Time" is not merely an alternative label for dark matter; it is the
-    proposed geometric identity of the phenomenology.
+    "Dark Time" is not merely an alternative label for dark matter; within the
+    Extended Regime, it offers a geometric identification of the unmodeled
+    temporal-transport contribution that may be embedded within the
+    phenomenology conventionally attributed to dark matter.
 </p>

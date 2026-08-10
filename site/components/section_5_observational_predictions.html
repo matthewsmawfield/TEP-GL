@@ -5,56 +5,56 @@
 <h3>5.1 The "Jittering" of Lensed Transients</h3>
 
 <p><strong>Prediction:</strong> Strongly lensed fast transients (FRBs, GRBs) will exhibit achromatic <em>differential</em> arrival-time residuals between images that cannot be explained by geometric time delays (Refsdal 1964) or plasma dispersion.</p>
-<p>In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional proper-time delay \(\Delta \tilde{\tau}\). Because \(\phi\) fields in halos may have substructure (or "weather"), this delay varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly in the <em>relative</em> arrival times of the images. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this differential delay is <em>achromatic</em> (frequency-independent) but scales with distance (approximately \(\propto z^{1.5}\) due to structure growth). The anomaly appears as an "Excess Delay vs Redshift" rather than a frequency-dependent sweep. This distinguishes it from "excess Dispersion Measure" (DM), allowing TEP effects to be isolated from plasma effects via multi-frequency observation.</p>
+<p>In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional arrival-time/clock-transfer residual \(\Delta \tilde{\tau}\). Because \(\phi\) fields in halos may have substructure (or "weather"), this residual varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly in the <em>relative</em> arrival times of the images. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this differential delay is <em>achromatic</em> (frequency-independent). The residual is expected to depend on integrated path depth and intervening temporal-field structure, and may therefore correlate with observed redshift; in TEP, redshift here is an observational clock-distance label, not a measure of physical spatial expansion. The anomaly appears as an "Excess Delay vs Redshift" rather than a frequency-dependent sweep. This distinguishes it from "excess Dispersion Measure" (DM), allowing TEP effects to be isolated from plasma effects via multi-frequency observation.</p>
 
 <p><strong>Target Candidates:</strong> Recent literature has identified specific anomalies suitable for this test. The repeating source <em>FRB 20190520B</em> exhibits a "Dispersion Measure Excess" (\(\sim 900\) pc cm\(^{-3}\)) relative to its redshift (Koch Ocker et al. 2022), currently attributed to extreme host density. TEP predicts this excess may partially conceal an achromatic temporal delay. Additionally, <em>FRB 20190308C</em> (Chang et al. 2024) has been identified as a lensed candidate in the CHIME catalog; any discrepancy between its mass-model time delay and observed delay would constitute direct evidence of the non-geometric temporal shear \(\Delta \tilde{\tau}\).</p>
 
-<p><strong>Preliminary Consistency Check:</strong> A preliminary analysis of high-time-resolution residuals from recent catalogs (CHIME/FRB, FAST) shows consistency with TEP-GL predictions in the "Extended Regime". The following events exhibit millisecond-scale residuals matching the predicted temporal shear envelope:</p>
+<p><strong>Test Protocol.</strong> No securely multiply-imaged FRB with a published independent lens model is available at the time of writing, so no lensed-FRB residual is claimed here as evidence. The prediction is instead stated as an identifiable measurement, using the blind-prediction residual of Axiom 3 (Section 2.3):</p>
+
+\[
+R_{ij} = \Delta t_{ij}^{\rm obs} - \Delta t_{ij}^{\rm GR},
+\]
+
+<p>where \(\Delta t_{ij}^{\rm GR}\) must be frozen from an independent lens model before the timing comparison is performed. Each element below is required for the test to be diagnostic; a measurement missing any one of them cannot discriminate TEP from astrophysical delay structure.</p>
 
 <table class="data-table" style="margin: 15px 0; font-size: 0.9em;">
 <thead>
 <tr>
-    <th>FRB ID</th>
-    <th>Observed Residual (\(\Delta t_{obs}\))</th>
-    <th>TEP-GL Prediction</th>
-    <th>Status</th>
+    <th>Required element</th>
+    <th>Specification</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td><strong>FRB 20181117C</strong></td>
-    <td>32.9 ± 0.7 ms</td>
-    <td>~30–35 ms</td>
-    <td><span style="color:green">✓ Consistent</span></td>
+    <td><strong>Secure multiple imaging</strong></td>
+    <td>Consistent sub-arcsecond localization and repeated burst morphology across images</td>
 </tr>
 <tr>
-    <td><strong>FRB 20210912B</strong></td>
-    <td>49.5 ± 1.2 ms</td>
-    <td>~45–55 ms</td>
-    <td><span style="color:green">✓ Consistent</span></td>
+    <td><strong>Independent lens model</strong></td>
+    <td>Frozen, pre-registered prediction \(\Delta t_{ij}^{\rm GR}\) with propagated model uncertainty</td>
 </tr>
 <tr>
-    <td><strong>FRB 20200405A</strong></td>
-    <td>13.1 ± 0.4 ms</td>
-    <td>~10–15 ms</td>
-    <td><span style="color:green">✓ Consistent</span></td>
+    <td><strong>Observed delay</strong></td>
+    <td>\(\Delta t_{ij}^{\rm obs}\) at high time resolution, corrected for plasma dispersion</td>
 </tr>
 <tr>
-    <td><strong>FRB 20201124A</strong></td>
-    <td>1.2 ± 0.3 ms</td>
-    <td>~1–2 ms</td>
-    <td><span style="color:green">✓ Consistent</span></td>
+    <td><strong>Residual</strong></td>
+    <td>\(R_{ij}\), with plasma, microlensing, and host-scattering budgets subtracted (Section 2.3)</td>
+</tr>
+<tr>
+    <td><strong>Discriminator</strong></td>
+    <td>Achromatic residual with non-zero ensemble mean, correlated with path environment</td>
 </tr>
 </tbody>
 </table>
 
-<p style="font-size: 0.9em; color: #666;"><em>Table 5.1: Comparison of observed arrival-time residuals (after correcting for geometric and plasma delays) against TEP-GL temporal shear predictions. The consistency suggests these anomalies may be systematic metric effects rather than random astrophysical noise.</em></p>
+<p style="font-size: 0.9em; color: #666;"><em>Table 5.1: Required elements of a diagnostic lensed-FRB timing test. The achromaticity requirement separates a temporal-transport residual from plasma dispersion (\(\propto \nu^{-2}\)); the non-zero ensemble mean separates it from microlensing, which averages to zero with RMS scaling as \(1/\sqrt{N}\).</em></p>
 
 <h3>5.2 The Variability Scatter Relation</h3>
 
 <p><strong>Prediction:</strong> The <em>dispersion</em> (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.</p>
 
-<p>As derived in Section 3, the coherent "dark matter" halo arises from the static refractive index. However, the secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical.</p>
+<p>As derived in Section 3, the coherent "dark matter" halo signal combines scalar-backreacted optical geometry and any bounded disformal response with the conformal clock-transfer reconstruction. The Dynamic Shutter supplies the additional source-dependent component. The secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical.</p>
 
 <div class="principle">
 <h4>Box 5.2: The Einstein Cross Test (Existing Data)</h4>
@@ -77,29 +77,29 @@
 
 <h3>5.3 The CMB-Galaxy Lensing Tension</h3>
 
-<p><strong>Prediction (Extended Regime):</strong> Lensing inferred from the Cosmic Microwave Background (CMB) should differ systematically from lensing inferred from galaxy shear.</p>
-<p>While the CMB is effectively a static backlight (zero intrinsic evolution), galaxy sources are dynamic population. Under TEP, the stochastic component of the refractive index (driven by source proper motion, see Section 5.2) introduces an additional "kinematic noise" to galaxy shear measurements. Because the CMB is static, it is immune to this effect. Consequently, TEP predicts that precision cosmology inferred from galaxy weak lensing will suffer from unmodeled systematic noise bias compared to CMB lensing, potentially explaining the observed tension in the clustering amplitude (\(S_8\)).</p>
+<p><strong>Prediction (Extended Regime):</strong> TEP-GL predicts that galaxy weak-lensing measurements can contain a source-dependent covariance contribution absent from CMB lensing, even when their mean inferred amplitudes are statistically consistent.</p>
+<p>While the CMB is effectively a static backlight (zero intrinsic evolution), galaxy sources are dynamic population. Under TEP, the stochastic component of the clock-transfer signal (driven by source proper motion, see Section 5.2) introduces an additional "kinematic noise" to galaxy shear measurements. Because the CMB is static, it is immune to this effect. Consequently, TEP predicts that precision cosmology inferred from galaxy weak lensing carries an unmodeled source-dependent covariance term absent from CMB lensing, which is a candidate contributor to the observed tension in the clustering amplitude (\(S_8\)).</p>
 
 <div class="principle">
-<h4>Box 5.3: \(S_8\) Tension as Noise Bias</h4>
-<p><strong>Observed Tension:</strong> Current measurements show a 2–3σ discrepancy between CMB-derived and galaxy weak-lensing-derived values of \(S_8 \equiv \sigma_8 \sqrt{\Omega_m/0.3}\):</p>
+<h4>Box 5.3: Source-Class-Dependent Shear Covariance</h4>
+<p><strong>Observed Situation:</strong> Current weak-lensing results are survey-dependent: DES Y6 continues to favour a lower \(S_8\) than the combined CMB determination, whereas KiDS-Legacy is statistically consistent with Planck. TEP-GL therefore does not identify a universal mean \(S_8\) offset as its prediction; its distinctive prediction is an additional source-dependent covariance that should track source temporal structure and survey selection.</p>
 <ul>
     <li><em>Planck</em> CMB (2018): \(S_8 = 0.834 \pm 0.016\)</li>
-    <li>DES Y3 + KiDS-1000 (2021): \(S_8 = 0.790 \pm 0.014\)</li>
-    <li>Discrepancy: \(\Delta S_8 / S_8 \approx 5\%\) (Galaxy < CMB)</li>
+    <li>DES Y6 (2025): \(S_8 = 0.789 \pm 0.012\), \(\sim 2.6\sigma\) from combined Planck+ACT+SPT</li>
+    <li>KiDS-Legacy (2025): \(S_8 = 0.815^{+0.016}_{-0.021}\), \(0.73\sigma\) from Planck</li>
 </ul>
 
 <p><strong>TEP Interpretation:</strong> Previous iterations of TEP considered secular source evolution as a driver for coherent shear offsets, but the magnitude (\(\sim 10^{-6}\)) is too small to explain the 5% tension. Instead, the tension is interpreted as a Systematic Noise Bias arising from Stochastic Shear (Box 5.2).</p>
 
-<p><strong>Mechanism:</strong> Standard maximum-likelihood estimators weight data by the inverse covariance (\(C^{-1}\)). If the covariance matrix excludes the source-dependent kinematic noise term (\(\sigma^2_{\mu}\)), high-variance regions (cluster outskirts) will be statistically misinterpreted as low-signal regions, effectively down-weighting the most massive structures and suppressing the inferred \(S_8\). Standard analyses assume shear noise is dominated only by random galaxy orientations ("shape noise"), missing this kinematic component.</p>
+<p><strong>Mechanism:</strong> Standard maximum-likelihood estimators weight data by the inverse covariance (\(C^{-1}\)). Standard analyses assume shear noise is dominated by random galaxy orientations ("shape noise"). If the covariance matrix omits a source-dependent kinematic term (\(\sigma^2_{\mu}\)), the relative weighting of high-variance regions such as cluster outskirts is misspecified, and the recovered clustering amplitude is biased.</p>
 <ul>
     <li><strong>Source-Dependent:</strong> Correlated with galaxy type and redshift (via proper motion).</li>
     <li><strong>Unmodeled:</strong> Not present in standard covariance matrices.</li>
 </ul>
 
-<p><strong>Result:</strong> Unmodeled excess variance in the likelihood analysis acts as a source of systematic bias. If the stochastic noise is treated as signal or dilutes the inference, it can suppress the recovered clustering amplitude \(S_8\) in galaxy surveys. The CMB, being static, is free from this kinematic noise bias and recovers the higher (true) value.</p>
-    
-<p><strong>Prediction:</strong> The \(S_8\) tension is not a breakdown of \(\Lambda\)CDM growth, but a signature of the TEP "noise floor". The tension should decrease if shear likelihoods are weighted by source kinematic priors.</p>
+<p><strong>Result:</strong> Unmodeled excess variance in the likelihood analysis acts as a potential source of systematic bias. However, a zero-mean covariance term does not by itself determine the sign of the inferred \(S_8\) shift; establishing the direction requires an explicit estimator-level calculation for each survey pipeline, which is not carried out here. The CMB, being static, carries no such kinematic covariance term.</p>
+
+<p><strong>Prediction:</strong> The falsifiable TEP-GL prediction is not a specific \(S_8\) shift but the existence of an additional source-dependent shear covariance: after standard shape-noise controls, residual shear covariance should vary with source variability, proper motion, or temporal structure. The cosmological mean-growth prediction belongs to the TEP-HC (Paper 18) perturbation closure; the GL-specific discriminator is this source-class dependence. Whether it contributes to the observed \(S_8\) tension, and in which direction, depends on the survey estimator.</p>
 </div>
 
 <h3>5.4 Comparison of Predictions: TEP-GL vs. Particle Dark Matter</h3>
@@ -117,28 +117,28 @@
 <tbody>
 <tr>
     <td><strong>Lensed FRB timing</strong></td>
-    <td>Achromatic, GR time delays only</td>
+    <td>GR lens delays from baryons, particle dark matter and substructure; no TEP-specific residual correlated with temporal-field environment after lens-model controls</td>
     <td>Achromatic <em>residual</em> anomaly (ms-scale)</td>
 </tr>
 <tr>
     <td><strong>Source-dependent Shear</strong></td>
-    <td>None (shear noise is constant)</td>
+    <td>No TEP-specific source-temporal correlation after intrinsic-alignment, selection and measurement-systematic controls</td>
     <td><strong>Excess Scatter</strong> (noise scales with \(\mu_s\))</td>
 </tr>
 <tr>
     <td><strong>Source variability–lens mass correlation</strong></td>
     <td>None (mass is source-independent)</td>
-    <td><strong>~20% higher inferred mass</strong> for AGN-backlit vs. galaxy-backlit lenses at same redshift</td>
+    <td>Source-class-dependent reconstruction residual correlated with source temporal structure; amplitude determined by \(\kappa_{\rm lens}\) and the environmental transfer function</td>
 </tr>
 <tr>
     <td><strong>CMB lensing</strong></td>
     <td>Standard convergence</td>
-    <td>Identical (CMB is static; no temporal smearing)</td>
+    <td>Coherent scalar-metric lensing remains active; only the source-dependent Temporal-Composite term vanishes</td>
 </tr>
 <tr>
     <td><strong>Galaxy weak lensing</strong></td>
-    <td>Identical to CMB lensing</td>
-    <td>Systematic offset from CMB (source-dependent)</td>
+    <td>Coherent component as CMB; plus source-dependent Temporal-Composite term</td>
+    <td>Additional source-class-dependent covariance absent from the CMB Temporal-Composite channel; TEP-GL does not independently fix the sign of the mean shift</td>
 </tr>
 <tr>
     <td><strong>Chromatic dependence</strong></td>
@@ -147,13 +147,13 @@
 </tr>
 <tr>
     <td><strong>Direct detection experiments</strong></td>
-    <td>Expected signal (WIMP recoil)</td>
-    <td>No signal (no particle to detect)</td>
+    <td>Expected signal (WIMP recoil accounting for lensing/rotation/CMB)</td>
+    <td>No signal required; TEP interprets dark sector as Phantom Mass from temporal-transport geometry, not particulate substance</td>
 </tr>
 </tbody>
 </table>
 
-<p>The critical discriminant is the <em>source-dependence</em> of the inferred dark component. Particle dark matter lenses all sources identically; TEP-GL predicts that the apparent "dark" signal depends on the variability timescale of the background source.</p>
+<p>A distinctive TEP-GL discriminator is the additional source-dependent component of the inferred lensing signal. The coherent scalar-metric contribution is source-independent, while the Temporal-Composite contribution is predicted to correlate with source variability, proper motion, or temporal structure.</p>
 
 <h3>5.5 Falsification Criteria</h3>
 
@@ -164,14 +164,14 @@
     
     <li><strong>Universal Shear Scatter:</strong> If the intrinsic scatter of weak-lensing shear measurements is identical across all source kinematic classes (after correcting for measurement noise), the stochastic temporal shear mechanism is excluded.</li>
 
-    <li><strong>CMB-Galaxy Agreement:</strong> If future surveys (e.g., CMB-S4, Rubin/LSST) demonstrate that CMB lensing and galaxy weak-lensing mass inferences agree to better than 1% after controlling for all modeling systematics, the Extended Regime parameter space is excluded.</li>
+    <li><strong>CMB-Galaxy Agreement:</strong> CMB–galaxy agreement below 1%, after source and survey controls, excludes a Temporal-Composite contribution above that level. It does not exclude the coherent scalar-metric component of the Extended Regime.</li>
     
     <li><strong>Chromatic Anomaly:</strong> If any timing or morphological anomaly shows wavelength dependence after correction for plasma dispersion and dust, the achromatic prediction of two-metric coupling is falsified. This would indicate conventional astrophysical systematics rather than metric effects.</li>
     
-    <li><strong>Direct Detection:</strong> A confirmed detection of dark matter particles in direct-detection experiments would falsify the strong TEP claim that the dark sector is wholly non-particulate. TEP would then survive only as a possible temporal-transport correction, not as the primary replacement explanation.</li>
+    <li><strong>Direct Detection:</strong> A confirmed detection of dark matter particles that quantitatively accounts for the relevant lensing, rotation-curve, and CMB phenomenology would falsify the strong TEP dark-sector ontology. Detection of an exotic particle that does not account for these observations would not by itself falsify TEP; the particle would be an additional component, and TEP would then be tested by whether temporal-transport geometry still predicts residuals unaccounted for by the particle model.</li>
 </ol>
 
-<p>The framework stands or falls on empirical grounds. It does not claim immunity from observation; the claim is that the observations required to test TEP have not yet been performed with sufficient precision.</p>
+<p>Joint satisfaction of these null thresholds excludes the distinctive chronometric and Temporal-Composite predictions at the amplitudes specified here. The coherent scalar-backreaction sector is separately tested by CMB and galaxy lensing consistency against its frozen HC/GL prediction. The framework does not claim immunity from observation; the claim is that the observations required to test TEP have not yet been performed with sufficient precision.</p>
 
 <div class="principle">
 <h4>Box 5.1: Quantitative Falsification Thresholds</h4>
@@ -186,7 +186,7 @@
     <td><strong>Lensed FRB Timing</strong></td>
     <td>≥10 lensed FRBs</td>
     <td>&lt;0.1 ms timing</td>
-    <td>All residuals &lt;0.01 ms</td>
+    <td>95% upper bound on ensemble achromatic residual amplitude below 0.1 ms</td>
     <td>Reference Envelope</td>
 </tr>
 <tr>
@@ -194,26 +194,26 @@
     <td>≥1000 lenses per class</td>
     <td>&lt;0.5% shear scatter</td>
     <td>No correlation at &gt;3σ</td>
-    <td>Extended Regime (dynamic term)</td>
+    <td>Temporal-Composite dynamic channel</td>
 </tr>
 <tr>
     <td><strong>CMB-Galaxy \(S_8\) Tension</strong></td>
     <td>CMB-S4 + LSST</td>
     <td>&lt;1% \(S_8\) agreement</td>
     <td>Statistically consistent agreement (&lt; 1\(\sigma\))</td>
-    <td>Extended Regime (static term)</td>
+    <td>Temporal-Composite contribution above 1%</td>
 </tr>
 <tr>
     <td><strong>Variability-Mass Correlation</strong></td>
     <td>≥100 lenses with varied sources</td>
     <td>10% mass precision</td>
     <td>No correlation at &gt;3σ</td>
-    <td>Extended Regime</td>
+    <td>Source-dependent reconstruction channel</td>
 </tr>
 </tbody>
 </table>
 
-<p><strong>Complete Falsification:</strong> If <em>all four</em> null-result thresholds are met simultaneously—(1) no FRB timing residuals, (2) no shear-variability correlation, (3) CMB-galaxy agreement &lt;1%, and (4) no variability-mass correlation—then TEP-GL is falsified as a framework, not merely in one regime. The theory makes no predictions distinguishable from standard CDM under these conditions.</p>
+<p><strong>Joint Channel Exclusion:</strong> If all four null-result thresholds are met simultaneously, the distinctive chronometric and Temporal-Composite predictions of TEP-GL are excluded at the amplitudes specified here. The coherent scalar-backreaction sector remains independently testable through its frozen HC/GL prediction for CMB and galaxy lensing. TEP-GL as a complete lensing realization is excluded only if both the time-domain/source-dependent channels and the independently specified coherent optical prediction are ruled out.</p>
 
 <p><strong>Timeline:</strong> Tests (1) and (4) are achievable within 5–10 years (CHIME, DSA-2000, Rubin/LSST). Tests (2) and (3) require next-generation surveys (CMB-S4, Euclid) with ~10-year horizons. A definitive verdict on TEP-GL is therefore expected by ~2035.</p>
 </div>
