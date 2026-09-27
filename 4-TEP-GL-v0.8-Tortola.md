@@ -801,7 +801,9 @@ therefore the coherent static temporal-field sector: physical optical
 shear/convergence arises from scalar backreaction and any permitted
 disformal response, while the conformal sector supplies the associated
 chronometric reconstruction. The temporal smearing (Mechanism B) becomes
-the dominant signal only for fast transients (FRBs).
+the dominant propagating temporal-composite signal only for fast transients
+(FRBs); for slowly evolving sources its observable content is the
+shear-variance residual above the standard delay-map baseline (§3.4).
 
 #### Why This Creates "Phantom Mass"
 
@@ -959,7 +961,7 @@ The Jacobian decomposition reveals two physically distinct contributions to imag
 | **Geometric** | \(\Psi_{,ij}\) | Spatial curvature from mass | Standard convergence \(\kappa\) and shear \(\gamma\) |
 | **Scalar backreaction** | \(g_{\mu\nu}[\phi]\) | Scalar field modifying Einstein-frame curvature | Coherent tangential shear mimicking DM halo |
 | **Disformal** | \(B(\phi)\nabla_\mu\phi\nabla_\nu\phi\) | Null-cone tilt along field gradient | Direction-dependent deflection |
-| **Temporal Composite** | \(\mu_s^{\,i}\,\partial_j \Delta T_{\rm eff}\) | Source motion × emission-time-map gradient | Stochastic shear noise correlated with kinematics |
+| **Temporal Composite** | \(\mu_s^{\,i}\,\partial_j \Delta T_{\rm eff}\) | Source motion × emission-time-map gradient | Kinematics-correlated shear variance; the residual above the standard delay-map baseline is the TEP-specific content |
 
 The scalar-backreaction and disformal terms produce coherent contributions to the shear field. The temporal composite term arises when the source position evolves during the differential emission-time contrast \(\Delta T_{\rm eff}\) across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
 
@@ -985,7 +987,7 @@ The full amplification matrix in TEP is:
 \mathcal{A}_{ij} = \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic Lensing}} + \underbrace{\mathcal{A}^{(g[\phi],\text{static})}_{ij}}_{\text{"Dark Matter" (Coherent)}} + \underbrace{\mathcal{A}^{(\text{dyn})}_{ij}}_{\text{Temporal Composite (Stochastic)}}
 \end{equation}
 
-Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of Phantom Mass — a geometric effect of scalar backreaction on the Einstein-frame metric and disformal null-cone tilt, not particulate matter. The third term provides the unique observational discriminator: excess shear dispersion correlated with source kinematics. The conformal factor \(A(\phi)\) acts on timelike observables and clock calibration but generates neither null-trajectory bending nor any inter-image arrival-time residual — the latter is exactly zero in the static conformal sector (Paper 19, step_56).
+Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of Phantom Mass — a geometric effect of scalar backreaction on the Einstein-frame metric and disformal null-cone tilt, not particulate matter. The third term supplies the source-dependent discriminating channel: shear variance correlated with source kinematics. The correlation's existence is not itself distinctive, since any emission-time map sources the same \(\mu_s\,\partial_j\Delta T\) structure — under particle dark matter and GR a moving source's effective source-plane position is \(\beta-\vec{\mu}_s\Delta T\), and the ordinary Fermat surface alone produces \(\gamma^{\rm std}=\mu_s\,\partial_\theta\Delta T_{\rm Fermat}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) at galaxy–galaxy scales; step_01). The discriminating observable is the residual over that computable baseline: on the propagating carrier it is the disformal emission-time deformation, bounded at \(\gamma^{\rm TC}_{\rm prop}\sim10^{-15}\) — seven orders below the standard baseline and tested directly by the timing residuals of §5.1 — while the chronometric-envelope contribution is reconstruction-space and is bound-set rather than measured by the scatter test of §3.4. The conformal factor \(A(\phi)\) acts on timelike observables and clock calibration but generates neither null-trajectory bending nor any inter-image arrival-time residual — the latter is exactly zero in the static conformal sector (Paper 19, step_56).
 
 **Principle:**
 
@@ -1011,7 +1013,7 @@ For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale 
 
 - **Mechanism A (Clock-Transfer Reconstruction):** The static gradient \(\nabla(\Delta \tilde{\tau}_{\rm env})\) defines the unmodeled clock-transfer field along existing lens paths. When a GR lens model is required to reproduce a path-dependent timing map while assuming isochrony, such a residual would be absorbed into inferred convergence, mass-sheet normalization, or distance calibration — the reconstruction-space "Phantom Mass" signature. It does not refract null geodesics onto new trajectories and does not shift propagated arrival times; the conformal sector preserves null cones. The corresponding physical optical-tidal contribution is carried by the scalar-backreaction and disformal channels of §3.1.4.
 
-- **Mechanism B (Stochastic):** The dynamic shutter effect \(\vec{\mu}_s \cdot \nabla \tau\) is small for galaxies on year-timescales, but dominant for millisecond transients (FRBs).
+- **Mechanism B (Stochastic):** The dynamic shutter term \(\vec{\mu}_s \cdot \nabla(\Delta T_{\rm eff})\) couples source proper motion to whichever emission-time map propagates. On the propagating carrier it is the millisecond-to-second disformal contribution, which dominates the differential delay budget for fast transients (the lensed-FRB channel of §5.1); for slowly evolving galaxy sources its observable content is the shear-variance residual above the standard-map baseline, bounded per Box 3.2.
 
 **Profile Dependence Check:** The ~3 year estimate uses a logarithmic profile for simplicity. Realistic dark matter halos follow the NFW profile:
 
@@ -1102,7 +1104,7 @@ Since the dynamic term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) is randomly 
 
 **The Variability Scatter:** The inferred "shear noise" (RMS dispersion of ellipticities) should be higher for source populations with high proper motion or intrinsic variability. While the coherent "dark matter" signal is static, the *scatter* around that signal is dynamic. The amplitude is set by the bookkeeping of Box 3.2: \(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the chronometric envelope and \(\sim10^{-15}\) on the propagating carrier, so the scatter excess contributes a variance \(\gamma_{\rm TC}^{2}\) that is orders of magnitude below shape noise on either branch. The observable content of the test is therefore a bound on the chronometric envelope — a non-detection at a stated scatter precision caps \(\nabla(\Delta\tilde{\tau})\) at that level — while the propagating channel is tested directly by timing residuals (§5.1).
 
-This distinguishes TEP from particle dark matter, where the shear dispersion is dominated solely by intrinsic shape noise and measurement error, independent of source kinematics.
+The discriminating quantity is not the correlation's existence — the ordinary delay map produces kinematics-correlated dispersion at the standard level \(\gamma^{\rm std}=\mu_s\,\partial_j\Delta T_{\rm Fermat}\) under particle dark matter as well (step_01: \(\sim3\times10^{-8}\) strong-lens, \(\sim6\times10^{-10}\) galaxy–galaxy) — but the residual above that baseline. Particle dark matter predicts equality with the standard-map value at every source class; a statistically significant excess bounds, and at sufficient precision reveals, a non-standard emission-time field. At achievable shear precisions the reach is the envelope-scale field and its reconstruction-space bound; the propagating disformal carrier sits ~7 orders below the baseline and is accessed by the timing channel of §5.1 rather than by shear.
 
 ## 4. Reanalysis of GW170817: What is Actually Constrained?
 
@@ -1382,7 +1384,7 @@ where \(\Delta t_{ij}^{\rm GR}\) must be frozen from an independent lens model b
 
 **Prediction:** The *dispersion* (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.
 
-As derived in Section 3, the coherent "dark matter" halo signal combines scalar-backreacted optical geometry and any bounded disformal response with the conformal clock-transfer reconstruction. The Dynamic Shutter supplies the additional source-dependent component. The secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical. The predicted excess is bounded by the ledger of Box 3.2 (\(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the chronometric envelope, \(\sim10^{-15}\) on the propagating carrier), so the test operates as a precision bound on the envelope amplitude at whatever scatter precision is achieved (Box 5.1).
+As derived in Section 3, the coherent "dark matter" halo signal combines scalar-backreacted optical geometry and any bounded disformal response with the conformal clock-transfer reconstruction. The Dynamic Shutter supplies the additional source-dependent component. The secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical — an excess over the standard-map baseline, which already predicts the same ordering. The predicted excess is bounded by the ledger of Box 3.2 (\(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the chronometric envelope, \(\sim10^{-15}\) on the propagating carrier), so the test operates as a precision bound on the envelope amplitude at whatever scatter precision is achieved (Box 5.1). Because the ordinary Fermat surface generates the same correlation at \(\gamma^{\rm std}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) galaxy–galaxy; step_01), the discriminating content is the dispersion residual over that standard-map baseline, not the correlation's existence.
 
 **Principle:**
 
@@ -1452,7 +1454,7 @@ The following table summarizes the distinguishing predictions of the two framewo
 | **Chromatic dependence** | None | None (both achromatic) |
 | **Direct detection experiments** | Expected signal (WIMP recoil accounting for lensing/rotation/CMB) | No signal required; TEP interprets dark sector as Phantom Mass from temporal-transport geometry, not particulate substance |
 
-A distinctive TEP-GL discriminator is the additional source-dependent component of the inferred lensing signal. The coherent scalar-metric contribution is source-independent, while the Temporal-Composite contribution is predicted to correlate with source variability, proper motion, or temporal structure.
+A distinctive TEP-GL discriminator is the additional source-dependent component of the inferred lensing signal above the standard delay-map baseline. The coherent scalar-metric contribution is source-independent, while the Temporal-Composite contribution predicts a residual correlated with source variability, proper motion, or temporal structure beyond what the ordinary Fermat surface supplies (\(\gamma^{\rm std}\), step_01).
 
 ### 5.5 Falsification Criteria
 
@@ -1460,7 +1462,7 @@ TEP-GL is a falsifiable hypothesis. The following observations would exclude spe
 
 - **Reference Envelope Exclusion:** If precision timing of strongly lensed FRBs yields achromatic residuals consistent with zero to better than 0.1 ms across diverse lens environments, the Reference Envelope parameter space is excluded.
 
-- **Universal Shear Scatter:** If the intrinsic scatter of weak-lensing shear measurements is identical across all source kinematic classes (after correcting for measurement noise), the stochastic temporal shear mechanism is excluded.
+- **Universal Shear Scatter:** If the intrinsic scatter of weak-lensing shear measurements, after correcting for measurement noise, equals the standard delay-map prediction \(\gamma^{\rm std}=\mu_s\,\partial_j\Delta T_{\rm Fermat}\) across all source kinematic classes — i.e., no residual above the baseline — the stochastic temporal shear mechanism is excluded at that precision.
 
 - **CMB-Galaxy Agreement:** CMB–galaxy agreement below 1%, after source and survey controls, excludes a Temporal-Composite contribution above that level. It does not exclude the coherent scalar-metric component of the Extended Regime.
 
@@ -2302,7 +2304,9 @@ TEP-GL/
 
 The amplitude bookkeeping quoted in Boxes 3.2, 3.3 and 5.1–5.3 — the
 source proper motion, the chronometric-envelope and propagating-carrier
-Temporal-Composite amplitudes, the delay-field amplitude probed by
+Temporal-Composite amplitudes, the standard delay-map baseline
+\(\gamma^{\rm std}=\mu_s\,\partial_\theta\Delta T_{\rm Fermat}\) of
+§3.4/§5.2, the delay-field amplitude probed by
 each falsification threshold, and the exact-one-form cancellation audit
 of §3.1.3 (the endpoint-determination of the shear integral on two
 multipath rays of the Box-3.1 toy halo) — is reproduced by

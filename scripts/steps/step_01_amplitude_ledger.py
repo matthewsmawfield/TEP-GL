@@ -106,6 +106,23 @@ grad_bound_yr_per_arcsec = gamma_scatter_spec / mu_s_arcsec_per_yr
 # residuals larger than ~10% of the Fermat delay would already violate
 # successful lens modeling -> dT <= ~10 d for 100 d delays.
 
+# --- standard-physics baseline for the kinematics correlation -----------------
+# The Temporal-Composite Jacobian dA^TC = -mu_s . grad(Delta T_eff) is sourced
+# by ANY emission-time map, including the ordinary GR Fermat/Shapiro surface:
+# a moving source's effective source-plane position is beta - mu_s DeltaT under
+# standard physics as well. The kinematics-correlated shear-variance signature
+# is therefore shared with particle-DM + GR at the standard-map level; the
+# TEP-discriminating content is the residual above this computable baseline.
+# Fiducial gradient: a ~100 d inter-image delay across a ~2 arcsec quad
+# separation -> ~0.14 yr/arcsec. For galaxy-galaxy lensing (day-scale delay
+# gradients over ~arcsec) the baseline is ~1e-3 yr/arcsec.
+dtheta_quad_arcsec = 2.0
+grad_fermat_yr_per_arcsec = (dt_fermat_d / 365.25) / dtheta_quad_arcsec
+gamma_std_strong = mu_s_arcsec_per_yr * grad_fermat_yr_per_arcsec
+dtheta_weak_arcsec = 1.0
+dt_weak_d = 1.0
+gamma_std_weak = mu_s_arcsec_per_yr * (dt_weak_d / 365.25) / dtheta_weak_arcsec
+
 # --- conformal-sector cancellation audit (Issue 4-1) -------------------------
 # Two equivalent statements fix the photon content of the clock-transfer map:
 #   (i)  null-cone invariance: A^2 g(k,k)=0 iff g(k,k)=0, so coordinate transit
@@ -249,6 +266,26 @@ ledger = {
             "gamma_TC": gamma_prop,
             "interpretation": "Regime-I ms-s channel; the only propagating "
                               "image-plane delay for photons",
+        },
+        "standard_baseline": {
+            "mechanism": "the same mu_s . grad(DeltaT) structure is generated "
+                         "by the ordinary GR Fermat/Shapiro surface: under "
+                         "particle DM + GR a moving source's effective "
+                         "source-plane position is beta - mu_s DeltaT",
+            "grad_fermat_yr_per_arcsec_quad": grad_fermat_yr_per_arcsec,
+            "gamma_std_strong_lens": gamma_std_strong,
+            "gamma_std_galaxy_galaxy": gamma_std_weak,
+            "envelope_over_std_strong": gamma_env / gamma_std_strong,
+            "propagating_over_std_strong": gamma_prop / gamma_std_strong,
+            "interpretation": "existence of kinematics-correlated shear "
+                              "variance is shared with standard physics at "
+                              "~1e-8 (strong lenses) to ~1e-9 (galaxy-galaxy); "
+                              "TEP-discriminating content is the residual "
+                              "over this computable baseline -- the "
+                              "propagating disformal piece sits ~7 orders "
+                              "below it (timing-tested, not shear-tested), "
+                              "and the chronometric envelope is "
+                              "reconstruction-space (bound-set only)",
         },
     },
     "discriminators": {
