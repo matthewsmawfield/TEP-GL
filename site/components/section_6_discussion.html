@@ -31,7 +31,8 @@
 <h3>6.2 CMB Lensing and the Integrated Sachs-Wolfe Constraint</h3>
 
 <p>
-    A scalar field capable of generating year-scale differential delays on
+    A scalar field capable of generating year-scale chronometric-envelope
+    contrasts on
     cluster scales raises a critical question: what are the implications for the
     Cosmic Microwave Background (CMB)? Two potential tensions must be addressed.
 </p>
@@ -79,8 +80,11 @@
     </p>
 
     <p>
-        <strong>Setup:</strong> The conformal factor is \(A(\phi) = 1 +
-        \alpha(\phi)\) with \(\alpha \sim 10^{-6}\) on halo scales. The following
+        <strong>Setup:</strong> The conformal factor is \(A(\phi) = e^{-u}
+        \approx 1 - u\), with the field excursion \(u \sim 10^{-6}\) on halo
+        scales (\(u\) is the canonical dimensionless field of Paper 0; the symbol
+        \(\alpha(\phi) \equiv d\ln A/d\phi = \beta_A\) is reserved for the
+        coupling function). The following
         estimate uses the conventional reference-background variables employed by
         the HC linear-transfer representation (Paper 18). Here \(H_{\rm ref}(z)\)
         is an observational/reference inverse-time scale and \(a_{\rm eff}=
@@ -89,20 +93,20 @@
     </p>
     <div class="equation">
  \begin{equation} \label{eq:gl_isw_constraint}
-        \left|\frac{\partial \ln A}{\partial t}\right| \approx
-        \left|\frac{\dot{\alpha}}{1+\alpha}\right| \approx |\dot{\alpha}| \ll
+        \left|\frac{\partial \ln A}{\partial t}\right| =
+        |\dot{u}| \ll
         H_0
  \end{equation}
     </div>
 
     <p>
-        <strong>Estimate of \(\dot{\alpha}\):</strong> If \(\phi\) tracks the
+        <strong>Estimate of \(\dot{u}\):</strong> If \(\phi\) tracks the
         matter distribution adiabatically (sourced by \(T^\mu_\mu\)), then
-        \(\alpha\) evolves on the timescale of structure formation:
+        \(u\) evolves on the timescale of structure formation:
     </p>
     <div class="equation">
- \begin{equation} \label{eq:gl_alpha_dot}
-        \dot{\alpha} \sim \alpha \cdot \frac{\dot{\rho}}{\rho} \sim \alpha
+ \begin{equation} \label{eq:gl_u_dot}
+        \dot{u} \sim u \cdot \frac{\dot{\rho}}{\rho} \sim u
         \cdot H_{\rm ref}(z) \cdot f_{\rm ref}(z)
  \end{equation}
     </div>
@@ -116,7 +120,7 @@
     <p><strong>Result:</strong></p>
     <div class="equation">
  \begin{equation} \label{eq:gl_isw_result}
-        \frac{|\dot{\alpha}|}{H_0} \sim \alpha \cdot f_{\rm ref} \cdot \frac{H_{\rm ref}(z)}{H_0}
+        \frac{|\dot{u}|}{H_0} \sim u \cdot f_{\rm ref} \cdot \frac{H_{\rm ref}(z)}{H_0}
         \sim 10^{-6} \times 0.8 \times 1.2 \approx 10^{-6}
  \end{equation}
     </div>
@@ -135,7 +139,7 @@
         only as fast as the underlying matter distribution. Year-scale
         <em>spatial</em> delays across an image plane are compatible with
         cosmologically slow <em>temporal</em> evolution because the delay
-        gradient is set by the static \(\nabla\alpha\), not by \(\dot{\alpha}\).
+        gradient is set by the static \(\nabla u\), not by \(\dot{u}\).
     </p>
 </div>
 
@@ -194,8 +198,8 @@
     TEP-GL imports that linear closure rather than treating CMB lensing as a
     source-evolution effect. The amplitude is controlled by the integrated
     scalar-backreaction profile, not by lens motion; consistency with the
-    observed spectrum constrains the relationship between \(\alpha(\phi)\) and
-    the matter density \(\rho\).
+    observed spectrum constrains the relationship between the field excursion
+    \(u\) and the matter density \(\rho\).
 </p>
 
 <h4>6.2.3 Parameter Space Constraints</h4>
@@ -282,7 +286,9 @@
         observable Temporal Shear below precision-test thresholds. The halo
         constraint is satisfied when the same operator, acting across an
         extended path through lower-density environments, permits a cumulative
-        clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\).
+        clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\) on the
+        matter-clock congruence — the chronometric-envelope field of §3.1.3,
+        which is endpoint-determined for photons and is not a propagated delay.
     </p>
 </div>
 
@@ -295,8 +301,16 @@
 <ol>
     <li>
         <strong>Static Degeneracy:</strong> Most lensing data are analyzed under
-        static assumptions. In this limit, temporal shear is mathematically
-        indistinguishable from spatial mass (Section 3).
+        static assumptions. In this limit, the conformal sector enters as a
+        reconstruction degeneracy — the endpoint-determined clock-transfer map
+        defined through $A(\phi) = \exp(\beta_A \phi/M_{\rm Pl})$ and the
+        line-of-sight field profile $\phi(r)$ is absorbed into mass-sheet and
+        delay normalization rather than into propagated arrival times (Section
+        3), while optical convergence and shear are carried by the
+        scalar-backreaction and disformal channels. The predicted
+        reconstruction-space map is qualitatively similar to the observed map;
+        a full quantitative comparison requires the source light-curve model,
+        which is the next pipeline step.
     </li>
     <li>
         <strong>Differential vs. Common-Mode Effects:</strong> The GW170817
@@ -321,8 +335,10 @@
         <strong>Lensing (Multipath):</strong> Observations that require "dark
         matter" (e.g., lensing) are fundamentally
         <em>multipath</em> measurements. These different pathways sample
-        different values of the time field \(\phi\), creating differential
-        delays that manifest as "phantom mass."
+        different values of the time field \(\phi\), creating a differential
+        clock-transfer field that isochronous reconstruction reads as "phantom
+        mass," while any propagated differential delay rides only on the
+        backreacted and disformal sectors.
     </li>
     <li>
         <strong>GW170817 (Single-Path):</strong> Observations that constrain
@@ -337,12 +353,14 @@
     The apparent contradiction—"how can gravity be modified enough to create
     dark matter but unmodified enough to pass GW170817?"—is resolved. TEP
     introduces the temporal field as the additional physical degree of freedom;
-    its conformal sector governs clock transport without bending null geodesics,
+    its conformal sector governs clock transport without bending null geodesics
+    or shifting propagated arrival times,
     while its stress-energy and strong-field operators can backreact on the
     Einstein-frame geometry (Bahrain, Paper 28). The differential-propagation
     bound constrains the disformal sector, not the common-mode conformal clock
-    sector. Time manifests as a differential observable only when comparing
-    divergent paths.
+    sector. Time manifests as a propagated differential observable only through
+    non-exact transport on divergent paths; in the exact conformal sector it
+    manifests as a reconstruction degeneracy.
 </p>
 
 <h3>6.5 Path-Dependent Distance/Proper-Time Ratio</h3>
@@ -366,7 +384,8 @@
         <strong>TEP Reality:</strong> The matter proper-time accumulation rate
         \(d\tilde{\tau} = A(\phi) d\tau_g\) varies with location. The anomaly
         in inferred travel time is due to the scalar field gradient modulating
-        clock rates along the path, not to a variation in local \(c\).
+        the clock-transfer field registered by matter congruences along the
+        path, not to a variation in local \(c\).
         Conclusion: apparent <em>dark matter</em> is reconstructed temporal
         transport.
     </li>
@@ -452,7 +471,7 @@
 
     <p>
         This lies within a factor of about five of the empirical MOND value
-        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². TEP attributes this
+        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is now anchored more precisely: the SPARC-derived characteristic acceleration \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7, v0.15; Paper 10) is rooted in the cosmological horizon scale \(g_t \sim cH_0/2 \approx 3.4 \times 10^{-10}\) m/s² and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
         cross-scale relation to the same temporal-gradient structure
         represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
         statement is that TEP produces an acceleration scale of cosmological
@@ -498,7 +517,9 @@
         <tr>
             <td>
                 <strong>Source-Dependent Shear</strong><br /><small
-                    >(Kinematic noise bias)</small
+                    >(Kinematic noise bias; bounded at
+                    \(\gamma_{\rm TC}^2/\sigma_{\rm sh}^2 \sim 4\times10^{-12}\),
+                    Box 5.3)</small
                 >
             </td>
             <td>
@@ -508,9 +529,7 @@
                 >
             </td>
             <td>
-                <span style="color: green"
-                    ><strong>Motivating Consistency</strong></span
-                >
+                <span style="color: green"><strong>Motivating Consistency</strong></span>
             </td>
         </tr>
         <tr>
@@ -522,11 +541,28 @@
             <td>
                 <strong>\(H_0\) Tension</strong><br /><small
                     >Time-delay cosmography (\(H_0 \approx 73\)) conflicts with
-                    CMB (\(H_0 \approx 67\)).</small
+                    CMB (\(H_0 \approx 67\)). The chronometric entry is a
+                    degeneracy statement, not a supply channel: a common-mode
+                    endpoint rescaling acts on inferred \(D_{\Delta t}\) exactly
+                    as an external convergence sheet does, but under the
+                    present-epoch convention its amplitude is the uniform
+                    local-well residual \(A_o \approx 1-10^{-7}\) — far below
+                    the tension and identical for every lens system. The full
+                    channel audit on the real TDCOSMO-2025 systems (Paper 19,
+                    Step 58) confirms the propagated sector is clean at
+                    \(\lesssim 10^{-8}\) fractional (\(\sim 10\) ms
+                    ceilings on \(10\,R_{\rm E}\) traverses) and finds the only
+                    order-percent route to be the lensing–dynamical slip in the
+                    velocity-dispersion prior — in the direction that elevates
+                    inferred \(H_0\) — while the mundane mass-model floor is
+                    \(\sim 6\%\) (SDSS1206+4332 power-law vs composite). The
+                    corpus's quantitative \(H_0\) channel is the Cepheid
+                    clock-bias sector (TEP-H0, Paper 11), a different
+                    projector.</small
                 >
             </td>
             <td>
-                <span style="color: orange"><strong>Consistent</strong></span>
+                <span style="color: gray"><strong>Degeneracy-level</strong></span>
             </td>
         </tr>
         <tr>
@@ -538,11 +574,12 @@
             <td>
                 <strong>Flux Ratio Anomalies</strong><br /><small
                     >Substructure required to explain ratios is often not found;
-                    "phantom" substructure.</small
+                    "phantom" substructure. TC contribution bounded at
+                    \(\delta\mu/\mu \lesssim 10^{-5}\) (Box 5.2).</small
                 >
             </td>
             <td>
-                <span style="color: orange"><strong>Consistent</strong></span>
+                <span style="color: gray"><strong>Amplitude-bounded</strong></span>
             </td>
         </tr>
         <tr>

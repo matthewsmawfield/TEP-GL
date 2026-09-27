@@ -88,6 +88,15 @@
         temporal field. Standard analysis combines them into a single inferred
         mass distribution precisely because it assumes a universal isochronous
         mapping between source clocks, photon transport, and observer clocks.
+        The three terms also sit on different carriers, which the remainder of
+        the paper keeps explicit: \(M_{\rm opt}^{g[\phi],B}\) is a propagated
+        optical contribution (backreacted geometry and the bounded disformal
+        deformation); \(M_{\rm TC}\) propagates only through the same
+        carriers — the conformal contribution to a propagated emission-time
+        map is identically zero; and \(M_{\rm rec}^{A}\) lives entirely in
+        reconstruction space, entering through the endpoint-determined
+        clock-transfer field and the inference degeneracy (mass-sheet and
+        normalization class) rather than through any propagated delay.
     </p>
 </div>
 
@@ -175,21 +184,44 @@
     Einstein rings and major arcs remain governed by the optical geometry.
 </p>
 <p>
-    The expression above is an effective matter-clock transfer functional evaluated in the chosen clock congruence; it is not an additional photon proper-time or geometric null-travel-time delay. In the pure-conformal limit, its operational content must be defined through emission/reception clock calibration and frequency transport. Genuine new path-dependent null delay beyond the GR geometry arises only through gravitational backreaction, the disformal sector, or another explicitly derived non-exact contribution. As established in Axiom 1, the conformal limit preserves null cones: pure multiplication by \(A^2(\phi)\) does not bend a photon onto a new null trajectory. Any
-    genuinely new static null-trajectory bending beyond the conformally related
-    geometry must arise through gravitational backreaction in \(g_{\mu\nu}\),
-    a non-negligible disformal contribution from \(B(\phi)\), or another
-    explicitly derived part of the coupled field solution. The observable
-    lensing signal in the conformal sector is therefore a clock-transfer
-    discrepancy — a difference between the matter-frame time accumulated along
-    each path and the time inferred from an isochronous GR lens model — rather
-    than a direct refraction of null geodesics.
+    The expression above is a matter-clock transfer functional evaluated on a
+    timelike clock congruence associated with the path; it is not a photon
+    observable, and for photons its differential content vanishes identically.
+    Two equivalent statements fix this. First, null cones are conformally
+    invariant (Axiom 1, Appendix A.1): \(A(\phi)\) drops out of the null
+    transport equation, so the coordinate travel time along any fixed spatial
+    path is identical in \(\tilde{g}_{\mu\nu}\) and \(g_{\mu\nu}\), and the only
+    conformal content in an observed arrival time is the endpoint clock ratio —
+    a common-mode factor for all images of one system. Second, the underlying
+    Temporal Shear is an exact one-form, \(\Sigma_\mu = \nabla_\mu\ln A\): its
+    open-path integral is endpoint-determined, so the shear-sector contribution
+    to any path contrast between rays joining the same source and observer
+    cancels algebraically, before screening is even applied. The dedicated
+    strong-lensing transport pipeline confirms the result directly: the exact
+    additional static-conformal inter-image residual is \(0.0\) d (TEP-LENS,
+    Paper 19, step_56). The functional is therefore retained in a
+    sharply delimited role: it is the chronometric reconstruction map — the
+    field of clock-rate contrasts that an isochronous lens model would
+    misassign to mass-sheet normalization, distance, or time-delay
+    calibration if it were read as propagating emission-time structure — and
+    it bounds, rather than supplies, the arrival-time residual. Genuine
+    path-dependent null delay beyond the GR geometry arises only through
+    gravitational backreaction in \(g_{\mu\nu}\), the disformal sector
+    \(B(\phi)\), or another explicitly derived non-exact contribution: pure
+    multiplication by \(A^2(\phi)\) does not bend a photon onto a new null
+    trajectory and does not shift its arrival time relative to any other
+    photon on the same endpoints. The observable lensing signal in the
+    conformal sector is therefore a reconstruction-space discrepancy — the
+    difference between the clock-transfer field an isochronous GR lens model
+    assumes and the field the temporal landscape provides — rather than a
+    propagated delay or a refraction of null geodesics.
 </p>
 
 <h4>2. The Dynamic Shutter (Temporal Lensing)</h4>
 <p>
-    While the static term shifts the arrival-time surface, the gradient of the
-    differential delay field \(\nabla(\Delta \tilde{\tau})\) acts as a "shutter"
+    While the static term reshapes the clock-transfer field read by an
+    isochronous reconstruction, the gradient of the differential delay field
+    \(\nabla(\Delta \tilde{\tau})\) acts as a "shutter"
     that modulates the arrival time of photons from different parts of the
     source. For a source with evolution or motion, this creates a
     <em>Temporal-Composite Shear</em>:
@@ -292,13 +324,18 @@
     \]
     where \(\mathcal{T}[\gamma] \equiv \Delta\tilde{\tau}[\gamma]\) is the
     time-transport functional. This is an <em>open-path blind-prediction
-    residual</em>, not a closed-loop synchronization holonomy. Because each
-    image has a single observed arrival time, algebraic closure of measured
-    pairwise delays around image triplets vanishes identically. This does
-    not cause the algebraic sum of observed image delays to fail to close;
-    it alters the relation between lens geometry and observed arrival time
-    without violating the algebraic identity among the observed arrival
-    times.
+    residual</em>, not a closed-loop synchronization holonomy. Two structural
+    properties delimit it. First, because each image has a single observed
+    arrival time, algebraic closure of measured pairwise delays around image
+    triplets vanishes identically: the axiom alters the relation between
+    lens geometry and observed arrival time without violating the algebraic
+    identity among the observed arrival times. Second, in the pure conformal
+    sector the residual itself vanishes identically, because
+    \(\Sigma_\mu = \nabla_\mu\ln A\) is an exact one-form and its open-path
+    integrals are endpoint-determined (§3.1.3); a nonzero
+    \(\Delta\mathcal{T}_{ij}^{\rm resid}\) is therefore a signature of
+    non-exact transport — the disformal sector or scalar backreaction — not
+    of the conformal clock-transfer map.
 </p>
 <p>
     <em>This axiom distinguishes open-path differential residuals (the GL
@@ -377,7 +414,7 @@
         <strong>Axiom 4 (Screening and Temporal Topology):</strong> Screening
         manifests as a continuous spatial profile (Temporal Topology) governed
         by the non-linear superposition of field gradients (Temporal Shear),
-        suppressing fifth forces and lensing anomalies in dense environments
+        suppressing Temporal Shear and lensing anomalies in dense environments
         while leaving cosmology accessible to dynamics. The suppression of
         local Temporal Shear in deep potential environments continuously
         reduces
@@ -447,14 +484,24 @@
             <li>
                 <strong>Local Invariance vs. Global Variability:</strong> Local
                 \(c\) remains invariant (measured as \(299,792,458\) m/s by
-                any local clock). What varies globally is not the local speed of
-                light, but the <em>inferred ratio between spatial separation and
-                matter-clock transfer registered between endpoints</em> along extended paths. Because
-                the rate of proper time accumulation \(d\tilde{\tau} = A(\phi)
-                d\tau_g\) varies with location, the time required to traverse a
-                fixed spatial interval depends on the scalar field value. To an
-                observer assuming a universal clock, light appears to speed up
-                or slow down depending on the path.
+                any local clock; Paper 0, Theorem 2). What varies globally is
+                not any speed of propagation, but the <em>inferred ratio between
+                spatial separation and matter-clock transfer registered between
+                endpoints</em> along extended paths. Because the rate of proper
+                time accumulation \(d\tilde{\tau} = A(\phi) d\tau_g\) varies
+                with location, the clock transfer associated with traversing a
+                fixed spatial interval depends on the scalar field value: a
+                timelike clock transported through a halo well (\(A < 1\))
+                accumulates less matter-frame time than the ambient rate, and
+                one transported through a void (\(A > 1\) relative to ambient)
+                accumulates more. For photons this path-integrated content is
+                not observable at all — the null condition is conformally
+                invariant — and the conformal sector enters the photon sector
+                only through the endpoint clock ratio, the same channel that
+                carries cosmological redshift (Paper 0, §2.2). Any "variable
+                speed of light" language is therefore shorthand for an
+                operational endpoint ratio inferred under a universal-clock
+                assumption, never a change in local propagation.
             </li>
             <li>
                 <strong>Single-Path Physics (GW170817):</strong> Photons and
@@ -467,11 +514,15 @@
                 <strong>Multipath Physics (Lensing):</strong> Gravitational
                 lensing involves light rays taking <em>different</em> paths
                 around a mass distribution. These paths traverse different
-                regions of the scalar field \(\phi(\vec{x})\). The differential
-                clock-transfer structure between these paths generates the
-                chronometric component of the Phantom-Mass signature; coherent
-                optical convergence and shear arise through scalar backreaction
-                and any permitted disformal response.
+                regions of the scalar field \(\phi(\vec{x})\), but photon
+                transport along them is conformally invariant: the conformal
+                differential clock-transfer contrast is a reconstruction-space
+                field, not a propagated delay, and it generates the chronometric
+                component of the Phantom-Mass signature only as an inference
+                degeneracy. Genuine propagated differential delay is carried by
+                scalar backreaction (absorbed by lens models as mass) and by the
+                GW170817-bounded disformal deformation; coherent optical
+                convergence and shear arise through the same two channels.
             </li>
         </ul>
     </li>
@@ -514,10 +565,17 @@
 </div>
 
 <p>
-    where \(\Delta T_{\rm eff}(\vec{\theta})\) is the effective clock-transfer
-    contrast along the line of sight at image position \(\vec{\theta}\), and
+    where \(\Delta T_{\rm eff}(\vec{\theta})\) is the effective emission-time
+    map along the line of sight at image position \(\vec{\theta}\), and
     \(\vec{\beta}_{\rm opt}(\vec{\theta})\) is the optical ray map generated by
-    the scalar-backreacted and disformal geometry. For a finite exposure over
+    the scalar-backreacted and disformal geometry. The propagating content of
+    \(\Delta T_{\rm eff}\) decomposes into the ordinary geometric-plus-Shapiro
+    Fermat surface already contained in any GR lens model, the disformal
+    multipath deformation bounded by GW170817 (\(\lesssim 0.2\) s per \(2\) Mpc
+    halo path; Box 3.2), and the common-mode endpoint clock ratio; the
+    conformal sector contributes no path-dependent term, because null transport
+    is conformally invariant (§3.1.1) and its clock-transfer map is
+    endpoint-determined (§2.2). For a finite exposure over
     \([t_1, t_2]\), the recorded image is the time-averaged quantity:
 </p>
 
@@ -534,15 +592,19 @@
 </div>
 
 <p>
-    For a spatially varying conformal coupling, \(\Delta T_{\rm eff}\) varies
-    across the image plane. If the source has temporal variability (secular
+    For a spatially varying temporal field, \(\Delta T_{\rm eff}\) varies
+    across the image plane through its propagating components — the
+    gravitational Fermat surface and the disformal deformation — while its
+    conformal clock-transfer content varies only in reconstruction space. If
+    the source has temporal variability (secular
     evolution, rotation, or fluctuations) on the timescale of
     \(\nabla_\theta (\Delta T_{\rm eff})\), the finite-exposure average smears
     the recorded image.
 </p>
 
 <p>
-    <strong>The Equivalence:</strong> A gradient in arrival time across an image
+    <strong>The Equivalence:</strong> A gradient in the emission-time map
+    across an image
     is mathematically equivalent to a shearing of the source frame. To a static
     observer assuming isochrony, this "temporal shear" is indistinguishable from
     the "gravitational shear" caused by mass. Thus,
@@ -568,16 +630,44 @@
     <p><strong>Regime I: The Reference Envelope</strong></p>
     <ul>
         <li>
-            <strong>Assumption (Standard):</strong> The GW170817 multi-messenger
-            timing constraint applies to all metric sectors equally.
+            <strong>Physical carrier:</strong> The disformal multipath
+            deformation. For photons on the matter metric the phase velocity is
+            \(v_{\rm ph}/c \simeq 1 - \tfrac{1}{2}D(\partial_{\hat{n}}\phi)^2\)
+            with \(D \equiv B/A^2\) (Paper 0, App. B); a differently routed
+            image pair traverses different \(\nabla\phi\) structure, so the
+            inter-image residual is
+            \(\Delta\tau_B = \tfrac{1}{2}\int D(\partial_{\hat{n}}\phi)^2\,dl\),
+            evaluated at the GW170817-bound normalization
+            (\(D(\partial_{\hat{n}}\phi)^2 \lesssim 2\times10^{-15}\)
+            path-averaged). The deformation is direction-even
+            (\((\partial_{\hat{n}}\phi)^2\) is invariant under
+            \(\hat{n}\to-\hat{n}\)), so it appears as a propagation residual
+            between distinct paths rather than a same-path holonomy — the
+            even-parity channel of the same \(B(\phi)\) sector the corpus's
+            holonomy program bounds on the odd/non-exact channel. On the
+            corpus's weak-field branch \(B(\phi)\simeq B_0\varphi^2\) (Paper 0,
+            §2.2), the product \(D(\partial_{\hat{n}}\phi)^2\) carries the
+            quadratic field-depth suppression, so the stated ceiling is the
+            saturation value of the GW170817 bound rather than the envelope's
+            expectation on weak-field halo paths: the corpus-calibrated
+            admissible normalization lies parametrically below it. The
+            falsification threshold therefore bounds the normalization — not
+            merely tests an assumed saturation — and the conversion into a
+            constraint on the dimensionful \(B_0\) belongs to the same open
+            normalization map as the corpus's B-sector bookkeeping (Paper 0,
+            Appendix E).
         </li>
         <li>
-            <strong>Constraint basis:</strong> The standard translation of
-            timing to propagation-speed bounds (\(\lesssim 10^{-15}\)).
+            <strong>Constraint basis:</strong> GW170817 bounds the path-averaged
+            monopole \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\); the conformal
+            sector contributes exactly zero propagated inter-image delay by
+            null-cone invariance (§3.1.3).
         </li>
         <li>
             <strong>Delay scale:</strong> \(\Delta\tilde{\tau} \sim
-            10^{-3}\text{--}1\) s (milliseconds to seconds) on halo scales.
+            10^{-3}\text{--}1\) s (milliseconds to seconds) on halo scales —
+            \(\Delta\tau_B \lesssim 0.2\) s per \(2\) Mpc halo path at the
+            bound — the only propagating inter-image delay the theory supplies.
         </li>
         <li>
             <strong>Primary observables:</strong> Time-domain signatures in
@@ -590,7 +680,13 @@
         </li>
         <li>
             <strong>Falsification:</strong> Null detection of achromatic timing
-            residuals at &lt; 0.1 ms excludes this regime.
+            residuals at &lt; 0.1 ms on a \(2\) Mpc halo path bounds the
+            path-averaged disformal product
+            \(D(\partial_{\hat{n}}\phi)^2 \lesssim 5\times10^{-19}\) —
+            \(\sim 3.5\) orders of magnitude below the GW170817 level —
+            probing between the corpus-calibrated envelope and the saturated
+            ceiling: the same \(B(\phi)\) instrument as the holonomy
+            program, applied to the even-parity multipath channel.
         </li>
     </ul>
 
@@ -605,9 +701,14 @@
             by clock, PPN, and redshift channels (see Axiom 4).
         </li>
         <li>
-            <strong>Delay scale:</strong> \(\Delta\tilde{\tau} \sim
+            <strong>Clock-transfer scale:</strong> \(\Delta\tilde{\tau} \sim
             1\text{--}10\) years, driven by the conformal factor \(A(\phi)\)
-            integrated over halo scales (Mpc).
+            integrated over halo scales (Mpc). This is the
+            <em>chronometric-envelope</em> scale — the reconstruction-space
+            clock-transfer map of §2.2 — not a propagated photon delay; the
+            conformal contribution to any inter-image arrival-time residual is
+            exactly zero, and the propagating differential channel remains the
+            disformal carrier at the ms–s level.
         </li>
         <li>
             <strong>Primary observables:</strong> The full phenomenology of
@@ -636,11 +737,11 @@
 <p>
     This work demonstrates that
     <em>the Extended Regime (Regime II) is a viable physical alternative</em>.
-    The Reference Envelope (Regime I) is a useful conservative baseline for
-    calibration, but it represents a scenario where the temporal field is
-    suppressed to match constraints whose differential-propagation
-    interpretation does not directly bound the common-mode conformal clock
-    sector.
+    The Reference Envelope (Regime I) is the conservative baseline in which the
+    only propagating inter-image content is the disformal multipath
+    deformation at its GW170817-bounded normalization; the conformal clock
+    sector, whose differential-propagation channel is identically inert, is
+    the additional carrier of Regime II.
 </p>
 
 <h3>2.7 Why Lensing May Not Be Purely Spatial</h3>
@@ -700,15 +801,16 @@
         Takes different paths through the lens (different impact parameters)
     </li>
     <li>
-        Accumulates time differently through regions with different \(A(\phi)\)
-        values
+        Is accompanied by a different matter-clock transfer congruence through
+        regions with different \(A(\phi)\) values — a timelike reconstruction
+        field, not a photon propagation delay
     </li>
     <li>Arrives at the detector at the "same" observation time</li>
 </ul>
 
 <p>
     If \(A(\phi)\) varies spatially—forming a halo-like configuration around the
-    lens—then:
+    lens—then the matter-frame path time
 </p>
 
 <div class="equation">
@@ -718,23 +820,32 @@
 </div>
 
 <p>
-    differs between rays at different impact parameters. For halo-scale
-    propagation distances \(L \sim 2\) Mpc and conformal variations \(\Delta A/A
-    \sim 10^{-6}\), the differential delay is:
+    evaluated on the associated timelike clock congruence differs between rays
+    at different impact parameters. This functional is not a photon arrival
+    time: Axiom 1 makes the photon coordinate transit conformally invariant,
+    so no part of it propagates to any observed inter-image delay. What it
+    quantifies is the chronometric-envelope contrast — the magnitude of the
+    clock-transfer field that a universal-clock reconstruction would
+    misassign to mass, distance, or time-delay normalization. For halo-scale
+    propagation depths \(L \sim 2\) Mpc and conformal variations \(\Delta A/A
+    \sim 10^{-6}\), that envelope contrast is:
 </p>
 
 <div class="equation">
  \begin{equation} \label{eq:gl_delay_estimate}
-    \Delta t \sim \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
+    \Delta \tilde{\tau}_{\rm env} \sim \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
     \text{years}
  \end{equation}
 </div>
 
 <p>
-    This delay is
-    <strong>consistent with observed strong lensing time delays</strong>.
-    However, it implies that the "Dynamic Shutter" effect (temporal smearing) is
-    negligible for slowly evolving galaxies. For slowly evolving galaxies the
+    The propagating residual on the same paths is exactly zero in the conformal
+    sector (Paper 19, step_56) and is bounded at the ms–s level on the
+    disformal carrier (Box 3.2). The relevant comparison for any claimed
+    observable is therefore the post-model residual — constrained to
+    \(\lesssim\) tens of days in existing strong-lens systems by the success of
+    GR mass models (Paper 19) — not the multi-hundred-day total delay, which
+    those models already reproduce. For slowly evolving galaxies the
     source-dependent Dynamic Shutter is negligible. The dominant signal is
     therefore the coherent static temporal-field sector: physical optical
     shear/convergence arises from scalar backreaction and any permitted
@@ -745,7 +856,7 @@
 
 <h4>Why This Creates "Phantom Mass"</h4>
 
-<p>For a source that evolves on timescales comparable to \(\Delta t\):</p>
+<p>For a source that evolves on timescales comparable to the emission-time-map contrast \(\Delta T_{\rm eff}\):</p>
 
 <ul>
     <li>

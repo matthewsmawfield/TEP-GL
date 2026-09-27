@@ -1,7 +1,7 @@
 # Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 **Matthew Lukin Smawfield**
-Version: v0.7 (Tortola)
-First published: 19 December 2025 · Last updated: 10 August 2026
+Version: v0.8 (Tortola)
+First published: 19 December 2025 · Last updated: 16 September 2026
 DOI: 10.5281/zenodo.17982540
 
 ---
@@ -17,11 +17,15 @@ temporal depth onto the spatial plane, generating a
 *Temporal-Composite Shear* contribution sourced by the underlying
 *Temporal Shear* field gradient—arising from gradients in the
 scalar field's continuous spatial profile (*Temporal Topology*,
-TEP)—that is degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included.
+TEP)—whose propagating component is confined to the millisecond
+(Reference-Envelope) window while its chronometric component is
+degenerate with gravitational shear in standard static lens
+reconstructions unless time-domain or variability-dependent
+observables are included.
 This contribution forms one component of the *Phantom-Mass* phenomenology defined here. GW170817 primarily constrains differential propagation and disformal cone tilt; it does not directly test common-mode conformal clock-rate structure along a shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. Because photons and gravitational waves traverse the same path, conformal time dilation is common-mode and cancels in differential measurements. Screening operates
 via the continuous flattening of Temporal Topology in dense
 environments, suppressing local field gradients without invoking
-discrete thin-shell boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. Within TEP, the phenomena conventionally attributed to dark matter are real, but the inference of an invisible particulate substance is rejected. TEP interprets the dark sector as Phantom Mass: an apparent convergence, shear, or dynamical mass discrepancy generated when temporal-transport structure is reconstructed under the Isochrony Axiom as synchronous spatial mass. The theory-level claim is stronger than the paper-level evidence claim: within TEP, particulate dark matter is rejected as the fundamental explanation, while this paper tests the lensing-sector realization of that ontology. These results are derived in two regimes: a conservative Reference Envelope (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended Regime (year-scale chronometric corrections and a full lensing-sector dark-sector reinterpretation), whose coherent and source-dependent components are independently testable through blind time-delay residuals, lensing consistency tests, and variability-dependent observables. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. The Reference Envelope result is the primary, unconditional contribution; the Extended Regime is conditional.
+discrete thin-shell boundaries. Conformal gradients may reproduce specific timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time domain—without violating strong-lens arrival time constraints. Within TEP, the phenomena conventionally attributed to dark matter are real, but the inference of an invisible particulate substance is rejected. TEP interprets the dark sector as Phantom Mass: an apparent convergence, shear, or dynamical mass discrepancy generated when temporal-transport structure is reconstructed under the Isochrony Axiom as synchronous spatial mass. The theory-level claim is stronger than the paper-level evidence claim: within TEP, particulate dark matter is rejected as the fundamental explanation, while this paper tests the lensing-sector realization of that ontology. These results are derived in two regimes: a conservative Reference Envelope (the GW170817-bounded disformal multipath deformation: millisecond-to-second propagated inter-image residuals, directly testable with lensed FRBs) and an Extended Regime (year-scale chronometric-envelope structure in reconstruction space and a full lensing-sector dark-sector reinterpretation), whose coherent and source-dependent components are independently testable through blind time-delay residuals, lensing consistency tests, and variability-dependent observables. Within the Extended Regime, where the Isochrony Axiom fails, temporal-field gradients produce an observational degeneracy with particulate dark matter. The Reference Envelope result is the primary, unconditional contribution; the Extended Regime is conditional.
 
 The continuous flattening of the Temporal Topology in dense lensing environments is governed by the abstract environmental operator $\mathcal{S}_\Sigma(\mathcal{E})$. By projecting temporal depth onto the spatial plane, this continuous geometric screening generates the conformal/chronometric component of the *Phantom-Mass* phenomenology.
 
@@ -57,7 +61,7 @@ Consider two mathematically equivalent interpretations of the same Fermat potent
 
 **Interpretation A (Standard Framework):** Assumes the Isochrony Axiom. An Einstein ring is analyzed with apparent convergence \(\kappa_{\rm obs}\) exceeding what the visible baryonic mass can produce. A dark matter halo with mass \(M_{\rm DM} = M_{\rm obs} - M_{\rm baryons}\) is inferred. The "dark matter" is treated as an unseen substance required to explain the lensing geometry.
 
-**Interpretation B (TEP Framework):** Rejects the Isochrony Axiom. The observed image is recognized as a *temporal composite*: photons arriving simultaneously at the detector left the source at different emission epochs, with differential delays set by the two-metric structure along each ray. For an evolving source, this temporal depth projects onto the image plane as an apparent spatial distortion. The differential temporal-transfer structure across the lens is computed, and the "excess convergence" is identified as the signature of temporal-field gradients \(\nabla(\Delta \tilde{\tau})\) in the lens environment. The "dark matter" is reinterpreted not as a substance, but as the shadow of unmodeled time.
+**Interpretation B (TEP Framework):** Rejects the Isochrony Axiom. The observed image is recognized as a *temporal composite*: photons arriving simultaneously at the detector left the source at different emission epochs, with differential emission structure set by the propagating delay surface (the gravitational Fermat surface plus the bounded disformal deformation) and with the conformal sector contributing the endpoint-determined clock-transfer field read by the reconstruction. For an evolving source, this temporal depth projects onto the image plane as an apparent spatial distortion. The differential temporal-transfer structure across the lens is computed, and the "excess convergence" is identified as the signature of temporal-field gradients \(\nabla(\Delta \tilde{\tau})\) in the lens environment. The "dark matter" is reinterpreted not as a substance, but as the shadow of unmodeled time.
 
 **The Critical Point:** Both frameworks can reproduce the static lensing observables considered here at the level of the reconstructed Fermat potential. The distinction is not settled by static image geometry alone, but by additional time-domain, variability-dependent, and multi-epoch observables. The difference is not purely observational but *interpretive*—it depends on which axiom (Isochrony vs. TEP) is taken as fundamental.
 
@@ -81,9 +85,9 @@ Within the Temporal Equivalence Principle, dark matter is not a fundamental part
 
 - **The "dark" signal is a combined temporal-field projection:** Conformal clock-transfer structure contributes chronometric reconstruction, scalar backreaction on \(g_{\mu\nu}[\phi]\) and any permitted disformal response generate coherent optical convergence and shear, and source evolution produces the additional Temporal-Composite image response. Standard isochronous reconstruction absorbs these contributions into apparent Phantom Mass.
 
-- **GW170817 is a differential constraint:** The multi-messenger constraint \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\) is explicitly reanalyzed. It is shown that this bounds only the *disformal* (cone-tilt) component of the coupling. The *conformal* component, which governs clock rates and drives the phantom-mass phenomenology, is not directly constrained by photon–graviton differential-propagation bounds because conformal transformations preserve null cones. It remains indirectly constrained by PPN, source-screening, gravitational-redshift, clock-comparison, and equivalence-principle tests.
+- **GW170817 is a differential constraint:** The multi-messenger constraint \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\) is explicitly reanalyzed. It is shown that this bounds only the *disformal* (cone-tilt) component of the coupling. The *conformal* component, which governs clock rates and drives the phantom-mass phenomenology, is not directly constrained by photon–graviton differential-propagation bounds because conformal transformations preserve null cones — and, symmetrically, it carries exactly zero propagated differential delay by the same invariance, its observable content being the common-mode endpoint calibration and reconstruction-space clock-transfer map. It remains indirectly constrained by PPN, source-screening, gravitational-redshift, clock-comparison, and equivalence-principle tests.
 
-- **The Reference Envelope vs. The Extended Regime:** The standard translation of GW170817 timing to propagation-speed bounds is treated as a conservative Reference Envelope for the disformal sector. For the conformal sector, which the GW170817 differential-propagation bound does not directly constrain, the required chronometric amplitudes remain conditionally viable subject to the independent clock, PPN, screening and lensing constraints developed below. The Extended Regime gives the full dark-sector reinterpretation: its chronometric and source-dependent amplitudes are tested by the stated time-domain/variability observables, while its coherent optical component is tested independently through scalar-backreaction/disformal lensing consistency.
+- **The Reference Envelope vs. The Extended Regime:** The conservative Reference Envelope is the disformal multipath deformation at its GW170817-bounded normalization (Δτ_B = ½∫ D(∂_n̂φ)² dl ≲ 0.2 s per 2 Mpc), the even-parity channel of the same B(φ) sector the holonomy program bounds on the odd channel — so that the stated <0.1 ms lensed-FRB null threshold operates as a bound on the disformal normalization itself. For the conformal sector, which the GW170817 differential-propagation bound does not directly constrain, the required chronometric amplitudes remain conditionally viable subject to the independent clock, PPN, screening and lensing constraints developed below — the same null-cone invariance confining their propagated differential content to exactly zero (§3.1.3), so their observable role is the common-mode endpoint calibration and reconstruction-space clock-transfer map rather than a propagating delay. The Extended Regime gives the full dark-sector reinterpretation: its chronometric and source-dependent amplitudes are tested by the stated time-domain/variability observables, while its coherent optical component is tested independently through scalar-backreaction/disformal lensing consistency.
 
 By abandoning the Isochrony Axiom, the dark matter problem is reframed as a search for unmodeled temporal structure that has been absorbed into inferred mass. The parameter space where this structure masquerades as dark matter is defined, offering a falsifiable alternative to the particle paradigm.
 
@@ -170,6 +174,15 @@ matter. They are three observational projections of one dynamical
 temporal field. Standard analysis combines them into a single inferred
 mass distribution precisely because it assumes a universal isochronous
 mapping between source clocks, photon transport, and observer clocks.
+The three terms also sit on different carriers, which the remainder of
+the paper keeps explicit: \(M_{\rm opt}^{g[\phi],B}\) is a propagated
+optical contribution (backreacted geometry and the bounded disformal
+deformation); \(M_{\rm TC}\) propagates only through the same
+carriers — the conformal contribution to a propagated emission-time
+map is identically zero; and \(M_{\rm rec}^{A}\) lives entirely in
+reconstruction space, entering through the endpoint-determined
+clock-transfer field and the inference degeneracy (mass-sheet and
+normalization class) rather than through any propagated delay.
 
 **Principle:**
 
@@ -242,20 +255,43 @@ degenerate with the mass normalization inferred from multipath timing,
 distance, and joint image–delay reconstruction. The angular positions of
 Einstein rings and major arcs remain governed by the optical geometry.
 
-The expression above is an effective matter-clock transfer functional evaluated in the chosen clock congruence; it is not an additional photon proper-time or geometric null-travel-time delay. In the pure-conformal limit, its operational content must be defined through emission/reception clock calibration and frequency transport. Genuine new path-dependent null delay beyond the GR geometry arises only through gravitational backreaction, the disformal sector, or another explicitly derived non-exact contribution. As established in Axiom 1, the conformal limit preserves null cones: pure multiplication by \(A^2(\phi)\) does not bend a photon onto a new null trajectory. Any
-genuinely new static null-trajectory bending beyond the conformally related
-geometry must arise through gravitational backreaction in \(g_{\mu\nu}\),
-a non-negligible disformal contribution from \(B(\phi)\), or another
-explicitly derived part of the coupled field solution. The observable
-lensing signal in the conformal sector is therefore a clock-transfer
-discrepancy — a difference between the matter-frame time accumulated along
-each path and the time inferred from an isochronous GR lens model — rather
-than a direct refraction of null geodesics.
+The expression above is a matter-clock transfer functional evaluated on a
+timelike clock congruence associated with the path; it is not a photon
+observable, and for photons its differential content vanishes identically.
+Two equivalent statements fix this. First, null cones are conformally
+invariant (Axiom 1, Appendix A.1): \(A(\phi)\) drops out of the null
+transport equation, so the coordinate travel time along any fixed spatial
+path is identical in \(\tilde{g}_{\mu\nu}\) and \(g_{\mu\nu}\), and the only
+conformal content in an observed arrival time is the endpoint clock ratio —
+a common-mode factor for all images of one system. Second, the underlying
+Temporal Shear is an exact one-form, \(\Sigma_\mu = \nabla_\mu\ln A\): its
+open-path integral is endpoint-determined, so the shear-sector contribution
+to any path contrast between rays joining the same source and observer
+cancels algebraically, before screening is even applied. The dedicated
+strong-lensing transport pipeline confirms the result directly: the exact
+additional static-conformal inter-image residual is \(0.0\) d (TEP-LENS,
+Paper 19, step_56). The functional is therefore retained in a
+sharply delimited role: it is the chronometric reconstruction map — the
+field of clock-rate contrasts that an isochronous lens model would
+misassign to mass-sheet normalization, distance, or time-delay
+calibration if it were read as propagating emission-time structure — and
+it bounds, rather than supplies, the arrival-time residual. Genuine
+path-dependent null delay beyond the GR geometry arises only through
+gravitational backreaction in \(g_{\mu\nu}\), the disformal sector
+\(B(\phi)\), or another explicitly derived non-exact contribution: pure
+multiplication by \(A^2(\phi)\) does not bend a photon onto a new null
+trajectory and does not shift its arrival time relative to any other
+photon on the same endpoints. The observable lensing signal in the
+conformal sector is therefore a reconstruction-space discrepancy — the
+difference between the clock-transfer field an isochronous GR lens model
+assumes and the field the temporal landscape provides — rather than a
+propagated delay or a refraction of null geodesics.
 
 #### 2. The Dynamic Shutter (Temporal Lensing)
 
-While the static term shifts the arrival-time surface, the gradient of the
-differential delay field \(\nabla(\Delta \tilde{\tau})\) acts as a "shutter"
+While the static term reshapes the clock-transfer field read by an
+isochronous reconstruction, the gradient of the differential delay field
+\(\nabla(\Delta \tilde{\tau})\) acts as a "shutter"
 that modulates the arrival time of photons from different parts of the
 source. For a source with evolution or motion, this creates a
 *Temporal-Composite Shear*:
@@ -342,13 +378,18 @@ transport residual
 \]
 where \(\mathcal{T}[\gamma] \equiv \Delta\tilde{\tau}[\gamma]\) is the
 time-transport functional. This is an open-path blind-prediction
-residual, not a closed-loop synchronization holonomy. Because each
-image has a single observed arrival time, algebraic closure of measured
-pairwise delays around image triplets vanishes identically. This does
-not cause the algebraic sum of observed image delays to fail to close;
-it alters the relation between lens geometry and observed arrival time
-without violating the algebraic identity among the observed arrival
-times.
+residual, not a closed-loop synchronization holonomy. Two structural
+properties delimit it. First, because each image has a single observed
+arrival time, algebraic closure of measured pairwise delays around image
+triplets vanishes identically: the axiom alters the relation between
+lens geometry and observed arrival time without violating the algebraic
+identity among the observed arrival times. Second, in the pure conformal
+sector the residual itself vanishes identically, because
+\(\Sigma_\mu = \nabla_\mu\ln A\) is an exact one-form and its open-path
+integrals are endpoint-determined (§3.1.3); a nonzero
+\(\Delta\mathcal{T}_{ij}^{\rm resid}\) is therefore a signature of
+non-exact transport — the disformal sector or scalar backreaction — not
+of the conformal clock-transfer map.
 
 This axiom distinguishes open-path differential residuals (the GL
 observable) from closed-loop holonomy (the domain of triangle
@@ -413,7 +454,7 @@ TEP discriminator.
 **Axiom 4 (Screening and Temporal Topology):** Screening
 manifests as a continuous spatial profile (Temporal Topology) governed
 by the non-linear superposition of field gradients (Temporal Shear),
-suppressing fifth forces and lensing anomalies in dense environments
+suppressing Temporal Shear and lensing anomalies in dense environments
 while leaving cosmology accessible to dynamics. The suppression of
 local Temporal Shear in deep potential environments continuously
 reduces
@@ -465,14 +506,24 @@ Furthermore, it necessitates a redefinition of the "speed of light":
 
 **Local Invariance vs. Global Variability:** Local
 \(c\) remains invariant (measured as \(299,792,458\) m/s by
-any local clock). What varies globally is not the local speed of
-light, but the inferred ratio between spatial separation and
-matter-clock transfer registered between endpoints along extended paths. Because
-the rate of proper time accumulation \(d\tilde{\tau} = A(\phi)
-d\tau_g\) varies with location, the time required to traverse a
-fixed spatial interval depends on the scalar field value. To an
-observer assuming a universal clock, light appears to speed up
-or slow down depending on the path.
+any local clock; Paper 0, Theorem 2). What varies globally is
+not any speed of propagation, but the inferred ratio between
+spatial separation and matter-clock transfer registered between
+endpoints along extended paths. Because the rate of proper
+time accumulation \(d\tilde{\tau} = A(\phi) d\tau_g\) varies
+with location, the clock transfer associated with traversing a
+fixed spatial interval depends on the scalar field value: a
+timelike clock transported through a halo well (\(A < 1\))
+accumulates less matter-frame time than the ambient rate, and
+one transported through a void (\(A > 1\) relative to ambient)
+accumulates more. For photons this path-integrated content is
+not observable at all — the null condition is conformally
+invariant — and the conformal sector enters the photon sector
+only through the endpoint clock ratio, the same channel that
+carries cosmological redshift (Paper 0, §2.2). Any "variable
+speed of light" language is therefore shorthand for an
+operational endpoint ratio inferred under a universal-clock
+assumption, never a change in local propagation.
 
 **Single-Path Physics (GW170817):** Photons and
 gravitational waves from the exact same source coordinate follow
@@ -483,11 +534,15 @@ diverge because they share the same history.
 **Multipath Physics (Lensing):** Gravitational
 lensing involves light rays taking *different* paths
 around a mass distribution. These paths traverse different
-regions of the scalar field \(\phi(\vec{x})\). The differential
-clock-transfer structure between these paths generates the
-chronometric component of the Phantom-Mass signature; coherent
-optical convergence and shear arise through scalar backreaction
-and any permitted disformal response.
+regions of the scalar field \(\phi(\vec{x})\), but photon
+transport along them is conformally invariant: the conformal
+differential clock-transfer contrast is a reconstruction-space
+field, not a propagated delay, and it generates the chronometric
+component of the Phantom-Mass signature only as an inference
+degeneracy. Genuine propagated differential delay is carried by
+scalar backreaction (absorbed by lens models as mass) and by the
+GW170817-bounded disformal deformation; coherent optical
+convergence and shear arise through the same two channels.
 
 **Disformal Sector (\(B(\phi)\)):**
 
@@ -516,10 +571,17 @@ t_{\rm obs} - \Delta T_{\rm eff}(\vec{\theta})
 \right],
 \end{equation}
 
-where \(\Delta T_{\rm eff}(\vec{\theta})\) is the effective clock-transfer
-contrast along the line of sight at image position \(\vec{\theta}\), and
+where \(\Delta T_{\rm eff}(\vec{\theta})\) is the effective emission-time
+map along the line of sight at image position \(\vec{\theta}\), and
 \(\vec{\beta}_{\rm opt}(\vec{\theta})\) is the optical ray map generated by
-the scalar-backreacted and disformal geometry. For a finite exposure over
+the scalar-backreacted and disformal geometry. The propagating content of
+\(\Delta T_{\rm eff}\) decomposes into the ordinary geometric-plus-Shapiro
+Fermat surface already contained in any GR lens model, the disformal
+multipath deformation bounded by GW170817 (\(\lesssim 0.2\) s per \(2\) Mpc
+halo path; Box 3.2), and the common-mode endpoint clock ratio; the
+conformal sector contributes no path-dependent term, because null transport
+is conformally invariant (§3.1.1) and its clock-transfer map is
+endpoint-determined (§2.2). For a finite exposure over
 \([t_1, t_2]\), the recorded image is the time-averaged quantity:
 
 \begin{equation} \label{eq:gl_composite_image_exposure}
@@ -532,13 +594,17 @@ t - \Delta T_{\rm eff}(\vec{\theta})
 \right] dt .
 \end{equation}
 
-For a spatially varying conformal coupling, \(\Delta T_{\rm eff}\) varies
-across the image plane. If the source has temporal variability (secular
+For a spatially varying temporal field, \(\Delta T_{\rm eff}\) varies
+across the image plane through its propagating components — the
+gravitational Fermat surface and the disformal deformation — while its
+conformal clock-transfer content varies only in reconstruction space. If
+the source has temporal variability (secular
 evolution, rotation, or fluctuations) on the timescale of
 \(\nabla_\theta (\Delta T_{\rm eff})\), the finite-exposure average smears
 the recorded image.
 
-**The Equivalence:** A gradient in arrival time across an image
+**The Equivalence:** A gradient in the emission-time map
+across an image
 is mathematically equivalent to a shearing of the source frame. To a static
 observer assuming isochrony, this "temporal shear" is indistinguishable from
 the "gravitational shear" caused by mass. Thus,
@@ -559,14 +625,42 @@ the magnitude of the differential clock-transfer residual
 
 **Regime I: The Reference Envelope**
 
-**Assumption (Standard):** The GW170817 multi-messenger
-timing constraint applies to all metric sectors equally.
+**Physical carrier:** The disformal multipath
+deformation. For photons on the matter metric the phase velocity is
+\(v_{\rm ph}/c \simeq 1 - \tfrac{1}{2}D(\partial_{\hat{n}}\phi)^2\)
+with \(D \equiv B/A^2\) (Paper 0, App. B); a differently routed
+image pair traverses different \(\nabla\phi\) structure, so the
+inter-image residual is
+\(\Delta\tau_B = \tfrac{1}{2}\int D(\partial_{\hat{n}}\phi)^2\,dl\),
+evaluated at the GW170817-bound normalization
+(\(D(\partial_{\hat{n}}\phi)^2 \lesssim 2\times10^{-15}\)
+path-averaged). The deformation is direction-even
+(\((\partial_{\hat{n}}\phi)^2\) is invariant under
+\(\hat{n}\to-\hat{n}\)), so it appears as a propagation residual
+between distinct paths rather than a same-path holonomy — the
+even-parity channel of the same \(B(\phi)\) sector the corpus's
+holonomy program bounds on the odd/non-exact channel. On the
+corpus's weak-field branch \(B(\phi)\simeq B_0\varphi^2\) (Paper 0,
+§2.2), the product \(D(\partial_{\hat{n}}\phi)^2\) carries the
+quadratic field-depth suppression, so the stated ceiling is the
+saturation value of the GW170817 bound rather than the envelope's
+expectation on weak-field halo paths: the corpus-calibrated
+admissible normalization lies parametrically below it. The
+falsification threshold therefore bounds the normalization — not
+merely tests an assumed saturation — and the conversion into a
+constraint on the dimensionful \(B_0\) belongs to the same open
+normalization map as the corpus's B-sector bookkeeping (Paper 0,
+Appendix E).
 
-**Constraint basis:** The standard translation of
-timing to propagation-speed bounds (\(\lesssim 10^{-15}\)).
+**Constraint basis:** GW170817 bounds the path-averaged
+monopole \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\); the conformal
+sector contributes exactly zero propagated inter-image delay by
+null-cone invariance (§3.1.3).
 
 **Delay scale:** \(\Delta\tilde{\tau} \sim
-10^{-3}\text{--}1\) s (milliseconds to seconds) on halo scales.
+10^{-3}\text{--}1\) s (milliseconds to seconds) on halo scales —
+\(\Delta\tau_B \lesssim 0.2\) s per \(2\) Mpc halo path at the
+bound — the only propagating inter-image delay the theory supplies.
 
 **Primary observables:** Time-domain signatures in
 rapidly varying sources—lensed FRBs, GRBs.
@@ -576,7 +670,13 @@ rapidly varying sources—lensed FRBs, GRBs.
 wholesale DM replacement.
 
 **Falsification:** Null detection of achromatic timing
-residuals at < 0.1 ms excludes this regime.
+residuals at < 0.1 ms on a \(2\) Mpc halo path bounds the
+path-averaged disformal product
+\(D(\partial_{\hat{n}}\phi)^2 \lesssim 5\times10^{-19}\) —
+\(\sim 3.5\) orders of magnitude below the GW170817 level —
+probing between the corpus-calibrated envelope and the saturated
+ceiling: the same \(B(\phi)\) instrument as the holonomy
+program, applied to the even-parity multipath channel.
 
 ---
 
@@ -587,9 +687,14 @@ only differential disformal coupling; common-mode conformal temporal
 structure is not directly constrained by it, though it remains bounded
 by clock, PPN, and redshift channels (see Axiom 4).
 
-**Delay scale:** \(\Delta\tilde{\tau} \sim
+**Clock-transfer scale:** \(\Delta\tilde{\tau} \sim
 1\text{--}10\) years, driven by the conformal factor \(A(\phi)\)
-integrated over halo scales (Mpc).
+integrated over halo scales (Mpc). This is the
+*chronometric-envelope* scale — the reconstruction-space
+clock-transfer map of §2.2 — not a propagated photon delay; the
+conformal contribution to any inter-image arrival-time residual is
+exactly zero, and the propagating differential channel remains the
+disformal carrier at the ms–s level.
 
 **Primary observables:** The full phenomenology of
 "dark matter" in lensing — cluster arcs, cosmic shear — arising
@@ -611,11 +716,11 @@ scalar-metric sector is tested independently.
 
 This work demonstrates that
 *the Extended Regime (Regime II) is a viable physical alternative*.
-The Reference Envelope (Regime I) is a useful conservative baseline for
-calibration, but it represents a scenario where the temporal field is
-suppressed to match constraints whose differential-propagation
-interpretation does not directly bound the common-mode conformal clock
-sector.
+The Reference Envelope (Regime I) is the conservative baseline in which the
+only propagating inter-image content is the disformal multipath
+deformation at its GW170817-bounded normalization; the conformal clock
+sector, whose differential-propagation channel is identically inert, is
+the additional carrier of Regime II.
 
 ### 2.7 Why Lensing May Not Be Purely Spatial
 
@@ -656,31 +761,41 @@ timescales)
 
 Takes different paths through the lens (different impact parameters)
 
-Accumulates time differently through regions with different \(A(\phi)\)
-values
+Is accompanied by a different matter-clock transfer congruence through
+regions with different \(A(\phi)\) values — a timelike reconstruction
+field, not a photon propagation delay
 
 - Arrives at the detector at the "same" observation time
 
 If \(A(\phi)\) varies spatially—forming a halo-like configuration around the
-lens—then:
+lens—then the matter-frame path time
 
 \begin{equation} \label{eq:gl_path_delay}
 \Delta t_{\rm path} = \int_{\rm path} \frac{A(\phi)}{c}\,dl
 \end{equation}
 
-differs between rays at different impact parameters. For halo-scale
-propagation distances \(L \sim 2\) Mpc and conformal variations \(\Delta A/A
-\sim 10^{-6}\), the differential delay is:
+evaluated on the associated timelike clock congruence differs between rays
+at different impact parameters. This functional is not a photon arrival
+time: Axiom 1 makes the photon coordinate transit conformally invariant,
+so no part of it propagates to any observed inter-image delay. What it
+quantifies is the chronometric-envelope contrast — the magnitude of the
+clock-transfer field that a universal-clock reconstruction would
+misassign to mass, distance, or time-delay normalization. For halo-scale
+propagation depths \(L \sim 2\) Mpc and conformal variations \(\Delta A/A
+\sim 10^{-6}\), that envelope contrast is:
 
 \begin{equation} \label{eq:gl_delay_estimate}
-\Delta t \sim \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
+\Delta \tilde{\tau}_{\rm env} \sim \frac{\Delta A}{A} \cdot \frac{L}{c} \sim
 \text{years}
 \end{equation}
 
-This delay is
-**consistent with observed strong lensing time delays**.
-However, it implies that the "Dynamic Shutter" effect (temporal smearing) is
-negligible for slowly evolving galaxies. For slowly evolving galaxies the
+The propagating residual on the same paths is exactly zero in the conformal
+sector (Paper 19, step_56) and is bounded at the ms–s level on the
+disformal carrier (Box 3.2). The relevant comparison for any claimed
+observable is therefore the post-model residual — constrained to
+\(\lesssim\) tens of days in existing strong-lens systems by the success of
+GR mass models (Paper 19) — not the multi-hundred-day total delay, which
+those models already reproduce. For slowly evolving galaxies the
 source-dependent Dynamic Shutter is negligible. The dominant signal is
 therefore the coherent static temporal-field sector: physical optical
 shear/convergence arises from scalar backreaction and any permitted
@@ -690,7 +805,7 @@ the dominant signal only for fast transients (FRBs).
 
 #### Why This Creates "Phantom Mass"
 
-For a source that evolves on timescales comparable to \(\Delta t\):
+For a source that evolves on timescales comparable to the emission-time-map contrast \(\Delta T_{\rm eff}\):
 
 If the source was more compact in the past → inner regions (earlier
 epoch) appear smaller
@@ -755,7 +870,7 @@ This has three immediate consequences for gravitational lensing:
 
 - Static geometric bending beyond the conformally related geometry must come from \(g_{\mu\nu}[\phi]\) backreaction — the scalar field modifying the Einstein-frame metric through the coupled field equations — or from \(B \neq 0\), which tilts the matter null cone relative to the gravitational null cone.
 
-- The conformal sector can alter endpoint clock calibration, frequency transport, and timelike source evolution. It acts directly on timelike observables (orbital periods, spectroscopic velocities, standard-candle distance calibration) but cannot generate the printed spatial refractive index \(n_{\rm eff} \simeq 1 - 2\Psi + \alpha(\phi)\) that would follow from inserting \(A^2(\phi)\) into the spatial sector of a Newtonian-gauge metric alone.
+- The conformal sector can alter endpoint clock calibration, frequency transport, and timelike source evolution. It acts directly on timelike observables (orbital periods, spectroscopic velocities, standard-candle distance calibration) but cannot generate the printed spatial refractive index \(n_{\rm eff} \simeq 1 - 2\Psi + (A(\phi)-1)\) that would follow from inserting \(A^2(\phi)\) into the spatial sector of a Newtonian-gauge metric alone.
 
 #### 3.1.2 Separating Null and Timelike Observables
 
@@ -785,7 +900,7 @@ The static clock-transfer contribution from the conformal sector modifies the re
 \Delta\tilde{\tau}_{\rm static} = \frac{1}{c} \int_\gamma \bigl(A(\phi) - 1\bigr)\,dl
 \end{equation}
 
-This is a clock-transfer discrepancy — a difference between the matter-frame time accumulated along each path and the time inferred from an isochronous GR lens model — not a direct refraction of null geodesics. It contributes a source-independent term to the arrival-time (Fermat) surface and is operationally degenerate with the mass normalization inferred from multipath timing, distance, and joint image–delay reconstruction. The angular positions of Einstein rings and major arcs are governed by the optical geometry; any TEP modification of those positions arises through scalar backreaction on \(g_{\mu\nu}\), the bounded disformal sector, or a source-dependent temporal-composite displacement. The path integral here represents accumulated clock-rate difference along the open path, not photon proper time.
+This is a clock-transfer discrepancy — a difference between the matter-frame time a timelike congruence accumulates along each path and the time an isochronous GR lens model infers — not a propagated photon delay and not a direct refraction of null geodesics. For photons its differential content vanishes identically: the null condition is conformally invariant (§3.1.1), and the underlying Temporal Shear is an exact one-form, \(\Sigma_\mu=\nabla_\mu\ln A\), whose open-path integral is endpoint-determined and cancels between any two rays joining the same source and observer; inserting the screening projection \(\mathcal{S}_\Sigma(\mathcal{E})\) inside a photon-path observable is a category error, since photons carry no clocks and do not respond to the shear sector. The dedicated strong-lensing pipeline evaluates the exact additional static-conformal residual at \(0.0\) d (Paper 19, step_56). The functional is retained as the chronometric reconstruction map — the field a universal-clock reconstruction would misassign to convergence, mass-sheet normalization, or delay calibration — and it contributes no term to the propagated Fermat surface. The angular positions of Einstein rings and major arcs are governed by the optical geometry; any TEP modification of those positions arises through scalar backreaction on \(g_{\mu\nu}\), the bounded disformal sector, or a source-dependent temporal-composite displacement. The physically propagating differential residual is carried by the disformal multipath deformation, bounded by GW170817 to \(\lesssim 0.2\) s per \(2\) Mpc halo path.
 
 #### 3.1.4 The Amplification Matrix and Jacobian Decomposition
 
@@ -829,11 +944,11 @@ This is a phenomenological scalar truncation of the tensor response. Weak shear 
 
 - \(\Sigma_\mu^{\rm obs} = \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\): the observable environmentally projected Temporal Shear.
 
-- \(\langle\Delta A\rangle_\gamma = \int_\gamma \Sigma_\mu^{\rm obs}\,dx^\mu\): the open-path clock-transfer contrast.
+- \(\langle\Delta A\rangle_\gamma = \int_\gamma \Sigma_\mu^{\rm obs}\,dx^\mu\): the open-path clock-transfer contrast. In the unscreened limit this is the integral of an exact one-form, \(\int_\gamma \nabla_\mu\ln A\,dx^\mu = \ln A_{\rm obs} - \ln A_{\rm em}\), so it is endpoint-determined and its differential between two rays sharing the same endpoints vanishes identically; the environment-projected form is defined on the matter-clock congruence and inherits the same vanishing multipath photon content.
 
 - \(\kappa_{\rm lens}\): the lensing reconstruction response coefficient relating temporal-field structure to inferred convergence.
 
-These quantities are not numerically interchangeable without a solved environmental transfer function.
+These quantities are not numerically interchangeable without a solved environmental transfer function, and none of them is a propagated photon delay: the conformal entries act on clock calibration and reconstruction, while the propagating delay field is the disformal multipath deformation bounded in Box 3.2.
 
 #### 3.1.5 Interpretation: Geometric vs. Temporal Contributions
 
@@ -844,15 +959,15 @@ The Jacobian decomposition reveals two physically distinct contributions to imag
 | **Geometric** | \(\Psi_{,ij}\) | Spatial curvature from mass | Standard convergence \(\kappa\) and shear \(\gamma\) |
 | **Scalar backreaction** | \(g_{\mu\nu}[\phi]\) | Scalar field modifying Einstein-frame curvature | Coherent tangential shear mimicking DM halo |
 | **Disformal** | \(B(\phi)\nabla_\mu\phi\nabla_\nu\phi\) | Null-cone tilt along field gradient | Direction-dependent deflection |
-| **Temporal Composite** | \(\mu_s^{\,i}\,\partial_j \Delta T_{\rm eff}\) | Source motion × clock-transfer delay gradient | Stochastic shear noise correlated with kinematics |
+| **Temporal Composite** | \(\mu_s^{\,i}\,\partial_j \Delta T_{\rm eff}\) | Source motion × emission-time-map gradient | Stochastic shear noise correlated with kinematics |
 
-The scalar-backreaction and disformal terms produce coherent contributions to the shear field. The temporal composite term arises when the source position evolves during the differential clock-transfer delay across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
+The scalar-backreaction and disformal terms produce coherent contributions to the shear field. The temporal composite term arises when the source position evolves during the differential emission-time contrast \(\Delta T_{\rm eff}\) across the image; for a source with proper motion \(\vec{\mu}_s\), the effective source position becomes:
 
 \begin{equation} \label{eq:gl_effective_source}
 \beta_{\rm eff}^{\,i}(\vec{\theta}) = \beta_{\rm geom}^{\,i}(\vec{\theta}) - \mu_s^{\,i}\,\Delta T_{\rm eff}(\vec{\theta})
 \end{equation}
 
-where \(\mu_s^{\,i}\) is the \(i\)-th component of the source proper motion and \(\Delta T_{\rm eff}\) is the scalar clock-transfer contrast. The corresponding Temporal-Composite contribution to the Jacobian is:
+where \(\mu_s^{\,i}\) is the \(i\)-th component of the source proper motion and \(\Delta T_{\rm eff}\) is the effective emission-time map of §2.5. The corresponding Temporal-Composite contribution to the Jacobian is:
 
 \begin{equation} \label{eq:gl_tc_jacobian}
 \delta\mathcal{A}^{\rm TC}_{ij} = -\mu_s^{\,i}\,\partial_j \Delta T_{\rm eff}
@@ -870,31 +985,31 @@ The full amplification matrix in TEP is:
 \mathcal{A}_{ij} = \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic Lensing}} + \underbrace{\mathcal{A}^{(g[\phi],\text{static})}_{ij}}_{\text{"Dark Matter" (Coherent)}} + \underbrace{\mathcal{A}^{(\text{dyn})}_{ij}}_{\text{Temporal Composite (Stochastic)}}
 \end{equation}
 
-Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of Phantom Mass — a geometric effect of scalar backreaction on the Einstein-frame metric and disformal null-cone tilt, not particulate matter. The third term provides the unique observational discriminator: excess shear dispersion correlated with source kinematics. The conformal factor \(A(\phi)\) acts on timelike observables and clock calibration but does not generate the null-trajectory bending at leading order.
+Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of Phantom Mass — a geometric effect of scalar backreaction on the Einstein-frame metric and disformal null-cone tilt, not particulate matter. The third term provides the unique observational discriminator: excess shear dispersion correlated with source kinematics. The conformal factor \(A(\phi)\) acts on timelike observables and clock calibration but generates neither null-trajectory bending nor any inter-image arrival-time residual — the latter is exactly zero in the static conformal sector (Paper 19, step_56).
 
 **Principle:**
 
 ### Box 3.1: A Minimal Toy Model Estimate (Halo Scale Integration)
 
-To demonstrate the order of magnitude, consider a simple spherical conformal halo profile:
+To demonstrate the order of magnitude, consider a simple spherical conformal halo profile, applied as a local interior model over the field-bearing extent of the halo:
 
 \begin{equation} \label{eq:gl_halo_profile}
-A(\phi) = 1 + \epsilon \ln(r/r_0)
+A(\phi) = 1 + \epsilon \ln(r/r_0), \qquad r \lesssim r_h \sim L_{\rm halo}/2
 \end{equation}
 
-For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale \(r_0 = 10\) kpc:
+For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale \(r_0 = 10\) kpc, the excursion \(|A(\phi)-1|\) remains at the \(10^{-6}\) level throughout the domain (\(|\ln(r/r_0)| \lesssim 5\) for \(r \in [r_E, r_h]\)). The ambient boundary condition is imposed by environmental matching rather than by the toy form: beyond the halo matching radius \(r_h\) the screened field relaxes to the ambient baseline \(A_\infty = 1\), so the asymptotic divergence of the logarithm lies outside the domain of the estimate and is never extrapolated.
 
 - **Integration Path:** The delay is integrated only over the effective halo depth (\(L_{halo} \approx 2\) Mpc), not the full cosmological path. This respects the locality of the potential well.
 
-**Differential Clock-Transfer Reconstruction Scale:** Across an Einstein radius (\(r_E \approx 5\) kpc), the differential clock-transfer contrast corresponds to:
+**Chronometric-Envelope Contrast:** Across an Einstein radius (\(r_E \approx 5\) kpc), the differential clock-transfer field corresponds to:
 
 \begin{equation} \label{eq:gl_diff_delay}
-\Delta \tilde{\tau} \sim \frac{\epsilon}{2} \frac{L_{halo}}{c} \approx \frac{10^{-6}}{2} \cdot (6.5 \times 10^6 \text{ light-years}) \approx 3.2 \text{ years}
+\Delta \tilde{\tau}_{\rm env} \sim \frac{\epsilon}{2} \frac{L_{halo}}{c} \approx \frac{10^{-6}}{2} \cdot (6.5 \times 10^6 \text{ light-years}) \approx 3.2 \text{ years}
 \end{equation}
 
-- **Consistency:** This ~3 year scale is commensurate with observed time delays in strong lens systems (e.g., SN Refsdal), removing the earlier millennia-scale inconsistency and placing the Extended-Regime clock-transfer scale in the observed strong-lens range. It is an effective matter-clock reconstruction scale, not additional photon proper time.
+- **Carrier status:** This ~3 year figure is the chronometric-envelope scale — the reconstruction-space clock-transfer field of §2.2 and §3.1.3 — not a propagated photon delay. The exact additional static-conformal inter-image residual on the same paths is \(0.0\) d (Paper 19, step_56); the propagating differential residual is carried by the disformal multipath deformation at \(\lesssim 0.2\) s per \(2\) Mpc, and scalar backreaction enters the delay surface only as ordinary \(g\)-sector Fermat structure that lens models absorb as mass. The figure therefore does not compete with observed strong-lens delays — which are already reproduced by GR mass models — but bounds the post-model residual an isochronous reconstruction could misassign; the correct empirical comparison set is the residual class measured by Paper 19 (\(\lesssim\) tens of days), not the multi-hundred-day totals.
 
-- **Mechanism A (Clock-Transfer Reconstruction):** The static gradient \(\nabla(\Delta \tilde{\tau})\) produces unmodeled differential clock-transfer along existing lens paths. When a GR lens model is required to reproduce a path-dependent timing map while assuming isochrony, it can absorb this residual into inferred convergence, mass-sheet normalization, or distance calibration — the reconstruction-space "Phantom Mass" signature. It does not refract null geodesics onto new trajectories; the conformal sector preserves null cones. The corresponding physical optical-tidal contribution is carried by the scalar-backreaction and disformal channels of §3.1.4.
+- **Mechanism A (Clock-Transfer Reconstruction):** The static gradient \(\nabla(\Delta \tilde{\tau}_{\rm env})\) defines the unmodeled clock-transfer field along existing lens paths. When a GR lens model is required to reproduce a path-dependent timing map while assuming isochrony, such a residual would be absorbed into inferred convergence, mass-sheet normalization, or distance calibration — the reconstruction-space "Phantom Mass" signature. It does not refract null geodesics onto new trajectories and does not shift propagated arrival times; the conformal sector preserves null cones. The corresponding physical optical-tidal contribution is carried by the scalar-backreaction and disformal channels of §3.1.4.
 
 - **Mechanism B (Stochastic):** The dynamic shutter effect \(\vec{\mu}_s \cdot \nabla \tau\) is small for galaxies on year-timescales, but dominant for millisecond transients (FRBs).
 
@@ -907,18 +1022,18 @@ For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale 
 If the clock-transfer field tracks the gravitational potential (\(A(\phi) - 1 \propto \Psi\)), then \(A(\phi) - 1 \propto \int \rho/r\, dr\), giving:
 
 \begin{equation} \label{eq:gl_nfw_deflection}
-\alpha_{NFW}(r) \propto \ln(1 + r/r_s) - \frac{r/r_s}{1 + r/r_s}
+(A(\phi)-1)_{\rm NFW}(r) \propto \ln(1 + r/r_s) - \frac{r/r_s}{1 + r/r_s}
 \end{equation}
 
 For a cluster with \(r_s \approx 200\) kpc and integration over \(L_{halo} \approx 2\) Mpc:
 
-- The NFW profile concentrates more delay near the core than the logarithmic profile.
+- The NFW profile concentrates more of the clock-transfer field near the core than the logarithmic profile.
 
-- The differential delay across an Einstein radius (\(r_E \approx 5\text{--}50\) kpc) is enhanced by a factor of 2–5 relative to the logarithmic estimate.
+- The differential envelope contrast across an Einstein radius (\(r_E \approx 5\text{--}50\) kpc) is enhanced by a factor of 2–5 relative to the logarithmic estimate.
 
-- Result: \(\Delta\tilde{\tau}_{NFW} \sim 5\text{--}15\) years, still consistent with observed strong-lens time delays.
+- Result: \(\Delta\tilde{\tau}_{{\rm env},NFW} \sim 5\text{--}15\) years at the chronometric envelope — a reconstruction-scale figure with the carrier status stated above, not an observed-delay prediction.
 
-The order-of-magnitude estimate is robust to profile shape; realistic NFW profiles produce slightly larger delays than the toy logarithmic model.
+The order-of-magnitude envelope estimate is robust to profile shape; realistic NFW profiles produce slightly larger chronometric contrasts than the toy logarithmic model.
 
 **Principle:**
 
@@ -926,17 +1041,19 @@ The order-of-magnitude estimate is robust to profile shape; realistic NFW profil
 
 To estimate the magnitude of the *stochastic* shear contribution (the dynamic term \(\mu_s \nabla(\Delta \tilde{\tau})\)), the analysis uses the updated halo-scale delays:
 
-- **Source Velocity:** Typical cluster transverse velocity \(v_s \sim 1000\) km/s at distance \(D_A \sim 1\) Gpc yields an angular proper motion \(\mu_s \approx 2 \times 10^{-4}\) arcsec/year.
+- **Source Velocity:** Typical cluster transverse velocity \(v_s \sim 1000\) km/s at distance \(D_A \sim 1\) Gpc yields an angular proper motion \(\mu_s \approx 2 \times 10^{-7}\) arcsec/year (\(\sim 0.2\,\mu\)as/yr; the milliarcsec-scale figure appearing in earlier drafts reflected a unit slip).
 
-- **Delay Gradient:** From Box 3.1, a delay of \(\sim 3\) years varying over arcsecond scales gives \(\nabla(\Delta \tilde{\tau}) \sim 3\) years/arcsec.
+- **Envelope Delay Gradient:** From Box 3.1, a chronometric-envelope contrast of \(\sim 3\) years varying over arcsecond scales gives \(\nabla(\Delta \tilde{\tau}_{\rm env}) \sim 3\) years/arcsec at the envelope; the propagating-carrier gradient is \(12\) orders smaller (below).
 
 **Resulting Stochastic Shear:** The product is dimensionless shear:
 
 \begin{equation} \label{eq:gl_stochastic_shear}
-\gamma_{stoch} \approx (2 \times 10^{-4} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-4}
+\gamma_{stoch}^{\rm env} \approx (2 \times 10^{-7} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-7}
 \end{equation}
 
-This stochastic contribution (\(\gamma_{stoch} \sim 10^{-3}\)) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo signature is the combined static temporal-field contribution as registered by the lens model: its physical optical-tidal component is carried by scalar backreaction on \(g_{\mu\nu}\) and any bounded disformal term, while the conformal sector modifies the associated clock-transfer and inference mapping (Mechanism A). It does not arise from source motion, and not from a spatial refractive index.
+This stochastic contribution (\(\gamma_{stoch} \sim 10^{-6}\) at the chronometric envelope) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo signature is the combined static temporal-field contribution as registered by the lens model: its physical optical-tidal component is carried by scalar backreaction on \(g_{\mu\nu}\) and any bounded disformal term, while the conformal sector modifies the associated clock-transfer and inference mapping (Mechanism A). It does not arise from source motion, and not from a spatial refractive index.
+
+**Carrier bookkeeping.** The two delay scales of Box 3.3 sit on different carriers, and the applications of Section 5 must be read against the correct one. For photons the conformal clock-transfer map contributes exactly zero differential inter-image delay: null cones are conformally invariant (§3.1.1), so \(A(\phi)\) drops out of the photon transport equation and the open-path integral is endpoint-determined (Paper 19 verifies the vanishing residual explicitly). The physically propagating component of \(\Delta T_{\rm eff}\) is carried by the disformal multipath deformation, bounded by GW170817 to \(\lesssim 10^{-15}\) fractional — \(\Delta T \lesssim 0.2\) s over the \(2\) Mpc halo path, the Reference-Envelope scale. On that carrier the same product gives \(\gamma^{\rm TC}_{\rm prop} \sim \mu_s\,\partial_\theta\Delta T \sim (2\times10^{-7}\,{\rm arcsec/yr})(6.5\times10^{-9}\,{\rm yr/arcsec}) \sim 10^{-15}\). The \(6\times10^{-7}\) figure is therefore the *chronometric-envelope* value: it quantifies the reconstruction-space field a lens model would absorb *if* the clock-transfer map acted as a propagating emission-time field, and it bounds — rather than supplies — the shear-variance applications of §5. The photon-propagating channel is tested directly and most sharply by the arrival-time residual itself (§5.1).
 
 ### 3.2 Connection to Lens-Model Degeneracies
 
@@ -950,24 +1067,24 @@ TEP phenomenology divides into two distinct regimes, distinguished by the magnit
 
 #### Box 3.3: Regime Definitions and Parameter Thresholds
 
-| Regime | Differential clock-transfer scale | Phenomenology |
+| Regime | Clock-transfer scale | Phenomenology |
 | --- | --- | --- |
-| **Reference Envelope** | ms–s | Time-domain residuals; static optical lensing effectively unchanged |
-| **Extended Regime** | \(1\text{--}10\) years | Coherent scalar-metric/disformal lensing combined with chronometric reconstruction and source-dependent Temporal-Composite response |
+| **Reference Envelope** | ms–s (propagating, disformal carrier) | Time-domain residuals; static optical lensing effectively unchanged |
+| **Extended Regime** | \(1\text{--}10\) years (chronometric envelope, reconstruction space; propagating channel unchanged at ms–s) | Coherent scalar-metric/disformal lensing combined with chronometric reconstruction and source-dependent Temporal-Composite response |
 
-For a \(2\) Mpc path, the Extended-Regime contrast is \(\langle\Delta A\rangle_\gamma \sim 10^{-7}\text{--}10^{-6}\), consistent with the halo-scale integration in Box 3.1.
+For a \(2\) Mpc path, the Extended-Regime envelope contrast is \(\langle\Delta A\rangle_\gamma \sim 10^{-7}\text{--}10^{-6}\), consistent with the halo-scale integration in Box 3.1; per §3.1.3 this contrast is endpoint-determined for photons and is realized in the data only through the reconstruction mapping, while the propagating residual remains the disformal channel.
 
 **Operational Distinction:** The Reference Envelope accepts the standard GW170817 translation (arrival-time offset → propagation-speed bound) at face value. The Extended Regime applies if TEP's dynamical-time interpretation is correct, in which case the standard translation may require revision—the observed \(\Delta t = 1.74\) s constrains the *disformal* sector; it does not directly test the *conformal* sector, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests (Section 4).
 
-**Empirical Discriminator:** The regime is determined by observation, not assumption. If lensed FRBs show only millisecond residuals, the Reference Envelope applies. If strong-lens time delays show source-dependent anomalies at the year level, the Extended Regime is indicated.
+**Empirical Discriminator:** The regime is determined by observation, not assumption. If lensed FRBs show only millisecond residuals, the Reference Envelope applies. If strong-lens post-model residuals, reconstruction maps, or variability-correlated structure reveal clock-transfer structure at the envelope scale, the Extended Regime is indicated.
 
 **Independent Regime Criterion (Breaking Circularity):** To avoid circular reasoning, the following observable specifies the regime *independently* of TEP's correctness:
 
 - **The Variability-Mass Correlation Test:** In the Extended Regime, the inferred "dark matter" mass of a lens should correlate with the variability timescale of the background source population. Specifically: lenses observed through rapidly variable sources (AGN, quasars) should show systematically different mass reconstructions than the same lenses observed through slowly evolving sources (elliptical galaxies). This correlation is *forbidden* in standard CDM (mass is source-independent) but *required by the source-dependent Temporal-Composite component of the Extended Regime*.
 
-- **Decision Rule:** If existing strong-lens catalogs show no statistically significant correlation between inferred lens mass and source variability class at the >3σ level, the source-dependent Temporal-Composite component is disfavored. If such a correlation exists, it constitutes positive evidence for TEP independent of FRB timing.
+- **Decision Rule:** If existing strong-lens catalogs show no statistically significant correlation between inferred lens mass and source variability class at the >3σ level, the source-dependent Temporal-Composite component is disfavored. If such a correlation exists, it constitutes positive evidence for TEP independent of FRB timing. *Sensitivity floor:* the response enters through \(\delta\kappa \sim \gamma^{\rm TC} = \mu_s\,\partial_\theta\Delta T_{\rm eff}\) (Box 3.2), so a correlation search at the proposed 10% mass precision probes \(\gamma^{\rm TC} \gtrsim 10^{-1}\) — some five orders of magnitude above even the chronometric-envelope value — and reaching the propagating carrier through mass reconstruction would require \(\delta M/M \sim 10^{-15}\), far below any achievable precision. A null result at the specified precision therefore bounds the envelope amplitude rather than testing the carrier; the carrier itself is tested by the timing residual of §5.1. Complementarily, the ordinary delay-absorption route already constrains the propagating field: a path-dependent delay \(\Delta T\) absorbed into a lens model shifts the inferred normalization by \(\sim\Delta T/\Delta t_{\rm Fermat}\), so the observed \(\sim 10\%\) closure of strong-lens mass models bounds any propagating residual at \(\lesssim 10\) days per \(100\)-day delay — excluding a propagating year-scale reading outright, consistently with the conformal null of §3.1.1.
 
-- **Current Status:** This test can be performed with existing data (HST strong-lens archives, SDSS quasar lenses vs. galaxy-galaxy lenses). This is flagged as a priority observational test.
+- **Current Status:** This test can be performed with existing data (HST strong-lens archives, SDSS quasar lenses vs. galaxy-galaxy lenses) as an envelope-bounding correlation search; its discriminating power on the propagating carrier requires the timing channel of §5.1. This is flagged as a priority observational test.
 
 Under the conservative *Reference Envelope*, \(\Delta \tilde{\tau}\) is small (milliseconds to seconds). In this regime:
 
@@ -983,7 +1100,7 @@ Since the dynamic term \(\mu_{s,i} \nabla_j (\Delta \tilde{\tau})\) is randomly 
 
 **Principle:**
 
-**The Variability Scatter:** The inferred "shear noise" (RMS dispersion of ellipticities) should be higher for source populations with high proper motion or intrinsic variability. While the coherent "dark matter" signal is static, the *scatter* around that signal is dynamic.
+**The Variability Scatter:** The inferred "shear noise" (RMS dispersion of ellipticities) should be higher for source populations with high proper motion or intrinsic variability. While the coherent "dark matter" signal is static, the *scatter* around that signal is dynamic. The amplitude is set by the bookkeeping of Box 3.2: \(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the chronometric envelope and \(\sim10^{-15}\) on the propagating carrier, so the scatter excess contributes a variance \(\gamma_{\rm TC}^{2}\) that is orders of magnitude below shape noise on either branch. The observable content of the test is therefore a bound on the chronometric envelope — a non-detection at a stated scatter precision caps \(\nabla(\Delta\tilde{\tau})\) at that level — while the propagating channel is tested directly by timing residuals (§5.1).
 
 This distinguishes TEP from particle dark matter, where the shear dispersion is dominated solely by intrinsic shape noise and measurement error, independent of source kinematics.
 
@@ -1002,16 +1119,16 @@ gravity \(c_g\) and the speed of light \(c_{\gamma}\) to (e.g., Baker et al.
 Jain 2017):
 
 Screening in TEP is represented at the theory level by the environmental operator
-\(\mathcal{S}_\Sigma(\mathcal{E})\).
+*S*<sub>&Sigma;</sub>(*&Epsilon;*).
 Quantities such as
-\(\rho_T\),
-\(R_T(M)\),
-\(\mathcal{S}_\oplus(r)\),
-compactness \(\Phi/c^2\),
+&rho;<sub>T</sub>,
+*R*<sub>T</sub>(*M*),
+*S*<sub>&oplus;</sub>(*r*),
+compactness &Phi;/*c*<sup>2</sup>,
 local stellar density,
 geometric coherence length,
 and channel-specific response coefficients
-are domain-specific projections of \(\mathcal{E}\),
+are domain-specific projections of *&Epsilon;*,
 not independent screening mechanisms
 and not interchangeable universal thresholds.
 Each is an observational transfer model
@@ -1058,7 +1175,13 @@ The measurement confirms only that light and gravity share the same causal
 structure along a single path; it does not constrain the *rate* at
 which they traverse that path relative to other paths in the universe. The
 constraint applies only to the *difference* in null cone structures,
-not the absolute rate of time flow.
+not the absolute rate of time flow. The symmetry of this exemption must be
+stated with equal precision: the same null-cone invariance that frees the
+conformal amplitude from the differential bound also confines its
+propagation content to the common-mode endpoint calibration — the conformal
+sector contributes exactly zero propagated differential delay between any
+two rays (Section 3.1.3; the static-conformal residual vanishes identically,
+Paper 19 step_56). The exemption and the inertness are one theorem.
 
 ### 4.3 The Operational Reality: Decoupling the Sectors
 
@@ -1082,16 +1205,26 @@ propagation and cancels in the differential measurement, so the magnitude of
 the conformal potential is not directly constrained by such differential
 propagation tests. It remains indirectly constrained by PPN,
 equivalence-principle, source-screening, gravitational-redshift, and
-clock-comparison tests.
+clock-comparison tests — and, more bindingly for this paper's mechanism, by
+the null-cone invariance itself: the conformal clock-transfer map is a
+reconstruction-space field (what a lens model would absorb into convergence,
+mass-sheet normalization, or delay calibration), not a propagating delay.
+The physically propagating differential residual is the disformal multipath
+deformation of Section 3.1.4, bounded by this same measurement to
+\(\lesssim 0.2\) s per \(2\) Mpc halo path.
 
 **Principle:**
 
 **Assumption (Sector Decoupling):** The \(10^{-15}\) bound
 on the Disformal sector (the "speed of light" vs "speed of gravity") is
 accepted. The TEP-GL phenomenology relies on Conformal sector gradients
-(the "rate of time"), which this bound does not directly constrain, and
-which remain bounded by their own clock-transfer, PPN, redshift, and
-lensing constraints after environmental screening is applied.
+(the "rate of time"), which this bound does not directly constrain —
+and which, by the same null-cone invariance, carry no propagated
+differential content at all: their observable role is the
+endpoint/common-mode calibration and reconstruction-space clock-transfer
+map, bounded by clock-transfer, PPN, redshift, and lensing constraints
+after environmental screening is applied, with the propagated sector
+carried separately by the GW170817-bounded disformal channel.
 
 This decoupling makes the TEP framework robust against propagation speed
 constraints. Consistent with the general disformal relation (Bekenstein
@@ -1111,7 +1244,11 @@ that mimics mass.
 **Conformal Sector:** Not directly constrained by the
 GW170817 differential-propagation bound; independently constrained by
 clock, redshift, PPN, equivalence-principle, source-screening and
-lensing channels.
+lensing channels — and, as the binding constraint on the propagation
+side, identically zero in propagated differential delay by null-cone
+invariance (Section 3.1.3). Its observable content is the
+endpoint/common-mode calibration and the reconstruction-space
+clock-transfer map.
 
 **Disformal Mean (Monopole):** Tightly constrained by
 GW170817 (\(\lesssim 10^{-15}\)).
@@ -1124,10 +1261,12 @@ time-domain signatures predicted in Section 5.
 
 By distinguishing between the *speed of transmission* (directly
 constrained by GW170817) and the *rate of proper time accumulation*
-(constrained instead by clock, PPN, and redshift channels), the conditional
+(constrained instead by clock, PPN, and redshift channels, and identically
+null in propagated differential delay), the conditional
 phenomenological viability of TEP as a dark-sector reinterpretation is
 established within the screening and amplitude-closure assumptions stated
-here.
+here — with the propagating discriminator assigned, as in Section 5, to the
+disformal multipath channel that GW170817 does bound.
 
 ### 4.4 Environmental Screening and Solar System Constraints
 
@@ -1136,8 +1275,9 @@ the clock-transfer contrast required to affect cluster lensing
 reconstructions. As established in Box 3.1, halo-scale integration over
 \(L_{\rm halo} \sim 2\) Mpc gives \(L_{\rm halo}/c \simeq 6.5\times10^6\) yr,
 so a path-averaged conformal contrast \(\langle \Delta A\rangle_{\rm path}
-\sim 10^{-7}\text{--}10^{-6}\) yields year-scale differential
-clock-transfer — commensurate with observed strong-lens delays. This replaces
+\sim 10^{-7}\text{--}10^{-6}\) yields a year-scale chronometric-envelope
+field — the reconstruction-space quantity of §3.1.3, not a propagated
+photon delay. This replaces
 the earlier cosmological-integration estimate, which produced unobserved
 \(10^3\text{--}10^5\) year gaps and is not the scale required by the Extended
 Regime. Even at this reduced contrast, if the same field gradients persisted
@@ -1216,7 +1356,7 @@ The transition from a geometric to a dynamical-time framework shifts the observa
 
 **Prediction:** Strongly lensed fast transients (FRBs, GRBs) will exhibit achromatic *differential* arrival-time residuals between images that cannot be explained by geometric time delays (Refsdal 1964) or plasma dispersion.
 
-In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional arrival-time/clock-transfer residual \(\Delta \tilde{\tau}\). Because \(\phi\) fields in halos may have substructure (or "weather"), this residual varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly in the *relative* arrival times of the images. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this differential delay is *achromatic* (frequency-independent). The residual is expected to depend on integrated path depth and intervening temporal-field structure, and may therefore correlate with observed redshift; in TEP, redshift here is an observational clock-distance label, not a measure of physical spatial expansion. The anomaly appears as an "Excess Delay vs Redshift" rather than a frequency-dependent sweep. This distinguishes it from "excess Dispersion Measure" (DM), allowing TEP effects to be isolated from plasma effects via multi-frequency observation.
+In standard GR, the time delay \(\Delta t_{geom}\) between images is fixed by the mass distribution. In TEP, there is an additional propagated arrival-time residual \(\Delta \tilde{\tau}\), carried by the disformal multipath deformation — bounded by GW170817 to \(\lesssim 0.2\) s per \(2\) Mpc halo path — since the conformal sector contributes exactly zero propagated inter-image delay (§3.1.3; Paper 19, step_56). Because \(\phi\) fields in halos may have substructure (or "weather"), this residual varies across the image plane. For a millisecond-duration FRB (e.g., Muñoz et al. 2016), even a tiny gradient in \(\Delta \tilde{\tau}\) will manifest as a timing anomaly in the *relative* arrival times of the images. Unlike plasma dispersion (which scales as \(\nu^{-2}\)), this differential delay is *achromatic* (frequency-independent). The residual is expected to depend on integrated path depth and intervening temporal-field structure, and may therefore correlate with observed redshift; in TEP, redshift here is an observational clock-distance label, not a measure of physical spatial expansion. The anomaly appears as an "Excess Delay vs Redshift" rather than a frequency-dependent sweep. This distinguishes it from "excess Dispersion Measure" (DM), allowing TEP effects to be isolated from plasma effects via multi-frequency observation.
 
 **Target Candidates:** Recent literature has identified specific anomalies suitable for this test. The repeating source *FRB 20190520B* exhibits a "Dispersion Measure Excess" (\(\sim 900\) pc cm\(^{-3}\)) relative to its redshift (Koch Ocker et al. 2022), currently attributed to extreme host density. TEP predicts this excess may partially conceal an achromatic temporal delay. Additionally, *FRB 20190308C* (Chang et al. 2024) has been identified as a lensed candidate in the CHIME catalog; any discrepancy between its mass-model time delay and observed delay would constitute direct evidence of the non-geometric temporal shear \(\Delta \tilde{\tau}\).
 
@@ -1242,7 +1382,7 @@ where \(\Delta t_{ij}^{\rm GR}\) must be frozen from an independent lens model b
 
 **Prediction:** The *dispersion* (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.
 
-As derived in Section 3, the coherent "dark matter" halo signal combines scalar-backreacted optical geometry and any bounded disformal response with the conformal clock-transfer reconstruction. The Dynamic Shutter supplies the additional source-dependent component. The secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical.
+As derived in Section 3, the coherent "dark matter" halo signal combines scalar-backreacted optical geometry and any bounded disformal response with the conformal clock-transfer reconstruction. The Dynamic Shutter supplies the additional source-dependent component. The secondary "Stochastic Shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical. The predicted excess is bounded by the ledger of Box 3.2 (\(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the chronometric envelope, \(\sim10^{-15}\) on the propagating carrier), so the test operates as a precision bound on the envelope amplitude at whatever scatter precision is achieved (Box 5.1).
 
 **Principle:**
 
@@ -1256,21 +1396,23 @@ The Einstein Cross (Q2237+0305) provides a unique opportunity to test TEP with *
 
 - **Extensive monitoring:** Decades of photometric data exist (OGLE, Gaia, HST).
 
-**TEP Prediction:** If the flux ratio anomalies are (partially) due to temporal shear rather than stellar microlensing, they should correlate with the quasar's variability timescale. Specifically:
+**Amplitude ledger.** Two response routes connect the temporal field to the observed flux ratios, and the bookkeeping of Box 3.2 applies to both. The Jacobian route gives \(\delta\mu/\mu \sim \mu\,\gamma^{\rm TC}\): at magnification \(\mu \sim 10\) this is \(\sim 6\times10^{-6}\) at the chronometric envelope and \(\sim10^{-14}\) on the propagating carrier — four orders of magnitude below the observed 10–30% anomalies even at the envelope. The emission-time route gives \(\delta F/F \sim \dot{\nu}\,\delta t_{\rm em}\): for a quasar varying fractionally at \(\dot{\nu} \sim 10\%\) per month, the propagating-carrier delay (\(\lesssim 0.2\) s) contributes \(\delta F/F \sim 10^{-8}\), while a year-scale propagating reading of the clock-transfer map would produce order-unity phase-correlated flux swings that are not observed. The Einstein Cross anomalies therefore remain in the stellar-microlensing regime and are not claimed as a TEP signal at any admissible amplitude.
 
-- During periods of rapid quasar variability, flux ratio anomalies should be *larger*.
+**TEP Prediction:** The discriminating content of this test is the correlation structure, not the anomaly amplitude. If a residual emission-time contrast \(\delta t_{\rm em}\) exists between the four sightlines, the apparent flux-ratio anomaly amplitude scales with the source's instantaneous variability rate:
 
-- During quiescent periods, anomalies should regress toward the smooth-lens prediction.
+- During periods of rapid quasar variability, the temporal-composite contribution to flux ratios is *larger* (\(\delta F/F \propto \dot{\nu}\,\delta t_{\rm em}\)).
 
-- Unlike stellar microlensing, which is uncorrelated with the source's intrinsic state, TEP predicts that "microlensing-like" anomalies will be coherent with the quasar's own variability phases—effectively turning "on" during violent source activity.
+- During quiescent periods, it regresses toward the smooth-lens prediction.
 
-**Status:** This test can be performed immediately using archival OGLE light curves cross-correlated with flux ratio measurements. A positive detection would constitute strong evidence for TEP using existing data, independent of future FRB observations. This is flagged as a priority archival analysis.
+- Unlike stellar microlensing, which is uncorrelated with the source's intrinsic state, the temporal contribution is coherent with the quasar's own variability phases—effectively turning "on" during violent source activity.
+
+**Status:** This test can be performed immediately using archival OGLE light curves cross-correlated with flux ratio measurements, and it functions quantitatively as a bound: at \(\sim 1\%\) photometric precision and \(\dot{\nu} \sim 10\%\) per month, the absence of a variability-phase-correlated residual bounds any coherent emission-time contrast at \(\delta t_{\rm em} \lesssim\) a few days — sitting between the millisecond propagating carrier and the excluded year-scale propagating reading. Detection of the Reference-Envelope carrier itself requires the arrival-time residual protocol of §5.1. This is flagged as a priority archival analysis.
 
 ### 5.3 The CMB-Galaxy Lensing Tension
 
 **Prediction (Extended Regime):** TEP-GL predicts that galaxy weak-lensing measurements can contain a source-dependent covariance contribution absent from CMB lensing, even when their mean inferred amplitudes are statistically consistent.
 
-While the CMB is effectively a static backlight (zero intrinsic evolution), galaxy sources are dynamic population. Under TEP, the stochastic component of the clock-transfer signal (driven by source proper motion, see Section 5.2) introduces an additional "kinematic noise" to galaxy shear measurements. Because the CMB is static, it is immune to this effect. Consequently, TEP predicts that precision cosmology inferred from galaxy weak lensing carries an unmodeled source-dependent covariance term absent from CMB lensing, which is a candidate contributor to the observed tension in the clustering amplitude (\(S_8\)).
+While the CMB is effectively a static backlight (zero intrinsic evolution), galaxy sources are dynamic population. Under TEP, the stochastic component of the clock-transfer signal (driven by source proper motion, see Section 5.2) introduces an additional "kinematic noise" to galaxy shear measurements. Because the CMB is static, it is immune to this effect. Consequently, TEP predicts that precision cosmology inferred from galaxy weak lensing carries an unmodeled source-dependent covariance term absent from CMB lensing. The quantitative reach of that term is set by Box 3.2: its variance contribution \(\gamma_{\rm TC}^{2} \sim 4\times10^{-13}\) at the chronometric envelope (\(\sim2\times10^{-30}\) on the propagating carrier) is far below the shape-noise variance \(\sim 0.09\), so it cannot supply the percent-level amplitude of the observed \(S_8\) tension. The prediction is the existence and source-class structure of the covariance term, not an explanation of the tension's magnitude.
 
 **Principle:**
 
@@ -1284,7 +1426,7 @@ While the CMB is effectively a static backlight (zero intrinsic evolution), gala
 
 - KiDS-Legacy (2025): \(S_8 = 0.815^{+0.016}_{-0.021}\), \(0.73\sigma\) from Planck
 
-**TEP Interpretation:** Previous iterations of TEP considered secular source evolution as a driver for coherent shear offsets, but the magnitude (\(\sim 10^{-6}\)) is too small to explain the 5% tension. Instead, the tension is interpreted as a Systematic Noise Bias arising from Stochastic Shear (Box 5.2).
+**TEP Interpretation:** Previous iterations of TEP considered secular source evolution as a driver for coherent shear offsets, but the magnitude (\(\sim 10^{-6}\)) is too small to explain the 5% tension. The stochastic-shear covariance term is likewise bounded: \(\gamma_{\rm TC}^{2}/\sigma_{\rm sh}^{2} \sim 4\times10^{-12}\) relative to shape noise at the chronometric envelope, so this channel does not resolve the \(S_8\) tension; its role is diagnostic — a source-dependent covariance signature whose presence, not its magnitude, is the observable.
 
 **Mechanism:** Standard maximum-likelihood estimators weight data by the inverse covariance (\(C^{-1}\)). Standard analyses assume shear noise is dominated by random galaxy orientations ("shape noise"). If the covariance matrix omits a source-dependent kinematic term (\(\sigma^2_{\mu}\)), the relative weighting of high-variance regions such as cluster outskirts is misspecified, and the recovered clustering amplitude is biased.
 
@@ -1303,7 +1445,7 @@ The following table summarizes the distinguishing predictions of the two framewo
 | Observable | Particle DM Prediction | TEP-GL Prediction |
 | --- | --- | --- |
 | **Lensed FRB timing** | GR lens delays from baryons, particle dark matter and substructure; no TEP-specific residual correlated with temporal-field environment after lens-model controls | Achromatic *residual* anomaly (ms-scale) |
-| **Source-dependent Shear** | No TEP-specific source-temporal correlation after intrinsic-alignment, selection and measurement-systematic controls | **Excess Scatter** (noise scales with \(\mu_s\)) |
+| **Source-dependent Shear** | No TEP-specific source-temporal correlation after intrinsic-alignment, selection and measurement-systematic controls | **Excess Scatter** (noise scales with \(\mu_s\); bounded amplitude per Box 3.2) |
 | **Source variability–lens mass correlation** | None (mass is source-independent) | Source-class-dependent reconstruction residual correlated with source temporal structure; amplitude determined by \(\kappa_{\rm lens}\) and the environmental transfer function |
 | **CMB lensing** | Standard convergence | Coherent scalar-metric lensing remains active; only the source-dependent Temporal-Composite term vanishes |
 | **Galaxy weak lensing** | Coherent component as CMB; plus source-dependent Temporal-Composite term | Additional source-class-dependent covariance absent from the CMB Temporal-Composite channel; TEP-GL does not independently fix the sign of the mean shift |
@@ -1341,6 +1483,8 @@ To ensure rigorous falsifiability, explicit null-result thresholds are specified
 | **CMB-Galaxy \(S_8\) Tension** | CMB-S4 + LSST | <1% \(S_8\) agreement | Statistically consistent agreement (< 1\(\sigma\)) | Temporal-Composite contribution above 1% |
 | **Variability-Mass Correlation** | ≥100 lenses with varied sources | 10% mass precision | No correlation at >3σ | Source-dependent reconstruction channel |
 
+**Amplitude probed by each threshold.** The thresholds act on different carriers (Box 3.2), and the table is populated accordingly. The lensed-FRB row acts on the propagating delay field directly: a 0.1 ms ensemble bound excludes the disformal multipath carrier at three orders of magnitude below the GW170817-saturating level (\(\sim0.2\) s per \(2\) Mpc halo path) — equivalently, it bounds the disformal normalization \(D(\partial_{\hat{n}}\phi)^2\) to \(\sim 2\times 10^{-18}\) on halo paths, the flagship, fully powered test of the same \(B(\phi)\) instrument the holonomy program probes on the odd-parity channel. The shear-variability row bounds \(\gamma^{\rm TC} \lesssim 5\times10^{-3}\), equivalent to a delay-gradient bound \(\nabla(\Delta\tilde{\tau}) \lesssim 2\times10^{4}\) yr/arcsec — a weak upper limit on the chronometric envelope, not a test of the carrier. The \(S_8\) row bounds fractional source-dependent covariance at the percent level; the Temporal-Composite term sits at \(\sim4\times10^{-12}\) relative to shape noise even at the envelope, so this row's content is the structural existence test rather than an amplitude reach. The variability–mass row probes \(\delta\kappa \sim \gamma^{\rm TC} \gtrsim 10^{-1}\) directly, and through the delay-absorption route bounds any propagating residual at \(\lesssim 10\%\) of the Fermat delay (\(\sim10\) d per 100 d) — already excluding a propagating year-scale reading, consistent with the conformal null of §3.1.1. Together the rows bound the propagating delay field at every scale between the millisecond and the tens-of-days level, with the chronometric sector confined to the reconstruction space where the Paper-19 residual program operates.
+
 **Joint Channel Exclusion:** If all four null-result thresholds are met simultaneously, the distinctive chronometric and Temporal-Composite predictions of TEP-GL are excluded at the amplitudes specified here. The coherent scalar-backreaction sector remains independently testable through its frozen HC/GL prediction for CMB and galaxy lensing. TEP-GL as a complete lensing realization is excluded only if both the time-domain/source-dependent channels and the independently specified coherent optical prediction are ruled out.
 
 **Timeline:** Tests (1) and (4) are achievable within 5–10 years (CHIME, DSA-2000, Rubin/LSST). Tests (2) and (3) require next-generation surveys (CMB-S4, Euclid) with ~10-year horizons. A definitive verdict on TEP-GL is therefore expected by ~2035.
@@ -1369,7 +1513,8 @@ the observation that this field has spatial gradients.
 
 ### 6.2 CMB Lensing and the Integrated Sachs-Wolfe Constraint
 
-A scalar field capable of generating year-scale differential delays on
+A scalar field capable of generating year-scale chronometric-envelope
+contrasts on
 cluster scales raises a critical question: what are the implications for the
 Cosmic Microwave Background (CMB)? Two potential tensions must be addressed.
 
@@ -1405,8 +1550,11 @@ Conditional on the HC tracking closure in which \(\phi\) follows the
 matter distribution adiabatically, the resulting order-of-magnitude
 estimate satisfies the quasi-static ISW bound.
 
-**Setup:** The conformal factor is \(A(\phi) = 1 +
-\alpha(\phi)\) with \(\alpha \sim 10^{-6}\) on halo scales. The following
+**Setup:** The conformal factor is \(A(\phi) = e^{-u}
+\approx 1 - u\), with the field excursion \(u \sim 10^{-6}\) on halo
+scales (\(u\) is the canonical dimensionless field of Paper 0; the symbol
+\(\alpha(\phi) \equiv d\ln A/d\phi = \beta_A\) is reserved for the
+coupling function). The following
 estimate uses the conventional reference-background variables employed by
 the HC linear-transfer representation (Paper 18). Here \(H_{\rm ref}(z)\)
 is an observational/reference inverse-time scale and \(a_{\rm eff}=
@@ -1414,17 +1562,17 @@ A_{\rm clock}\); neither denotes physical expansion of the underlying
 spatial geometry. The ISW constraint requires:
 
 \begin{equation} \label{eq:gl_isw_constraint}
-\left|\frac{\partial \ln A}{\partial t}\right| \approx
-\left|\frac{\dot{\alpha}}{1+\alpha}\right| \approx |\dot{\alpha}| \ll
+\left|\frac{\partial \ln A}{\partial t}\right| =
+|\dot{u}| \ll
 H_0
 \end{equation}
 
-**Estimate of \(\dot{\alpha}\):** If \(\phi\) tracks the
+**Estimate of \(\dot{u}\):** If \(\phi\) tracks the
 matter distribution adiabatically (sourced by \(T^\mu_\mu\)), then
-\(\alpha\) evolves on the timescale of structure formation:
+\(u\) evolves on the timescale of structure formation:
 
-\begin{equation} \label{eq:gl_alpha_dot}
-\dot{\alpha} \sim \alpha \cdot \frac{\dot{\rho}}{\rho} \sim \alpha
+\begin{equation} \label{eq:gl_u_dot}
+\dot{u} \sim u \cdot \frac{\dot{\rho}}{\rho} \sim u
 \cdot H_{\rm ref}(z) \cdot f_{\rm ref}(z)
 \end{equation}
 
@@ -1436,7 +1584,7 @@ and \(H_{\rm ref}(z) \approx 1.2 H_0\).
 **Result:**
 
 \begin{equation} \label{eq:gl_isw_result}
-\frac{|\dot{\alpha}|}{H_0} \sim \alpha \cdot f_{\rm ref} \cdot \frac{H_{\rm ref}(z)}{H_0}
+\frac{|\dot{u}|}{H_0} \sim u \cdot f_{\rm ref} \cdot \frac{H_{\rm ref}(z)}{H_0}
 \sim 10^{-6} \times 0.8 \times 1.2 \approx 10^{-6}
 \end{equation}
 
@@ -1451,7 +1599,7 @@ varies spatially (creating "dark matter" halos) but evolves temporally
 only as fast as the underlying matter distribution. Year-scale
 *spatial* delays across an image plane are compatible with
 cosmologically slow *temporal* evolution because the delay
-gradient is set by the static \(\nabla\alpha\), not by \(\dot{\alpha}\).
+gradient is set by the static \(\nabla u\), not by \(\dot{u}\).
 
 #### 6.2.2 CMB Lensing Power Spectrum
 
@@ -1495,8 +1643,8 @@ pure-conformal Bellini–Sawicki closure with active \(\delta\phi\) evolution.
 TEP-GL imports that linear closure rather than treating CMB lensing as a
 source-evolution effect. The amplitude is controlled by the integrated
 scalar-backreaction profile, not by lens motion; consistency with the
-observed spectrum constrains the relationship between \(\alpha(\phi)\) and
-the matter density \(\rho\).
+observed spectrum constrains the relationship between the field excursion
+\(u\) and the matter density \(\rho\).
 
 #### 6.2.3 Parameter Space Constraints
 
@@ -1547,7 +1695,9 @@ bound is satisfied when the environmental projection
 observable Temporal Shear below precision-test thresholds. The halo
 constraint is satisfied when the same operator, acting across an
 extended path through lower-density environments, permits a cumulative
-clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\).
+clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\) on the
+matter-clock congruence — the chronometric-envelope field of §3.1.3,
+which is endpoint-determined for photons and is not a propagated delay.
 
 ### 6.3 Interpretational Challenges
 
@@ -1555,8 +1705,16 @@ TEP effects mimic standard lensing signatures, making them difficult to
 distinguish without time-domain analysis.
 
 **Static Degeneracy:** Most lensing data are analyzed under
-static assumptions. In this limit, temporal shear is mathematically
-indistinguishable from spatial mass (Section 3).
+static assumptions. In this limit, the conformal sector enters as a
+reconstruction degeneracy — the endpoint-determined clock-transfer map
+defined through $A(\phi) = \exp(\beta_A \phi/M_{\rm Pl})$ and the
+line-of-sight field profile $\phi(r)$ is absorbed into mass-sheet and
+delay normalization rather than into propagated arrival times (Section
+3), while optical convergence and shear are carried by the
+scalar-backreaction and disformal channels. The predicted
+reconstruction-space map is qualitatively similar to the observed map;
+a full quantitative comparison requires the source light-curve model,
+which is the next pipeline step.
 
 **Differential vs. Common-Mode Effects:** The GW170817
 constraint is often interpreted as excluding modified metric couplings.
@@ -1574,8 +1732,10 @@ sector resolve into a consistent picture based on signal topology:
 **Lensing (Multipath):** Observations that require "dark
 matter" (e.g., lensing) are fundamentally
 *multipath* measurements. These different pathways sample
-different values of the time field \(\phi\), creating differential
-delays that manifest as "phantom mass."
+different values of the time field \(\phi\), creating a differential
+clock-transfer field that isochronous reconstruction reads as "phantom
+mass," while any propagated differential delay rides only on the
+backreacted and disformal sectors.
 
 **GW170817 (Single-Path):** Observations that constrain
 "modified gravity" (GW170817) are fundamentally
@@ -1586,12 +1746,14 @@ distortions are common-mode and cancel out.
 The apparent contradiction—"how can gravity be modified enough to create
 dark matter but unmodified enough to pass GW170817?"—is resolved. TEP
 introduces the temporal field as the additional physical degree of freedom;
-its conformal sector governs clock transport without bending null geodesics,
+its conformal sector governs clock transport without bending null geodesics
+or shifting propagated arrival times,
 while its stress-energy and strong-field operators can backreact on the
 Einstein-frame geometry (Bahrain, Paper 28). The differential-propagation
 bound constrains the disformal sector, not the common-mode conformal clock
-sector. Time manifests as a differential observable only when comparing
-divergent paths.
+sector. Time manifests as a propagated differential observable only through
+non-exact transport on divergent paths; in the exact conformal sector it
+manifests as a reconstruction degeneracy.
 
 ### 6.5 Path-Dependent Distance/Proper-Time Ratio
 
@@ -1609,7 +1771,8 @@ particulate *dark matter* is inferred.
 **TEP Reality:** The matter proper-time accumulation rate
 \(d\tilde{\tau} = A(\phi) d\tau_g\) varies with location. The anomaly
 in inferred travel time is due to the scalar field gradient modulating
-clock rates along the path, not to a variation in local \(c\).
+the clock-transfer field registered by matter congruences along the
+path, not to a variation in local \(c\).
 Conclusion: apparent *dark matter* is reconstructed temporal
 transport.
 
@@ -1676,7 +1839,7 @@ a_0 \sim c H_0 \approx (3 \times 10^8\ \text{m/s}) \times (2.2 \times
 \end{equation}
 
 This lies within a factor of about five of the empirical MOND value
-\(a_0 \approx 1.2 \times 10^{-10}\) m/s². TEP attributes this
+\(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is now anchored more precisely: the SPARC-derived characteristic acceleration \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7, v0.15; Paper 10) is rooted in the cosmological horizon scale \(g_t \sim cH_0/2 \approx 3.4 \times 10^{-10}\) m/s² and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
 cross-scale relation to the same temporal-gradient structure
 represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
 statement is that TEP produces an acceleration scale of cosmological
@@ -1707,17 +1870,37 @@ assumption.
 | TEP-GL Prediction | Existing Observational Anomaly | Status |
 | --- | --- | --- |
 | **Source-Dependent Shear**
-(Kinematic noise bias) | **\(S_8\) Tension**
+(Kinematic noise bias; bounded at
+\(\gamma_{\rm TC}^2/\sigma_{\rm sh}^2 \sim 4\times10^{-12}\),
+Box 5.3) | **\(S_8\) Tension**
 Survey-dependent: DES Y6 lower than CMB; KiDS-Legacy
 consistent with Planck. | **Motivating Consistency** |
 | **Mass-Sheet Degeneracy**
 (Temporal vs Spatial) | **\(H_0\) Tension**
 Time-delay cosmography (\(H_0 \approx 73\)) conflicts with
-CMB (\(H_0 \approx 67\)). | **Consistent** |
+CMB (\(H_0 \approx 67\)). The chronometric entry is a
+degeneracy statement, not a supply channel: a common-mode
+endpoint rescaling acts on inferred \(D_{\Delta t}\) exactly
+as an external convergence sheet does, but under the
+present-epoch convention its amplitude is the uniform
+local-well residual \(A_o \approx 1-10^{-7}\) — far below
+the tension and identical for every lens system. The full
+channel audit on the real TDCOSMO-2025 systems (Paper 19,
+Step 58) confirms the propagated sector is clean at
+\(\lesssim 10^{-8}\) fractional (\(\sim 10\) ms
+ceilings on \(10\,R_{\rm E}\) traverses) and finds the only
+order-percent route to be the lensing–dynamical slip in the
+velocity-dispersion prior — in the direction that elevates
+inferred \(H_0\) — while the mundane mass-model floor is
+\(\sim 6\%\) (SDSS1206+4332 power-law vs composite). The
+corpus's quantitative \(H_0\) channel is the Cepheid
+clock-bias sector (TEP-H0, Paper 11), a different
+projector. | **Degeneracy-level** |
 | **Temporal-Composite Shear**
 (Dynamic Shutter) | **Flux Ratio Anomalies**
 Substructure required to explain ratios is often not found;
-"phantom" substructure. | **Consistent** |
+"phantom" substructure. TC contribution bounded at
+\(\delta\mu/\mu \lesssim 10^{-5}\) (Box 5.2). | **Amplitude-bounded** |
 | **Variability-Shear Correlation** | **Einstein Cross Anomalies**
 Existing Einstein Cross monitoring provides archival data
 suitable for testing the predicted variability-phase
@@ -1781,9 +1964,11 @@ temporal-field phenomenology, but it is not particulate dark matter.
 one temporal field projects into coherent optical,
 chronometric-reconstruction and source-dependent image channels. Scalar
 backreaction and any permitted disformal contribution generate coherent
-angular response; conformal open-path clock transfer changes timing and
-inferred mass normalization; source evolution generates
-Temporal-Composite Shear. Standard isochronous reconstruction combines
+angular response; conformal open-path clock transfer reshapes the
+reconstruction-space timing and inferred mass normalization — its
+propagated inter-image delay is exactly zero, so its observable content
+is the inference degeneracy itself; source evolution generates
+Temporal-Composite Shear on the propagating carriers. Standard isochronous reconstruction combines
 these effects into an apparent dark-matter distribution.
 
 **The GW170817 "Speed Limit" is Nuanced:** The standard
@@ -1804,7 +1989,9 @@ are defined. In the conservative *Reference Envelope*, the
 effects are millisecond-scale and detectable only in
 high-time-resolution astrophysics (FRBs, pulsars). In the
 *Extended Regime*, where environmental screening and/or a revised
-operational mapping allow larger effective delays, TEP becomes a full
+operational mapping allow a year-scale chronometric-envelope field —
+with the propagating inter-image delay remaining bounded at the ms–s
+level — TEP becomes a full
 temporal-geometry replacement for particle dark matter.
 
 ### 7.3 Future Outlook: Time, Not Mass
@@ -1856,7 +2043,12 @@ consistent with that refinement: Axiom 3 already distinguishes open-path
 differential residuals (the GL observable) from closed-loop holonomy,
 and the static clock-transfer contribution is identified as a
 clock-transfer discrepancy rather than a direct refraction of null
-geodesics. Readers should consult TEP-LENS for the current canonical
+geodesics. The two papers now state one answer for the conformal
+sector: the exact additional static-conformal inter-image residual is
+\(0.0\) d (Paper 19, step_56), and every year-scale figure quoted here
+is a chronometric-envelope (reconstruction-space) amplitude, with the
+propagating differential channel carried by the disformal deformation
+at the ms–s level. Readers should consult TEP-LENS for the current canonical
 strong-lensing time-delay formulation.
 
 ## References
@@ -1993,37 +2185,37 @@ J. 2012, *A&A*, 544, A62
 
 Smette, A., Surdej, J., et al. 1992, *ApJ*, 389, 39
 
-Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.10 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.15 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.25 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
+Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.27 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
-Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.18 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
+Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.20 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.5 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
+Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.7 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
 
-Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.7 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
+Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.8 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.4 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5)
+Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.6 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5)
 
-Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.6 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
+Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.8 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
 
-Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.3 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
+Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.4 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.3 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
+Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.4 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
 
-Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.3 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
+Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.7 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.6 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.9 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
 
-Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.6 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
+Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.10 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.4 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.7 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.4 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.6 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.1 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572720](https://doi.org/10.5281/zenodo.20572720) (Paper 19)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.2 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572720](https://doi.org/10.5281/zenodo.20572720) (Paper 19)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Black Holes and the Temporal Horizon*. Preprint v0.2 (Bahrain). Zenodo. DOI: [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) (Paper 28)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Black Holes and the Temporal Horizon*. Preprint v0.3 (Bahrain). Zenodo. DOI: [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) (Paper 28)
 
 Tie, S. S., & Kochanek, C. S. 2018, *MNRAS*, 473, 80
 (arXiv:1707.01908)
@@ -2062,7 +2254,7 @@ github.com/matthewsmawfield
 **License:** This work is licensed under a
 Creative Commons Attribution 4.0 International License.
 
-Version: v0.7 (Tortola) · First published: 19 December 2025 · Last updated: 10 August 2026
+Version: v0.8 (Tortola) · First published: 19 December 2025 · Last updated: 16 September 2026
 
 ## Data Availability & Reproducibility
 
@@ -2097,11 +2289,25 @@ TEP-GL/
 │   │   ├── references.html
 │   │   └── appendix_a.html
 │   └── manifest.json
-├── scripts/                   # Analysis scripts (future expansion)
+├── scripts/                   # Analysis scripts
+│   ├── steps/
+│   │   └── step_01_amplitude_ledger.py   # Temporal-Composite amplitude
+│   │                                   # ledger (Boxes 3.2, 3.3, 5.1–5.3)
 │   └── utils/
+├── results/
+│   └── step_01_amplitude_ledger.json    # machine-readable ledger output
 ├── requirements.txt           # Python dependencies
 ├── CITATION.cff               # Citation metadata
 └── README.md                  # Repository documentation
+
+The amplitude bookkeeping quoted in Boxes 3.2, 3.3 and 5.1–5.3 — the
+source proper motion, the chronometric-envelope and propagating-carrier
+Temporal-Composite amplitudes, the delay-field amplitude probed by
+each falsification threshold, and the exact-one-form cancellation audit
+of §3.1.3 (the endpoint-determination of the shear integral on two
+multipath rays of the Box-3.1 toy halo) — is reproduced by
+`scripts/steps/step_01_amplitude_ledger.py`, whose output is
+archived at `results/step_01_amplitude_ledger.json`.
 
 ### Data Provenance
 

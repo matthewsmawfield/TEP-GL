@@ -1,0 +1,82 @@
+{
+  "step": "01",
+  "status": "success",
+  "description": "Temporal-Composite amplitude ledger: corrected proper motion, propagating-carrier (disformal, GW170817-bounded) vs chronometric-envelope (inference-space) amplitudes, and the delay-field amplitude each discriminator probes.",
+  "corrections": {
+    "mu_s_manuscript_arcsec_per_yr": 0.0002,
+    "mu_s_correct_arcsec_per_yr": 2.10949526603192e-07,
+    "mu_s_correct_uas_per_yr": 0.210949526603192,
+    "unit_slip_factor": 948.094092556137,
+    "note": "0.2 uas/yr was printed as 2e-4 arcsec/yr (mas/uas slip); the envelope gamma_TC is 6e-7, not 6e-4."
+  },
+  "carriers": {
+    "conformal_sector_audit": {
+      "exact_one_form_integral_inner_ray": -4.054630545140268e-07,
+      "exact_one_form_integral_outer_ray": -4.0546315763906375e-07,
+      "endpoint_value_lnAobs_minus_lnAsrc": -4.054631586807368e-07,
+      "quadrature_residual_inner": 1.0416671001380615e-13,
+      "quadrature_residual_outer": 1.0416730717203396e-15,
+      "multipath_differential_shear_integral": 1.0312503694208581e-13,
+      "scalar_field_integral_inner_ray_kpc": 0.009636681916027023,
+      "scalar_field_integral_outer_ray_kpc": 0.009772760587552507,
+      "scalar_field_integral_contrast_yr": 0.44382926582190835,
+      "photon_differential_residual_d": 0.0,
+      "cross_check": "Paper 19 step_56 conformal_only_additional_residual_days = 0.0",
+      "interpretation": "the shear one-form is exact: verified to quadrature precision on the Box-3.1 toy halo for two rays of different pericenter sharing one source and observer, its open-path integral is endpoint-determined and its multipath differential vanishes; the scalar amplitude integral int(A-1)dl is genuinely path-dependent but is a timelike-congruence clock-transfer field (chronometric envelope), not a photon delay"
+    },
+    "chronometric_envelope": {
+      "dT_yr_per_arcsec": 3.0,
+      "gamma_TC": 6.32848579809576e-07,
+      "interpretation": "reconstruction-space clock-transfer map; zero differential photon transport (null-cone invariance; Paper 19 step_56 = 0.0 d)"
+    },
+    "propagating_disformal": {
+      "gw_bound_fractional": 1e-15,
+      "lighttime_halo_yr": 6523127.553296115,
+      "dT_s_per_halo": 0.20585425007589753,
+      "gamma_TC": 1.3760506693400538e-15,
+      "interpretation": "Regime-I ms-s channel; the only propagating image-plane delay for photons"
+    }
+  },
+  "discriminators": {
+    "lensed_frb_residual": {
+      "probes": "dT directly",
+      "threshold": "<0.1 ms achromatic ensemble residual",
+      "powered_for": "propagating carrier (ms-s); flagship test"
+    },
+    "einstein_cross_flux": {
+      "jacobian_route_dmu_over_mu_env": 6.3284857980957605e-06,
+      "jacobian_route_dmu_over_mu_prop": 1.3760506693400538e-14,
+      "emission_route_dF_over_F_env": 3.6000000000000005,
+      "emission_route_dF_over_F_prop": 7.827753063955341e-09,
+      "required_anomaly": [
+        0.1,
+        0.3
+      ],
+      "shortfall_env": 15801.56820926895,
+      "archival_emission_bound_d": 3.0437499999999993,
+      "verdict": "10-30% anomalies are microlensing terrain, not claimed by TEP at propagating amplitude; ~1% archival photometry bounds coherent emission-time contrast at ~3 d and the yr-scale reading overshoots (dF/F~3) -- the test is a bound-setting correlation program"
+    },
+    "s8_covariance": {
+      "cov_frac_env": 4.449970277411082e-12,
+      "cov_frac_prop": 2.103906049545789e-29,
+      "gamma_needed_for_5pct_of_shape": 0.0670820393249937,
+      "verdict": "relative covariance ~4e-12 even at the envelope: the TC term cannot source the ~5% S8 tension; retained prediction is existence of source-class covariance"
+    },
+    "variability_mass": {
+      "dM_needed_env": 6.32848579809576e-07,
+      "dM_needed_prop": 1.3760506693400538e-15,
+      "spec_precision": 0.1,
+      "delay_absorption_bound_d": 10.0,
+      "verdict": "10% mass precision is ~1e5 above the envelope TC response; the same precision bounds any propagating delay at <=10 d per 100 d delay, already excluding a propagating yr-scale residual (consistent with the conformal null)"
+    },
+    "shear_variability": {
+      "gamma_bound_at_spec": 0.005,
+      "grad_bound_yr_per_arcsec": 23702.352313903426,
+      "verdict": "weak direct bound on the delay gradient; reaching the envelope requires ~1e-5 fractional scatter precision"
+    },
+    "lens_model_closure": {
+      "bound": "propagating dT <= ~10% of Fermat delay (~10 d per 100 d)",
+      "verdict": "existing strong-lens model closure excludes propagating year-scale residuals outright"
+    }
+  }
+}

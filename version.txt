@@ -1,4 +1,4 @@
-v0.7 (Tortola) — 10 August 2026 — Canonical TEP architecture alignment, static-space cosmological synchronization, mathematical corrections, and Vainshtein/Galileon removal
+v0.8 (Tortola) — 16 September 2026 — Canonical TEP architecture alignment, static-space cosmological synchronization, mathematical corrections, and Vainshtein/Galileon removal
 
 - Canonical architecture: all nongravitational matter couples universally to the causal matter metric; Axiom 2 and the TEP statement corrected so observables are clock-registered proper time plus phase/frequency/arrival-time transport along null paths.
 - Static-space cosmology: redshift reframed as a conformal clock map (a_m=1, A_clock=(1+z)^-1), not physical spatial expansion; H_0 is the observational clock/redshift rate.
