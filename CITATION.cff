@@ -8,49 +8,8 @@ authors:
 - family-names: Smawfield
   given-names: Matthew Lukin
   orcid: https://orcid.org/0009-0003-8219-3159
-abstract: 'Standard gravitational lensing analysis relies on the Isochrony Axiom—the
-  implicit assumption that the observed image represents a synchronous spatial snapshot
-  of the source. For evolving sources, this approximation breaks down in the presence
-  of conformal metric couplings, creating a "temporal composite" image. This projects
-  temporal depth onto the spatial plane, generating a Temporal-Composite Shear
-  contribution sourced by the underlying Temporal Shear field gradient—arising
-  from gradients in the scalar field''s continuous spatial profile (Temporal
-  Topology, TEP)—whose propagating component is confined to the millisecond (Reference-Envelope) window while its chronometric component is degenerate with gravitational shear in standard static
-  lens reconstructions unless time-domain or variability-dependent observables
-  are included. This contribution forms one component of the Phantom-Mass
-  phenomenology defined here. GW170817 primarily
-  constrains differential propagation and disformal cone tilt; it does not directly
-  test common-mode conformal clock-rate structure along a shared path, although conformal
-  scalar sectors remain indirectly constrained by PPN, equivalence-principle,
-  source-screening, and clock-comparison tests. Because photons and gravitational
-  waves traverse the same path, conformal time dilation is common-mode and cancels in
-  differential measurements. Screening operates via the continuous flattening of
-  Temporal Topology in dense environments, suppressing local field gradients without
-  invoking discrete thin-shell boundaries. Conformal gradients may reproduce specific
-  timing-sensitive aspects of dark-matter-like phenomenology—particularly in the time
-  domain—without violating strong-lens arrival time constraints. Within TEP, the
-  phenomena conventionally attributed to dark matter are real, but the inference of an
-  invisible particulate substance is rejected. TEP interprets the dark sector as
-  Phantom Mass: an apparent convergence, shear, or dynamical mass discrepancy generated
-  when temporal-transport structure is reconstructed under the Isochrony Axiom as
-  synchronous spatial mass. The theory-level claim is stronger than the paper-level
-  evidence claim: within TEP, particulate dark matter is rejected as the fundamental
-  explanation, while this paper tests the lensing-sector realization of that ontology.
-  These results are derived in two regimes: a conservative Reference Envelope
-  (millisecond-scale corrections, directly testable with lensed FRBs) and an Extended
-  Regime (year-scale chronometric corrections and a full lensing-sector dark-sector
-  reinterpretation), whose coherent and source-dependent components are independently
-  testable through blind time-delay residuals, lensing consistency tests, and
-  variability-dependent observables. Within the Extended Regime, where the Isochrony
-  Axiom fails, temporal-field gradients produce an observational degeneracy with
-  particulate dark matter. The Reference Envelope result is the primary, unconditional
-  contribution; the Extended Regime is conditional. The continuous flattening of the
-  Temporal Topology in dense lensing environments is governed by the abstract
-  environmental operator S_Sigma(E). By projecting temporal depth onto the spatial
-  plane, this continuous geometric screening generates the conformal/chronometric
-  component of the Phantom-Mass phenomenology.
-
-  '
+abstract: |
+  Standard gravitational lensing analysis relies on the Isochrony Axiom —the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a temporal-composite response contribution sourced by the underlying Temporal Shear field gradient—arising from gradients in the scalar field's continuous spatial profile ( Temporal Topology , TEP)—whose propagating component is confined to the millisecond (conservative-baseline) window while its chronometric component is bounded by the ratio of differential delay to source-evolution time and is accessible only through time-domain or variability-dependent observables. Within TEP, Phantom Mass is the excess dynamical mass inferred when the scalar force on matter trajectories is analyzed as gravitating mass. Its test is the mass difference inferred from dynamics and lensing at matched radii and with compatible mass models. At fixed gravitational metric g_μν, the conformal factor does not alter photon paths; it does not prevent the scalar's stress-energy from curving g_μν. For the SN Refsdal lens benchmark in Paper 19, that backreaction supplies κ_ϕ≈ 10⁻⁵, roughly 2 × 10³ below the dark-matter-level convergence required there; the bound is not a cosmological no-go theorem. Disformal transport and source-evolution reconstruction are separately bounded on their tested paths. The temporal-composite term vanishes for a stationary backlight and cannot supply the observed CMB lensing deflection. Paper 18's Planck-lensing likelihood retains a standard cold-dark-matter fluid with Ω_cdmh²≈ 0.1155; its agreement is therefore not a CDM-free lensing prediction of TEP. The intended ontology requires a source-independent metric potential from the stated TEP fields and baryons that reproduces CMB, galaxy, and cluster lensing without that fluid. This closure remains open. The present paper's established scope is its bounded time-domain and reconstruction-channel tests, not a completed replacement for the dark-matter lensing potential. Screening of the shear response in high-acceleration lensing environments is governed by the abstract environmental operator S_Σ(E), which pins the incremental field gradient where the ambient landscape is steep while the Temporal Topology persists. The same operator sets the environment-dependence of the phantom mass, which is accordingly largest in isolated, diffuse low-acceleration systems.
 license: CC-BY-4.0
 repository-code: https://github.com/matthewsmawfield/TEP-GL
 url: https://mlsmawfield.com/tep/gl

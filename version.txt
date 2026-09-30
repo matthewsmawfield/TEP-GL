@@ -6,3 +6,4 @@ v0.8 (Tortola) — 16 September 2026 — Canonical TEP architecture alignment, s
 - Mathematical and naming corrections: image and vector equations fixed; "Chronometric Reconstruction" and "Temporal-Composite Shear" terminology adopted; falsification thresholds and evidence statements (Einstein Cross, GW170817) made statistically and historically accurate.
 - Removed unsupported entries (lensed-FRB table, alpha_halo ~ 10^-1, a_0 ~ Lambda^2/M_Pl chain) and replaced with traceable, environment-dependent notation tied to results/.
 - Synchronized abstract, CITATION.cff, codemeta.json, manifest.json, and site/index.html meta tags with the corrected Extended-Regime test statement; added missing TEP-LENS and TEP-BH references.
+- Reframed Phantom Mass as the matched dynamical-lensing inference difference; stated the CDM-free lensing potential as open and scoped the Refsdal bounds to the tested configuration.

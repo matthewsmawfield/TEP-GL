@@ -1,4 +1,4 @@
-<h2>6. Discussion: A Paradigm Shift in the Dark Sector</h2>
+<h2>6. Discussion: The Dark Sector — Phantom Mass in Dynamics and Lensing</h2>
 
 <h3>6.1 Limitations of the "Stack of Corrections"</h3>
 
@@ -31,7 +31,7 @@
 <h3>6.2 CMB Lensing and the Integrated Sachs-Wolfe Constraint</h3>
 
 <p>
-    A scalar field capable of generating year-scale chronometric-envelope
+    A scalar field capable of generating year-scale reconstruction-space
     contrasts on
     cluster scales raises a critical question: what are the implications for the
     Cosmic Microwave Background (CMB)? Two potential tensions must be addressed.
@@ -183,7 +183,7 @@
 </p>
 
 <p>
-    For the CMB (a static, non-evolving source), the Temporal-Composite Shear
+    For the CMB (a static, non-evolving source), the temporal-composite response
     term vanishes identically—there is no source proper motion or intrinsic
     variability on lensing timescales to couple to the delay gradient. Removing
     that term does <em>not</em> make the CMB insensitive to TEP: it means CMB
@@ -192,14 +192,17 @@
 </p>
 
 <p>
-    <strong>Implication:</strong> CMB lensing therefore tests the coherent
-    scalar-metric sector, which is implemented in TEP-HC (Paper 18) through the
-    pure-conformal Bellini–Sawicki closure with active \(\delta\phi\) evolution.
-    TEP-GL imports that linear closure rather than treating CMB lensing as a
-    source-evolution effect. The amplitude is controlled by the integrated
-    scalar-backreaction profile, not by lens motion; consistency with the
-    observed spectrum constrains the relationship between the field excursion
-    \(u\) and the matter density \(\rho\).
+    <strong>Implication:</strong> CMB lensing tests the source-independent
+    gravitational-metric potential, not the temporal-composite response of a
+    variable galaxy. Paper 18 evolves scalar perturbations through its
+    Bellini–Sawicki implementation, but its Planck low-$\ell$ and lensing
+    likelihood retains the standard cold-dark-matter fluid
+    ($\Omega_{\rm cdm}h^2=0.1155\pm0.0042$ in the primary posterior).
+    That fit validates an implementation under a CDM-containing background;
+    it does not establish that the TEP scalar and baryons source the observed
+    CMB lensing potential without CDM. A CDM-free prediction of
+    $C_\ell^{\phi\phi}$, with the same field configuration checked against
+    galaxy and cluster lensing, remains the required ontology test.
 </p>
 
 <h4>6.2.3 Parameter Space Constraints</h4>
@@ -225,8 +228,8 @@
         </tr>
         <tr>
             <td>Cluster Lensing</td>
-            <td>\(\left|\int_{\gamma_{\rm halo}} \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu\right| \sim 10^{-7}\text{--}10^{-6}\)</td>
-            <td>Required for DM phenomenology; value set by solved transfer function</td>
+            <td>Optical-sector requirement: \(\kappa\sim10^{-2}\text{--}10^{-1}\) via scalar backreaction; chronometric integral \(\left|\int_{\gamma_{\rm halo}} \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu\right| \sim 10^{-7}\text{--}10^{-6}\) is reconstruction-space only</td>
+            <td><strong>Not closed in the tested SN Refsdal configuration:</strong> scalar backreaction evaluated at \(\kappa_\phi\approx4\times10^{-5}\), \(\sim2\times10^{3}\) short (Paper 19, Step 61); the tested disformal path is \(\sim5\times\) short (Step 63). This profile-specific bound is not a no-go theorem for every cosmological scalar-metric configuration</td>
         </tr>
         <tr>
             <td>ISW (<em>Planck</em>)</td>
@@ -236,19 +239,23 @@
         <tr>
             <td>CMB Lensing</td>
             <td>\(\delta\kappa_{g[\phi]} + \delta\kappa_B\) must satisfy the HC/CMB lensing spectrum constraint; \(\delta\kappa_{A,\rm recon}\) treated separately</td>
-            <td>Constrains the coherent scalar-metric closure and its relationship to the matter distribution</td>
+            <td>Open CDM-free source-to-metric closure. Paper 18 includes a standard CDM density in the lensing likelihood; that result alone cannot satisfy this requirement</td>
         </tr>
     </tbody>
 </table>
 
 <p>
-    The required closure is a relationship between the solved scalar-backreaction
-    profile and the matter distribution. It is not a claim that the pure
-    conformal factor independently deflects CMB rays. The closure is satisfied
-    in models where the scalar-backreaction profile is sourced by the matter
-    density, but represents a theoretical prior that must be verified against
-    N-body simulations. This is flagged as a key target for future numerical
-    work.
+    The scalar-backreaction calculation on the adopted SN Refsdal lens
+    geometry (Paper 19, Step 61) gives
+    \(\kappa_\phi\approx4\times10^{-5}\), about \(2\times10^{3}\) below the
+    convergence needed in that reconstruction; the tested disformal path is
+    also below the Refsdal delay residual under the measured halo
+    deprojection (Step 63). This excludes those specific configurations
+    as the missing optical amplitude, not every metric potential that could
+    be generated by a cosmological TEP field. The dynamical–lensing mass
+    difference separately tests the phantom-force response. A CDM-free
+    calculation of the absolute cluster and CMB lensing potentials remains
+    open and cannot be inferred from that difference.
 </p>
 
 <div class="principle">
@@ -287,7 +294,7 @@
         constraint is satisfied when the same operator, acting across an
         extended path through lower-density environments, permits a cumulative
         clock-transfer contrast of order \(10^{-7}\text{--}10^{-6}\) on the
-        matter-clock congruence — the chronometric-envelope field of §3.1.3,
+        matter-clock congruence — the reconstruction-space field of §3.1.3,
         which is endpoint-determined for photons and is not a propagated delay.
     </p>
 </div>
@@ -413,10 +420,15 @@
 <p>TEP offers a potential unification of competing frameworks:</p>
 <ul>
     <li>
-        <strong>CDM:</strong> In the limit where the scalar field \(\phi\)
-        relaxes into stable halos and source variability is ignored, TEP
-        reproduces the phenomenology of Cold Dark Matter (via the Phantom Mass
-        mechanism).
+        <strong>CDM:</strong> For the dynamical sector, TEP offers a candidate
+        temporal-field origin for the mass anomaly ordinarily ascribed to Cold
+        Dark Matter: the Temporal Shear acts on matter trajectories as the
+        extra pull Newtonian analysis counts as a halo. In the lensing sector
+        the correspondence is an inference degeneracy, not a deflection
+        mechanism: real lensing is matter-sourced, so the CDM-like lensing
+        phenomenology is covered only to the extent that the inferred excess
+        is reconstruction-space or that the predicted phantom mass is
+        confirmed. That comparison is the decisive open test of this work.
     </li>
     <li>
         <strong>MOND:</strong> In low-acceleration environments,
@@ -471,7 +483,7 @@
 
     <p>
         This lies within a factor of about five of the empirical MOND value
-        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is now anchored more precisely: the SPARC-derived characteristic acceleration \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7, v0.15; Paper 10) is rooted in the cosmological horizon scale \(g_t \sim cH_0/2 \approx 3.4 \times 10^{-10}\) m/s² and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
+        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 \S2.2, v0.15); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda_X^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
         cross-scale relation to the same temporal-gradient structure
         represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
         statement is that TEP produces an acceleration scale of cosmological
@@ -486,8 +498,8 @@
         phenomenology arises in TEP because the environmental operator
         \(\mathcal{S}_\Sigma(\mathcal{E})\) leaves the Temporal Shear response
         active precisely in low-gradient regions. Regions with internal
-        accelerations \(a \lesssim cH_0\) are weakly screened and the temporal
-        gradient contributes; regions with \(a \gtrsim cH_0\) are strongly
+        accelerations \(a \lesssim g_t\) are weakly screened and the temporal
+        gradient contributes; regions with \(a \gtrsim g_t\) are strongly
         screened and follow Newtonian dynamics. The low-gradient scalar
         profile, its metric backreaction, and the reconstruction response must
         be fitted jointly to galaxy and lensing data before the MOND
@@ -552,8 +564,8 @@
                     Step 58) confirms the propagated sector is clean at
                     \(\lesssim 10^{-8}\) fractional (\(\sim 10\) ms
                     ceilings on \(10\,R_{\rm E}\) traverses) and finds the only
-                    order-percent route to be the lensing–dynamical slip in the
-                    velocity-dispersion prior — in the direction that elevates
+                    order-percent route to be the dynamical–lensing mass
+                    difference in the velocity-dispersion prior — in the direction that elevates
                     inferred \(H_0\) — while the mundane mass-model floor is
                     \(\sim 6\%\) (SDSS1206+4332 power-law vs composite). The
                     corpus's quantitative \(H_0\) channel is the Cepheid
@@ -567,8 +579,8 @@
         </tr>
         <tr>
             <td>
-                <strong>Temporal-Composite Shear</strong><br /><small
-                    >(Dynamic Shutter)</small
+                <strong>temporal-composite response</strong><br /><small
+                    >(source-evolution response)</small
                 >
             </td>
             <td>
@@ -600,27 +612,56 @@
 </table>
 
 <p>
-    The theory does not require new observations to find initial support; it
-    provides a unified explanation for <em>existing</em> anomalies that
-    \(\Lambda\)CDM struggles to explain simultaneously.
+    The theory supplies testable temporal channels on existing lensing and
+    timing observations; the present analysis does not claim that their
+    source-independent lensing amplitudes have already been reproduced.
 </p>
 
 <h3>6.8 The Path Forward</h3>
 
 <p>
-    The analysis suggests that
-    <em>dark-matter phenomenology may be reproducible without a new particulate dark component</em>,
-    if the combined coherent optical, chronometric and Temporal-Composite predictions survive the proposed tests.
-    In the TEP ontology, the underlying entity is a temporal field whose geometry and transport are
-    reconstructed as apparent spatial mass under the Isochrony Axiom. For particulate dark matter to
-    remain the complete explanation of the relevant anomalies, the distinctive TEP residuals must be
-    excluded at the required precision. The framework also provides a common setting in which CDM-like
-    and MOND-like phenomenology may emerge, while the quantitative MOND transition remains to be derived.
+    The analysis shows that a new particulate dark component is not
+    required by the temporal-field ontology: the same scalar configuration
+    can produce dynamical mass-inference and source-dependent reconstruction
+    signatures. Whether that suffices for the full dark sector is decided by
+    two distinct tests — the matched dynamical–lensing phantom-mass
+    comparison and a CDM-free calculation of the absolute lensing potential.
+    For particulate dark matter to remain necessary, the distinctive TEP
+    residuals must be excluded at the required precision.
 </p>
 
 <p>
-    "Dark Time" is not merely an alternative label for dark matter; within the
-    Extended Regime, it offers a geometric identification of the unmodeled
-    temporal-transport contribution that may be embedded within the
-    phenomenology conventionally attributed to dark matter.
+    Three concrete consequences follow directly from the phantom-mass mechanism and require no further
+    model-building:
+</p>
+
+<p>
+    <em>Lensing radial-acceleration relation.</em> Because photon trajectories track the matter-sourced
+    geometry alone, the acceleration profile reconstructed from weak-lensing mass maps should follow the
+    baryonic distribution — $g_{\rm lens} \simeq g_{\rm bar}$ — in the same systems where the dynamical
+    radial-acceleration relation departs from it. The dynamical–lensing divergence is therefore predicted
+    to be systematic in the radial-acceleration plane, not a scatter of independent anomalies, and is
+    testable galaxy-by-galaxy wherever both inference channels exist.
+</p>
+
+<p>
+    <em>Isolation dependence.</em> The phantom mass is largest for isolated, diffuse, low-acceleration
+    systems ($a \lesssim g_t$, $\mathcal S_\Sigma \to 1$) and is suppressed toward zero for galaxies embedded
+    in high-acceleration environments — cluster members, compact groups, satellites in deep host potentials —
+    where the environment screens the Temporal Shear. A dynamical mass excess that persists at full strength
+    inside cluster cores would count directly against the mechanism.
+</p>
+
+<p>
+    <em>Dissociative mergers.</em> The Bullet Cluster is the discriminating case. TEP predicts that lensing
+    peaks track the true gravitating mass while the phantom component appears only in dynamical inference;
+    the observed lensing peaks sit on the galaxies, offset from the dominant baryonic gas. This outcome is
+    the standard argument for collisionless dark matter and is a live tension for the present framework:
+    the conformal sector cannot move photon paths onto the galaxy peaks, so consistency requires either that
+    the true mass distribution is concentrated at the galaxies (with the gas not dominant in the relevant
+    projected columns) or that a photon-sector channel — scalar backreaction or the disformal sector —
+    contributes at a level the current action bounds have not yet shown to be sufficient. The Bullet Cluster
+    is therefore recorded as an unresolved test, not an established success: a persistent lensing excess
+    centred on collisionless components with no dynamical-analogue counterpart would falsify the
+    phantom-mass account of the dark sector.
 </p>

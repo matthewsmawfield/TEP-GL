@@ -162,7 +162,7 @@
     TEP-GL lensing contains three projections of one temporal field: coherent
     optical response through scalar backreaction and any permitted disformal
     contribution; conformal open-path chronometric reconstruction; and the
-    source-dependent Temporal-Composite response.
+    source-dependent temporal-composite response.
 </p>
 
 <h4>1. The Static Clock-Transfer Contribution (Chronometric Reconstruction)</h4>
@@ -187,6 +187,14 @@
     The expression above is a matter-clock transfer functional evaluated on a
     timelike clock congruence associated with the path; it is not a photon
     observable, and for photons its differential content vanishes identically.
+    That vanishing is a statement about a restricted net observable — the
+    static conformal contribution to an inter-image arrival-time contrast —
+    not that the photon is unaffected while traversing the topology: the
+    locally measured frequency rises descending into each well and falls
+    climbing out, asymmetric crossings slice residuals to the intervening
+    field difference, and lapse-geometry dwell through each structure accrues
+    monotonically. Only the frequency bookkeeping of a strictly static
+    conformal field telescopes to the endpoints.
     Two equivalent statements fix this. First, null cones are conformally
     invariant (Axiom 1, Appendix A.1): \(A(\phi)\) drops out of the null
     transport equation, so the coordinate travel time along any fixed spatial
@@ -217,14 +225,14 @@
     propagated delay or a refraction of null geodesics.
 </p>
 
-<h4>2. The Dynamic Shutter (Temporal Lensing)</h4>
+<h4>2. The Source-Evolution Response (Temporal Lensing)</h4>
 <p>
     While the static term reshapes the clock-transfer field read by an
     isochronous reconstruction, the gradient of the differential delay field
     \(\nabla(\Delta \tilde{\tau})\) acts as a "shutter"
     that modulates the arrival time of photons from different parts of the
     source. For a source with evolution or motion, this creates a
-    <em>Temporal-Composite Shear</em>:
+    <em>temporal-composite response</em>:
 </p>
 <div class="equation">
  \begin{equation} \label{eq:gl_temporal_shear}
@@ -236,25 +244,27 @@
     The nomenclature follows the canonical corpus convention: <em>Temporal
     Shear</em> denotes the field gradient \(\Sigma_\mu \equiv \nabla_\mu \ln
     A(\phi)\), which generates the path-dependent clock-transfer field, whereas
-    <em>Temporal-Composite Shear</em> \(\gamma^{\rm TC}\) denotes the observable
+    <em>temporal-composite response</em> \(\gamma^{\rm TC}\) denotes the observable
     source-dependent image response to that field. The two must not be conflated:
     the former is a property of the temporal field, the latter of the
     observation.
 </p>
 <p>
-    This <em>Dynamic Shutter</em> explains the anomalies—the "phantom mass" that
-    appears to fluctuate with source type. It operates as a re-ordering of
-    wavefronts in time rather than a deflection of rays. Crucially, this effect
-    applies even to "static" sources (like elliptical galaxies) due to their
-    proper motion \(\vec{v}_s\) across the delay gradient. (See Section 3 for
-    the full derivation).
+    This source-evolution response supplies a source-dependent phantom-mass
+    component — an apparent mass that can fluctuate with source type. It operates
+    as a re-ordering of emission epochs rather than a deflection of rays, and for
+    galaxy
+    sources it is bounded by the ratio of differential delay to
+    source-evolution time at \(\lesssim 10^{-7}\) in shear, far below the
+    observed lensing excess. (See Section 3 for the full derivation).
 </p>
 
 <p>
     Together, these two mechanisms constitute the TEP framework: the
     clock-transfer contribution may contribute to the phenomenology
-    conventionally attributed to the dark matter halo, and the dynamic
-    shutter may account for part of the apparent "complexity" of
+    conventionally attributed to the dark matter halo, and the
+    source-evolution response may account for part of the apparent
+    "complexity" of
     substructure. Any genuinely new null-trajectory bending beyond the
     conformally related geometry must arise through gravitational
     backreaction in \(g_{\mu\nu}\), a non-negligible disformal
@@ -414,7 +424,8 @@
         <strong>Axiom 4 (Screening and Temporal Topology):</strong> Screening
         manifests as a continuous spatial profile (Temporal Topology) governed
         by the non-linear superposition of field gradients (Temporal Shear),
-        suppressing Temporal Shear and lensing anomalies in dense environments
+        suppressing the Temporal Shear where the ambient time-gradient is
+        steep (weak-field: high-acceleration environments)
         while leaving cosmology accessible to dynamics. The suppression of
         local Temporal Shear in deep potential environments continuously
         reduces
@@ -607,11 +618,41 @@
     across an image
     is mathematically equivalent to a shearing of the source frame. To a static
     observer assuming isochrony, this "temporal shear" is indistinguishable from
-    the "gravitational shear" caused by mass. Thus,
+    the "gravitational shear" caused by mass. Thus, for temporally structured
+    sources,
     <em
         >purely temporal structure is misinterpreted as "Phantom Mass" (dark
         matter).</em
-    >
+    > The channel is bounded at \(\lesssim 10^{-7}\) for galaxy sources and
+    vanishes for static sources; it is a source-dependent discriminator, not
+    the carrier of the observed static-source lensing excess.
+</p>
+
+<h4>One Quantity, Two Measurements</h4>
+
+<p>
+    Phantom Mass is not a separate mechanism in each observable channel; it is
+    one quantity — the mass a standard analysis infers because it does not
+    model the TEP temporal field. It enters through two routes: in dynamics,
+    where the Temporal Shear supplies extra apparent acceleration
+    (\(M_{\rm ph}^{\rm dyn}\)); and in reconstruction, where the differential
+    source-clock history of an evolving source is read as spatial structure
+    (\(M_{\rm ph}^{\rm recon}\), zero for static sources). Each channel is
+    inferred independently: \(M_{\rm ph}^{\rm dyn} \equiv M_{\rm dyn}^{\rm GR} -
+    M_{\rm baryon}\) and
+    \(M_{\rm ph}^{\rm lens} \equiv M_{\rm lens}^{\rm GR} - M_{\rm baryon}\).
+    Comparing them is then a <em>test</em> of Phantom Mass rather than its
+    definition — the empirical question is
+    \(M_{\rm ph}^{\rm dyn} \overset{?}{=} M_{\rm ph}^{\rm lens}\). Particle dark
+    matter requires equality, since the same substance sources both inferences.
+    Under the present action the Temporal Shear acts on matter trajectories but
+    not on photon paths, so the prediction is
+    \(M_{\rm ph}^{\rm dyn} > M_{\rm ph}^{\rm lens}\), with the difference largest
+    where the shear is active — the isolated, low-acceleration systems where
+    \(\mathcal{S}_\Sigma \to 1\). This phantom-mass consistency test is the
+    framework's decisive dark-sector check: agreement would bound the Temporal
+    Shear's share of the dynamical anomaly; a positive difference is a signature
+    no particulate model reproduces.
 </p>
 
 <h3>2.6 Two Regimes of TEP-GL</h3>
@@ -627,7 +668,7 @@
 
     <hr />
 
-    <p><strong>Regime I: The Reference Envelope</strong></p>
+    <p><strong>Regime I: the conservative baseline</strong></p>
     <ul>
         <li>
             <strong>Physical carrier:</strong> The disformal multipath
@@ -692,7 +733,7 @@
 
     <hr />
 
-    <p><strong>Regime II: The Extended Regime</strong></p>
+    <p><strong>Regime II: the bookkeeping-inclusive case</strong></p>
     <ul>
         <li>
             <strong>Assumption (Sector Decoupling):</strong> GW170817 constrains
@@ -704,44 +745,58 @@
             <strong>Clock-transfer scale:</strong> \(\Delta\tilde{\tau} \sim
             1\text{--}10\) years, driven by the conformal factor \(A(\phi)\)
             integrated over halo scales (Mpc). This is the
-            <em>chronometric-envelope</em> scale — the reconstruction-space
+            <em>reconstruction-space</em> scale — the reconstruction-space
             clock-transfer map of §2.2 — not a propagated photon delay; the
             conformal contribution to any inter-image arrival-time residual is
             exactly zero, and the propagating differential channel remains the
             disformal carrier at the ms–s level.
         </li>
         <li>
-            <strong>Primary observables:</strong> The full phenomenology of
-            "dark matter" in lensing — cluster arcs, cosmic shear — arising
-            from coherent scalar backreaction on \(g_{\mu\nu}[\phi]\) and any
-            permitted disformal response, combined with the conformal
-            clock-transfer reconstruction. The Dynamic Shutter supplies the
-            additional source-dependent component.
+            <strong>Primary observables:</strong> The reconstruction-space and
+            time-domain content of the conformal sector — chronometric
+            bookkeeping, endpoint clock-transfer maps, and the source-dependent
+            temporal-composite response — together with the
+            <em>dynamical–lensing mass difference</em> (which measures the
+            shear-induced phantom mass) in matched spatial observables. At
+            fixed gravitational metric the conformal factor does not deflect
+            photons; Paper 19 bounds scalar backreaction and disformal delay
+            for its tested Refsdal configuration, not every lens geometry.
+            Absolute CDM-free lensing remains a separate prediction to derive.
         </li>
         <li>
             <strong>Dark matter status:</strong> Phantom Mass is the apparent
-            spatial component generated when temporal-field geometry,
-            chronometric transport, and Temporal-Composite response are
-            reconstructed under the Isochrony Axiom. The underlying physical
-            entity is the temporal field \(\phi\), not particulate dark matter.
+            mass component an analyst infers when temporal structure is
+            reconstructed under the Isochrony Axiom. It is an inference
+            artifact, not a mechanism: for dynamics it mislabels the real
+            shear force; for temporally structured sources it mislabels the
+            projected image response (bounded \(\lesssim10^{-7}\)); for
+            static sources no projection exists and inferred lensing mass is
+            real gravitating content.
         </li>
         <li>
-            <strong>Falsification:</strong> Null source-variability
-            correlations exclude the Temporal-Composite channel; CMB–galaxy
-            consistency constrains its amplitude, while the coherent
-            scalar-metric sector is tested independently.
+            <strong>Falsification:</strong> An environment-resolved
+            dynamical–lensing mass comparison tests the extra-force channel;
+            an absolute CDM-free CMB/cluster/galaxy lensing calculation tests
+            the missing optical channel. Null source-variability correlations
+            constrain the temporal-composite contribution. Failure to supply
+            the observed absolute deflection rules out the proposed complete
+            dark-sector replacement, even if a phantom-mass difference exists.
         </li>
     </ul>
 </div>
 
 <p>
     This work demonstrates that
-    <em>the Extended Regime (Regime II) is a viable physical alternative</em>.
-    The Reference Envelope (Regime I) is the conservative baseline in which the
-    only propagating inter-image content is the disformal multipath
-    deformation at its GW170817-bounded normalization; the conformal clock
-    sector, whose differential-propagation channel is identically inert, is
-    the additional carrier of Regime II.
+    <em>Regime II is viable as a time-domain and
+    reconstruction-space framework</em> — not as a carrier of
+    dark-matter-level spatial deflection. Regime I
+    is the conservative baseline in which the only propagating inter-image
+    content is the disformal multipath deformation at its GW170817-bounded
+    normalization; the conformal clock sector, whose differential-propagation
+    channel is identically inert, contributes the reconstruction-space
+    clock-transfer map of Regime II. The phantom-mass prediction of §2.6
+    addresses the dynamical–lensing difference; it does not close the
+    source-independent deflection required by a CDM-free ontology.
 </p>
 
 <h3>2.7 Why Lensing May Not Be Purely Spatial</h3>
@@ -785,7 +840,7 @@
     variance is an additional source-dependent reconstruction residual.
 </p>
 
-<h4>The Temporal Composite Mechanism</h4>
+<h4>The temporal composite Mechanism</h4>
 
 <p>
     Consider an extended galaxy being lensed. Light from different parts of the
@@ -824,7 +879,7 @@
     at different impact parameters. This functional is not a photon arrival
     time: Axiom 1 makes the photon coordinate transit conformally invariant,
     so no part of it propagates to any observed inter-image delay. What it
-    quantifies is the chronometric-envelope contrast — the magnitude of the
+    quantifies is the reconstruction-space contrast — the magnitude of the
     clock-transfer field that a universal-clock reconstruction would
     misassign to mass, distance, or time-delay normalization. For halo-scale
     propagation depths \(L \sim 2\) Mpc and conformal variations \(\Delta A/A
@@ -846,11 +901,11 @@
     \(\lesssim\) tens of days in existing strong-lens systems by the success of
     GR mass models (Paper 19) — not the multi-hundred-day total delay, which
     those models already reproduce. For slowly evolving galaxies the
-    source-dependent Dynamic Shutter is negligible. The dominant signal is
+    source-dependent temporal-composite response is negligible. The dominant signal is
     therefore the coherent static temporal-field sector: physical optical
     shear/convergence arises from scalar backreaction and any permitted
     disformal response, while the conformal sector supplies the associated
-    chronometric reconstruction. The temporal smearing (Mechanism B) becomes
+    chronometric reconstruction. The temporal smearing (the source-motion term) becomes
     the dominant propagating temporal-composite signal only for fast transients
     (FRBs); for slowly evolving sources its observable content is the
     shear-variance residual above the standard delay-map baseline (§3.4).
@@ -877,8 +932,12 @@
     Standard lensing analysis interprets <em>any</em> systematic shape
     distortion as evidence for mass (convergence and shear). The temporal
     smearing is mathematically indistinguishable from gravitational lensing
-    distortion. What has been interpreted as "dark matter" may be, in whole or
-    in part, <em>temporal depth projected onto the spatial image plane</em>.
+    distortion, but its amplitude is bounded by the ratio of the
+    emission-time-map contrast to the source-evolution timescale:
+    \(\lesssim 10^{-7}\) in shear for galaxy sources, vanishing for static
+    sources. It is therefore a source-dependent reconstruction signature, not
+    the carrier of the observed dark-matter-level lensing excess; that excess
+    is confronted through the dynamical–lensing mass comparison (§2.6).
 </p>
 
 <h4>Why This Effect Is Achromatic</h4>
