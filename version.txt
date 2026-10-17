@@ -1,9 +1,6 @@
-v0.8 (Tortola) — 16 September 2026 — Canonical TEP architecture alignment, static-space cosmological synchronization, mathematical corrections, and Vainshtein/Galileon removal
+v0.9 (Tortola) — 17 October 2026 — Unstretched-space ADM optical refraction and CDM-free lensing closure
 
-- Canonical architecture: all nongravitational matter couples universally to the causal matter metric; Axiom 2 and the TEP statement corrected so observables are clock-registered proper time plus phase/frequency/arrival-time transport along null paths.
-- Static-space cosmology: redshift reframed as a conformal clock map (a_m=1, A_clock=(1+z)^-1), not physical spatial expansion; H_0 is the observational clock/redshift rate.
-- Removed the illustrative Galileon/Vainshtein completion throughout; the canonical temporal-gradient suppression operator is now the sole foregrounded mechanism, with Galileon/Vainshtein listed only as candidate completions.
-- Mathematical and naming corrections: image and vector equations fixed; "Chronometric Reconstruction" and "Temporal-Composite Shear" terminology adopted; falsification thresholds and evidence statements (Einstein Cross, GW170817) made statistically and historically accurate.
-- Removed unsupported entries (lensed-FRB table, alpha_halo ~ 10^-1, a_0 ~ Lambda^2/M_Pl chain) and replaced with traceable, environment-dependent notation tied to results/.
-- Synchronized abstract, CITATION.cff, codemeta.json, manifest.json, and site/index.html meta tags with the corrected Extended-Regime test statement; added missing TEP-LENS and TEP-BH references.
-- Reframed Phantom Mass as the matched dynamical-lensing inference difference; stated the CDM-free lensing potential as open and scoped the Refsdal bounds to the tested configuration.
+- Formulated the unstretched-space (3+1) ADM temporal metric g_tilde_munu = -A_loc^2(u_grav) U_mu U_nu + A_sp^2(u_drift) Pi_munu: intermediate clock depth -beta_A u_grav(x) along the photon path supplies the optical refractive index n(x) = 1 - 2 Phi_N(x)/c^2 - beta_A u_grav(x) while preserving c_GW = c_gamma identically on the shared temporal-lapse cone
+- Demonstrated that baryon-only sourcing on the zero-free-parameter two-branch kinetic sector P_,X = k sqrt(xi) + 2xi (k = 16.03) reproduces the Bullet Cluster galaxy-peak convergence and offset morphology (kappa_tot = 0.307-0.372 at the bullet galaxies, no negative moat), the SN Refsdal Fermat delay (+330.9 d sheet), and the Planck CMB lensing cosmic-web amplification (9.4x-129x) without particulate dark matter
+- Updated the abstract, theoretical framework, Bullet Cluster forward model, and conclusions to distinguish isotropic conformal rescaling from unstretched-space temporal refraction
+- Synchronized the shared core library and cross-paper references across the corpus

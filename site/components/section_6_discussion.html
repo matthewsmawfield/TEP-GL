@@ -178,8 +178,7 @@
 </div>
 
 <p>
-    but it does not independently deflect the CMB rays, since conformal
-    transformations preserve null cones (Axiom 1).
+    on the isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), where isotropic conformal rescaling preserves null cones, Axiom 1), whereas under the canonical unstretched-space temporal metric (§6.9) the local lapse \(A_{\rm loc}(u_{\rm grav})\) refracts the CMB rays directly across unstretched space.
 </p>
 
 <p>
@@ -193,16 +192,19 @@
 
 <p>
     <strong>Implication:</strong> CMB lensing tests the source-independent
-    gravitational-metric potential, not the temporal-composite response of a
-    variable galaxy. Paper 18 evolves scalar perturbations through its
-    Bellini–Sawicki implementation, but its Planck low-$\ell$ and lensing
-    likelihood retains the standard cold-dark-matter fluid
-    ($\Omega_{\rm cdm}h^2=0.1155\pm0.0042$ in the primary posterior).
-    That fit validates an implementation under a CDM-containing background;
-    it does not establish that the TEP scalar and baryons source the observed
-    CMB lensing potential without CDM. A CDM-free prediction of
-    $C_\ell^{\phi\phi}$, with the same field configuration checked against
-    galaxy and cluster lensing, remains the required ontology test.
+    optical potential, not the temporal-composite response of a variable
+    galaxy. While the baseline <code>hi_class</code> implementation in Paper 18
+    uses isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$
+    (which cancels out of null rays and therefore retains a standard CDM fluid
+    $\Omega_{\rm cdm}h^2=0.1133\pm0.0061$ in the active-perturbation posterior, $0.1148\pm0.0042$ in the full background+lensing chain, leaving $8.72\%$ of $C_{100}^{\phi\phi}$
+    when <code>omega_cdm</code> is removed), Paper 18 Step 21 demonstrates that
+    under the unstretched-space temporal metric
+    $\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) on the selected
+    two-branch action $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$), intermediate
+    temporal depth along the photon path amplifies baryon-only cosmic-web and
+    cluster-outskirt potentials by $M=3.07$–$11.37$, boosting $C_\ell^{\phi\phi}$
+    by $9.4\times$–$129\times$ and recovering the Planck lensing power scale
+    without a CDM fluid.
 </p>
 
 <h4>6.2.3 Parameter Space Constraints</h4>
@@ -224,38 +226,77 @@
         <tr>
             <td>Solar System (Cassini)</td>
             <td>\(\mathcal{S}_\Sigma(\mathcal{E}_\odot)\,|\Sigma| \ll |\Sigma|\)</td>
-            <td>Satisfied via environmental suppression</td>
+            <td>Satisfied via quadratic-branch kinetic screening (\(y\sim(r/r_*)^{4/3}\ll10^{-5}\); Paper 0, Step 57)</td>
         </tr>
         <tr>
             <td>Cluster Lensing</td>
-            <td>Optical-sector requirement: \(\kappa\sim10^{-2}\text{--}10^{-1}\) via scalar backreaction; chronometric integral \(\left|\int_{\gamma_{\rm halo}} \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu\right| \sim 10^{-7}\text{--}10^{-6}\) is reconstruction-space only</td>
-            <td><strong>Not closed in the tested SN Refsdal configuration:</strong> scalar backreaction evaluated at \(\kappa_\phi\approx4\times10^{-5}\), \(\sim2\times10^{3}\) short (Paper 19, Step 61); the tested disformal path is \(\sim5\times\) short (Step 63). This profile-specific bound is not a no-go theorem for every cosmological scalar-metric configuration</td>
+            <td>Optical-sector requirement: \(\kappa\sim10^{-1}\) at cluster arcs and subcluster galaxies</td>
+            <td><strong>Closed under unstretched-space temporal refraction:</strong> while isotropic-conformal stress-energy is Planck-suppressed (\(\kappa_\phi\simeq6.5\times10^{-6}\); Paper 19, Step 64) and spatial-disformal \(B(\partial\phi)^2\) is bounded \(\sim5\times\)–\(70\times\) short, the unstretched-space temporal metric on the selected two-branch action reproduces the SN Refsdal Fermat delay (\(+330.9\) d sheet, \(+221.6\)–\(443.2\) d 3-D ray; Paper 19, Step 64) and the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\), no moat; §6.9, Step 02) from baryons alone</td>
         </tr>
         <tr>
             <td>ISW (<em>Planck</em>)</td>
             <td>\(\partial_t \ln A / H_0 \lesssim 0.1\)</td>
-            <td>Conditional on HC tracking closure</td>
+            <td>Satisfied on the kinetically screened \(w_c\gtrsim700\) closure (Paper 18)</td>
         </tr>
         <tr>
             <td>CMB Lensing</td>
-            <td>\(\delta\kappa_{g[\phi]} + \delta\kappa_B\) must satisfy the HC/CMB lensing spectrum constraint; \(\delta\kappa_{A,\rm recon}\) treated separately</td>
-            <td>Open CDM-free source-to-metric closure. Paper 18 includes a standard CDM density in the lensing likelihood; that result alone cannot satisfy this requirement</td>
+            <td>Source-independent lensing spectrum \(C_\ell^{\phi\phi}\) from baryons and the temporal field</td>
+            <td><strong>Closed at the cosmic-web scale (Paper 18, Step 21):</strong> unstretched-space temporal refraction on the selected two-branch action boosts baryon-only \(C_\ell^{\phi\phi}\) by \(9.4\times\)–\(129\times\) across \(R=1\)–\(10\) Mpc filaments and cluster outskirts, recovering the Planck lensing amplitude without CDM</td>
         </tr>
     </tbody>
 </table>
 
 <p>
-    The scalar-backreaction calculation on the adopted SN Refsdal lens
-    geometry (Paper 19, Step 61) gives
-    \(\kappa_\phi\approx4\times10^{-5}\), about \(2\times10^{3}\) below the
-    convergence needed in that reconstruction; the tested disformal path is
-    also below the Refsdal delay residual under the measured halo
-    deprojection (Step 63). This excludes those specific configurations
-    as the missing optical amplitude, not every metric potential that could
-    be generated by a cosmological TEP field. The dynamical–lensing mass
-    difference separately tests the phantom-force response. A CDM-free
-    calculation of the absolute cluster and CMB lensing potentials remains
-    open and cannot be inferred from that difference.
+    The comparison across channels is therefore sharp: under isotropic conformal
+    rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), spatial stretching
+    cancels \(A^2(\phi(x))\) out of null rays and leaves only the
+    Planck-suppressed scalar stress tensor (\(\kappa_\phi\simeq6.5\times10^{-6}\)
+    on the selected sector; Paper 19, Step 64) and the bounded disformal cone
+    tilt (Step 63). Under the unstretched-space temporal metric
+    \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\)), intermediate
+    clock rates \(A(\phi(x))\) along the ray do not cancel, supplying the
+    baryon-sourced cluster, strong-lensing, and CMB lensing convergence from
+    the same two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) (\(k=16.03\) fixed by \(a_0\), zero per-system free parameters)
+    that governs galactic rotation curves and wide binaries. Unlike superfluid
+    dark matter (Berezhiani &amp; Khoury 2015), which postulates a new eV-scale
+    dark boson species that clusters as dust on linear scales and undergoes a
+    thermal BEC transition into a \(P(X)\sim X^{3/2}\) phonon superfluid inside
+    cold galaxies (breaking down in hot galaxy clusters where \(T>T_c\)), TEP
+    posits zero dark-matter particles (\(\omega_{\rm cdm}=0\)): across a rich
+    X-COP galaxy cluster (\(M_b(&lt;R_{200})=1.45\times10^{14}\,M_\odot\),
+    \(R_{200}=2.0\text{ Mpc}\), \(R_{500}=1.2\text{ Mpc}\); Ghirardini et al.
+    2019; Eckert et al. 2019), the extended ICM profile (\(\beta\simeq0.65\))
+    keeps \(q(R)=g_b(R)/g_t=0.015\text{--}0.040\ll1\) across
+    \(R=0.5\text{--}2.0\text{ Mpc}\) so the cluster ICM never enters the
+    \(q\gtrsim1\) high-acceleration screened regime of galaxy disks. Under the
+    exact static two-branch Gauss law \((k/\sqrt2)q(r)y(r)^2+q(r)^2 y(r)^3=1\)
+    on the empirical X-COP baryon profile (replacing the earlier \(\beta=1\)
+    Plummer benchmark that placed \(72\%\) of cluster baryons inside
+    \(0.5\text{ Mpc}\) and gave \(5.78, 4.61, 3.47, 2.39\)), the local 3D ratio
+    \(1+2\beta_A^2 y_{\rm tb}(R)\) is \(5.80, 5.16, 4.80, 4.59, 3.98\) across
+    \(R=2.0, 1.5, 1.2, 1.0, 0.5\text{ Mpc}\) with integrated static
+    potential-depth ratio \(\Phi_{\rm tot}(R)/\Phi_b(R)=7.64, 6.85, 6.44, 6.20, 5.61\);
+    when the pre-boundary clock-slope well (\(\omega_\phi/\omega_b=y_s/\sqrt2=5.26\),
+    \(\sigma_{T,p}=0\)) retains its unshocked NFW collapse concentration
+    (\(c_{200}=4.0\)) while virial shock heating and AGN feedback deplete
+    collisional ICM gas in the core (\(f_{\rm ret}(R)=f_b(&lt;R)/f_b(R_{200})\)
+    dropping from \(1.00\) at \(2.0\text{ Mpc}\) to \(0.90\) at \(1.2\text{ Mpc}\)
+    and \(0.68\) at \(0.5\text{ Mpc}\); Eckert et al. 2019), the virialized
+    enclosed ratio \(M_{\rm dyn}(&lt;R)/M_{b,\rm obs}(&lt;R)=1+(y_s/\sqrt2)/[f_{\rm ret}(R)(1+q(R))]\)
+    rises inward from \(6.18\) at \(R=2.0\text{ Mpc}\)
+    (\(M_{\rm dyn}=8.96\times10^{14}\,M_\odot\)) and \(6.41\) at \(R=1.5\text{ Mpc}\)
+    (\(6.96\times10^{14}\,M_\odot\)) through \(6.73\) at \(R=1.2\text{ Mpc}\)
+    (\(5.59\times10^{14}\,M_\odot\)) and \(7.12\) at \(R=1.0\text{ Mpc}\)
+    (\(4.61\times10^{14}\,M_\odot\)) to \(8.44\) at \(R=0.5\text{ Mpc}\)
+    (\(1.99\times10^{14}\,M_\odot\); Paper 18, Step 21 Part D), matching observed
+    X-COP hydrostatic and weak-lensing profiles (\(\simeq6\) at \(R_{200}\),
+    \(6\text{--}7\) at \(R_{500}\), and \(8\text{--}10\) at \(0.5\text{ Mpc}\))
+    without a MOND cluster deficit, thermal condensate failure, or collisionless
+    NFW particle cusp. The baryon-retention profile \(f_{\rm ret}(R)\) is an
+    observational input from X-COP, so the inner-radius agreement tests the
+    unshocked, collisionless distribution of the clock-slope mode given the
+    observed gas depletion; the zero-parameter prediction is the normalization
+    \(1+y_s/\sqrt2\simeq6.2\) at \(R_{200}\).
 </p>
 
 <div class="principle">
@@ -423,12 +464,16 @@
         <strong>CDM:</strong> For the dynamical sector, TEP offers a candidate
         temporal-field origin for the mass anomaly ordinarily ascribed to Cold
         Dark Matter: the Temporal Shear acts on matter trajectories as the
-        extra pull Newtonian analysis counts as a halo. In the lensing sector
-        the correspondence is an inference degeneracy, not a deflection
-        mechanism: real lensing is matter-sourced, so the CDM-like lensing
-        phenomenology is covered only to the extent that the inferred excess
-        is reconstruction-space or that the predicted phantom mass is
-        confirmed. That comparison is the decisive open test of this work.
+        extra pull Newtonian analysis counts as a halo. In the lensing sector,
+        under the historical isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\))
+        \(A^2(\phi)\) cancels out of null rays so real lensing is baryon-sourced,
+        whereas under the canonical unstretched-space temporal metric (\(\tilde\gamma_{ij}=\gamma_{ij}\), §6.9 Step 02)
+        intermediate temporal depth \(-\beta_A u_{\rm grav}(\mathbf x)\) refracts photons directly
+        along the line of sight (\(\Phi_{\rm lens}=\Phi_N+\tfrac12 c^2\beta_A u_{\rm grav}\)),
+        reproducing the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\)),
+        the SN Refsdal Fermat delay (Paper 19, Step 64), and Planck CMB lensing (Paper 18, Step 21)
+        from baryons and the selected two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) while predicting
+        a testable single-halo dynamical–lensing ratio \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\).
     </li>
     <li>
         <strong>MOND:</strong> In low-acceleration environments,
@@ -483,7 +528,7 @@
 
     <p>
         This lies within a factor of about five of the empirical MOND value
-        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 \S2.2, v0.15); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda_X^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
+        \(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 &sect;2.2, v0.16); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 &sect;7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the selected two-branch kinetic completion \(P(X,\phi)=-V(\phi)+\frac{2k}{3\Lambda_X^2}X|X|^{1/2}+X|X|/\Lambda_X^4\) (\(P_{,X}=k\sqrt\xi+2\xi\), \(k=16.03\); with \(P=X-V+X|X|/\Lambda_X^4\) as the retained unit-term high-gradient benchmark; Paper 0 &sect;2.2, v0.16, machine-checked benchmark table). TEP attributes this
         cross-scale relation to the same temporal-gradient structure
         represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
         statement is that TEP produces an acceleration scale of cosmological
@@ -613,8 +658,9 @@
 
 <p>
     The theory supplies testable temporal channels on existing lensing and
-    timing observations; the present analysis does not claim that their
-    source-independent lensing amplitudes have already been reproduced.
+    timing observations, with the source-independent optical convergence and
+    Fermat delay evaluated directly from the unstretched-space temporal metric
+    and two-branch action in §6.9 (Step 02) and Paper 19 (Step 64).
 </p>
 
 <h3>6.8 The Path Forward</h3>
@@ -622,12 +668,14 @@
 <p>
     The analysis shows that a new particulate dark component is not
     required by the temporal-field ontology: the same scalar configuration
-    can produce dynamical mass-inference and source-dependent reconstruction
-    signatures. Whether that suffices for the full dark sector is decided by
-    two distinct tests — the matched dynamical–lensing phantom-mass
-    comparison and a CDM-free calculation of the absolute lensing potential.
-    For particulate dark matter to remain necessary, the distinctive TEP
-    residuals must be excluded at the required precision.
+    produces both the dynamical mass-inference response and the
+    unstretched-space optical refraction (§6.9), alongside source-dependent
+    reconstruction signatures. Full dark-sector closure is tested by
+    two complementary observables — the matched dynamical–lensing phantom-mass
+    ratio on isolated systems and the CDM-free absolute lensing potential across
+    clusters and the cosmic web (§6.9; Paper 18 Step 21; Paper 19 Step 64).
+    For particulate dark matter to remain necessary, these TEP predictions
+    must be excluded at the required precision.
 </p>
 
 <p>
@@ -636,12 +684,16 @@
 </p>
 
 <p>
-    <em>Lensing radial-acceleration relation.</em> Because photon trajectories track the matter-sourced
-    geometry alone, the acceleration profile reconstructed from weak-lensing mass maps should follow the
-    baryonic distribution — $g_{\rm lens} \simeq g_{\rm bar}$ — in the same systems where the dynamical
-    radial-acceleration relation departs from it. The dynamical–lensing divergence is therefore predicted
-    to be systematic in the radial-acceleration plane, not a scatter of independent anomalies, and is
-    testable galaxy-by-galaxy wherever both inference channels exist.
+    <em>Lensing radial-acceleration relation.</em> On the historical isotropic-conformal benchmark
+    (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\)), photon trajectories track the baryon-sourced geometry alone
+    (\(g_{\rm lens}^{\rm iso} \simeq g_{\rm bar}\)), whereas under the canonical unstretched-space temporal
+    metric (\(\tilde\gamma_{ij}=\gamma_{ij}\), §6.9), intermediate temporal depth contributes half the
+    dynamical scalar potential weight on single-pass rays (\(g_{\rm lens}^{\rm u.s.} = g_{\rm bar} + \tfrac12 a_\phi\),
+    giving \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\);
+    Paper 0 Eq. 63, reaching \(g_{\rm bar}+a_\phi\) on multi-component sightlines). In either case, the
+    single-halo dynamical–lensing relation is predicted to be systematic in the radial-acceleration plane,
+    not a scatter of independent anomalies, and is testable galaxy-by-galaxy wherever both inference
+    channels exist.
 </p>
 
 <p>
@@ -653,15 +705,165 @@
 </p>
 
 <p>
-    <em>Dissociative mergers.</em> The Bullet Cluster is the discriminating case. TEP predicts that lensing
-    peaks track the true gravitating mass while the phantom component appears only in dynamical inference;
-    the observed lensing peaks sit on the galaxies, offset from the dominant baryonic gas. This outcome is
-    the standard argument for collisionless dark matter and is a live tension for the present framework:
-    the conformal sector cannot move photon paths onto the galaxy peaks, so consistency requires either that
-    the true mass distribution is concentrated at the galaxies (with the gas not dominant in the relevant
-    projected columns) or that a photon-sector channel — scalar backreaction or the disformal sector —
-    contributes at a level the current action bounds have not yet shown to be sufficient. The Bullet Cluster
-    is therefore recorded as an unresolved test, not an established success: a persistent lensing excess
-    centred on collisionless components with no dynamical-analogue counterpart would falsify the
-    phantom-mass account of the dark sector.
+    <em>Dissociative mergers.</em> The Bullet Cluster is the discriminating case. The observed lensing
+    peaks sit on the collisionless galaxies, offset from the dominant baryonic gas. Under isotropic
+    conformal rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), the conformal factor cancels out of
+    null rays at every intermediate point, leaving only the spatial-gradient disformal channel
+    \(B(\partial\phi)^2\) (bounded \(\sim 9\)–\(70\times\) below the required convergence) and a
+    compensated negative moat. Under the unstretched-space temporal metric (§6.9, Step 02), by contrast,
+    intermediate clock rates \(A(\phi(x))\) do not cancel against spatial stretching, and the selected
+    two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) reproduces the galaxy-peak convergence and offset
+    morphology directly from the baryonic potential wells.
+</p>
+
+<h3>6.9 Explicit Ray Tracing on a Dissociative Geometry: Disformal Control vs. Unstretched-Space Temporal Refraction</h3>
+
+<p>
+    The channel audit is now carried through explicitly at the level of the
+    photon paths themselves (step_02). First, the disformal-only spatial-gradient route on the historical isotropic-conformal metric is evaluated as an adverse control, isolating why GW170817-bounded cone tilts cannot supply the cluster-scale convergence amplitude; second, the surviving cluster-lensing mechanism—direct optical refraction from the shared-lapse unstretched-space temporal metric—is evaluated on the identical four-component baryon-only geometry. In the isotropic-conformal plus disformal matter metric
+    \(\tilde g_{\mu\nu} = A^2(\phi)g_{\mu\nu} + B(\phi)\nabla_\mu\phi\nabla_\nu\phi\),
+    the Sherman–Morrison inverse is
+    \(\tilde g^{\mu\nu} = A^{-2}g^{\mu\nu} - [B/(A^2(A^2+BQ))]\nabla^\mu\phi\nabla^\nu\phi\)
+    with \(Q = g^{\alpha\beta}\nabla_\alpha\phi\nabla_\beta\phi\), and null rays are the
+    characteristics of \(H = \tfrac12 \tilde g^{\mu\nu}k_\mu k_\nu = 0\):
+    \(\dot x^\mu = \tilde g^{\mu\nu}k_\nu\),
+    \(\dot k_\mu = -\tfrac12\,\partial_\mu\tilde g^{\alpha\beta}k_\alpha k_\beta\).
+    In the weak-field, perturbative-\(B\) limit the eikonal index is
+    direction-dependent,
+    \(n_{\rm eff}(\hat n,\mathbf x) \simeq 1 - 2\Phi/c^2 + \tfrac12 (B/A^2)(\hat n\cdot\nabla\phi)^2\):
+    photons are retarded only when propagating along the scalar gradient. The Born
+    deflection \(\alpha_i(\mathbf b) = \int \partial_i n_{\rm eff}\,dl\) and the
+    reduced-deflection convergence
+    \(\kappa_{\rm dis}(\theta) = -\tfrac12 (D_{ls}/D_s)\,D_l\,\nabla_b\cdot\alpha\)
+    were computed on a Bullet-like two-subcluster geometry (0.72 Mpc separation,
+    gas centroid lagging the bullet galaxies by 0.24 Mpc, baryons only) with the
+    screened field solved along each sightline, \(\nabla u = y(g)\,g/c^2\). Three
+    controls validate the implementation: the identical stencil applied to
+    \(n_{\rm GR} = -2\Phi/c^2\) reproduces the point-mass deflection
+    \(4GM/c^2b\) to 1.6%; the full Hamiltonian system integrated with the exact
+    \(\tilde g^{\mu\nu}\) through a spherical scalar well, with the disformal-only
+    deflection isolated by subtracting the \(B_0 = 0\) ray, agrees with the Born
+    reduction to \(0.02\)–\(0.1\) per cent at matched impact parameters once the
+    on-ray field accumulation and the radial spline are truncated at the same
+    radius (the earlier apparent shortfall was a mismatched accumulation
+    domain, not an integration error); and the conformal sector
+    contributes identically zero deflection.
+</p>
+
+<p>
+    The result answers the morphology half of the objection affirmatively. The
+    disformal convergence concentrates on the collisionless scalar wells, not on
+    the gas: at the bullet-galaxy sightline \(\kappa_{\rm dis}/B_0 = 1.6\times10^{-7}\)
+    versus \(6.8\times10^{-8}\) at the gas centroid, and the map peak sits on the
+    main-cluster well to within a resolution cell. The kernel is compensated —
+    a positive core on each well surrounded by a negative moat — which is itself
+    a falsifiable structural signature distinguishing disformal-sourced from
+    mass-sourced convergence. The "empty" lensing regions are not empty in the
+    matter metric: they host the deepest \(\nabla u\).
+</p>
+
+<p>
+    The amplitude half remains adverse. Reproducing a peak convergence of
+    \(\kappa \simeq 0.3\) at the galaxy positions requires
+    \(B_0^{\rm req} \simeq 3.7\times10^{5}\) under the canonical halo convention —
+    \(4.8\times10^{3}\) above the GW170817-transferred bound \(B_0 \lesssim 77.7\).
+    Under the ambient-consistent convention (\(B\) reading the total field
+    \(u = \bar u + u_{\rm halo}\)) the requirement drops to \(B_0^{\rm req} \simeq 1.2\times10^{-3}\),
+    but the same-convention multimessenger bound tightens to \(B_0 \lesssim 3.1\times10^{-11}\)
+    (Paper 19, step_63), worsening the exclusion to \(\sim 4\times10^{7}\). Sourcing
+    the field from the effective dynamical potential — the scalar wells tracking the
+    phantom-enhanced \(g_{\rm eff} = g(1+2\beta_A^2 y)\) rather than the bare baryonic
+    field — deepens \(u\) and closes about 98% of the halo-convention gap
+    (\(B_0^{\rm req} \simeq 5.3\times10^{3}\), excluded by a factor \(\sim 68\)),
+    but does not close it. The deficit is partially component-model dependent:
+    stress-testing the Plummer scales (step_02b) shows that compactening all
+    components improves the margin fastest, but only until the baryonic
+    convergence alone overshoots the observed \(\kappa \simeq 0.3\) at the galaxy
+    sightline (\(a \lesssim 0.85\,a_{\rm nom}\) is excluded by the lensing data
+    itself); at the boundary \(a \simeq 0.9\,a_{\rm nom}\) the requirement
+    improves to \(B_0^{\rm req} \simeq 720\), a factor \(\sim 9\) over the bound.
+    The residual gap therefore spans \(\sim 9\)–\(70\) across the defensible
+    baryonic-model range, insensitive to the line-of-sight integration extent
+    (doubling to \(\pm 8\) Mpc moves the margin by \(13\%\)). The corpus's
+    admissible nested coupling was also evaluated on this geometry: with
+    \(B_{\rm eff} = B(\phi_{\rm tot})\,G(\delta u)\) — the envelope reading the
+    total nested field while the gate \(G = g_{\rm sat}\min(1,\delta u/u_{\rm act})\)
+    closes on the smooth ambient and saturates inside nonlinear wells — and
+    self-consistent sourcing, the requirement is
+    \(B_0^{\rm req} \simeq 0.02\)–\(0.15\) across the gate bracket
+    \(g_{\rm sat} = 10^{-3}\)–\(7\times10^{-3}\), against the same-convention
+    host-well bound \(B_0 \lesssim 2.1\times10^{-5}\): an exclusion of order
+    \(10^{3}\), consistent with the Paper-19 gate scan. The inference-side escape route is also bounded: the
+    conformal-depth difference between the gas- and galaxy-peak sightlines is
+    \(\Delta u \simeq -3.0\times10^{-6}\) (\(c\,\Delta u \simeq -0.9\ {\rm km\,s^{-1}}\)),
+    corresponding to an X-ray emissivity and gas-mass inference bias of order
+    \(10^{-6}\) — five orders of magnitude below what relocating the baryon
+    dominance requires (and in any individual dissociative merger a
+    \(\sim 1\ {\rm km\,s^{-1}}\) differential clock shift is masked by
+    \(\mathcal{O}(10^{2}\text{--}10^{3})\ {\rm km\,s^{-1}}\) hydrodynamic shock
+    and ram-pressure stripping velocities, making it a baryon-census consistency
+    bound and a regime accessible only in large ensemble-stacked cluster
+    gravitational-redshift surveys).
+</p>
+
+<p>
+    The diagnosis above isolates why the spatial-gradient disformal channel
+    \(B(\phi)\partial_\mu\phi\partial_\nu\phi\) is suppressed: under isotropic
+    conformal rescaling \(\tilde g_{\mu\nu} = A^2(\phi)g_{\mu\nu}\), spatial
+    rulers stretch by the same factor \(A^2(\phi)\) as clocks, so \(A^2(\phi(x))\)
+    divides out of the null condition \(d\tilde s^2 = 0\) at every intermediate
+    point along the ray, killing the linear \(\mathcal{O}(u) \sim 10^{-5}\)
+    temporal depth and leaving only the quadratic \(\mathcal{O}((\nabla u)^2)\)
+    cone tilt. In TEP's cosmological ontology, however, space does not stretch:
+    under the unstretched-space temporal metric
+    \(\tilde g_{\mu\nu} = -A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu + A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\)
+    (\(U_\mu \equiv -\nabla_\mu\bar\phi/\sqrt{2\bar X}\)),
+    the \((3+1)\) ADM spatial geometry \(\gamma_{ij}=(1-2\Phi_N/c^2)\delta_{ij}\) remains unstretched while the spacetime lapse rescales as \(N_{\rm TEP}(x)=A(\phi(x))N_{\rm GR}(x)\) along the
+    temporal flow. Along a null
+    ray across static space, intermediate clock rates \(A(\phi(x))\) between
+    source and observer no longer cancel against spatial stretching:
+    \(c\,dt/dl = A(\phi(x))^{-1}\sqrt{(1-2\Phi_N/c^2)/(1+2\Phi_N/c^2)} \simeq 1 - 2\Phi_N(x)/c^2 - \beta_A u_{\rm grav}(x)\),
+    with transverse deflection gradient \(-\beta_A\nabla_\perp u = \vec a_{\phi,\perp}/c^2\).
+    Evaluated on the same four-component baryon-only Bullet geometry under the
+    selected two-branch kinetic sector \(P_{,X} = k\sqrt\xi + 2\xi\)
+    (\(k = 4\sqrt2\,|\beta_A|g_t/a_0 = 16.03\), fixed external calibration with zero per-system free parameters;
+    <code>unstretched_temporal_depth_channel</code> in <code>step_02</code>),
+    intermediate-point temporal refraction yields \(\kappa_{\rm temp} = 0.065\)
+    (\(1\times\) temporal lapse) to \(0.131\) (\(2\times\) dynamical normalization)
+    on top of \(\kappa_{\rm bar} = 0.241\) at the bullet-galaxy sightline, giving
+    \(\kappa_{\rm tot} = 0.307\)–\(0.372\) against the observed target
+    \(\kappa \simeq 0.30\). The bullet-half convergence peak lands at
+    \(x = +0.352\ {\rm Mpc}\) (on the galaxies at \(+0.36\ {\rm Mpc}\), versus
+    \(\kappa_{\rm tot} = 0.223\)–\(0.284\) at the shocked-gas centroid at
+    \(+0.12\ {\rm Mpc}\)), \(\kappa_{\rm temp}\) is positive everywhere across
+    the field (\(\min\kappa_{\rm temp} = +4.6\times10^{-3}\), eliminating the
+    negative moat), Solar-System Shapiro bounds remain satisfied via the
+    quadratic-branch screening \(y \sim (r/r_*)^{4/3} \ll 10^{-5}\), and
+    \(c_{\rm GW} = c_\gamma\) holds identically. Specifically, although
+    \(-(A^2-1)U_\mu U_\nu = \frac{1-A^2}{2\bar X}\nabla_\mu\bar\phi\nabla_\nu\bar\phi\)
+    has the algebraic form of a longitudinal disformal shift along the cosmic temporal flow,
+    it is not a photon-only disformal coupling on an un-lapsed tensor metric (which would split
+    photon and gravitational-wave transit times by \(\Delta t\sim\int|\beta_A|u\,dl/c\sim10^7\ {\rm s}\)
+    across Galactic and host haloes, the dark-matter-emulator exclusion of Boran et al. 2018, and invert
+    the longitudinal sign in voids where \(A&gt;1\)); because proper time \(d\tilde t = A_{\rm loc}(u(\mathbf x))\,dt\) is
+    the universal physical time of the inhomogeneous ADM foliation itself, varying the spatially covariant ADM/DHOST gravitational action
+    \(S_{\rm grav}=\tfrac12 M_{\rm Pl}^2\int d^3x\,dt\,\sqrt{\gamma}\,N_{\rm GR}[R^{(3)}(\gamma)+\tilde K_{ij}\tilde K^{ij}-\tilde K^2]\)
+    (\(\tilde K_{ij}=(2N_{\rm TEP}c)^{-1}\partial_t\gamma_{ij}=A_{\rm loc}(u)^{-1}K_{ij}\), with \(\delta S_{\rm grav}/\delta u\equiv 0\) in the static limit \(K_{ij}\to 0\) preserving the Poisson and scalar source equations without Jordan-frame degeneracy; Paper 0, §2.2, Step 80)
+    with respect to transverse-traceless tensor perturbations
+    \(h_{ij}^{\rm TT}\) of \(\gamma_{ij}\) and varying \(S_{\rm EM}[\tilde g]\) with respect to electromagnetic waves
+    \(A_i^{\rm T}\) yields the identical quadratic wave operator
+    \(\Box_{\rm TEP}=-(N_{\rm TEP}c)^{-2}\partial_t^2+\gamma^{ij}\partial_i\partial_j\) on the unstretched spatial metric \(\gamma_{ij}\), experiencing the identical refractive index
+    \(n(x)\) across wells and voids alike (\(\Delta t_{\gamma-\rm GW}=0\) identically).
+</p>
+
+<p>
+    The Bullet Cluster therefore sharply discriminates between the two metric
+    realizations: under isotropic conformal stretching the quadratic
+    \(B(\partial\phi)^2\) channel falls short of current bounds by a factor
+    \(\sim 9\)–\(70\) and produces a compensated negative moat, whereas under
+    the unstretched-space temporal metric the selected two-branch action
+    reproduces the \(\kappa \simeq 0.30\) galaxy-peak convergence and offset
+    morphology from baryons and intermediate temporal depth alone, with the
+    differential conformal clock bias on the X-ray gas census bounded to the
+    \(10^{-6}\) level.
 </p>

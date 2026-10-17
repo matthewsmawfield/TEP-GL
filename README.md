@@ -2,24 +2,27 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17982540.svg)](https://doi.org/10.5281/zenodo.17982540)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
 ![TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations](site/public/twitter-image.jpg)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.8 (Tortola)  
-**First published:** 19 December 2025 · **Last updated:** 30 September 2026
+**Version:** v0.9 (Tortola)  
+**First published:** 19 December 2025 · **Last updated:** 17 October 2026  
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540)  
-**Website:** [https://mlsmawfield.com/tep/gl/](https://mlsmawfield.com/tep/gl/)
+**Website:** [https://mlsmawfield.com/tep/gl/](https://mlsmawfield.com/tep/gl/)  
+**Paper Series:** TEP Series · Group D (IV. Low-Acceleration Dynamics, Phantom Mass & Gravitational Lensing) · Paper 4 (`D4`)
 
 ## Abstract
 
+<!-- Generated from site/components/abstract.html; update the manuscript source, then run tools/sync_current_corpus_readmes.py. -->
 
+Standard gravitational lensing analysis relies on the Isochrony Axiom—the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a temporal-composite response contribution sourced by the underlying Temporal Shear field gradient—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP)—whose propagating component is confined to the millisecond (conservative-baseline) window while its chronometric component is bounded by the ratio of differential delay to source-evolution time and is accessible only through time-domain or variability-dependent observables. Within TEP, Phantom Mass is the excess dynamical mass inferred when the scalar force on matter trajectories is analyzed as gravitating mass. Its test is the mass difference inferred from dynamics and lensing at matched radii and with compatible mass models. Whereas isotropic conformal rescaling $\tilde g_{\mu\nu}=A²(\phi)g_{\mu\nu}$ stretches spatial rulers alongside clocks so $A²(\phi(x))$ cancels out of null rays, under the canonical unstretched-space temporal metric $\tilde g_{\mu\nu}=-A_{\rm loc}²(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}²(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) the $(3+1)$ ADM spacetime lapse rescales as $N_{\rm TEP}(x)=A(\phi(x))N_{\rm GR}(x)$ while the spatial 3-metric $\gamma_{ij}$ remains unstretched. Intermediate clock rates along the ray therefore contribute $-\beta_A u_{\rm grav}(x)$ directly to the optical refractive index $n(x)\simeq1-2\Phi_N(x)/c²-\beta_A u_{\rm grav}(x)$, preserving local Lorentz invariance and $c_{\rm GW}=c_\gamma$ identically on the shared temporal-lapse cone ($\Delta t_{\gamma-\rm GW}=0$). Sourced by baryons alone on the selected kinetic sector $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$ fixed by $a_0$, zero per-system free parameters), this unstretched-space temporal refraction reproduces the Bullet Cluster galaxy-peak convergence and offset morphology ($\kappa_{\rm tot}=0.307$–$0.372$ at the bullet galaxies, peak at $x=+0.352$ Mpc on the galaxies, no negative moat; Step 02) without particulate dark matter, consistent with the companion strong-lensing delay and CMB lensing closures (Papers 18, 19).
 
+Screening of the shear response in high-acceleration lensing environments is governed by the abstract environmental operator $\mathcal{S}_\Sigma(\mathcal{E})$, which pins the incremental field gradient where the ambient landscape is steep while the Temporal Topology persists. The same operator sets the environment-dependence of the phantom mass, which is accordingly largest in isolated, diffuse low-acceleration systems.
 
+Keywords: gravitational lensing – dark matter – modified gravity – cosmology: theory – galaxies: kinematics and dynamics – temporal equivalence principle
 
-Standard gravitational lensing analysis relies on the Isochrony Axiom —the implicit assumption that the observed image represents a synchronous spatial snapshot of the source. For evolving sources, this approximation breaks down in the presence of conformal metric couplings, creating a "temporal composite" image. This projects temporal depth onto the spatial plane, generating a temporal-composite response contribution sourced by the underlying Temporal Shear field gradient—arising from gradients in the scalar field's continuous spatial profile ( Temporal Topology , TEP)—whose propagating component is confined to the millisecond (conservative-baseline) window while its chronometric component is bounded by the ratio of differential delay to source-evolution time and is accessible only through time-domain or variability-dependent observables. Within TEP, Phantom Mass is the excess dynamical mass inferred when the scalar force on matter trajectories is analyzed as gravitating mass. Its test is the mass difference inferred from dynamics and lensing at matched radii and with compatible mass models. At fixed gravitational metric g_μν, the conformal factor does not alter photon paths; it does not prevent the scalar's stress-energy from curving g_μν. For the SN Refsdal lens benchmark in Paper 19, that backreaction supplies κ_ϕ≈ 10⁻⁵, roughly 2 × 10³ below the dark-matter-level convergence required there; the bound is not a cosmological no-go theorem. Disformal transport and source-evolution reconstruction are separately bounded on their tested paths. The temporal-composite term vanishes for a stationary backlight and cannot supply the observed CMB lensing deflection. Paper 18's Planck-lensing likelihood retains a standard cold-dark-matter fluid with Ω_cdmh²≈ 0.1155; its agreement is therefore not a CDM-free lensing prediction of TEP. The intended ontology requires a source-independent metric potential from the stated TEP fields and baryons that reproduces CMB, galaxy, and cluster lensing without that fluid. This closure remains open. The present paper's established scope is its bounded time-domain and reconstruction-channel tests, not a completed replacement for the dark-matter lensing potential. Screening of the shear response in high-acceleration lensing environments is governed by the abstract environmental operator S_Σ(E), which pins the incremental field gradient where the ambient landscape is steep while the Temporal Topology persists. The same operator sets the environment-dependence of the phantom mass, which is accordingly largest in isolated, diffuse low-acceleration systems.
-
+Current manuscript source: [abstract.html](site/components/abstract.html).
 
 ## The TEP Research Program
 
@@ -40,16 +43,14 @@ Standard gravitational lensing analysis relies on the Isochrony Axiom —the imp
 | **Paper 12** | [TEP-JWST](https://github.com/matthewsmawfield/TEP-JWST) | The Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies | [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) |
 | **Paper 13** | [TEP-WB](https://github.com/matthewsmawfield/TEP-WB) | The Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries | [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) |
 | **Paper 15** | [TEP-EFA](https://github.com/matthewsmawfield/TEP-EFA) | Temporal Equivalence Principle: Temporal Shear in the Earth Flyby Anomaly | [10.5281/zenodo.19454862](https://doi.org/10.5281/zenodo.19454862) |
-| **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454620](https://doi.org/10.5281/zenodo.19454620) |
+| **Paper 16** | [TEP-J0437](https://github.com/matthewsmawfield/TEP-J0437) | Synchronization Holonomy in Pulsar Scintillation | [10.5281/zenodo.19454619](https://doi.org/10.5281/zenodo.19454619) |
 | **Paper 17** | [TEP-LLR](https://github.com/matthewsmawfield/TEP-LLR) | Lunar Laser Ranging and the Nordtvedt Effect | [10.5281/zenodo.19446028](https://doi.org/10.5281/zenodo.19446028) |
 
 When using this work, please cite the paper and theoretical framework listed below.
 
 ## Key Findings
 
-This paper identifies a nuanced aspect of multi-messenger constraints: GW170817 bounds differential propagation speeds (disformal sector) but does not directly test common-mode conformal clock-rate structure along the shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. If time flows at different rates across an extended source, the observed image becomes a "temporal composite" that projects temporal depth onto the spatial plane. This temporal shear—arising from gradients in the scalar field's continuous spatial profile (Temporal Topology, TEP)—has a propagating component confined to the millisecond (Reference-Envelope) window and a chronometric component degenerate with gravitational shear in standard static lens reconstructions unless time-domain or variability-dependent observables are included, forming one component of the Phantom-Mass phenomenology that mimics dark matter. Screening operates via the continuous flattening of Temporal Topology in dense environments, suppressing local field gradients without invoking discrete thin-shell boundaries. No securely multiply-imaged FRB with a published independent lens model is available at the time of writing, so no lensed-FRB residual is claimed here as evidence; the required observational protocol is specified in Section 5.1. Unlike dark matter models, TEP-GL predicts unique signatures: variability-dependent Phantom Mass and non-zero curl (image rotation) in the shear tensor.
-
----
+The current findings, numerical results and comparison assumptions are reported in [7. Conclusions](site/components/section_7_conclusions.html). The abstract above is synchronized from the current manuscript.
 
 ## Core Hypothesis
 
@@ -101,7 +102,7 @@ This work builds on the Temporal Equivalence Principle (TEP), which proposes:
 -   **Temporal Shear Suppression**: The "Screening Cliff" objection is addressed through continuous geometric gradient suppression (TEP); the mechanism is shown to be over-efficient rather than fine-tuned.
 
 **TEP Theory Reference:**
-> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.15 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
+> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.16 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
 
 ## File Structure
 
@@ -157,7 +158,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   journal={Zenodo},
   year={2025},
   doi={10.5281/zenodo.17982540},
-  note={Preprint v0.8 (Tortola)}
+  note={Preprint v0.9 (Tortola)}
 }
 ```
 

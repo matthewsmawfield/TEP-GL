@@ -1,7 +1,7 @@
 # Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 **Matthew Lukin Smawfield**
-Version: v0.8 (Tortola)
-First published: 19 December 2025 · Last updated: 30 September 2026
+Version: v0.9 (Tortola)
+First published: 19 December 2025 · Last updated: 17 October 2026
 DOI: 10.5281/zenodo.17982540
 
 ---
@@ -26,25 +26,23 @@ Within TEP, *Phantom Mass* is the excess dynamical mass
 inferred when the scalar force on matter trajectories is analyzed
 as gravitating mass. Its test is the mass difference inferred from
 dynamics and lensing at matched radii and with compatible mass
-models. At fixed gravitational metric $g_{\mu\nu}$, the conformal
-factor does not alter photon paths; it does not prevent the scalar's
-stress-energy from curving $g_{\mu\nu}$. For the SN Refsdal lens
-benchmark in Paper 19, that backreaction supplies
-$\kappa_\phi\sim10^{-5}$, roughly $2\times10^3$ below the
-dark-matter-level convergence required there; the bound is not a
-cosmological no-go theorem. Disformal transport and source-evolution
-reconstruction are separately bounded on their tested paths. The
-temporal-composite term vanishes for a stationary backlight and
-cannot supply the observed CMB lensing deflection. Paper 18's
-Planck-lensing likelihood retains a standard cold-dark-matter fluid
-with $\Omega_{\rm cdm}h^2\simeq0.1155$; its agreement is therefore
-not a CDM-free lensing prediction of TEP. The intended ontology
-requires a source-independent metric potential from the stated TEP
-fields and baryons that reproduces CMB, galaxy, and cluster lensing
-without that fluid. This closure remains open. The present paper's
-established scope is its bounded time-domain and
-reconstruction-channel tests, not a completed replacement for the
-dark-matter lensing potential.
+models. Whereas isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$
+stretches spatial rulers alongside clocks so $A^2(\phi(x))$ cancels out
+of null rays, under the canonical unstretched-space temporal metric
+$\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$)
+the $(3+1)$ ADM spacetime lapse rescales as $N_{\rm TEP}(x)=A(\phi(x))N_{\rm GR}(x)$
+while the spatial 3-metric $\gamma_{ij}$ remains unstretched. Intermediate
+clock rates along the ray therefore contribute $-\beta_A u_{\rm grav}(x)$
+directly to the optical refractive index $n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)$,
+preserving local Lorentz invariance and $c_{\rm GW}=c_\gamma$ identically
+on the shared temporal-lapse cone ($\Delta t_{\gamma-\rm GW}=0$). Sourced
+by baryons alone on the selected kinetic sector
+$P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$ fixed by $a_0$, zero per-system free parameters), this unstretched-space temporal
+refraction reproduces the Bullet Cluster galaxy-peak convergence and offset
+morphology ($\kappa_{\rm tot}=0.307$–$0.372$ at the bullet galaxies, peak
+at $x=+0.352$ Mpc on the galaxies, no negative moat; Step 02) without
+particulate dark matter, consistent with the companion strong-lensing
+delay and CMB lensing closures (Papers 18, 19).
 
 Screening of the shear response in high-acceleration lensing environments is governed by the abstract environmental operator $\mathcal{S}_\Sigma(\mathcal{E})$, which pins the incremental field gradient where the ambient landscape is steep while the Temporal Topology persists. The same operator sets the environment-dependence of the phantom mass, which is accordingly largest in isolated, diffuse low-acceleration systems.
 
@@ -80,11 +78,11 @@ Consider two mathematically equivalent interpretations of the same Fermat potent
 
 **Interpretation A (Standard Framework):** Assumes the Isochrony Axiom. An Einstein ring is analyzed with apparent convergence \(\kappa_{\rm obs}\) exceeding what the visible baryonic mass can produce. A dark matter halo with mass \(M_{\rm DM} = M_{\rm obs} - M_{\rm baryons}\) is inferred. The "dark matter" is treated as an unseen substance required to explain the lensing geometry.
 
-**Interpretation B (TEP Framework):** Rejects the Isochrony Axiom. The observed image is recognized as a *temporal composite*: photons arriving simultaneously at the detector left the source at different emission epochs, with differential emission structure set by the propagating delay surface (the gravitational Fermat surface plus the bounded disformal deformation) and with the conformal sector contributing the endpoint-determined clock-transfer field read by the reconstruction. For an evolving source, this temporal depth projects onto the image plane as an apparent spatial distortion, bounded in amplitude by the delay/evolution-time ratio. The differential temporal-transfer structure across the lens is computed, and apparent excess convergence in such reconstructions is identified as the signature of temporal-field gradients \(\nabla(\Delta \tilde{\tau})\) in the lens environment. Where the projection applies, unmodeled time can bias reconstruction at the bounded amplitude; where it does not, any lensing excess is real deflection requiring a gravitational-metric potential. Its CDM-free origin is not established by the temporal-composite mechanism.
+**Interpretation B (TEP Framework):** Rejects the Isochrony Axiom. The observed image is recognized as a *temporal composite*: photons arriving simultaneously at the detector left the source at different emission epochs, with differential emission structure set by the propagating delay surface (the gravitational Fermat surface, the unstretched-space temporal-lapse refraction, and the bounded disformal deformation) and with the conformal sector contributing the endpoint-determined clock-transfer field read by the reconstruction. For an evolving source, this temporal depth projects onto the image plane as an apparent spatial distortion, bounded in amplitude by the delay/evolution-time ratio. The differential temporal-transfer structure across the lens is computed, and apparent excess convergence in such reconstructions is identified as the signature of temporal-field gradients \(\nabla(\Delta \tilde{\tau})\) in the lens environment. Where the projection applies, unmodeled time can bias reconstruction at the bounded amplitude; where it does not (stationary sources), the static lensing deflection is supplied directly by the unstretched-space temporal metric and the two-branch scalar action (§1.5, §6.9), while on the historical isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\)) \(A^2(\phi)\) cancels from null rays.
 
-**The Critical Point:** The frameworks diverge where the source is static. For evolving sources, temporal projection can contribute apparent spatial structure at the bounded amplitude and the distinction is settled by time-domain, variability-dependent, and multi-epoch observables. For a stationary backlight there is no source-evolution projection: light responds to the gravitational metric sourced by the baryons and any scalar stress. The matched dynamical–lensing mass difference tests the extra force on matter, but reproducing the absolute lensing signal without an independent CDM fluid remains a separate requirement.
+**The Critical Point:** The frameworks diverge where the source is static. For evolving sources, temporal projection can contribute apparent spatial structure at the bounded amplitude and the distinction is settled by time-domain, variability-dependent, and multi-epoch observables. For a stationary backlight there is no source-evolution projection: on the historical isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\)) light responds only to the gravitational metric sourced by baryons and scalar stress, whereas under the canonical unstretched-space temporal metric (§1.5, §6.9) intermediate temporal depth refracts photons directly at half the dynamical scalar potential weight (\(\Phi_{\rm lens}=\Phi_N+\tfrac12 c^2\beta_A u_{\rm grav}\) vs \(\Phi_{\rm dyn}=\Phi_N+c^2\beta_A u_{\rm grav}\); Paper 0 Eq. 63), yielding both the CDM-free optical deflection and a testable dynamical–lensing mass ratio \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\).
 
-This bifurcation illustrates that the inference of particulate dark matter is contingent, in part, on the Isochrony Axiom for temporally structured sources, while for the static-source excess it sets a sharp falsifiable boundary: where the shear supplies the dynamical anomaly, lensing should find less mass than dynamics.
+This bifurcation illustrates that the inference of particulate dark matter is contingent, in part, on the Isochrony Axiom for temporally structured sources, while for the static-source excess it sets a sharp falsifiable boundary: where the Temporal Shear supplies the dynamical anomaly, single-pass weak lensing on isolated halos infers a smaller phantom mass than dynamics (\(M_{\rm lens}^{\rm u.s.}<M_{\rm dyn}\) under the unstretched-space metric, and \(g_{\rm lens}^{\rm iso}\simeq g_{\rm bar}\) on the isotropic-conformal benchmark).
 
 ## 1.4 The Temporal Equivalence Principle (TEP)
 
@@ -100,17 +98,17 @@ The same distinction extends to cosmology. In the canonical TEP interpretation t
 
 ## 1.5 Redefining the Dark Sector
 
-TEP's intended ontology does not posit particulate dark matter. It must nevertheless account for the real lensing and dynamical observations attributed to it. Temporal Shear can modify dynamical mass inference, and source-dependent clock transfer can affect time-domain reconstructions; neither statement by itself supplies the gravitational-metric potential required by cluster and CMB lensing. This paper tests those distinct channels and records where the CDM-free lensing calculation remains open. It is demonstrated that:
+TEP's intended ontology does not posit particulate dark matter. It accounts for both the dynamical and optical observations attributed to dark matter through the selected two-branch kinetic action \(P_{,X}=k\sqrt\xi+2\xi\) (\(k=16.03\) fixed by \(a_0\), zero per-system free parameters) and the unstretched-space temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\), rescaling the $(3+1)$ ADM spacetime lapse $N_{\rm TEP}=A(\phi)N_{\rm GR}$ at fixed spatial 3-metric $\gamma_{ij}$), alongside the bounded source-dependent temporal-composite response for evolving sources. It is demonstrated that:
 
-- **The tested deflection channels are bounded:** Conformal rescaling leaves null paths unchanged at fixed \(g_{\mu\nu}\), while scalar stress can curve that metric. For the SN Refsdal configuration, Paper 19 obtains \(\kappa_\phi\sim10^{-5}\), about \(2\times10^{3}\) below the required lensing convergence; the tested disformal delay is also subdominant (Steps 56, 61, 63). The dynamical–lensing mass difference tests Temporal Shear in matter trajectories but cannot substitute for the measured lensing potential. The source-evolution temporal-composite correction is bounded for evolving galaxies and does not supply CMB lensing; no CDM-free cosmological deflection solution is established here.
+- **Isotropic-conformal vs. unstretched-space temporal refraction:** Under isotropic conformal rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), spatial rulers stretch by \(A^2(\phi)\) alongside clocks so \(A^2(\phi(x))\) cancels out of \(d\tilde s^2=0\), leaving only the Planck-suppressed scalar stress tensor (\(\kappa_\phi\simeq6.5\times10^{-6}\) on the selected two-branch sector; Paper 19, Step 64) and the bounded spatial-disformal delay (Steps 61–63). Under the unstretched-space temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\)), space does not stretch and every intermediate point \(x\) along the photon path contributes its local temporal depth \(-\beta_A u_{\rm grav}(x)\) directly to the optical refractive index \(n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)\), reproducing the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\), Step 02), the SN Refsdal delay and arrival order (Paper 19, Step 64), and the CMB lensing cosmic-web boost (Paper 18, Step 21) from baryons and the selected two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) without particulate dark matter.
 
-- **GW170817 is a differential constraint:** The multi-messenger constraint \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\) is explicitly reanalyzed. It is shown that this bounds only the *disformal* (cone-tilt) component of the coupling. The *conformal* component, which governs clock rates and drives the phantom-mass phenomenology, is not directly constrained by photon–graviton differential-propagation bounds because conformal transformations preserve null cones — and, symmetrically, it carries exactly zero propagated differential delay by the same invariance, its observable content being the common-mode endpoint calibration and reconstruction-space clock-transfer map. It remains indirectly constrained by PPN, source-screening, gravitational-redshift, clock-comparison, and equivalence-principle tests.
+- **GW170817 is a differential constraint:** The multi-messenger constraint \(|c_{\gamma}-c_g|/c \lesssim 10^{-15}\) is explicitly reanalyzed. It is shown that this bounds only the *disformal* (cone-tilt) component of the coupling. Both isotropic conformal rescaling and the unstretched-space temporal metric preserve \(c_{\rm GW}=c_\gamma\) identically because transverse-traceless tensor perturbations of \(\gamma_{ij}\) and electromagnetic waves evolve in the same physical ADM lapse \(d\tilde t=A(\phi)\,dt\) on the shared unstretched spatial geometry (evading the \(\sim10^7\text{ s}\) halo arrival-time split of photon-only disformal dark-matter emulators; Boran et al. 2018), while quadratic-branch kinetic screening \(y\sim(r/r_*)^{4/3}\ll10^{-5}\) satisfies Solar-System PPN Shapiro bounds.
 
-- **Regime I vs. Regime II:** The conservative baseline (Regime I) is the disformal multipath deformation at its GW170817-bounded normalization (Δτ_B = ½∫ D(∂_n̂φ)² dl ≲ 0.2 s per 2 Mpc), the even-parity channel of the same B(φ) sector the holonomy program bounds on the odd channel — so that the stated <0.1 ms lensed-FRB null threshold operates as a bound on the disformal normalization itself. Regime II collects the reconstruction-space and time-domain content of the conformal sector — endpoint clock calibration, chronometric bookkeeping, and the source-dependent temporal-composite response — whose propagated differential content is identically zero and whose image-space amplitude is bounded by the delay/evolution-time ratio. Neither regime supplies the absolute dark-matter-level spatial deflection in the tested lens geometry. A CDM-free gravitational-metric potential is required in addition to the phantom-mass comparison before the lensing sector can close.
+- **Regime I vs. Regime II:** The conservative baseline (Regime I) is the disformal multipath deformation at its GW170817-bounded normalization (Δτ_B = ½∫ D(∂_n̂φ)² dl ≲ 0.2 s per 2 Mpc), the even-parity channel of the same B(φ) sector the holonomy program bounds on the odd channel — so that the stated <0.1 ms lensed-FRB null threshold operates as a bound on the disformal normalization itself. Regime II collects the reconstruction-space and time-domain content of the conformal sector — endpoint clock calibration, chronometric bookkeeping, and the source-dependent temporal-composite response — whose image-space amplitude is bounded by the delay/evolution-time ratio, alongside the source-independent unstretched-space temporal refraction evaluated in Section 6.9 (Step 02).
 
-Relaxing the isochronous reconstruction identifies bounded, testable temporal contributions to mass inference; it does not make measured photon deflection a reconstruction artifact. A CDM-free alternative must additionally predict the gravitational-metric potential traced by CMB, galaxy and cluster lensing.
+Relaxing the isochronous reconstruction identifies bounded, testable temporal contributions to mass inference alongside the source-independent optical refraction of the unstretched-space temporal metric across galaxy, cluster and CMB lensing.
 
-TEP does not posit an alternative dark substance. Its proposed replacement of particulate dark matter therefore requires the same action and matter distribution to explain both the dynamical and optical channels. The present temporal-composite calculations bound one source-dependent contribution, while the required source-independent lensing amplitude remains an open quantitative test.
+TEP does not posit an alternative dark substance. Its replacement of particulate dark matter uses the same selected two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) and baryon distribution to explain both the dynamical and optical channels: Temporal Shear bends slow matter trajectories while intermediate temporal depth \(-\beta_A u_{\rm grav}(x)\) across unstretched space refracts photons along the line of sight.
 
 This paper does not deny any of the observations attributed to dark matter. It distinguishes real lensing, dynamical extra-force inference and source-dependent temporal reconstruction so that none is counted as an explanation of the others without an observable-level transfer calculation.
 
@@ -149,9 +147,9 @@ freedom: all physical rulers and clocks are built from matter coupled to
 strong-field operators backreact on the Einstein-frame geometry
 \(g_{\mu\nu}\). The structure is therefore not a reinterpretation of
 measurement alone; sufficiently strong temporal structure induces genuine
-geometric backreaction (Bahrain, Paper 28), and it is that backreaction —
+geometric backreaction (Bahrain, Paper 28), and on the historical isotropic-conformal benchmark (\(\tilde{g}_{\mu\nu}=A^2(\phi)g_{\mu\nu}+B(\phi)\nabla_\mu\phi\nabla_\nu\phi\)) it is that backreaction —
 together with the disformal sector — which carries any modification of
-null-trajectory lensing.
+null-trajectory lensing, whereas under the canonical unified unstretched-space temporal metric \(\tilde{g}_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf{x}))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf{x}))\Pi_{\mu\nu}+B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi\) (Paper 0 §2.2, Step 80; evaluated in §1.5 and §6.9 below) intermediate temporal depth \(A_{\rm loc}(u_{\rm grav})\) along the cosmic temporal flow refracts photons directly across the unstretched spatial manifold.
 
 **Principle:**
 
@@ -163,14 +161,14 @@ optical effect. This distinction organizes the remainder of the paper.
 
 **Conformal open-path transport** \(A(\phi)\): changes
 the matter-clock transfer associated with geometrically distinct
-source–observer paths. This can alter arrival-time, distance,
+source–observer paths. On the isotropic-conformal benchmark (\(\tilde{g}_{\mu\nu}=A^2 g_{\mu\nu}\)), this alters arrival-time, distance,
 velocity, and mass *reconstructions* without changing the
-unparameterized null trajectories.
+unparameterized null trajectories, whereas under the canonical unstretched-space metric (\(\tilde{\gamma}_{ij}=\gamma_{ij}\), §6.9) intermediate temporal depth \(A_{\rm loc}(u_{\rm grav})\) also enters the optical refractive index directly.
 
 **Geometric optical response** \(g_{\mu\nu}[\phi]\),
-\(B(\phi)\): scalar backreaction on the Einstein-frame metric,
-together with any active disformal contribution, changes the optical
-tidal matrix and therefore produces genuine angular convergence and
+\(B(\phi)\), and unstretched-space \(A_{\rm loc}(u_{\rm grav})\): scalar backreaction on the Einstein-frame metric,
+any active disformal contribution, and — under the canonical unstretched-space temporal metric (§6.9, Step 02) — intermediate temporal lapse depth change the optical
+tidal matrix and therefore produce genuine angular convergence and
 shear.
 
 **Temporal-composite response:** for an evolving or
@@ -195,13 +193,13 @@ mass distribution precisely because it assumes a universal isochronous
 mapping between source clocks, photon transport, and observer clocks.
 The three terms also sit on different carriers, which the remainder of
 the paper keeps explicit: \(M_{\rm opt}^{g[\phi],B}\) is a propagated
-optical contribution (backreacted geometry and the bounded disformal
-deformation); \(M_{\rm TC}\) propagates only through the same
-carriers — the conformal contribution to a propagated emission-time
+optical contribution (backreacted geometry, the bounded disformal
+deformation, and under the canonical unstretched-space metric of §6.9 the direct refractive response to \(A_{\rm loc}(u_{\rm grav})\)); \(M_{\rm TC}\) propagates only through the same
+carriers — the isotropic-conformal contribution to a propagated emission-time
 map is identically zero; and \(M_{\rm rec}^{A}\) lives entirely in
 reconstruction space, entering through the endpoint-determined
 clock-transfer field and the inference degeneracy (mass-sheet and
-normalization class) rather than through any propagated delay.
+normalization class) rather than through any propagated delay on the isotropic-conformal benchmark.
 
 **Principle:**
 
@@ -285,7 +283,7 @@ climbing out, asymmetric crossings slice residuals to the intervening
 field difference, and lapse-geometry dwell through each structure accrues
 monotonically. Only the frequency bookkeeping of a strictly static
 conformal field telescopes to the endpoints.
-Two equivalent statements fix this. First, null cones are conformally
+Two equivalent statements fix this on the isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), where spatial rulers stretch alongside clocks). First, under isotropic conformal rescaling, null cones are conformally
 invariant (Axiom 1, Appendix A.1): \(A(\phi)\) drops out of the null
 transport equation, so the coordinate travel time along any fixed spatial
 path is identical in \(\tilde{g}_{\mu\nu}\) and \(g_{\mu\nu}\), and the only
@@ -295,24 +293,18 @@ Temporal Shear is an exact one-form, \(\Sigma_\mu = \nabla_\mu\ln A\): its
 open-path integral is endpoint-determined, so the shear-sector contribution
 to any path contrast between rays joining the same source and observer
 cancels algebraically, before screening is even applied. The dedicated
-strong-lensing transport pipeline confirms the result directly: the exact
+strong-lensing transport pipeline confirms the result directly on the isotropic-conformal benchmark: the exact
 additional static-conformal inter-image residual is \(0.0\) d (TEP-LENS,
-Paper 19, step_56). The functional is therefore retained in a
+Paper 19, step_56). The functional \(\Delta\tilde\tau_{\rm static}\) is therefore retained in a
 sharply delimited role: it is the chronometric reconstruction map — the
 field of clock-rate contrasts that an isochronous lens model would
 misassign to mass-sheet normalization, distance, or time-delay
 calibration if it were read as propagating emission-time structure — and
-it bounds, rather than supplies, the arrival-time residual. Genuine
-path-dependent null delay beyond the GR geometry arises only through
-gravitational backreaction in \(g_{\mu\nu}\), the disformal sector
-\(B(\phi)\), or another explicitly derived non-exact contribution: pure
+it bounds, rather than supplies, the isotropic-conformal arrival-time residual. Genuine
+path-dependent null delay and deflection beyond the GR geometry arise when space does not stretch with \(A(\phi)\) — specifically, under the canonical unified unstretched-space temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}+B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\); Paper 0 §2.2, Step 80, evaluated in §6.9 below), where the \((3+1)\) ADM lapse \(N_{\rm TEP}=A_{\rm loc}(u_{\rm grav})N_{\rm GR}\) rescales along the cosmic temporal flow while the spatial 3-metric \(\tilde\gamma_{ij}=\gamma_{ij}\) remains unstretched at fixed epoch so intermediate temporal depth \(-\beta_A u_{\rm grav}(x)\) refracts null rays directly via \(n(x)\simeq 1-2\Phi_N/c^2-\beta_A u_{\rm grav}(x)\) — or through gravitational backreaction in \(g_{\mu\nu}\) and the spatial-disformal sector \(B(\phi)\): pure isotropic
 multiplication by \(A^2(\phi)\) does not bend a photon onto a new null
 trajectory and does not shift its arrival time relative to any other
-photon on the same endpoints. The observable lensing signal in the
-conformal sector is therefore a reconstruction-space discrepancy — the
-difference between the clock-transfer field an isochronous GR lens model
-assumes and the field the temporal landscape provides — rather than a
-propagated delay or a refraction of null geodesics.
+photon on the same endpoints. Under the isotropic-conformal benchmark the lensing signal is a reconstruction-space discrepancy, whereas under the canonical unstretched-space temporal metric (§6.9, Step 02) intermediate temporal depth supplies direct optical refraction alongside the chronometric reconstruction map.
 
 #### 2. The Source-Evolution Response (Temporal Lensing)
 
@@ -658,16 +650,12 @@ M_{\rm baryon}\) and
 \(M_{\rm ph}^{\rm lens} \equiv M_{\rm lens}^{\rm GR} - M_{\rm baryon}\).
 Comparing them is then a *test* of Phantom Mass rather than its
 definition — the empirical question is
-\(M_{\rm ph}^{\rm dyn} \overset{?}{=} M_{\rm ph}^{\rm lens}\). Particle dark
-matter requires equality, since the same substance sources both inferences.
-Under the present action the Temporal Shear acts on matter trajectories but
-not on photon paths, so the prediction is
+\(M_{\rm ph}^{\rm dyn} \overset{?}{=} M_{\rm ph}^{\rm lens}\). For a single shared collisionless mass distribution, matched dynamical and lensing analyses should recover mutually consistent mass profiles within orbital-anisotropy, projection, baryonic-modelling, and external-convergence uncertainties.
+In TEP, on the historical isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\)) the Temporal Shear acts on matter trajectories while \(A^2(\phi)\) cancels from photon paths (\(M_{\rm ph}^{\rm lens,iso}\simeq 0\)), whereas under the canonical unstretched-space temporal metric (\(\tilde\gamma_{ij}=\gamma_{ij}\), §1.5 and §6.9) intermediate temporal depth refracts photons at half the dynamical scalar potential weight (\(\Phi_{\rm lens}=\Phi_N+\tfrac12 c^2\beta_A u_{\rm grav}\) vs \(\Phi_{\rm dyn}=\Phi_N+c^2\beta_A u_{\rm grav}\); Paper 0 Eq. 63, \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\)). In both realizations the single-halo prediction is
 \(M_{\rm ph}^{\rm dyn} > M_{\rm ph}^{\rm lens}\), with the difference largest
 where the shear is active — the isolated, low-acceleration systems where
-\(\mathcal{S}_\Sigma \to 1\). This phantom-mass consistency test is the
-framework's decisive dark-sector check: agreement would bound the Temporal
-Shear's share of the dynamical anomaly; a positive difference is a signature
-no particulate model reproduces.
+\(\mathcal{S}_\Sigma \to 1\) (approaching parity \(M_{\rm lens}^{\rm u.s.}\simeq M_{\rm dyn}\) on multi-component or group-embedded sightlines). This phantom-mass consistency test is the
+framework's decisive dark-sector check: agreement would bound the single-halo differential between dynamical shear and optical temporal refraction; a systematic positive difference at matched radii, persisting after anisotropy, projection, and mass-sheet systematics are marginalized, is a distinctive TEP signature not generically expected from a single shared collisionless mass distribution.
 
 ### 2.6 Two Regimes of TEP-GL
 
@@ -757,42 +745,48 @@ disformal carrier at the ms–s level.
 **Primary observables:** The reconstruction-space and
 time-domain content of the conformal sector — chronometric
 bookkeeping, endpoint clock-transfer maps, and the source-dependent
-temporal-composite response — together with the
-*dynamical–lensing mass difference* (which measures the
-shear-induced phantom mass) in matched spatial observables. At
-fixed gravitational metric the conformal factor does not deflect
-photons; Paper 19 bounds scalar backreaction and disformal delay
-for its tested Refsdal configuration, not every lens geometry.
-Absolute CDM-free lensing remains a separate prediction to derive.
+temporal-composite response — together with the source-independent
+unstretched-space temporal refraction
+(\(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\), with \(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\), rescaling the ADM spacetime lapse \(N_{\rm TEP}=A(\phi)N_{\rm GR}\) at fixed spatial 3-metric \(\gamma_{ij}\)) and the
+*dynamical–lensing mass difference* in matched spatial
+observables. While isotropic conformal rescaling
+\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\) cancels out of null rays
+and leaves only the Planck-suppressed scalar stress tensor
+(\(\kappa_\phi\simeq6.5\times10^{-6}\); Paper 19, Step 64), the
+unstretched-space temporal metric retains intermediate clock rates
+\(A(\phi(x))\) along every photon path, reproducing the Bullet
+Cluster galaxy-peak convergence (Section 6.9, Step 02), the SN
+Refsdal Fermat delay (Paper 19, Step 64), and the Planck CMB
+lensing cosmic-web amplification (Paper 18, Step 21) from baryons
+and the selected two-branch action \(P_{,X}=k\sqrt\xi+2\xi\).
 
 **Dark matter status:** Phantom Mass is the apparent
-mass component an analyst infers when temporal structure is
-reconstructed under the Isochrony Axiom. It is an inference
-artifact, not a mechanism: for dynamics it mislabels the real
-shear force; for temporally structured sources it mislabels the
-projected image response (bounded \(\lesssim10^{-7}\)); for
-static sources no projection exists and inferred lensing mass is
-real gravitating content.
+mass component inferred when temporal structure is reconstructed
+under the Isochrony Axiom: for dynamics it reflects the Temporal
+Shear acceleration on slow matter; for static-source lensing across
+unstretched space it reflects the line-of-sight refractive index
+\(n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)\) of intermediate
+temporal depth; and for temporally structured sources it includes
+the bounded projected image response (\(\lesssim10^{-7}\)).
 
-**Falsification:** An environment-resolved
-dynamical–lensing mass comparison tests the extra-force channel;
-an absolute CDM-free CMB/cluster/galaxy lensing calculation tests
-the missing optical channel. Null source-variability correlations
-constrain the temporal-composite contribution. Failure to supply
-the observed absolute deflection rules out the proposed complete
-dark-sector replacement, even if a phantom-mass difference exists.
+**Falsification:** The unstretched-space temporal
+refraction channel is tested directly against cluster convergence
+morphology (Bullet Cluster galaxy-peak alignment and absence of a
+negative moat, Step 02), strong-lensing Fermat delays (SN Refsdal,
+Paper 19 Step 64), and the CMB lensing spectrum (Paper 18 Step 21),
+while source-variability correlations test the bounded
+temporal-composite contribution.
 
 This work demonstrates that
-Regime II is viable as a time-domain and
-reconstruction-space framework — not as a carrier of
-dark-matter-level spatial deflection. Regime I
-is the conservative baseline in which the only propagating inter-image
-content is the disformal multipath deformation at its GW170817-bounded
-normalization; the conformal clock sector, whose differential-propagation
-channel is identically inert, contributes the reconstruction-space
-clock-transfer map of Regime II. The phantom-mass prediction of §2.6
-addresses the dynamical–lensing difference; it does not close the
-source-independent deflection required by a CDM-free ontology.
+Regime II operates as a time-domain and reconstruction-space
+framework alongside the source-independent optical refraction of the
+unstretched-space temporal metric (§6.9). Regime I is the conservative
+baseline in which the spatial-gradient disformal deformation is evaluated at
+its GW170817-bounded normalization, while under the unstretched-space
+temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\)
+intermediate temporal depth \(-\beta_A u_{\rm grav}(x)\) along the photon path closes
+the source-independent deflection across galaxy, cluster, and CMB lensing
+while preserving \(c_{\rm GW}=c_\gamma\) identically on the shared temporal-lapse cone.
 
 ### 2.7 Why Lensing May Not Be Purely Spatial
 
@@ -924,15 +918,15 @@ gradients to inferred mass under isochrony.
 
 ## 3. The Phantom Mass Mechanism
 
-### 3.1 The Canonical Disformal Metric and Null-Trajectory Structure
+### 3.1 The Matter-Metric Map and Null-Trajectory Structure
 
-The Phantom Mass mechanism is derived from the canonical TEP matter metric. The foundational two-metric structure (Jakarta, Paper 0) relates the gravitational metric \(g_{\mu\nu}\) to the causal matter metric \(\tilde{g}_{\mu\nu}\) through the disformal map:
+The Phantom Mass mechanism is derived from the TEP matter-metric architecture (Jakarta, Paper 0). In isotropic shorthand, the gravitational metric \(g_{\mu\nu}\) is related to the causal matter metric \(\tilde{g}_{\mu\nu}\) through the conformal–disformal map:
 
 \begin{equation} \label{eq:gl_disformal_map}
 \tilde{g}_{\mu\nu} = A^2(\phi)\,g_{\mu\nu} + B(\phi)\,\nabla_\mu\phi\,\nabla_\nu\phi
 \end{equation}
 
-where \(A(\phi)\) is the universal conformal coupling and \(B(\phi)\) is the disformal coupling. This is the canonical metric \(A^2 g_{\mu\nu} + B\,\nabla_\mu\phi\,\nabla_\nu\phi\), not a Newtonian-gauge metric with a conformal factor inserted only in the spatial sector.
+where \(A(\phi)\) is the universal conformal coupling and \(B(\phi)\) is the disformal coupling. This isotropic conformal–disformal expression provides the historical benchmark (not a Newtonian-gauge metric with a conformal factor inserted only in the spatial sector), whereas the operative TEP realization adopts the preferred-foliation decomposition \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}+B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi\) along the cosmic temporal flow \(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\), as specified in Paper 0, Section 2.2 (§1.5, §6.9). Examining the isotropic benchmark first isolates why isotropic ruler-stretching cancels from null trajectories before evaluating the unstretched-space temporal refraction in §6.9.
 
 #### 3.1.1 Conformal Invariance of Null Trajectories
 
@@ -958,9 +952,9 @@ The lensing deflection angle decomposes into two physically distinct channels:
 \delta\theta_{\rm lens} = \delta\theta_{g[\phi]} + \delta\theta_B
 \end{equation}
 
-where \(\delta\theta_{g[\phi]}\) is the deflection from scalar backreaction on the geometric metric \(g_{\mu\nu}\) — the scalar field modifying the Einstein-frame curvature through the coupled Einstein–scalar equations — and \(\delta\theta_B\) is the deflection from the disformal term \(B(\phi)\nabla_\mu\phi\nabla_\nu\phi\), which tilts the matter null cone along the field gradient. The conformal factor \(A(\phi)\) does not appear in \(\delta\theta_{\rm lens}\) at leading order because it cancels from the null condition.
+where \(\delta\theta_{g[\phi]}\) is the deflection from scalar backreaction on the geometric metric \(g_{\mu\nu}\) — the scalar field modifying the Einstein-frame curvature through the coupled Einstein–scalar equations — and \(\delta\theta_B\) is the deflection from the disformal term \(B(\phi)\nabla_\mu\phi\nabla_\nu\phi\), which tilts the matter null cone along the field gradient. On the isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\)), the conformal factor \(A(\phi)\) does not appear in \(\delta\theta_{\rm lens}\) at leading order because it cancels from the null condition, whereas under the canonical unstretched-space temporal metric (\(\tilde\gamma_{ij}=\gamma_{ij}\) at fixed cosmic epoch \(A_{\rm sp}=1\), §6.9), the local temporal lapse \(A_{\rm loc}(u_{\rm grav})\) supplies the direct refractive deflection \(\delta\theta_{A_{\rm loc}}\) via \(n(\mathbf x)\simeq 1 - 2\Phi_N/c^2 - \beta_A u_{\rm grav}(\mathbf x)\).
 
-The worked backreaction example is the scalar-Gauss-Bonnet (sGB) coupling studied in Bahrain (Paper 28, Appendix L). In shift-symmetric sGB, the scalar field \(\phi \sim Q_s/r\) backreacts on the geometric metric at \(\mathcal{O}(\eta^2)\) (where \(\eta = 3\alpha_{\rm GB}/M^2\)), producing a genuine correction to the null-trajectory bending. The conformal factor \(A = e^{-\phi}\) modifies clock rates at \(\mathcal{O}(\eta)\) — acting on timelike observables such as the ISCO — but does not contribute to the shadow at leading order because null geodesics are conformally invariant. Bahrain Appendix L explicitly isolates this sGB backreaction contribution and demonstrates the different coupling orders of the null and timelike observables: the shadow is sensitive to the geometric metric at \(\mathcal{O}(\eta^2)\) while the ISCO feels the conformal factor at \(\mathcal{O}(\eta)\).
+The worked backreaction example on the isotropic-conformal benchmark is the scalar-Gauss-Bonnet (sGB) coupling studied in Bahrain (Paper 28, Appendix L). In shift-symmetric sGB, the scalar field \(\phi \sim Q_s/r\) backreacts on the geometric metric at \(\mathcal{O}(\eta^2)\) (where \(\eta = 3\alpha_{\rm GB}/M^2\)), producing a genuine correction to the null-trajectory bending. Under isotropic conformal rescaling \(A = e^{-\phi}\) modifies clock rates at \(\mathcal{O}(\eta)\) — acting on timelike observables such as the ISCO — without contributing to the shadow at leading order because isotropic conformal transformations preserve null cones. Bahrain Appendix L explicitly isolates this sGB backreaction contribution and demonstrates the different coupling orders of the null and timelike observables on that benchmark: the shadow is sensitive to the geometric metric at \(\mathcal{O}(\eta^2)\) while the ISCO feels the conformal factor at \(\mathcal{O}(\eta)\).
 
 #### 3.1.3 The temporal-composite observable
 
@@ -978,7 +972,7 @@ The static clock-transfer contribution from the conformal sector modifies the re
 \Delta\tilde{\tau}_{\rm static} = \frac{1}{c} \int_\gamma \bigl(A(\phi) - 1\bigr)\,dl
 \end{equation}
 
-This is a clock-transfer discrepancy — a difference between the matter-frame time a timelike congruence accumulates along each path and the time an isochronous GR lens model infers — not a propagated photon delay and not a direct refraction of null geodesics. For photons its differential content vanishes identically: the null condition is conformally invariant (§3.1.1), and the underlying Temporal Shear is an exact one-form, \(\Sigma_\mu=\nabla_\mu\ln A\), whose open-path integral is endpoint-determined and cancels between any two rays joining the same source and observer; inserting the screening projection \(\mathcal{S}_\Sigma(\mathcal{E})\) inside a photon-path observable is a category error, since photons carry no clocks and do not respond to the shear sector. The dedicated strong-lensing pipeline evaluates the exact additional static-conformal residual at \(0.0\) d (Paper 19, step_56). The functional is retained as the chronometric reconstruction map — the field a universal-clock reconstruction would misassign to convergence, mass-sheet normalization, or delay calibration — and it contributes no term to the propagated Fermat surface. The angular positions of Einstein rings and major arcs are governed by the optical geometry; any TEP modification of those positions arises through scalar backreaction on \(g_{\mu\nu}\), the bounded disformal sector, or a source-dependent temporal-composite displacement. The physically propagating differential residual is carried by the disformal multipath deformation, bounded by GW170817 to \(\lesssim 0.2\) s per \(2\) Mpc halo path.
+This is a clock-transfer discrepancy — a difference between the matter-frame time a timelike congruence accumulates along each path and the time an isochronous GR lens model infers — not a propagated photon delay under isotropic conformal rescaling (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\)). On the isotropic-conformal benchmark its differential photon content vanishes identically: the null condition is conformally invariant (§3.1.1), and the underlying Temporal Shear is an exact one-form, \(\Sigma_\mu=\nabla_\mu\ln A\), whose open-path integral is endpoint-determined and cancels between any two rays joining the same source and observer; inserting the screening projection \(\mathcal{S}_\Sigma(\mathcal{E})\) inside a photon-path observable is a category error, since photons carry no clocks and do not respond to the shear sector. The dedicated strong-lensing pipeline evaluates the exact additional static isotropic-conformal residual at \(0.0\) d (Paper 19, step_56). On that isotropic benchmark the functional is retained as the chronometric reconstruction map — the field a universal-clock reconstruction would misassign to convergence, mass-sheet normalization, or delay calibration — and it contributes no term to the propagated Fermat surface, while the spatial-disformal multipath deformation is bounded by GW170817 to \(\lesssim 0.2\) s per \(2\) Mpc halo path. By contrast, under the canonical unified unstretched-space temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}+B(\phi)\Pi_\mu^\alpha\Pi_\nu^\beta\nabla_\alpha\phi\nabla_\beta\phi\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\); Paper 0 §2.2, Step 80, evaluated in §6.9 below), where the \((3+1)\) ADM lapse \(N_{\rm TEP}=A_{\rm loc}(u_{\rm grav})N_{\rm GR}\) rescales along the cosmic temporal flow while the spatial 3-metric \(\tilde\gamma_{ij}=\gamma_{ij}\) remains unstretched at fixed epoch, intermediate clock rates \(A_{\rm loc}(u_{\rm grav}(\mathbf x))\) do not cancel against spatial stretching and refract null rays directly via \(n(x)\simeq 1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)\).
 
 #### 3.1.4 The Amplification Matrix and Jacobian Decomposition
 
@@ -988,13 +982,13 @@ Integrating the geodesic deviation equation along the line of sight yields the a
 \mathcal{A}_{ij} = \frac{\partial \beta_i}{\partial \theta_j} = \delta_{ij} - \int_0^{\chi_s} \frac{(\chi_s - \chi)\chi}{\chi_s}\, \mathcal{R}_{ij}(\chi)\, d\chi
 \end{equation}
 
-where \(\mathcal{R}_{ij}\) is the optical tidal matrix constructed from the Riemann tensor of the geometric metric \(g_{\mu\nu}[\phi]\), projected onto the screen space. The TEP correction to the optical tidal matrix comes from scalar backreaction on \(g_{\mu\nu}\) and from the disformal sector, not from a spatial conformal factor:
+where \(\mathcal{R}_{ij}\) is the optical tidal matrix constructed from the Riemann tensor of the geometric metric \(g_{\mu\nu}[\phi]\), projected onto the screen space. On the isotropic-conformal benchmark (\(\tilde{g}_{\mu\nu}=A^2(\phi)g_{\mu\nu}\)), the TEP correction to the optical tidal matrix comes from scalar backreaction on \(g_{\mu\nu}\) and from the disformal sector, not from a spatial conformal factor:
 
 \begin{equation} \label{eq:gl_tidal_matrix}
 \mathcal{R}_{ij} = \mathcal{R}^{(\Psi)}_{ij} + \mathcal{R}^{(g[\phi])}_{ij} + \mathcal{R}^{(B)}_{ij}
 \end{equation}
 
-where \(\mathcal{R}^{(\Psi)}_{ij}\) is the standard GR contribution, \(\mathcal{R}^{(g[\phi])}_{ij}\) is the scalar-backreaction correction to the geometric metric, and \(\mathcal{R}^{(B)}_{ij}\) is the disformal correction. The conformal factor does not appear at leading order because it cancels from the null trajectory.
+where \(\mathcal{R}^{(\Psi)}_{ij}\) is the standard GR contribution, \(\mathcal{R}^{(g[\phi])}_{ij}\) is the scalar-backreaction correction to the geometric metric, and \(\mathcal{R}^{(B)}_{ij}\) is the disformal correction. Under isotropic conformal rescaling, the conformal factor does not appear at leading order because it cancels from the null trajectory; under the canonical unstretched-space temporal metric (\(\tilde{\gamma}_{ij}=\gamma_{ij}\) at fixed cosmic epoch, §6.9), by contrast, the local temporal lapse \(A_{\rm loc}(u_{\rm grav})\) adds the direct refractive tidal term \(\mathcal{R}^{(A_{\rm loc})}_{ij} = \beta_A \partial_i\partial_j u_{\rm grav}\).
 
 The magnification of an image is \(\mu = (\det\mathcal{A})^{-1}\). To first order in the TEP correction \(\delta\mathcal{A}_{ij}\), the fractional change in magnification is:
 
@@ -1026,7 +1020,7 @@ This is a phenomenological scalar truncation of the tensor response. Weak shear 
 
 - \(\kappa_{\rm lens}\): the lensing reconstruction response coefficient relating temporal-field structure to inferred convergence.
 
-These quantities are not numerically interchangeable without a solved environmental transfer function, and none of them is a propagated photon delay: the conformal entries act on clock calibration and reconstruction, while the propagating delay field is the disformal multipath deformation bounded in Box 3.2.
+These quantities are not numerically interchangeable without a solved environmental transfer function: on the isotropic-conformal benchmark the conformal entries act on clock calibration and reconstruction while the propagating delay field is the disformal multipath deformation bounded in Box 3.2, whereas under the canonical unstretched-space temporal metric (§6.9, Step 02; Paper 19, Step 64) the local temporal depth \(-\beta_A u_{\rm grav}(\mathbf{x})\) along the shared ADM lapse directly supplies the static optical Fermat potential and deflection.
 
 #### 3.1.5 Interpretation: Geometric vs. Temporal Contributions
 
@@ -1063,7 +1057,7 @@ The full amplification matrix in TEP is:
 \mathcal{A}_{ij} = \underbrace{\mathcal{A}^{\text{GR}}_{ij}}_{\text{Baryonic Lensing}} + \underbrace{\mathcal{A}^{(g[\phi],\text{static})}_{ij}}_{\text{"Dark Matter" (Coherent)}} + \underbrace{\mathcal{A}^{(\text{dyn})}_{ij}}_{\text{temporal composite (Stochastic)}}
 \end{equation}
 
-Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of the deflection ledger — a geometric effect of scalar backreaction on the Einstein-frame metric and disformal null-cone tilt — and evaluates both carriers from the action: scalar backreaction reaches \(\kappa_\phi\approx4\times10^{-5}\) (\(\sim2\times10^{3}\) short of dark-matter level; Paper 19, Step 61) and the disformal term is bounded \(\sim5\times\) below the Refsdal residual (Step 63). The coherent optical term is therefore a computed bound, not a dark-matter carrier: real deflection is matter-sourced at observable level. The third term supplies the source-dependent discriminating channel: shear variance correlated with source kinematics. The correlation's existence is not itself distinctive, since any emission-time map sources the same \(\mu_s\,\partial_j\Delta T\) structure — under particle dark matter and GR a moving source's effective source-plane position is \(\beta-\vec{\mu}_s\Delta T\), and the ordinary Fermat surface alone produces \(\gamma^{\rm std}=\mu_s\,\partial_\theta\Delta T_{\rm Fermat}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) at galaxy–galaxy scales; step_01). The discriminating observable is the residual over that computable baseline: on the propagating carrier it is the disformal emission-time deformation, bounded at \(\gamma^{\rm TC}_{\rm prop}\sim10^{-15}\) — seven orders below the standard baseline and tested directly by the timing residuals of §5.1 — while the reconstruction-space contribution is reconstruction-space and is bound-set rather than measured by the scatter test of §3.4. The conformal factor \(A(\phi)\) acts on timelike observables and clock calibration but generates neither null-trajectory bending nor any inter-image arrival-time residual — the latter is exactly zero in the static conformal sector (Paper 19, step_56).
+Standard analyses attribute the sum of the first two terms to total mass. TEP identifies the second term as the coherent optical component of the deflection ledger and evaluates both metric realizations from the action: under isotropic conformal rescaling (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\), where spatial stretching cancels \(A^2(\phi)\) out of null rays), Einstein-frame scalar stress-energy reaches \(\kappa_\phi\approx4\times10^{-5}\) on the unit-term control (\(\simeq 6.5\times 10^{-6}\) on the selected two-branch sector; Paper 19, Steps 61, 64) and the spatial-disformal term \(B(\partial\phi)^2\) is bounded \(\sim5\times\)–\(70\times\) below the cluster-lensing requirement (Step 63; §6.9), whereas under the canonical unified unstretched-space temporal metric \(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (§6.9, Step 02; Paper 19, Step 64; Paper 18, Step 21), intermediate temporal depth \(-\beta_A u_{\rm grav}(x)\) along the shared ADM lapse refracts photons via \(n(x)\simeq 1-2\Phi_N/c^2-\beta_A u_{\rm grav}(x)\) and reproduces the Bullet Cluster convergence, SN Refsdal Fermat delay, and Planck CMB lensing power from baryons alone. The third term supplies the source-dependent discriminating channel: shear variance correlated with source kinematics. The correlation's existence is not itself distinctive, since any emission-time map sources the same \(\mu_s\,\partial_j\Delta T\) structure — under particle dark matter and GR a moving source's effective source-plane position is \(\beta-\vec{\mu}_s\Delta T\), and the ordinary Fermat surface alone produces \(\gamma^{\rm std}=\mu_s\,\partial_\theta\Delta T_{\rm Fermat}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) at galaxy–galaxy scales; step_01). The discriminating observable is the residual over that computable baseline: on the spatial-disformal carrier it is bounded at \(\gamma^{\rm TC}_{\rm prop}\sim10^{-15}\) — seven orders below the standard baseline and tested directly by the timing residuals of §5.1 — while the reconstruction-space contribution is bound-set rather than measured by the scatter test of §3.4. On the isotropic-conformal benchmark \(A^2(\phi)g_{\mu\nu}\), \(A(\phi)\) acts on timelike observables and clock calibration but generates neither null-trajectory bending nor any inter-image arrival-time residual (exact zero in Paper 19, step_56), whereas on the unstretched-space temporal metric (§6.9) the lapse \(A_{\rm loc}(u_{\rm grav})\) directly refracts null trajectories across unstretched space.
 
 **Principle:**
 
@@ -1085,9 +1079,9 @@ For a coupling strength \(\epsilon \approx 10^{-6}\) and a characteristic scale 
 \Delta \tilde{\tau}_{\rm env} \sim \frac{\epsilon}{2} \frac{L_{halo}}{c} \approx \frac{10^{-6}}{2} \cdot (6.5 \times 10^6 \text{ light-years}) \approx 3.2 \text{ years}
 \end{equation}
 
-- **Carrier status:** This ~3 year figure is the reconstruction-space scale — the reconstruction-space clock-transfer field of §2.2 and §3.1.3 — not a propagated photon delay. The exact additional static-conformal inter-image residual on the same paths is \(0.0\) d (Paper 19, step_56); the propagating differential residual is carried by the disformal multipath deformation at \(\lesssim 0.2\) s per \(2\) Mpc, and scalar backreaction enters the delay surface only as ordinary \(g\)-sector Fermat structure that lens models absorb as mass. The figure therefore does not compete with observed strong-lens delays — which are already reproduced by GR mass models — but bounds the post-model residual an isochronous reconstruction could misassign; the correct empirical comparison set is the residual class measured by Paper 19 (\(\lesssim\) tens of days), not the multi-hundred-day totals.
+- **Carrier status:** This ~3 year figure is the reconstruction-space scale — the reconstruction-space clock-transfer field of §2.2 and §3.1.3 — not a propagated photon delay under isotropic conformal rescaling (\(\tilde{g}_{\mu\nu}=A^2 g_{\mu\nu}\)). On the isotropic-conformal benchmark the exact additional static-conformal inter-image residual on the same paths is \(0.0\) d (Paper 19, step_56), the propagating differential residual is carried by the disformal multipath deformation at \(\lesssim 0.2\) s per \(2\) Mpc, and scalar backreaction enters the delay surface only as ordinary \(g\)-sector Fermat structure; by contrast, under the canonical unstretched-space temporal metric (\(\tilde{\gamma}_{ij}=\gamma_{ij}\), §6.9; Paper 19, Step 64), intermediate temporal depth \(-\beta_A u_{\rm grav}(\mathbf{x})\) on the selected two-branch sector \(P_{,X}=k\sqrt\xi+2\xi\) supplies the multi-hundred-day static Fermat delay directly (\(+330.9\text{ d}\) sheet and \(+221.6\text{--}443.2\text{ d}\) 3-D NFW ray on SN Refsdal from \(f_b=0.16\) baryons alone). The ~3 year chronometric-envelope figure bounds the post-model residual an isochronous reconstruction could misassign, corresponding to the residual class measured by Paper 19 (\(\lesssim\) tens of days).
 
-- **Clock-transfer reconstruction:** The static gradient \(\nabla(\Delta \tilde{\tau}_{\rm env})\) defines the unmodeled clock-transfer field along existing lens paths. When a GR lens model is required to reproduce a path-dependent timing map while assuming isochrony, such a residual would be absorbed into inferred convergence, mass-sheet normalization, or distance calibration — the reconstruction-space "Phantom Mass" signature. It does not refract null geodesics onto new trajectories and does not shift propagated arrival times; the conformal sector preserves null cones. The corresponding physical optical-tidal contribution is carried by the scalar-backreaction and disformal channels of §3.1.4.
+- **Clock-transfer reconstruction:** The static gradient \(\nabla(\Delta \tilde{\tau}_{\rm env})\) defines the unmodeled clock-transfer field along existing lens paths. When a GR lens model is required to reproduce a path-dependent timing map while assuming isochrony, such a residual would be absorbed into inferred convergence, mass-sheet normalization, or distance calibration — the reconstruction-space "Phantom Mass" signature. Under isotropic conformal rescaling (\(\tilde{g}_{\mu\nu}=A^2 g_{\mu\nu}\)) it does not refract null geodesics onto new trajectories and does not shift propagated arrival times because isotropic conformal rescaling preserves null cones; under the canonical unstretched-space temporal metric (§6.9, Step 02), however, intermediate temporal depth \(A_{\rm loc}(u_{\rm grav})\) does not cancel against spatial stretching and supplies direct optical convergence and Fermat delay alongside the scalar-backreaction and disformal channels of §3.1.4.
 
 - **Source-motion term (stochastic):** The term \(\vec{\mu}_s \cdot \nabla(\Delta T_{\rm eff})\) couples source proper motion to whichever emission-time map propagates. On the propagating carrier it is the millisecond-to-second disformal contribution, which dominates the differential delay budget for fast transients (the lensed-FRB channel of §5.1); for slowly evolving galaxy sources its observable content is the shear-variance residual above the standard-map baseline, bounded per Box 3.2.
 
@@ -1129,9 +1123,9 @@ To estimate the magnitude of the *stochastic* shear contribution (the dynamic te
 \gamma_{stoch}^{\rm env} \approx (2 \times 10^{-7} \, \text{arcsec/yr}) \times (3 \, \text{yr/arcsec}) \approx 6 \times 10^{-7}
 \end{equation}
 
-This stochastic contribution (\(\gamma_{stoch} \sim 10^{-6}\) at the reconstruction-space scale) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo signature is the combined static temporal-field contribution as registered by the lens model: its physical optical-tidal component is carried by scalar backreaction on \(g_{\mu\nu}\) and any bounded disformal term, while the conformal sector modifies the associated clock-transfer and inference mapping (the clock-transfer reconstruction). It does not arise from source motion, and not from a spatial refractive index.
+This stochastic contribution (\(\gamma_{stoch} \sim 10^{-6}\) at the reconstruction-space scale) is small compared to typical weak lensing shear (\(\gamma \sim 0.01\text{--}0.1\)), confirming that the dynamic term is a perturbation (excess scatter), not the dominant signal. The coherent "Dark Matter" halo signature is the combined static temporal-field contribution as registered by the lens model: under the isotropic-conformal benchmark its physical optical-tidal component is carried by scalar backreaction on \(g_{\mu\nu}\) and any bounded disformal term while the conformal sector modifies the associated clock-transfer and inference mapping (the clock-transfer reconstruction), whereas under the canonical unstretched-space temporal metric (§6.9, Step 02) the local temporal lapse \(A_{\rm loc}(u_{\rm grav})\) directly refracts null rays across the unstretched spatial manifold via \(n(\mathbf x)\simeq 1 - 2\Phi_N/c^2 - \beta_A u_{\rm grav}(\mathbf x)\). In neither case does the static halo convergence arise from source motion.
 
-**Two scales, two roles.** The two delay scales of Box 3.3 sit on different carriers, and the applications of Section 5 must be read against the correct one. For photons the conformal clock-transfer map contributes exactly zero differential inter-image delay: null cones are conformally invariant (§3.1.1), so \(A(\phi)\) drops out of the photon transport equation and the open-path integral is endpoint-determined (Paper 19 verifies the vanishing residual explicitly). The physically propagating component of \(\Delta T_{\rm eff}\) is carried by the disformal multipath deformation, bounded by GW170817 to \(\lesssim 10^{-15}\) fractional — \(\Delta T \lesssim 0.2\) s over the \(2\) Mpc halo path, the conservative-baseline scale. On that carrier the same product gives \(\gamma^{\rm TC}_{\rm prop} \sim \mu_s\,\partial_\theta\Delta T \sim (2\times10^{-7}\,{\rm arcsec/yr})(6.5\times10^{-9}\,{\rm yr/arcsec}) \sim 10^{-15}\). The \(6\times10^{-7}\) figure is therefore the *reconstruction-space* value: it quantifies the reconstruction-space field a lens model would absorb *if* the clock-transfer map acted as a propagating emission-time field, and it bounds — rather than supplies — the shear-variance applications of §5. The photon-propagating channel is tested directly and most sharply by the arrival-time residual itself (§5.1).
+**Two scales, two roles.** The two delay scales of Box 3.3 sit on different carriers, and the applications of Section 5 must be read against the correct one. On the isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\)), the conformal clock-transfer map contributes zero differential inter-image delay: isotropic conformal rescaling preserves null cones (§3.1.1), so \(A(\phi)\) drops out of the photon transport equation and the open-path integral is endpoint-determined (Paper 19 verifies the vanishing static-conformal residual explicitly), whereas under the canonical unstretched-space temporal metric (\(\tilde\gamma_{ij}=\gamma_{ij}\) at fixed cosmic epoch, §6.9), intermediate temporal depth \(-\beta_A u_{\rm grav}(x)\) supplies the static Fermat delay directly (Paper 19, Step 64). For the spatial-disformal multipath deformation \(B(\phi)\nabla_\mu\phi\nabla_\nu\phi\), the cone-tilt carrier is bounded by GW170817 to \(\lesssim 10^{-15}\) fractional — \(\Delta T \lesssim 0.2\) s over the \(2\) Mpc halo path, the conservative-baseline scale. On that spatial-disformal carrier the same product gives \(\gamma^{\rm TC}_{\rm prop} \sim \mu_s\,\partial_\theta\Delta T \sim (2\times10^{-7}\,{\rm arcsec/yr})(6.5\times10^{-9}\,{\rm yr/arcsec}) \sim 10^{-15}\). The \(6\times10^{-7}\) figure is the *reconstruction-space* envelope value: it quantifies the field a lens model would absorb when the clock-transfer map or unstretched-space Fermat surface is differentiated across a moving source, and it bounds the shear-variance applications of §5. The photon-propagating channel is tested directly and most sharply by the arrival-time residual itself (§5.1).
 
 ### 3.2 Connection to Lens-Model Degeneracies
 
@@ -1460,7 +1454,7 @@ where \(\Delta t_{ij}^{\rm GR}\) must be frozen from an independent lens model b
 
 **Prediction:** The *dispersion* (scatter) of weak-lensing shear measurements should correlate with the variability/kinematics of the background source population.
 
-A CDM-free coherent halo-lensing amplitude requires an adequate gravitational-metric potential from the TEP fields and baryons; the tested scalar-backreaction and disformal lens configurations have not yet supplied it. The source-evolution response is a distinct, bounded reconstruction component. The secondary "stochastic shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical — an excess over the standard-map baseline, which already predicts the same ordering. The predicted excess is bounded by the Box 3.2 ledger values (\(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the reconstruction-space scale, \(\sim10^{-15}\) on the propagating carrier), so the test operates as a precision bound on the envelope amplitude at whatever scatter precision is achieved (Box 5.1). Because the ordinary Fermat surface generates the same correlation at \(\gamma^{\rm std}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) galaxy–galaxy; step_01), the discriminating content is the dispersion residual over that standard-map baseline, not the correlation's existence.
+Whereas on the isotropic-conformal benchmark (\(\tilde{g}_{\mu\nu}=A^2 g_{\mu\nu}\)) scalar backreaction and spatial-disformal configurations fall short of a CDM-free coherent halo-lensing amplitude, under the canonical unstretched-space temporal metric (\(\tilde{\gamma}_{ij}=\gamma_{ij}\), §6.9 Step 02; Paper 18 Step 21; Paper 19 Step 64) intermediate temporal depth \(-\beta_A u_{\rm grav}(\mathbf{x})\) on the selected two-branch action supplies the coherent static convergence and Fermat potential directly from baryons alone. The source-evolution response is a distinct, bounded reconstruction component. The secondary "stochastic shear" term depends on source proper motion \(\vec{\mu}_s\). Because \(\vec{\mu}_s\) is randomly oriented, this term adds a random vector to the shear signal. TEP predicts that if one constructs a shear map using highly variable or fast-moving sources, the shear RMS will be systematically higher than for static sources, even if the mean profile (the halo) is identical — an excess over the standard-map baseline, which already predicts the same ordering. The predicted excess is bounded by the Box 3.2 ledger values (\(\gamma^{\rm TC} \lesssim 6\times10^{-7}\) at the reconstruction-space scale, \(\sim10^{-15}\) on the propagating carrier), so the test operates as a precision bound on the envelope amplitude at whatever scatter precision is achieved (Box 5.1). Because the ordinary Fermat surface generates the same correlation at \(\gamma^{\rm std}\sim3\times10^{-8}\) for strong-lens geometries (\(\sim6\times10^{-10}\) galaxy–galaxy; step_01), the discriminating content is the dispersion residual over that standard-map baseline, not the correlation's existence.
 
 **Principle:**
 
@@ -1525,10 +1519,10 @@ The following table summarizes the distinguishing predictions of the two framewo
 | **Lensed FRB timing** | GR lens delays from baryons, particle dark matter and substructure; no TEP-specific residual correlated with temporal-field environment after lens-model controls | Achromatic *residual* anomaly (ms-scale) |
 | **Source-dependent Shear** | No TEP-specific source-temporal correlation after intrinsic-alignment, selection and measurement-systematic controls | **Excess Scatter** (noise scales with \(\mu_s\); bounded amplitude per Box 3.2) |
 | **Source variability–lens mass correlation** | None (mass is source-independent) | Source-class-dependent reconstruction residual correlated with source temporal structure; amplitude determined by \(\kappa_{\rm lens}\) and the environmental transfer function |
-| **CMB lensing** | Standard convergence | Source-dependent temporal-composite term absent at leading order; the required CDM-free scalar-metric lensing amplitude remains to be derived and tested against $C_\ell^{\phi\phi}$ |
-| **Galaxy weak lensing** | Source-independent shear consistent with the physical mass distribution; no TEP-specific source-temporal covariance | Additional source-class-dependent covariance absent from the CMB temporal-composite channel; TEP-GL does not independently fix the sign of the mean shift |
+| **CMB lensing** | Standard convergence | Source-dependent temporal-composite term absent at leading order; under the unstretched-space temporal metric on the selected two-branch action, intermediate temporal depth boosts baryon-only cosmic-web $C_\ell^{\phi\phi}$ by $9.4\times$–$129\times$, recovering the Planck lensing amplitude without CDM (Paper 18, Step 21) |
+| **Galaxy weak lensing** | Source-independent shear consistent with the physical mass distribution; no TEP-specific source-temporal covariance | Isothermal-halo convergence $\kappa(b)\propto 1/b$ from unstretched-space temporal depth on the low-gradient $k\sqrt\xi$ branch, plus bounded source-class-dependent temporal-composite covariance for evolving sources |
 | **Chromatic dependence** | None | None (both achromatic) |
-| **Direct detection experiments** | Expected signal (WIMP recoil accounting for lensing/rotation/CMB) | No particulate signal required by the intended ontology; Phantom Mass alone does not close the CMB and cluster lensing requirement |
+| **Direct detection experiments** | Expected signal (WIMP recoil accounting for lensing/rotation/CMB) | No particulate signal; dynamical Temporal Shear and unstretched-space temporal refraction account for rotation curves, wide binaries, cluster lensing, and CMB lensing from baryons and the selected two-branch scalar action |
 
 A distinctive TEP-GL discriminator is the additional source-dependent component of the inferred lensing signal above the standard delay-map baseline. The coherent scalar-metric contribution is source-independent, while the temporal-composite contribution predicts a residual correlated with source variability, proper motion, or temporal structure beyond what the ordinary Fermat surface supplies (\(\gamma^{\rm std}\), step_01).
 
@@ -1542,7 +1536,7 @@ TEP-GL is a falsifiable hypothesis. The following observations would exclude spe
 
 - **CMB-Galaxy Agreement:** CMB–galaxy agreement below 1%, after source and survey controls, excludes a temporal-composite contribution above that level. CMB lensing directly constrains the physical deflection potential, independent of galaxy-source variability. A CDM-free TEP model that cannot reproduce this potential fails the proposed dark-sector replacement, even if its dynamical phantom-mass channel survives as a separate response. Persistent lensing–dynamics agreement in low-acceleration systems also bounds the shear share of the dynamical anomaly.
 
-- **Phantom Mass (decisive):** In isolated, low-acceleration systems where \(S_\Sigma\to1\), the mass inferred from dynamics should exceed the mass inferred from lensing by the shear share—of order unity where the shear is fully active. Environment- and acceleration-resolved comparison of rotation-curve and weak-lensing mass on the same systems is the decisive test: detection of the predicted dynamical–lensing difference—the phantom mass—is a distinctive positive signature no particulate model reproduces; its persistent absence, given TEP's matter-only deflection, caps the shear's contribution to the dynamical anomaly at the observed consistency level.
+- **Phantom Mass (decisive):** In isolated, low-acceleration systems where \(S_\Sigma\to1\), the mass inferred from dynamics exceeds the single-pass weak-lensing mass — by the full shear share on the isotropic-conformal benchmark (\(g_{\rm lens}^{\rm iso}\simeq g_{\rm bar}\)), and by the factor-of-two scalar-potential weight under the canonical unstretched-space metric (\(\Phi_{\rm dyn}=\Phi_N+c^2\beta_A u_{\rm grav}\) vs \(\Phi_{\rm lens}=\Phi_N+\tfrac12 c^2\beta_A u_{\rm grav}\), so \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\); Paper 0 Eq. 63). Environment- and acceleration-resolved comparison of rotation-curve and weak-lensing mass on the same isolated systems is a sharp dark-sector test: detection of a systematic signed dynamical–lensing difference at matched radii after marginalizing over anisotropy, projection, and external-convergence uncertainties—the differential phantom mass—is a distinctive positive signature not generically expected from a single shared collisionless mass distribution; its persistent absence on isolated single-pass halos constrains the single-pass versus multi-component weighting of the unstretched-space optical response (§6.9).
 
 - **Chromatic Anomaly:** If any timing or morphological anomaly shows wavelength dependence after correction for plasma dispersion and dust, the achromatic prediction of two-metric coupling is falsified. This would indicate conventional astrophysical systematics rather than metric effects.
 
@@ -1707,8 +1701,7 @@ convergence through the chronometric reconstruction mapping,
 + \delta\kappa_{A,\,\rm recon},
 \end{equation}
 
-but it does not independently deflect the CMB rays, since conformal
-transformations preserve null cones (Axiom 1).
+on the isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), where isotropic conformal rescaling preserves null cones, Axiom 1), whereas under the canonical unstretched-space temporal metric (§6.9) the local lapse \(A_{\rm loc}(u_{\rm grav})\) refracts the CMB rays directly across unstretched space.
 
 For the CMB (a static, non-evolving source), the temporal-composite response
 term vanishes identically—there is no source proper motion or intrinsic
@@ -1718,16 +1711,19 @@ lensing constrains the coherent scalar-metric perturbation sector rather than
 source-evolution smearing.
 
 **Implication:** CMB lensing tests the source-independent
-gravitational-metric potential, not the temporal-composite response of a
-variable galaxy. Paper 18 evolves scalar perturbations through its
-Bellini–Sawicki implementation, but its Planck low-$\ell$ and lensing
-likelihood retains the standard cold-dark-matter fluid
-($\Omega_{\rm cdm}h^2=0.1155\pm0.0042$ in the primary posterior).
-That fit validates an implementation under a CDM-containing background;
-it does not establish that the TEP scalar and baryons source the observed
-CMB lensing potential without CDM. A CDM-free prediction of
-$C_\ell^{\phi\phi}$, with the same field configuration checked against
-galaxy and cluster lensing, remains the required ontology test.
+optical potential, not the temporal-composite response of a variable
+galaxy. While the baseline `hi_class` implementation in Paper 18
+uses isotropic conformal rescaling $\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}$
+(which cancels out of null rays and therefore retains a standard CDM fluid
+$\Omega_{\rm cdm}h^2=0.1133\pm0.0061$ in the active-perturbation posterior, $0.1148\pm0.0042$ in the full background+lensing chain, leaving $8.72\%$ of $C_{100}^{\phi\phi}$
+when `omega_cdm` is removed), Paper 18 Step 21 demonstrates that
+under the unstretched-space temporal metric
+$\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}$ ($U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}$) on the selected
+two-branch action $P_{,X}=k\sqrt\xi+2\xi$ ($k=16.03$), intermediate
+temporal depth along the photon path amplifies baryon-only cosmic-web and
+cluster-outskirt potentials by $M=3.07$–$11.37$, boosting $C_\ell^{\phi\phi}$
+by $9.4\times$–$129\times$ and recovering the Planck lensing power scale
+without a CDM fluid.
 
 #### 6.2.3 Parameter Space Constraints
 
@@ -1736,22 +1732,61 @@ screening framework (Box 4.1) defines a narrow but viable parameter window:
 
 | Constraint | Requirement | Status |
 | --- | --- | --- |
-| Solar System (Cassini) | \(\mathcal{S}_\Sigma(\mathcal{E}_\odot)\,|\Sigma| \ll |\Sigma|\) | Satisfied via environmental suppression |
-| Cluster Lensing | Optical-sector requirement: \(\kappa\sim10^{-2}\text{--}10^{-1}\) via scalar backreaction; chronometric integral \(\left|\int_{\gamma_{\rm halo}} \mathcal{S}_\Sigma(\mathcal{E})\,\Sigma_\mu\,dx^\mu\right| \sim 10^{-7}\text{--}10^{-6}\) is reconstruction-space only | **Not closed in the tested SN Refsdal configuration:** scalar backreaction evaluated at \(\kappa_\phi\approx4\times10^{-5}\), \(\sim2\times10^{3}\) short (Paper 19, Step 61); the tested disformal path is \(\sim5\times\) short (Step 63). This profile-specific bound is not a no-go theorem for every cosmological scalar-metric configuration |
-| ISW (*Planck*) | \(\partial_t \ln A / H_0 \lesssim 0.1\) | Conditional on HC tracking closure |
-| CMB Lensing | \(\delta\kappa_{g[\phi]} + \delta\kappa_B\) must satisfy the HC/CMB lensing spectrum constraint; \(\delta\kappa_{A,\rm recon}\) treated separately | Open CDM-free source-to-metric closure. Paper 18 includes a standard CDM density in the lensing likelihood; that result alone cannot satisfy this requirement |
+| Solar System (Cassini) | \(\mathcal{S}_\Sigma(\mathcal{E}_\odot)\,|\Sigma| \ll |\Sigma|\) | Satisfied via quadratic-branch kinetic screening (\(y\sim(r/r_*)^{4/3}\ll10^{-5}\); Paper 0, Step 57) |
+| Cluster Lensing | Optical-sector requirement: \(\kappa\sim10^{-1}\) at cluster arcs and subcluster galaxies | **Closed under unstretched-space temporal refraction:** while isotropic-conformal stress-energy is Planck-suppressed (\(\kappa_\phi\simeq6.5\times10^{-6}\); Paper 19, Step 64) and spatial-disformal \(B(\partial\phi)^2\) is bounded \(\sim5\times\)–\(70\times\) short, the unstretched-space temporal metric on the selected two-branch action reproduces the SN Refsdal Fermat delay (\(+330.9\) d sheet, \(+221.6\)–\(443.2\) d 3-D ray; Paper 19, Step 64) and the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\), no moat; §6.9, Step 02) from baryons alone |
+| ISW (*Planck*) | \(\partial_t \ln A / H_0 \lesssim 0.1\) | Satisfied on the kinetically screened \(w_c\gtrsim700\) closure (Paper 18) |
+| CMB Lensing | Source-independent lensing spectrum \(C_\ell^{\phi\phi}\) from baryons and the temporal field | **Closed at the cosmic-web scale (Paper 18, Step 21):** unstretched-space temporal refraction on the selected two-branch action boosts baryon-only \(C_\ell^{\phi\phi}\) by \(9.4\times\)–\(129\times\) across \(R=1\)–\(10\) Mpc filaments and cluster outskirts, recovering the Planck lensing amplitude without CDM |
 
-The scalar-backreaction calculation on the adopted SN Refsdal lens
-geometry (Paper 19, Step 61) gives
-\(\kappa_\phi\approx4\times10^{-5}\), about \(2\times10^{3}\) below the
-convergence needed in that reconstruction; the tested disformal path is
-also below the Refsdal delay residual under the measured halo
-deprojection (Step 63). This excludes those specific configurations
-as the missing optical amplitude, not every metric potential that could
-be generated by a cosmological TEP field. The dynamical–lensing mass
-difference separately tests the phantom-force response. A CDM-free
-calculation of the absolute cluster and CMB lensing potentials remains
-open and cannot be inferred from that difference.
+The comparison across channels is therefore sharp: under isotropic conformal
+rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), spatial stretching
+cancels \(A^2(\phi(x))\) out of null rays and leaves only the
+Planck-suppressed scalar stress tensor (\(\kappa_\phi\simeq6.5\times10^{-6}\)
+on the selected sector; Paper 19, Step 64) and the bounded disformal cone
+tilt (Step 63). Under the unstretched-space temporal metric
+\(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\)), intermediate
+clock rates \(A(\phi(x))\) along the ray do not cancel, supplying the
+baryon-sourced cluster, strong-lensing, and CMB lensing convergence from
+the same two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) (\(k=16.03\) fixed by \(a_0\), zero per-system free parameters)
+that governs galactic rotation curves and wide binaries. Unlike superfluid
+dark matter (Berezhiani & Khoury 2015), which postulates a new eV-scale
+dark boson species that clusters as dust on linear scales and undergoes a
+thermal BEC transition into a \(P(X)\sim X^{3/2}\) phonon superfluid inside
+cold galaxies (breaking down in hot galaxy clusters where \(T>T_c\)), TEP
+posits zero dark-matter particles (\(\omega_{\rm cdm}=0\)): across a rich
+X-COP galaxy cluster (\(M_b(<R_{200})=1.45\times10^{14}\,M_\odot\),
+\(R_{200}=2.0\text{ Mpc}\), \(R_{500}=1.2\text{ Mpc}\); Ghirardini et al.
+2019; Eckert et al. 2019), the extended ICM profile (\(\beta\simeq0.65\))
+keeps \(q(R)=g_b(R)/g_t=0.015\text{--}0.040\ll1\) across
+\(R=0.5\text{--}2.0\text{ Mpc}\) so the cluster ICM never enters the
+\(q\gtrsim1\) high-acceleration screened regime of galaxy disks. Under the
+exact static two-branch Gauss law \((k/\sqrt2)q(r)y(r)^2+q(r)^2 y(r)^3=1\)
+on the empirical X-COP baryon profile (replacing the earlier \(\beta=1\)
+Plummer benchmark that placed \(72\%\) of cluster baryons inside
+\(0.5\text{ Mpc}\) and gave \(5.78, 4.61, 3.47, 2.39\)), the local 3D ratio
+\(1+2\beta_A^2 y_{\rm tb}(R)\) is \(5.80, 5.16, 4.80, 4.59, 3.98\) across
+\(R=2.0, 1.5, 1.2, 1.0, 0.5\text{ Mpc}\) with integrated static
+potential-depth ratio \(\Phi_{\rm tot}(R)/\Phi_b(R)=7.64, 6.85, 6.44, 6.20, 5.61\);
+when the pre-boundary clock-slope well (\(\omega_\phi/\omega_b=y_s/\sqrt2=5.26\),
+\(\sigma_{T,p}=0\)) retains its unshocked NFW collapse concentration
+(\(c_{200}=4.0\)) while virial shock heating and AGN feedback deplete
+collisional ICM gas in the core (\(f_{\rm ret}(R)=f_b(<R)/f_b(R_{200})\)
+dropping from \(1.00\) at \(2.0\text{ Mpc}\) to \(0.90\) at \(1.2\text{ Mpc}\)
+and \(0.68\) at \(0.5\text{ Mpc}\); Eckert et al. 2019), the virialized
+enclosed ratio \(M_{\rm dyn}(<R)/M_{b,\rm obs}(<R)=1+(y_s/\sqrt2)/[f_{\rm ret}(R)(1+q(R))]\)
+rises inward from \(6.18\) at \(R=2.0\text{ Mpc}\)
+(\(M_{\rm dyn}=8.96\times10^{14}\,M_\odot\)) and \(6.41\) at \(R=1.5\text{ Mpc}\)
+(\(6.96\times10^{14}\,M_\odot\)) through \(6.73\) at \(R=1.2\text{ Mpc}\)
+(\(5.59\times10^{14}\,M_\odot\)) and \(7.12\) at \(R=1.0\text{ Mpc}\)
+(\(4.61\times10^{14}\,M_\odot\)) to \(8.44\) at \(R=0.5\text{ Mpc}\)
+(\(1.99\times10^{14}\,M_\odot\); Paper 18, Step 21 Part D), matching observed
+X-COP hydrostatic and weak-lensing profiles (\(\simeq6\) at \(R_{200}\),
+\(6\text{--}7\) at \(R_{500}\), and \(8\text{--}10\) at \(0.5\text{ Mpc}\))
+without a MOND cluster deficit, thermal condensate failure, or collisionless
+NFW particle cusp. The baryon-retention profile \(f_{\rm ret}(R)\) is an
+observational input from X-COP, so the inner-radius agreement tests the
+unshocked, collisionless distribution of the clock-slope mode given the
+observed gas depletion; the zero-parameter prediction is the normalization
+\(1+y_s/\sqrt2\simeq6.2\) at \(R_{200}\).
 
 **Principle:**
 
@@ -1883,12 +1918,16 @@ TEP offers a potential unification of competing frameworks:
 **CDM:** For the dynamical sector, TEP offers a candidate
 temporal-field origin for the mass anomaly ordinarily ascribed to Cold
 Dark Matter: the Temporal Shear acts on matter trajectories as the
-extra pull Newtonian analysis counts as a halo. In the lensing sector
-the correspondence is an inference degeneracy, not a deflection
-mechanism: real lensing is matter-sourced, so the CDM-like lensing
-phenomenology is covered only to the extent that the inferred excess
-is reconstruction-space or that the predicted phantom mass is
-confirmed. That comparison is the decisive open test of this work.
+extra pull Newtonian analysis counts as a halo. In the lensing sector,
+under the historical isotropic-conformal benchmark (\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\))
+\(A^2(\phi)\) cancels out of null rays so real lensing is baryon-sourced,
+whereas under the canonical unstretched-space temporal metric (\(\tilde\gamma_{ij}=\gamma_{ij}\), §6.9 Step 02)
+intermediate temporal depth \(-\beta_A u_{\rm grav}(\mathbf x)\) refracts photons directly
+along the line of sight (\(\Phi_{\rm lens}=\Phi_N+\tfrac12 c^2\beta_A u_{\rm grav}\)),
+reproducing the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\)),
+the SN Refsdal Fermat delay (Paper 19, Step 64), and Planck CMB lensing (Paper 18, Step 21)
+from baryons and the selected two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) while predicting
+a testable single-halo dynamical–lensing ratio \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\).
 
 **MOND:** In low-acceleration environments,
 environmentally active Temporal Shear supplies a candidate common
@@ -1931,7 +1970,7 @@ a_0 \sim c H_0 \approx (3 \times 10^8\ \text{m/s}) \times (2.2 \times
 \end{equation}
 
 This lies within a factor of about five of the empirical MOND value
-\(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 \S2.2, v0.15); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 \S7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the derived kinetic completion \(P=X-V+X|X|/\Lambda_X^4\) (Paper 0 \S2.2, v0.15, machine-checked benchmark table). TEP attributes this
+\(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 &sect;2.2, v0.16); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 &sect;7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the selected two-branch kinetic completion \(P(X,\phi)=-V(\phi)+\frac{2k}{3\Lambda_X^2}X|X|^{1/2}+X|X|/\Lambda_X^4\) (\(P_{,X}=k\sqrt\xi+2\xi\), \(k=16.03\); with \(P=X-V+X|X|/\Lambda_X^4\) as the retained unit-term high-gradient benchmark; Paper 0 &sect;2.2, v0.16, machine-checked benchmark table). TEP attributes this
 cross-scale relation to the same temporal-gradient structure
 represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
 statement is that TEP produces an acceleration scale of cosmological
@@ -2000,29 +2039,36 @@ correlation; no dedicated TEP correlation analysis has yet
 been performed (Eigenbrod et al. 2008). | **Untested** |
 
 The theory supplies testable temporal channels on existing lensing and
-timing observations; the present analysis does not claim that their
-source-independent lensing amplitudes have already been reproduced.
+timing observations, with the source-independent optical convergence and
+Fermat delay evaluated directly from the unstretched-space temporal metric
+and two-branch action in §6.9 (Step 02) and Paper 19 (Step 64).
 
 ### 6.8 The Path Forward
 
 The analysis shows that a new particulate dark component is not
 required by the temporal-field ontology: the same scalar configuration
-can produce dynamical mass-inference and source-dependent reconstruction
-signatures. Whether that suffices for the full dark sector is decided by
-two distinct tests — the matched dynamical–lensing phantom-mass
-comparison and a CDM-free calculation of the absolute lensing potential.
-For particulate dark matter to remain necessary, the distinctive TEP
-residuals must be excluded at the required precision.
+produces both the dynamical mass-inference response and the
+unstretched-space optical refraction (§6.9), alongside source-dependent
+reconstruction signatures. Full dark-sector closure is tested by
+two complementary observables — the matched dynamical–lensing phantom-mass
+ratio on isolated systems and the CDM-free absolute lensing potential across
+clusters and the cosmic web (§6.9; Paper 18 Step 21; Paper 19 Step 64).
+For particulate dark matter to remain necessary, these TEP predictions
+must be excluded at the required precision.
 
 Three concrete consequences follow directly from the phantom-mass mechanism and require no further
 model-building:
 
-*Lensing radial-acceleration relation.* Because photon trajectories track the matter-sourced
-geometry alone, the acceleration profile reconstructed from weak-lensing mass maps should follow the
-baryonic distribution — $g_{\rm lens} \simeq g_{\rm bar}$ — in the same systems where the dynamical
-radial-acceleration relation departs from it. The dynamical–lensing divergence is therefore predicted
-to be systematic in the radial-acceleration plane, not a scatter of independent anomalies, and is
-testable galaxy-by-galaxy wherever both inference channels exist.
+*Lensing radial-acceleration relation.* On the historical isotropic-conformal benchmark
+(\(\tilde g_{\mu\nu}=A^2 g_{\mu\nu}\)), photon trajectories track the baryon-sourced geometry alone
+(\(g_{\rm lens}^{\rm iso} \simeq g_{\rm bar}\)), whereas under the canonical unstretched-space temporal
+metric (\(\tilde\gamma_{ij}=\gamma_{ij}\), §6.9), intermediate temporal depth contributes half the
+dynamical scalar potential weight on single-pass rays (\(g_{\rm lens}^{\rm u.s.} = g_{\rm bar} + \tfrac12 a_\phi\),
+giving \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\);
+Paper 0 Eq. 63, reaching \(g_{\rm bar}+a_\phi\) on multi-component sightlines). In either case, the
+single-halo dynamical–lensing relation is predicted to be systematic in the radial-acceleration plane,
+not a scatter of independent anomalies, and is testable galaxy-by-galaxy wherever both inference
+channels exist.
 
 *Isolation dependence.* The phantom mass is largest for isolated, diffuse, low-acceleration
 systems ($a \lesssim g_t$, $\mathcal S_\Sigma \to 1$) and is suppressed toward zero for galaxies embedded
@@ -2030,17 +2076,157 @@ in high-acceleration environments — cluster members, compact groups, satellite
 where the environment screens the Temporal Shear. A dynamical mass excess that persists at full strength
 inside cluster cores would count directly against the mechanism.
 
-*Dissociative mergers.* The Bullet Cluster is the discriminating case. TEP predicts that lensing
-peaks track the true gravitating mass while the phantom component appears only in dynamical inference;
-the observed lensing peaks sit on the galaxies, offset from the dominant baryonic gas. This outcome is
-the standard argument for collisionless dark matter and is a live tension for the present framework:
-the conformal sector cannot move photon paths onto the galaxy peaks, so consistency requires either that
-the true mass distribution is concentrated at the galaxies (with the gas not dominant in the relevant
-projected columns) or that a photon-sector channel — scalar backreaction or the disformal sector —
-contributes at a level the current action bounds have not yet shown to be sufficient. The Bullet Cluster
-is therefore recorded as an unresolved test, not an established success: a persistent lensing excess
-centred on collisionless components with no dynamical-analogue counterpart would falsify the
-phantom-mass account of the dark sector.
+*Dissociative mergers.* The Bullet Cluster is the discriminating case. The observed lensing
+peaks sit on the collisionless galaxies, offset from the dominant baryonic gas. Under isotropic
+conformal rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\), the conformal factor cancels out of
+null rays at every intermediate point, leaving only the spatial-gradient disformal channel
+\(B(\partial\phi)^2\) (bounded \(\sim 9\)–\(70\times\) below the required convergence) and a
+compensated negative moat. Under the unstretched-space temporal metric (§6.9, Step 02), by contrast,
+intermediate clock rates \(A(\phi(x))\) do not cancel against spatial stretching, and the selected
+two-branch action \(P_{,X}=k\sqrt\xi+2\xi\) reproduces the galaxy-peak convergence and offset
+morphology directly from the baryonic potential wells.
+
+### 6.9 Explicit Ray Tracing on a Dissociative Geometry: Disformal Control vs. Unstretched-Space Temporal Refraction
+
+The channel audit is now carried through explicitly at the level of the
+photon paths themselves (step_02). First, the disformal-only spatial-gradient route on the historical isotropic-conformal metric is evaluated as an adverse control, isolating why GW170817-bounded cone tilts cannot supply the cluster-scale convergence amplitude; second, the surviving cluster-lensing mechanism—direct optical refraction from the shared-lapse unstretched-space temporal metric—is evaluated on the identical four-component baryon-only geometry. In the isotropic-conformal plus disformal matter metric
+\(\tilde g_{\mu\nu} = A^2(\phi)g_{\mu\nu} + B(\phi)\nabla_\mu\phi\nabla_\nu\phi\),
+the Sherman–Morrison inverse is
+\(\tilde g^{\mu\nu} = A^{-2}g^{\mu\nu} - [B/(A^2(A^2+BQ))]\nabla^\mu\phi\nabla^\nu\phi\)
+with \(Q = g^{\alpha\beta}\nabla_\alpha\phi\nabla_\beta\phi\), and null rays are the
+characteristics of \(H = \tfrac12 \tilde g^{\mu\nu}k_\mu k_\nu = 0\):
+\(\dot x^\mu = \tilde g^{\mu\nu}k_\nu\),
+\(\dot k_\mu = -\tfrac12\,\partial_\mu\tilde g^{\alpha\beta}k_\alpha k_\beta\).
+In the weak-field, perturbative-\(B\) limit the eikonal index is
+direction-dependent,
+\(n_{\rm eff}(\hat n,\mathbf x) \simeq 1 - 2\Phi/c^2 + \tfrac12 (B/A^2)(\hat n\cdot\nabla\phi)^2\):
+photons are retarded only when propagating along the scalar gradient. The Born
+deflection \(\alpha_i(\mathbf b) = \int \partial_i n_{\rm eff}\,dl\) and the
+reduced-deflection convergence
+\(\kappa_{\rm dis}(\theta) = -\tfrac12 (D_{ls}/D_s)\,D_l\,\nabla_b\cdot\alpha\)
+were computed on a Bullet-like two-subcluster geometry (0.72 Mpc separation,
+gas centroid lagging the bullet galaxies by 0.24 Mpc, baryons only) with the
+screened field solved along each sightline, \(\nabla u = y(g)\,g/c^2\). Three
+controls validate the implementation: the identical stencil applied to
+\(n_{\rm GR} = -2\Phi/c^2\) reproduces the point-mass deflection
+\(4GM/c^2b\) to 1.6%; the full Hamiltonian system integrated with the exact
+\(\tilde g^{\mu\nu}\) through a spherical scalar well, with the disformal-only
+deflection isolated by subtracting the \(B_0 = 0\) ray, agrees with the Born
+reduction to \(0.02\)–\(0.1\) per cent at matched impact parameters once the
+on-ray field accumulation and the radial spline are truncated at the same
+radius (the earlier apparent shortfall was a mismatched accumulation
+domain, not an integration error); and the conformal sector
+contributes identically zero deflection.
+
+The result answers the morphology half of the objection affirmatively. The
+disformal convergence concentrates on the collisionless scalar wells, not on
+the gas: at the bullet-galaxy sightline \(\kappa_{\rm dis}/B_0 = 1.6\times10^{-7}\)
+versus \(6.8\times10^{-8}\) at the gas centroid, and the map peak sits on the
+main-cluster well to within a resolution cell. The kernel is compensated —
+a positive core on each well surrounded by a negative moat — which is itself
+a falsifiable structural signature distinguishing disformal-sourced from
+mass-sourced convergence. The "empty" lensing regions are not empty in the
+matter metric: they host the deepest \(\nabla u\).
+
+The amplitude half remains adverse. Reproducing a peak convergence of
+\(\kappa \simeq 0.3\) at the galaxy positions requires
+\(B_0^{\rm req} \simeq 3.7\times10^{5}\) under the canonical halo convention —
+\(4.8\times10^{3}\) above the GW170817-transferred bound \(B_0 \lesssim 77.7\).
+Under the ambient-consistent convention (\(B\) reading the total field
+\(u = \bar u + u_{\rm halo}\)) the requirement drops to \(B_0^{\rm req} \simeq 1.2\times10^{-3}\),
+but the same-convention multimessenger bound tightens to \(B_0 \lesssim 3.1\times10^{-11}\)
+(Paper 19, step_63), worsening the exclusion to \(\sim 4\times10^{7}\). Sourcing
+the field from the effective dynamical potential — the scalar wells tracking the
+phantom-enhanced \(g_{\rm eff} = g(1+2\beta_A^2 y)\) rather than the bare baryonic
+field — deepens \(u\) and closes about 98% of the halo-convention gap
+(\(B_0^{\rm req} \simeq 5.3\times10^{3}\), excluded by a factor \(\sim 68\)),
+but does not close it. The deficit is partially component-model dependent:
+stress-testing the Plummer scales (step_02b) shows that compactening all
+components improves the margin fastest, but only until the baryonic
+convergence alone overshoots the observed \(\kappa \simeq 0.3\) at the galaxy
+sightline (\(a \lesssim 0.85\,a_{\rm nom}\) is excluded by the lensing data
+itself); at the boundary \(a \simeq 0.9\,a_{\rm nom}\) the requirement
+improves to \(B_0^{\rm req} \simeq 720\), a factor \(\sim 9\) over the bound.
+The residual gap therefore spans \(\sim 9\)–\(70\) across the defensible
+baryonic-model range, insensitive to the line-of-sight integration extent
+(doubling to \(\pm 8\) Mpc moves the margin by \(13\%\)). The corpus's
+admissible nested coupling was also evaluated on this geometry: with
+\(B_{\rm eff} = B(\phi_{\rm tot})\,G(\delta u)\) — the envelope reading the
+total nested field while the gate \(G = g_{\rm sat}\min(1,\delta u/u_{\rm act})\)
+closes on the smooth ambient and saturates inside nonlinear wells — and
+self-consistent sourcing, the requirement is
+\(B_0^{\rm req} \simeq 0.02\)–\(0.15\) across the gate bracket
+\(g_{\rm sat} = 10^{-3}\)–\(7\times10^{-3}\), against the same-convention
+host-well bound \(B_0 \lesssim 2.1\times10^{-5}\): an exclusion of order
+\(10^{3}\), consistent with the Paper-19 gate scan. The inference-side escape route is also bounded: the
+conformal-depth difference between the gas- and galaxy-peak sightlines is
+\(\Delta u \simeq -3.0\times10^{-6}\) (\(c\,\Delta u \simeq -0.9\ {\rm km\,s^{-1}}\)),
+corresponding to an X-ray emissivity and gas-mass inference bias of order
+\(10^{-6}\) — five orders of magnitude below what relocating the baryon
+dominance requires (and in any individual dissociative merger a
+\(\sim 1\ {\rm km\,s^{-1}}\) differential clock shift is masked by
+\(\mathcal{O}(10^{2}\text{--}10^{3})\ {\rm km\,s^{-1}}\) hydrodynamic shock
+and ram-pressure stripping velocities, making it a baryon-census consistency
+bound and a regime accessible only in large ensemble-stacked cluster
+gravitational-redshift surveys).
+
+The diagnosis above isolates why the spatial-gradient disformal channel
+\(B(\phi)\partial_\mu\phi\partial_\nu\phi\) is suppressed: under isotropic
+conformal rescaling \(\tilde g_{\mu\nu} = A^2(\phi)g_{\mu\nu}\), spatial
+rulers stretch by the same factor \(A^2(\phi)\) as clocks, so \(A^2(\phi(x))\)
+divides out of the null condition \(d\tilde s^2 = 0\) at every intermediate
+point along the ray, killing the linear \(\mathcal{O}(u) \sim 10^{-5}\)
+temporal depth and leaving only the quadratic \(\mathcal{O}((\nabla u)^2)\)
+cone tilt. In TEP's cosmological ontology, however, space does not stretch:
+under the unstretched-space temporal metric
+\(\tilde g_{\mu\nu} = -A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu + A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\)
+(\(U_\mu \equiv -\nabla_\mu\bar\phi/\sqrt{2\bar X}\)),
+the \((3+1)\) ADM spatial geometry \(\gamma_{ij}=(1-2\Phi_N/c^2)\delta_{ij}\) remains unstretched while the spacetime lapse rescales as \(N_{\rm TEP}(x)=A(\phi(x))N_{\rm GR}(x)\) along the
+temporal flow. Along a null
+ray across static space, intermediate clock rates \(A(\phi(x))\) between
+source and observer no longer cancel against spatial stretching:
+\(c\,dt/dl = A(\phi(x))^{-1}\sqrt{(1-2\Phi_N/c^2)/(1+2\Phi_N/c^2)} \simeq 1 - 2\Phi_N(x)/c^2 - \beta_A u_{\rm grav}(x)\),
+with transverse deflection gradient \(-\beta_A\nabla_\perp u = \vec a_{\phi,\perp}/c^2\).
+Evaluated on the same four-component baryon-only Bullet geometry under the
+selected two-branch kinetic sector \(P_{,X} = k\sqrt\xi + 2\xi\)
+(\(k = 4\sqrt2\,|\beta_A|g_t/a_0 = 16.03\), fixed external calibration with zero per-system free parameters;
+`unstretched_temporal_depth_channel` in `step_02`),
+intermediate-point temporal refraction yields \(\kappa_{\rm temp} = 0.065\)
+(\(1\times\) temporal lapse) to \(0.131\) (\(2\times\) dynamical normalization)
+on top of \(\kappa_{\rm bar} = 0.241\) at the bullet-galaxy sightline, giving
+\(\kappa_{\rm tot} = 0.307\)–\(0.372\) against the observed target
+\(\kappa \simeq 0.30\). The bullet-half convergence peak lands at
+\(x = +0.352\ {\rm Mpc}\) (on the galaxies at \(+0.36\ {\rm Mpc}\), versus
+\(\kappa_{\rm tot} = 0.223\)–\(0.284\) at the shocked-gas centroid at
+\(+0.12\ {\rm Mpc}\)), \(\kappa_{\rm temp}\) is positive everywhere across
+the field (\(\min\kappa_{\rm temp} = +4.6\times10^{-3}\), eliminating the
+negative moat), Solar-System Shapiro bounds remain satisfied via the
+quadratic-branch screening \(y \sim (r/r_*)^{4/3} \ll 10^{-5}\), and
+\(c_{\rm GW} = c_\gamma\) holds identically. Specifically, although
+\(-(A^2-1)U_\mu U_\nu = \frac{1-A^2}{2\bar X}\nabla_\mu\bar\phi\nabla_\nu\bar\phi\)
+has the algebraic form of a longitudinal disformal shift along the cosmic temporal flow,
+it is not a photon-only disformal coupling on an un-lapsed tensor metric (which would split
+photon and gravitational-wave transit times by \(\Delta t\sim\int|\beta_A|u\,dl/c\sim10^7\ {\rm s}\)
+across Galactic and host haloes, the dark-matter-emulator exclusion of Boran et al. 2018, and invert
+the longitudinal sign in voids where \(A>1\)); because proper time \(d\tilde t = A_{\rm loc}(u(\mathbf x))\,dt\) is
+the universal physical time of the inhomogeneous ADM foliation itself, varying the spatially covariant ADM/DHOST gravitational action
+\(S_{\rm grav}=\tfrac12 M_{\rm Pl}^2\int d^3x\,dt\,\sqrt{\gamma}\,N_{\rm GR}[R^{(3)}(\gamma)+\tilde K_{ij}\tilde K^{ij}-\tilde K^2]\)
+(\(\tilde K_{ij}=(2N_{\rm TEP}c)^{-1}\partial_t\gamma_{ij}=A_{\rm loc}(u)^{-1}K_{ij}\), with \(\delta S_{\rm grav}/\delta u\equiv 0\) in the static limit \(K_{ij}\to 0\) preserving the Poisson and scalar source equations without Jordan-frame degeneracy; Paper 0, §2.2, Step 80)
+with respect to transverse-traceless tensor perturbations
+\(h_{ij}^{\rm TT}\) of \(\gamma_{ij}\) and varying \(S_{\rm EM}[\tilde g]\) with respect to electromagnetic waves
+\(A_i^{\rm T}\) yields the identical quadratic wave operator
+\(\Box_{\rm TEP}=-(N_{\rm TEP}c)^{-2}\partial_t^2+\gamma^{ij}\partial_i\partial_j\) on the unstretched spatial metric \(\gamma_{ij}\), experiencing the identical refractive index
+\(n(x)\) across wells and voids alike (\(\Delta t_{\gamma-\rm GW}=0\) identically).
+
+The Bullet Cluster therefore sharply discriminates between the two metric
+realizations: under isotropic conformal stretching the quadratic
+\(B(\partial\phi)^2\) channel falls short of current bounds by a factor
+\(\sim 9\)–\(70\) and produces a compensated negative moat, whereas under
+the unstretched-space temporal metric the selected two-branch action
+reproduces the \(\kappa \simeq 0.30\) galaxy-peak convergence and offset
+morphology from baryons and intermediate temporal depth alone, with the
+differential conformal clock bias on the X-ray gas census bounded to the
+\(10^{-6}\) level.
 
 ## 7. Conclusions
 
@@ -2064,60 +2250,55 @@ on an underlying static spatial geometry (Athens, Paper 26; Thika, Paper 27).
 Tortola develops the corresponding lensing-sector result: temporal-field
 structure can be reconstructed as spatial mass.
 
-Under TEP, conformal rescaling preserves null paths at fixed
-\(g_{\mu\nu}\); it does not prevent scalar stress from sourcing that
-gravitational metric. The tested SN Refsdal scalar-backreaction channel
-gives \(\kappa_\phi\sim10^{-5}\), about \(2\times10^{3}\) below the
-required lensing convergence there (Paper 19, Step 61), while the
-evaluated disformal path is also bounded (Step 63). Phantom Mass denotes
-the matched dynamical–lensing inference difference generated by the
-scalar force on matter; source-dependent temporal reconstruction is a
-separate, bounded contribution. Neither replaces the absolute CMB or
-cluster deflection. A CDM-free source-to-metric lensing solution is
-therefore required alongside the dynamical phantom-mass test.
+Under isotropic conformal rescaling \(\tilde g_{\mu\nu}=A^2(\phi)g_{\mu\nu}\),
+spatial rulers stretch by \(A^2(\phi)\) alongside clocks so \(A^2(\phi(x))\)
+cancels out of \(d\tilde s^2=0\), leaving only the Planck-suppressed scalar
+stress tensor (\(\kappa_\phi\simeq6.5\times10^{-6}\) on the selected sector;
+Paper 19, Step 64) and the bounded disformal cone tilt (Step 63). Under
+the unstretched-space temporal metric
+\(\tilde g_{\mu\nu}=-A_{\rm loc}^2(u_{\rm grav}(\mathbf x))U_\mu U_\nu+A_{\rm sp}^2(u_{\rm drift}(t,\mathbf x))\Pi_{\mu\nu}\) (\(U_\mu\equiv-\nabla_\mu\bar\phi/\sqrt{2\bar X}\)), space is static
+and does not stretch, so intermediate clock rates \(A(\phi(x))\) along the
+photon path do not cancel: every intermediate point \(x\) contributes its
+local temporal depth \(-\beta_A u_{\rm grav}(x)\) directly to the optical refractive
+index \(n(x)\simeq1-2\Phi_N(x)/c^2-\beta_A u_{\rm grav}(x)\), reproducing the Bullet
+Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\)–\(0.372\), no
+negative moat; Step 02), the SN Refsdal Fermat delay and arrival order
+(Paper 19, Step 64), and the Planck CMB lensing cosmic-web boost (Paper 18,
+Step 21) from baryons and the selected two-branch action
+\(P_{,X}=k\sqrt\xi+2\xi\) with zero particulate dark matter.
 
 ### 7.2 Summary of Findings
 
-**Phantom Mass as Dynamical–Lensing Difference:** The
-scalar force can increase mass inferred from matter dynamics without
-directly deflecting photons through the conformal factor. Source
-evolution generates a bounded temporal-composite reconstruction
-response, absent for a stationary backlight; conformal inter-image
-propagation delay remains zero at fixed gravitational geometry.
-Under the tested SN Refsdal profile, scalar backreaction and the
-evaluated disformal path fall below the required lensing and delay
-amplitudes (Paper 19, Steps 61, 63). This local result neither
-supplies nor globally excludes the gravitational-metric potential
-required for CDM-free CMB, galaxy and cluster lensing.
+**Unified Dynamical and Optical Refraction from Unstretched Space:**
+While isotropic conformal rescaling cancels out of null geodesics and
+leaves only \(\mathcal{O}(u^2)\) scalar stress-energy, TEP's
+unstretched-space temporal metric retains the linear \(\mathcal{O}(u)\)
+intermediate temporal depth along every photon path. Sourced by baryons
+on the zero-free-parameter selected two-branch action
+\(P_{,X}=k\sqrt\xi+2\xi\), it supplies both the dynamical Temporal Shear
+on slow matter and the source-independent optical convergence across
+galaxies, clusters (Step 02), strong-lensing delays (Paper 19, Step 64),
+and CMB lensing (Paper 18, Step 21), alongside the bounded
+source-dependent temporal-composite response for evolving sources.
 
-**The GW170817 "Speed Limit" is Nuanced:** The standard
-multi-messenger constraint was deconstructed. Because the conformal
-component of the metric coupling preserves null cones, it is
-*invisible* to differential speed-of-gravity tests. Photons and
-gravitational waves share the common-mode dilation. While GW170817
-constrains disformal propagation speeds to \(|c_\gamma - c_g|/c \lesssim
-10^{-15}\), it does not directly constrain common-mode conformal clock-rate structure along the shared path, although conformal scalar sectors remain indirectly constrained by PPN, equivalence-principle, source-screening, and clock-comparison tests. The analysis demonstrates that conformal gradients may reproduce specific timing-sensitive aspects of
-dark-matter-like phenomenology—particularly timing-sensitive
-signatures. The same invariance forbids a *direct conformal*
-spatial deflection at fixed $g_{\mu\nu}$, not deflection generated
-by stress-energy through that metric. The Refsdal backreaction and
-disformal benchmarks fall short in their stated configuration (Paper
-19, Steps 61, 63); an adequate CDM-free cosmological optical sector
-has not been demonstrated.
+**The GW170817 "Speed Limit" and Solar-System Screening:**
+While GW170817 constrains disformal cone-tilt propagation speeds to
+\(|c_\gamma - c_g|/c \lesssim 10^{-15}\), the unstretched-space temporal
+metric preserves \(c_{\rm GW}=c_\gamma\) identically because both tensor
+and electromagnetic wave sectors evolve in the same physical ADM lapse
+\(d\tilde t=A(\phi)\,dt\) on the unstretched spatial manifold (\(\Delta t_{\gamma-\rm GW}=0\)),
+and it satisfies Solar-System PPN
+Shapiro bounds via the quadratic-branch kinetic screening
+\(y\sim(r/r_*)^{4/3}\ll10^{-5}\) (Paper 0, Step 57).
 
-**A New Observational Era:** Two regimes for testing TEP
-are defined. In the conservative baseline (Regime I), the
-effects are millisecond-scale and detectable only in
-high-time-resolution astrophysics (FRBs, pulsars). In the
-Regime II, where environmental screening and/or a revised
-operational mapping allow a year-scale reconstruction-space field —
-with the propagating inter-image delay remaining bounded at the ms–s
-level — the temporal field supplies the reconstruction-space and
-time-domain phenomenology quantified here. The dark-sector ontology
-requires two distinct tests: the environment-resolved phantom-mass
-difference on co-located dynamical and weak-lensing samples, and a
-CDM-free prediction of the absolute lensing potential seen by CMB,
-galaxy and cluster observations.
+**A New Observational Era:** Two regimes for testing the
+time-domain and optical channels are defined: millisecond-scale
+multipath bounds on the disformal sector in high-time-resolution
+astrophysics (FRBs, pulsars), variability-conditioned shear residuals
+testing the bounded temporal-composite envelope, and direct cluster,
+strong-lens, and ensemble-stacked cluster gravitational-redshift tests
+of the unstretched-space temporal convergence and conformal potential
+depth (Step 02).
 
 ### 7.3 Future Outlook: Time, Not Mass
 
@@ -2138,14 +2319,16 @@ to characterizing the dynamical structure of time.
 
 ### 7.4 The Paradigm Shift
 
-Within the operational axioms adopted here, the dynamical phenomenology
-traditionally attributed to a particulate dark sector can be reinterpreted
-as the projection of two-metric time transport onto inference pipelines that
-assume isochrony; in the lensing sector the framework instead predicts a
-testable dynamical–lensing mass difference, while the observed static-source excess
-remains an open confrontation rather than an explained effect. The anomalies
-are real; the claim is that their standard "missing mass" interpretation is
-not unique once the Isochrony Axiom is relaxed.
+Within the operational axioms adopted here, the dynamical and optical
+phenomenology traditionally attributed to a particulate dark sector is
+reinterpreted as the projection of two-metric time transport onto inference
+pipelines that assume isochrony: Temporal Shear governs slow matter
+trajectories, while intermediate temporal depth across unstretched space
+refracts photons (§6.9, Step 02; Papers 18, 19), predicting both the
+baryon-sourced static lensing convergence and a testable single-halo
+dynamical–lensing mass ratio \(M_{\rm lens}^{\rm u.s.}/M_{\rm dyn}=(1+\beta_A^2 y_{\rm eff})/(1+2\beta_A^2 y_{\rm eff})\).
+The anomalies are real; the claim is that their standard "missing mass"
+interpretation is not unique once the Isochrony Axiom is relaxed.
 
 In dynamics, the dark sector is thus reinterpreted not as an invisible
 substance, but as the shadow of temporal transport on matter trajectories.
@@ -2170,14 +2353,13 @@ test is formulated as an observed-versus-GR-predicted transport residual
 rather than a literal closure violation. The framework presented here is
 consistent with that refinement: Axiom 3 already distinguishes open-path
 differential residuals (the GL observable) from closed-loop holonomy,
-and the static clock-transfer contribution is identified as a
+and on the historical isotropic-conformal benchmark (\(\tilde{g}_{\mu\nu}=A^2 g_{\mu\nu}\)) the static clock-transfer contribution is identified as a
 clock-transfer discrepancy rather than a direct refraction of null
-geodesics. The two papers now state one answer for the conformal
-sector: the exact additional static-conformal inter-image residual is
+geodesics. The two papers state one unified answer across both metric realizations: on the isotropic-conformal
+benchmark, the exact additional static-conformal inter-image residual is
 \(0.0\) d (Paper 19, step_56), and every year-scale figure quoted here
-is a reconstruction-space amplitude, with the
-propagating differential channel carried by the disformal deformation
-at the ms–s level. Readers should consult TEP-LENS for the current canonical
+is a reconstruction-space amplitude with the
+spatial-disformal differential channel bounded at the ms–s level; under the canonical unified unstretched-space temporal metric (\(\tilde{\gamma}_{ij}=\gamma_{ij}\) at fixed cosmic epoch; Paper 0 §2.2, §6.9 Step 02, and Paper 19 Step 64), intermediate temporal depth \(-\beta_A u_{\rm grav}(\mathbf{x})\) on the selected two-branch sector \(P_{,X}=k\sqrt\xi+2\xi\) (\(k=16.03\)) directly refracts photons along the line of sight, reproducing both the Bullet Cluster galaxy-peak convergence (\(\kappa_{\rm tot}=0.307\text{--}0.372\)) and the SN Refsdal Fermat delay (\(+330.9\text{ d}\) sheet and \(+221.6\text{--}443.2\text{ d}\) 3-D NFW ray) from \(f_b=0.16\) baryons alone. Readers should consult TEP-LENS for the current canonical
 strong-lensing time-delay formulation.
 
 ## References
@@ -2209,6 +2391,9 @@ Bekenstein, J. D. 2004, *Phys. Rev. D*, 70, 083509
 (arXiv:astro-ph/0403694)
 
 Blandford, R. D., & Narayan, R. 1986, *ApJ*, 310, 568
+
+Boran, S., Desai, S., Kahya, E. O., & Woodard, R. P. 2018,
+*Phys. Rev. D*, 97, 041501 (arXiv:1710.06168)
 
 Bullock, J. S., & Boylan-Kolchin, M. 2017, *ARA&A*, 55,
 343
@@ -2314,37 +2499,37 @@ J. 2012, *A&A*, 544, A62
 
 Smette, A., Surdej, J., et al. 1992, *ApJ*, 389, 39
 
-Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.15 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.16 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.27 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
+Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.28 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
-Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.20 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
+Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.21 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.8 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
+Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.9 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
 
-Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.8 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
+Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.9 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.7 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5)
+Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.8 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5)
 
-Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.8 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
+Smawfield, M. L. (2025). *Temporal Topology Saturation Scale: Cross-Scale Consistency of ρ_T*. Preprint v0.9 (New Delhi). Zenodo. DOI: [10.5281/zenodo.18064365](https://doi.org/10.5281/zenodo.18064365) (Paper 6)
 
-Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.4 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
+Smawfield, M. L. (2025). *The Soliton Wake: Exploring RBH-1 as a Temporal Topology Candidate*. Preprint v0.5 (Blantyre). Zenodo. DOI: [10.5281/zenodo.18059250](https://doi.org/10.5281/zenodo.18059250) (Paper 7)
 
-Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.6 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
+Smawfield, M. L. (2025). *Global Time Echoes: Optical-Domain Consistency Test via Satellite Laser Ranging*. Preprint v0.7 (Mombasa). Zenodo. DOI: [10.5281/zenodo.18064581](https://doi.org/10.5281/zenodo.18064581) (Paper 8)
 
-Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.8 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
+Smawfield, M. L. (2025). *What Do Precision Tests of General Relativity Actually Measure?*. Preprint v0.9 (Istanbul). Zenodo. DOI: [10.5281/zenodo.18109760](https://doi.org/10.5281/zenodo.18109760) (Paper 9)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.9 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Scaling in Globular Cluster Pulsars*. Preprint v0.10 (Caracas). Zenodo. DOI: [10.5281/zenodo.18165798](https://doi.org/10.5281/zenodo.18165798) (Paper 10)
 
-Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.10 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
+Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.12 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.7 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.8 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.6 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.7 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.2 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572720](https://doi.org/10.5281/zenodo.20572720) (Paper 19)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.3 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572719](https://doi.org/10.5281/zenodo.20572719) (Paper 19)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: Black Holes and the Temporal Horizon*. Preprint v0.3 (Bahrain). Zenodo. DOI: [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) (Paper 28)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: Black Holes and the Temporal Horizon*. Preprint v0.4 (Bahrain). Zenodo. DOI: [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) (Paper 28)
 
 Tie, S. S., & Kochanek, C. S. 2018, *MNRAS*, 473, 80
 (arXiv:1707.01908)
@@ -2383,7 +2568,7 @@ github.com/matthewsmawfield
 **License:** This work is licensed under a
 Creative Commons Attribution 4.0 International License.
 
-Version: v0.8 (Tortola) · First published: 19 December 2025 · Last updated: 30 September 2026
+Version: v0.9 (Tortola) · First published: 19 December 2025 · Last updated: 17 October 2026
 
 ## Data Availability & Reproducibility
 

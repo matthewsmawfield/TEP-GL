@@ -1,0 +1,390 @@
+{
+  "step": "02",
+  "status": "success",
+  "model": {
+    "z_l": 0.296,
+    "z_s": 2.0,
+    "separation_mpc": 0.72,
+    "gas_lag_mpc": 0.24,
+    "components": [
+      {
+        "name": "main_galaxies",
+        "kind": "stellar",
+        "m_msun": 15000000000000.0,
+        "a_kpc": 80.0
+      },
+      {
+        "name": "main_gas",
+        "kind": "gas",
+        "m_msun": 90000000000000.0,
+        "a_kpc": 300.0
+      },
+      {
+        "name": "bullet_galaxies",
+        "kind": "stellar",
+        "m_msun": 6000000000000.0,
+        "a_kpc": 60.0
+      },
+      {
+        "name": "bullet_gas",
+        "kind": "gas",
+        "m_msun": 35000000000000.0,
+        "a_kpc": 180.0
+      }
+    ],
+    "label": "idealized Bullet-like two-subcluster geometry; baryons only (no particulate halo under TEP)"
+  },
+  "cosmology": {
+    "D_l_mpc": 910.2514270174096,
+    "D_ls_mpc": 1333.3920753490834,
+    "D_s_mpc": 1726.6206918206042,
+    "Sigma_crit_kg_m2": 4.940296063278872
+  },
+  "benchmarks": {
+    "bullet_galaxy_peak": {
+      "b_mpc": [
+        0.36,
+        0.0
+      ],
+      "u_midplane": 1.5182245856801463e-05,
+      "kappa_bar": 0.24131798447446434,
+      "kappa_dis_per_B0_halo": 1.56869909350281e-07,
+      "kappa_dis_per_B0_ambient": 49.16460039476942,
+      "g_midplane": 6.90530007929491e-11,
+      "y_midplane": 0.9631550991230977
+    },
+    "bullet_gas_peak": {
+      "b_mpc": [
+        0.12000000000000001,
+        0.0
+      ],
+      "u_midplane": 1.8171449457029902e-05,
+      "kappa_bar": 0.1615821485156956,
+      "kappa_dis_per_B0_halo": 6.790073127259657e-08,
+      "kappa_dis_per_B0_ambient": 15.180872962914188,
+      "g_midplane": 3.377088505347876e-11,
+      "y_midplane": 0.9904178308677336
+    },
+    "empty_midpoint": {
+      "b_mpc": [
+        0.24000000000000002,
+        0.0
+      ],
+      "u_midplane": 1.60071944132377e-05,
+      "kappa_bar": 0.08437005657692996,
+      "kappa_dis_per_B0_halo": 1.685902609996342e-09,
+      "kappa_dis_per_B0_ambient": 1.5274637292578002,
+      "g_midplane": 5.0659868334945816e-11,
+      "y_midplane": 0.9791638343305586
+    },
+    "main_galaxy_peak": {
+      "b_mpc": [
+        -0.36,
+        0.0
+      ],
+      "u_midplane": 2.37221693044867e-05,
+      "kappa_bar": 0.4384409024026784,
+      "kappa_dis_per_B0_halo": 8.370951809459523e-07,
+      "kappa_dis_per_B0_ambient": 110.07257741619621,
+      "g_midplane": 4.5263165806225335e-11,
+      "y_midplane": 0.9831620665318854
+    },
+    "main_gas_peak": {
+      "b_mpc": [
+        -0.3,
+        0.0
+      ],
+      "u_midplane": 2.2947911703048325e-05,
+      "kappa_bar": 0.2609700587955476,
+      "kappa_dis_per_B0_halo": 2.1123303363507157e-07,
+      "kappa_dis_per_B0_ambient": 32.732592730059245,
+      "g_midplane": 1.0207672788599318e-10,
+      "y_midplane": 0.9279880963335907
+    }
+  },
+  "kappa_maps_per_B0": {
+    "kap_bar_peak": 0.4384409024026784,
+    "kap_dis_halo_peak": 8.370951809459523e-07,
+    "kap_dis_halo_min": -6.523333518625504e-08,
+    "kap_dis_ambient_peak": 110.07257741619621,
+    "kap_bar_at_bullet_galaxy": 0.24131798447446434,
+    "kap_dis_halo_at_bullet_galaxy": 1.56869909350281e-07,
+    "kap_dis_ambient_at_bullet_galaxy": 49.16460039476942
+  },
+  "B0_analysis": {
+    "kappa_target": 0.3,
+    "B0_required_halo_convention": 374080.7639182239,
+    "B0_required_ambient_convention": 0.001193582680512924,
+    "B0_required_selfconsistent_halo": 5269.781853696927,
+    "margin_selfconsistent": 0.014744443348350534,
+    "kap_dis_sc_at_bullet_galaxy": 1.1135568255898157e-05,
+    "kap_dis_sc_peak": 5.475619596442072e-05,
+    "nested_gated_selfconsistent": {
+      "g_sat_1e-03": {
+        "kappa_dis_per_B0_at_bullet_galaxy": 0.3994326858759011,
+        "kappa_dis_per_B0_peak": 0.8482403412064642,
+        "B0_required": 0.14691340393652072,
+        "B0_max_GW_same_convention": 2.078e-05,
+        "margin": 0.00014144386722520402
+      },
+      "g_sat_7e-03": {
+        "kappa_dis_per_B0_at_bullet_galaxy": 2.796028801131308,
+        "kappa_dis_per_B0_peak": 5.937682388445249,
+        "B0_required": 0.02098762913378867,
+        "B0_max_GW_same_convention": 2.078e-05,
+        "margin": 0.0009901070705764284
+      }
+    },
+    "unstretched_temporal_depth_channel": {
+      "metric": "g_tilde_mn = g_mn - (A^2(phi) - 1) U_m U_n (space unstretched; clock rate A(phi) along temporal flow)",
+      "kinetic_sector": "selected two-branch P_,X = k sqrt(xi) + 2 xi, k = 16.03 (zero free parameters)",
+      "c_GW_equals_c_gamma": true,
+      "negative_moat_present": false,
+      "kap_u_min_across_field": 0.004557269900992576,
+      "bullet_half_peak_x_mpc": 0.3520833333333333,
+      "bullet_half_peak_y_mpc": 0.0,
+      "sightlines": {
+        "bullet_galaxy_peak": {
+          "kappa_bar": 0.24131798447446434,
+          "kappa_temporal_1x": 0.06548531606549364,
+          "kappa_temporal_2x": 0.13097063213098728,
+          "kappa_total_1x": 0.30680330053995797,
+          "kappa_total_2x": 0.37228861660545165
+        },
+        "bullet_gas_peak": {
+          "kappa_bar": 0.1615821485156956,
+          "kappa_temporal_1x": 0.061034091126814474,
+          "kappa_temporal_2x": 0.12206818225362895,
+          "kappa_total_1x": 0.2226162396425101,
+          "kappa_total_2x": 0.28365033076932455
+        },
+        "empty_midpoint": {
+          "kappa_bar": 0.08437005657692996,
+          "kappa_temporal_1x": 0.03830089100349964,
+          "kappa_temporal_2x": 0.07660178200699928,
+          "kappa_total_1x": 0.1226709475804296,
+          "kappa_total_2x": 0.16097183858392924
+        },
+        "main_galaxy_peak": {
+          "kappa_bar": 0.4384409024026784,
+          "kappa_temporal_1x": 0.1111817877803545,
+          "kappa_temporal_2x": 0.222363575560709,
+          "kappa_total_1x": 0.5496226901830329,
+          "kappa_total_2x": 0.6608044779633874
+        },
+        "main_gas_peak": {
+          "kappa_bar": 0.2609700587955476,
+          "kappa_temporal_1x": 0.08042137007899487,
+          "kappa_temporal_2x": 0.16084274015798974,
+          "kappa_total_1x": 0.34139142887454244,
+          "kappa_total_2x": 0.4218127989535373
+        }
+      }
+    },
+    "kap_dis_halo_peak_position_mpc": [
+      -0.3520833333333333,
+      0.0
+    ],
+    "morphology_note": "sigma is largest for rays crossing the well close to its axis ((n.du)^2 maximal at small impact), so a scalar well produces a positive convergence core ON the well surrounded by a compensating negative moat -- a compensated kernel whose signed area integrates near zero, structurally unlike a mass-sheet peak.  Peak position and moat morphology are the falsifiable signatures of the channel.",
+    "B0_max_GW170817_halo": 77.7,
+    "B0_max_drift_ambient": 3.115e-11,
+    "signature_wall_ambient": 6.444,
+    "margin_halo": 0.0002077091566702041,
+    "margin_ambient": 2.6097898795426357e-08,
+    "B0_peak_migrates_to_galaxies": 1e-08
+  },
+  "centroid_scan": [
+    {
+      "B0": 1e-08,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798447446592
+    },
+    {
+      "B0": 3.480700588428413e-08,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.2413179844744698
+    },
+    {
+      "B0": 1.2115276586285877e-07,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798447448335
+    },
+    {
+      "B0": 4.2169650342858225e-07,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798447453048
+    },
+    {
+      "B0": 1.4677992676220675e-06,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.2413179844746946
+    },
+    {
+      "B0": 5.108969774506924e-06,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798447526578
+    },
+    {
+      "B0": 1.778279410038923e-05,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798447725392
+    },
+    {
+      "B0": 6.189658188912597e-05,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798448417405
+    },
+    {
+      "B0": 0.00021544346900318823,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798450826095
+    },
+    {
+      "B0": 0.0007498942093324559,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.2413179845921002
+    },
+    {
+      "B0": 0.002610157215682533,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798488391948
+    },
+    {
+      "B0": 0.009085175756516862,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798589965503
+    },
+    {
+      "B0": 0.03162277660168379,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131798943512645
+    },
+    {
+      "B0": 0.11006941712522081,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131800174104384
+    },
+    {
+      "B0": 0.3831186849557285,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131804457425773
+    },
+    {
+      "B0": 1.333521432163324,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131819366385052
+    },
+    {
+      "B0": 4.641588833612772,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24131871260008392
+    },
+    {
+      "B0": 16.155980984398695,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24132051886173683
+    },
+    {
+      "B0": 56.23413251903491,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.241326805917735
+    },
+    {
+      "B0": 195.73417814876575,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24134868927724729
+    },
+    {
+      "B0": 681.2920690579595,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24142485869957853
+    },
+    {
+      "B0": 2371.373705661655,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24168998165270714
+    },
+    {
+      "B0": 8254.041852680173,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.2426127952716677
+    },
+    {
+      "B0": 28729.848333536567,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.24582483317819354
+    },
+    {
+      "B0": 100000.0,
+      "peak_x_mpc": 0.3520833333333333,
+      "peak_y_mpc": 0.0,
+      "kappa_peak": 0.25700497540949246
+    }
+  ],
+  "inference_side_channel": {
+    "delta_u_gas_minus_galaxy": 2.9892036002284393e-06,
+    "A_gas": 0.9999818287156428,
+    "A_gal": 0.9999848178693929,
+    "predicted_gas_line_offset_km_s": -0.8961406947749332,
+    "emissivity_calibration_bias_frac": 2.9891537500770227e-06,
+    "gas_mass_bias_frac_order": 1.4945768750385113e-06,
+    "note": "conformal-depth difference between gas-peak and galaxy-peak sightlines (Delta_u ~ -3.0e-6, c*Delta_u ~ -0.9 km/s).  The corresponding X-ray emissivity and gas-mass inference bias is of order 1e-6 -- five orders below what relocating the baryon dominance requires -- while in any single dissociative merger a ~1 km/s clock shift is masked by O(1e2-1e3) km/s hydrodynamic shock and ram-pressure velocities, making it a baryon-census consistency bound accessible only in ensemble-stacked cluster gravitational-redshift surveys."
+  },
+  "validation": {
+    "v1_point_mass_gr_ratio": 0.9841828592657933,
+    "v2_ode_vs_born": {
+      "B0_ode": 30000.0,
+      "note": "ode_deflection = (dv(B0)-dv(0))/B0; the GR part of the disformal metric cancels in the difference",
+      "born_alpha_per_B0": {
+        "0.15": -1.7682296081395392e-09,
+        "0.30": -2.4829411699782136e-10,
+        "0.60": -1.0546233291810471e-11,
+        "1.00": -5.366545769632983e-13
+      },
+      "ode_alpha_per_B0": {
+        "0.15": -1.768809755775635e-09,
+        "0.30": -2.483707696532806e-10,
+        "0.60": -1.0546056293559444e-11,
+        "1.00": -5.360225161781046e-13
+      },
+      "ratio_ode_over_born": {
+        "0.15": 1.0003280951938738,
+        "0.30": 1.0003087171632823,
+        "0.60": 0.9999832169224661,
+        "1.00": 0.998822220451803
+      }
+    },
+    "v3_conformal_control_kappa": 0.0
+  },
+  "field_arrays_meta": {
+    "NB": 97,
+    "B_half_mpc": 1.3,
+    "NZ": 2401,
+    "Z_half_mpc": 4.0,
+    "u_amb": 0.25928259793008296
+  }
+}

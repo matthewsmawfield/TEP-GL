@@ -207,7 +207,7 @@ class HTMLToMarkdownConverter {
         const version = versionMatch ? versionMatch[1]
             .replace(/<[^>]+>/g, '')
             .replace(/^Version:\s*/i, '')
-            .trim() : 'v0.8 (Tortola)';
+            .trim() : 'v0.9 (Tortola)';
         
         const dateMatch = html.match(/<div[^>]*class=["'][^"']*date[^"']*["'][^>]*>([\s\S]*?)<\/div>/i);
         let date = dateMatch ? dateMatch[1].replace(/<[^>]+>/g, '').trim() : 'First published: 19 December 2025';
@@ -273,14 +273,14 @@ class HTMLToMarkdownConverter {
             // Build the complete markdown document
             const markdown = this.buildMarkdownDocument(metadata, markdownContent);
             
-            // Parse version for filename (e.g., "v0.8 (Tortola)" -> "v0.8-Tortola")
+            // Parse version for filename (e.g., "v0.9 (Tortola)" -> "v0.9-Tortola")
             const versionClean = metadata.version
                 .replace(/^Version:\s*/i, '')
                 .replace(/\s+/g, '-')
                 .replace(/[()]/g, '');
             
-            // Write to file with new naming format: 4-TEP-GL-v0.8-Tortola.md
-            const outputPath = path.join(__dirname, '..', `4-TEP-GL-${versionClean}.md`);
+            // Write to file with new naming format: D4-TEP-GL-v0.9-Tortola.md
+            const outputPath = path.join(__dirname, '..', `D4-TEP-GL-${versionClean}.md`);
             fs.writeFileSync(outputPath, markdown, 'utf8');
 
             // Keep the shared collection archive (../manuscripts/) in sync

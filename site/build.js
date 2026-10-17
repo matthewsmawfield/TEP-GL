@@ -167,7 +167,7 @@ async function buildStaticSite() {
         
         console.log('✅ Static site built successfully!');
         console.log(`📁 Output: ${outputPath}`);
-        console.log(`📄 Markdown: 4-TEP-GL-${manifest.version.replace(/\s+/g, '-').replace(/[()]/g, '')}.md (in root)`);
+        console.log(`📄 Markdown: D4-TEP-GL-${manifest.version.replace(/\s+/g, '-').replace(/[()]/g, '')}.md (in root)`);
         console.log(`📊 Generated ${manifest.sections.length} sections`);
         console.log('🚀 Ready for deployment');
         
