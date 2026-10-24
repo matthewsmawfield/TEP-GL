@@ -5,8 +5,8 @@
 ![TEP-GL: Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations](site/public/twitter-image.jpg)
 
 **Author:** Matthew Lukin Smawfield  
-**Version:** v0.9 (Tortola)  
-**First published:** 19 December 2025 · **Last updated:** 17 October 2026  
+**Version:** v0.10 (Tortola)  
+**First published:** 19 December 2025 · **Last updated:** 24 October 2026  
 **Status:** Preprint  
 **DOI:** [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540)  
 **Website:** [https://mlsmawfield.com/tep/gl/](https://mlsmawfield.com/tep/gl/)  
@@ -102,7 +102,7 @@ This work builds on the Temporal Equivalence Principle (TEP), which proposes:
 -   **Temporal Shear Suppression**: The "Screening Cliff" objection is addressed through continuous geometric gradient suppression (TEP); the mechanism is shown to be over-efficient rather than fine-tuned.
 
 **TEP Theory Reference:**
-> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.16 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
+> Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed (v0.18 (Jakarta))*. Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911)
 
 ## File Structure
 
@@ -158,7 +158,7 @@ This project is licensed under Creative Commons Attribution 4.0 International (C
   journal={Zenodo},
   year={2025},
   doi={10.5281/zenodo.17982540},
-  note={Preprint v0.9 (Tortola)}
+  note={Preprint v0.10 (Tortola)}
 }
 ```
 

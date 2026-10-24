@@ -1,7 +1,7 @@
 # Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations
 **Matthew Lukin Smawfield**
-Version: v0.9 (Tortola)
-First published: 19 December 2025 · Last updated: 17 October 2026
+Version: v0.10 (Tortola)
+First published: 19 December 2025 · Last updated: 24 October 2026
 DOI: 10.5281/zenodo.17982540
 
 ---
@@ -1494,7 +1494,7 @@ While the CMB is effectively a static backlight (zero intrinsic evolution), gala
 
 - *Planck* CMB (2018): \(S_8 = 0.834 \pm 0.016\)
 
-- DES Y6 (2025): \(S_8 = 0.789 \pm 0.012\), \(\sim 2.6\sigma\) from combined Planck+ACT+SPT
+- DES Y6 (2026): \(S_8 = 0.789 \pm 0.012\), \(\sim 2.6\sigma\) in 1D \(S_8\) (\(1.8\sigma\) full parameter space) from combined Planck+ACT+SPT
 
 - KiDS-Legacy (2025): \(S_8 = 0.815^{+0.016}_{-0.021}\), \(0.73\sigma\) from Planck
 
@@ -1970,7 +1970,7 @@ a_0 \sim c H_0 \approx (3 \times 10^8\ \text{m/s}) \times (2.2 \times
 \end{equation}
 
 This lies within a factor of about five of the empirical MOND value
-\(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 &sect;2.2, v0.16); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 &sect;7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the selected two-branch kinetic completion \(P(X,\phi)=-V(\phi)+\frac{2k}{3\Lambda_X^2}X|X|^{1/2}+X|X|/\Lambda_X^4\) (\(P_{,X}=k\sqrt\xi+2\xi\), \(k=16.03\); with \(P=X-V+X|X|/\Lambda_X^4\) as the retained unit-term high-gradient benchmark; Paper 0 &sect;2.2, v0.16, machine-checked benchmark table). TEP attributes this
+\(a_0 \approx 1.2 \times 10^{-10}\) m/s². The canonical TEP acceleration scale is the derived cosmological-horizon scale \(g_t = cH_0/(2|\beta_A|) \approx 3.4 \times 10^{-10}\) m/s² (Paper 0 &sect;2.2, v0.18); the SPARC-extracted empirical benchmark \(g_{\rm TEP} \approx 5 \times 10^{-10}\) m/s² (Paper 0 &sect;7; Paper 10) independently corroborates the same order and matches the ambient Galactic shear \(a_{\rm amb} \approx 3.9 \times 10^{-10}\) m/s² at the solar circle. The environmental transition is supplied by the nested two-body operator \(\mathcal{R}(s)=\mathcal{S}_\Sigma(X_{\rm env})^2\,y(s)\) — the effective pairwise projection of the master environmental operator \(\mathcal{S}_\Sigma(\mathcal{E})\) under the selected two-branch kinetic completion \(P(X,\phi)=-V(\phi)+\frac{2k}{3\Lambda_X^2}X|X|^{1/2}+X|X|/\Lambda_X^4\) (\(P_{,X}=k\sqrt\xi+2\xi\), \(k=16.03\); with \(P=X-V+X|X|/\Lambda_X^4\) as the retained unit-term high-gradient benchmark; Paper 0 &sect;2.2, v0.18, machine-checked benchmark table). TEP attributes this
 cross-scale relation to the same temporal-gradient structure
 represented by \(\mathcal{S}_\Sigma(\mathcal{E})\). The defensible
 statement is that TEP produces an acceleration scale of cosmological
@@ -2209,13 +2209,13 @@ it is not a photon-only disformal coupling on an un-lapsed tensor metric (which 
 photon and gravitational-wave transit times by \(\Delta t\sim\int|\beta_A|u\,dl/c\sim10^7\ {\rm s}\)
 across Galactic and host haloes, the dark-matter-emulator exclusion of Boran et al. 2018, and invert
 the longitudinal sign in voids where \(A>1\)); because proper time \(d\tilde t = A_{\rm loc}(u(\mathbf x))\,dt\) is
-the universal physical time of the inhomogeneous ADM foliation itself, varying the spatially covariant ADM/DHOST gravitational action
+the universal physical time of the inhomogeneous ADM foliation itself, varying the spatially covariant ADM/DHOST gravitational action (written here at fixed lens epoch \(A_{\rm sp}(t_0)=1\); see Paper 0 Appendix A5 for the general cosmological SVT-split form with \(A_{\rm sp}^{-1}R_{\rm TT}^{(3)}\) and \(A_{\rm sp}^{-2}\gamma^{kl}\partial_k\partial_l\))
 \(S_{\rm grav}=\tfrac12 M_{\rm Pl}^2\int d^3x\,dt\,\sqrt{\gamma}\,N_{\rm GR}[R^{(3)}(\gamma)+\tilde K_{ij}\tilde K^{ij}-\tilde K^2]\)
 (\(\tilde K_{ij}=(2N_{\rm TEP}c)^{-1}\partial_t\gamma_{ij}=A_{\rm loc}(u)^{-1}K_{ij}\), with \(\delta S_{\rm grav}/\delta u\equiv 0\) in the static limit \(K_{ij}\to 0\) preserving the Poisson and scalar source equations without Jordan-frame degeneracy; Paper 0, §2.2, Step 80)
 with respect to transverse-traceless tensor perturbations
 \(h_{ij}^{\rm TT}\) of \(\gamma_{ij}\) and varying \(S_{\rm EM}[\tilde g]\) with respect to electromagnetic waves
 \(A_i^{\rm T}\) yields the identical quadratic wave operator
-\(\Box_{\rm TEP}=-(N_{\rm TEP}c)^{-2}\partial_t^2+\gamma^{ij}\partial_i\partial_j\) on the unstretched spatial metric \(\gamma_{ij}\), experiencing the identical refractive index
+\(\Box_{\rm TEP}=-(N_{\rm TEP}c)^{-2}\partial_t^2+\gamma^{ij}\partial_i\partial_j\) on the unstretched spatial metric \(\gamma_{ij}\) at fixed lens epoch, experiencing the identical refractive index
 \(n(x)\) across wells and voids alike (\(\Delta t_{\gamma-\rm GW}=0\) identically).
 
 The Bullet Cluster therefore sharply discriminates between the two metric
@@ -2371,7 +2371,8 @@ Abbott, T. M. C., et al. (DES Collaboration) 2022,
 *Phys. Rev. D*, 105, 023520
 
 Abbott, T. M. C., et al. (DES Collaboration) 2026,
-arXiv:2601.14559 (DES Year 6 3×2pt cosmological constraints)
+arXiv:2601.14559 (DES Year 6 3×2pt cosmological constraints);
+see also arXiv:2602.10065 (DES Year 6 cosmic shear) and arXiv:2601.15175 (DES Year 6 galaxy–galaxy lensing)
 
 Asgari, M., et al. (KiDS Collaboration) 2021, *A&A*, 645, A104
 
@@ -2499,15 +2500,15 @@ J. 2012, *A&A*, 544, A62
 
 Smette, A., Surdej, J., et al. 1992, *ApJ*, 389, 39
 
-Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.16 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
+Smawfield, M. L. (2025). *Temporal Equivalence Principle: Dynamic Time & Emergent Light Speed*. Preprint v0.18 (Jakarta). Zenodo. DOI: [10.5281/zenodo.16921911](https://doi.org/10.5281/zenodo.16921911) (Paper 0)
 
 Smawfield, M. L. (2025). *Global Time Echoes: Distance-Structured Correlations in GNSS Clocks*. Preprint v0.28 (Jaipur). Zenodo. DOI: [10.5281/zenodo.17127229](https://doi.org/10.5281/zenodo.17127229) (Paper 1)
 
-Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.21 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
+Smawfield, M. L. (2025). *Global Time Echoes: 25-Year Analysis of CODE Precise Clock Products*. Preprint v0.22 (Cairo). Zenodo. DOI: [10.5281/zenodo.17517141](https://doi.org/10.5281/zenodo.17517141) (Paper 2)
 
 Smawfield, M. L. (2025). *Global Time Echoes: Raw RINEX Consistency Test*. Preprint v0.9 (Kathmandu). Zenodo. DOI: [10.5281/zenodo.17860166](https://doi.org/10.5281/zenodo.17860166) (Paper 3)
 
-Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.9 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
+Smawfield, M. L. (2025). *Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations*. Preprint v0.10 (Tortola). Zenodo. DOI: [10.5281/zenodo.17982540](https://doi.org/10.5281/zenodo.17982540) (Paper 4 — this work)
 
 Smawfield, M. L. (2025). *Global Time Echoes: Empirical Synthesis*. Preprint v0.8 (Singapore). Zenodo. DOI: [10.5281/zenodo.18004832](https://doi.org/10.5281/zenodo.18004832) (Paper 5)
 
@@ -2523,11 +2524,11 @@ Smawfield, M. L. (2026). *Temporal Equivalence Principle: Suppressed Density Sca
 
 Smawfield, M. L. (2026). *The Cepheid Bias: Resolving the Hubble Tension*. Preprint v0.12 (Kingston upon Hull). Zenodo. DOI: [10.5281/zenodo.18209702](https://doi.org/10.5281/zenodo.18209702) (Paper 11)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.8 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Unified Resolution to the JWST High-Redshift Anomalies*. Preprint v0.9 (Kos). Zenodo. DOI: [10.5281/zenodo.19000827](https://doi.org/10.5281/zenodo.19000827) (Paper 12)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: Temporal Shear Recovery in Gaia DR3 Wide Binaries*. Preprint v0.7 (Kilifi). Zenodo. DOI: [10.5281/zenodo.19102061](https://doi.org/10.5281/zenodo.19102061) (Paper 13)
 
-Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.3 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572719](https://doi.org/10.5281/zenodo.20572719) (Paper 19)
+Smawfield, M. L. (2026). *Temporal Equivalence Principle: A Blind-Prediction Residual Test in Multiply-Imaged Supernovae*. Preprint v0.4 (Lisboa). Zenodo. DOI: [10.5281/zenodo.20572719](https://doi.org/10.5281/zenodo.20572719) (Paper 19)
 
 Smawfield, M. L. (2026). *Temporal Equivalence Principle: Black Holes and the Temporal Horizon*. Preprint v0.4 (Bahrain). Zenodo. DOI: [10.5281/zenodo.21677826](https://doi.org/10.5281/zenodo.21677826) (Paper 28)
 
@@ -2568,7 +2569,7 @@ github.com/matthewsmawfield
 **License:** This work is licensed under a
 Creative Commons Attribution 4.0 International License.
 
-Version: v0.9 (Tortola) · First published: 19 December 2025 · Last updated: 17 October 2026
+Version: v0.10 (Tortola) · First published: 19 December 2025 · Last updated: 24 October 2026
 
 ## Data Availability & Reproducibility
 
@@ -2606,11 +2607,15 @@ TEP-GL/
 │   └── manifest.json
 ├── scripts/                   # Analysis scripts
 │   ├── steps/
-│   │   └── step_01_amplitude_ledger.py   # temporal-composite amplitude
-│   │                                   # ledger (Boxes 3.2, 3.3, 5.1–5.3)
+│   │   ├── step_01_amplitude_ledger.py     # temporal-composite amplitude
+│   │   │                                   # ledger (Boxes 3.2, 3.3, 5.1–5.3)
+│   │   ├── step_02_bullet_cluster_raytrace.py  # Bullet Cluster unstretched-space ray-tracing
+│   │   └── step_02b_bullet_plummer_scan.py     # Plummer gas-smoothing robustness scan
 │   └── utils/
 ├── results/
-│   └── step_01_amplitude_ledger.json    # machine-readable ledger output
+│   ├── step_01_amplitude_ledger.json       # machine-readable ledger output
+│   ├── step_02_bullet_cluster_raytrace.json
+│   └── step_02b_bullet_plummer_scan.json
 ├── requirements.txt           # Python dependencies
 ├── CITATION.cff               # Citation metadata
 └── README.md                  # Repository documentation

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 title: 'Temporal-Spatial Coupling in Gravitational Lensing: A Reinterpretation of Dark Matter Observations'
 message: If you use this software, please cite it as below.
 type: article
-version: v0.9 (Tortola)
+version: v0.10 (Tortola)
 date-released: 2025-12-19
 authors:
 - family-names: Smawfield
@@ -30,7 +30,7 @@ preferred-citation:
     value: 10.5281/zenodo.17982540
     description: Pre-print DOI
   url: https://doi.org/10.5281/zenodo.17982540
-  notes: Preprint v0.9 (Tortola)
+  notes: Preprint v0.10 (Tortola)
 keywords:
 - Temporal Equivalence Principle
 - Temporal Shear

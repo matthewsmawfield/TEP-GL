@@ -1,6 +1,4 @@
-v0.9 (Tortola) — 17 October 2026 — Unstretched-space ADM optical refraction and CDM-free lensing closure
+v0.10 (Tortola) — 24 October 2026 — Unstretched-space Bullet Cluster convergence reconstruction and DES Year 6 weak-lensing integration
 
-- Formulated the unstretched-space (3+1) ADM temporal metric g_tilde_munu = -A_loc^2(u_grav) U_mu U_nu + A_sp^2(u_drift) Pi_munu: intermediate clock depth -beta_A u_grav(x) along the photon path supplies the optical refractive index n(x) = 1 - 2 Phi_N(x)/c^2 - beta_A u_grav(x) while preserving c_GW = c_gamma identically on the shared temporal-lapse cone
-- Demonstrated that baryon-only sourcing on the zero-free-parameter two-branch kinetic sector P_,X = k sqrt(xi) + 2xi (k = 16.03) reproduces the Bullet Cluster galaxy-peak convergence and offset morphology (kappa_tot = 0.307-0.372 at the bullet galaxies, no negative moat), the SN Refsdal Fermat delay (+330.9 d sheet), and the Planck CMB lensing cosmic-web amplification (9.4x-129x) without particulate dark matter
-- Updated the abstract, theoretical framework, Bullet Cluster forward model, and conclusions to distinguish isotropic conformal rescaling from unstretched-space temporal refraction
-- Synchronized the shared core library and cross-paper references across the corpus
+- Demonstrated that unstretched-space temporal refraction on the zero-free-parameter two-branch kinetic sector reproduces the Bullet Cluster convergence peak and offset morphology from baryons alone while preserving equal gravitational-wave and photon propagation speeds
+- Integrated the completed Dark Energy Survey Year 6 (DES Y6) cosmic-shear and 3x2pt weak-lensing constraints into the source-class shear analysis

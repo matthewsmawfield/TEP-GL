@@ -38,11 +38,15 @@
 │   └── manifest.json
 ├── scripts/                   # Analysis scripts
 │   ├── steps/
-│   │   └── step_01_amplitude_ledger.py   # temporal-composite amplitude
-│   │                                   # ledger (Boxes 3.2, 3.3, 5.1–5.3)
+│   │   ├── step_01_amplitude_ledger.py     # temporal-composite amplitude
+│   │   │                                   # ledger (Boxes 3.2, 3.3, 5.1–5.3)
+│   │   ├── step_02_bullet_cluster_raytrace.py  # Bullet Cluster unstretched-space ray-tracing
+│   │   └── step_02b_bullet_plummer_scan.py     # Plummer gas-smoothing robustness scan
 │   └── utils/
 ├── results/
-│   └── step_01_amplitude_ledger.json    # machine-readable ledger output
+│   ├── step_01_amplitude_ledger.json       # machine-readable ledger output
+│   ├── step_02_bullet_cluster_raytrace.json
+│   └── step_02b_bullet_plummer_scan.json
 ├── requirements.txt           # Python dependencies
 ├── CITATION.cff               # Citation metadata
 └── README.md                  # Repository documentation</code></pre>
